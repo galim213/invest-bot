@@ -1,0 +1,12 @@
+{
+  "name": "invest-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bot de paper trading simulado (educativo, $1000 ficticios) con señales técnicas multi-factor, panel de riesgo macro y contexto de noticias.",
+  "main": "run-daily.js",
+  "scripts": {
+    "invest:daily": "node run-daily.js",
+    "invest:backtest": "node backtest.js"
+  },
+  "license": "UNLICENSED"
+}
