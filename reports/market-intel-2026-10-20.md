@@ -189,4 +189,4 @@ Selección curada de empresas con posición competitiva reconocida en su sector,
 - _Sin datos fundamentales disponibles hoy (falla ocasional del endpoint no oficial de Yahoo)._
 
 ---
-_Generado automáticamente el 2026-10-20T10:28:14.809Z. Fundamentales: endpoint no oficial de Yahoo Finance (mismo mecanismo que usa la librería yfinance) — puede fallar sin aviso. Los textos "por qué" son análisis cualitativo, no se actualizan automáticamente y pueden quedar desactualizados; revisalos cada tanto._
+_Generado automáticamente el 2026-10-20T10:34:43.332Z. Fundamentales: endpoint no oficial de Yahoo Finance (mismo mecanismo que usa la librería yfinance) — puede fallar sin aviso. Los textos "por qué" son análisis cualitativo, no se actualizan automáticamente y pueden quedar desactualizados; revisalos cada tanto._

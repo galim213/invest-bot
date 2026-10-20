@@ -6,10 +6,10 @@
 
 ## Panorama de riesgo macro (contexto, no predicción)
 
-- **VIX**: 18.64 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.6 pts.
+- **VIX**: 18.56 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.5 pts.
 - **Curva de rendimientos (10 años vs 3 meses)**: +1.06 pts — normal (sin inversión).
 - **Spread de crédito (proxy HYG vs LQD, 20d)**: -0.25 pts — normal.
-- **Índice dólar (DXY)**: 101.86 (variación 10d: -0.38) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
+- **Índice dólar (DXY)**: 101.88 (variación 10d: -0.36) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
 - _Nota: el crecimiento del crédito y la pendiente de la curva son los que más respaldo académico tienen como señales tempranas de crisis en estudios de largo plazo multi-país. El spread de crédito y el dólar son más rápidos pero más ruidosos. Ninguno anticipa el tipo ni el momento exacto de una crisis — no son una alarma de "vender todo"._
 
 ## Resumen del portfolio
@@ -224,22 +224,16 @@ _No se ejecutaron movimientos hoy._
   - RSI 27: sobreventa, posible rebote.
 
 ---
-_Generado automáticamente el 2026-10-20T10:28:14.681Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
+_Generado automáticamente el 2026-10-20T10:34:43.201Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
 ## Análisis cualitativo de cierre (agente con búsqueda web)
 
-**Mercado general:** no se encontró una crónica de cierre publicada para el 2026-10-20; los recaps más recientes disponibles son del 15 de octubre (S&P 500 ≈ 7,744, Nasdaq Composite ≈ 26,713, ambos cerca de máximos). No se puede atribuir el movimiento de hoy a una causa concreta. El VIX en 18.64 (calma) y el régimen alcista del reporte son consistentes con un mercado sin estrés, pero eso es contexto del motor, no una explicación de noticias.
+**Aviso de calidad de datos:** esta corrida se ejecutó a las ~10:34 UTC del 2026-10-20 (antes de la apertura de Wall Street), por lo que los precios provienen del último cierre disponible, no del cierre de hoy: la variación diaria del portfolio es 0.00% y los precios actuales coinciden con el costo promedio de las posiciones. Además, la búsqueda web no encontró un reporte de cierre del 20/10/2026; lo último confirmable es el cierre del 15/10/2026 (S&P 500 ~7,744, +0.33%; Nasdaq ~26,713, +0.08%), tras un rango estrecho cerca de máximos históricos a comienzos de octubre. Las cifras provienen de blogs/agregadores de terceros, no de fuentes oficiales.
 
-**MRNA** (BUY, score 75): no hay noticia del día, pero el contexto reciente es relevante: ingresó al Nasdaq-100 el 9 de octubre y tiene resultados esperados el 30 de octubre (antes de apertura), con consenso de pérdida de ~$1.38/acción. La señal técnica (SMA20 muy por encima de SMA50) refleja el rebote previo; el reporte de resultados es un riesgo de evento que el motor no modela.
+No se encontraron noticias recientes y verificables que expliquen el movimiento de MRNA, VEEV, MTD, ACN, MPC, PLTR ni de las señales SELL destacadas, por lo que no se comenta ninguno. Único dato relevante: Phillips 66 (PSX, posición abierta, señal BUY) reportaría resultados del 3T el 2026-10-28 antes de la apertura (consenso ~$10.41/acción); es un posible catalizador de volatilidad para la posición.
 
-**PSX / refinadoras (PSX, MPC, VLO)** (BUY/HOLD): la cobertura disponible (julio 2026) vincula los máximos de las refinadoras con márgenes elevados por el conflicto con Irán; no se encontró noticia específica de hoy. Es un contexto que encaja con la tendencia alcista técnica del sector Energy, aunque la nota no confirma la causa del movimiento de hoy.
-
-Sin noticias relevantes encontradas para VEEV, MTD ni el resto de las señales destacadas.
-
-### Fuentes
-- [Tapeboard — Market pulse 2026-10-15](https://tapeboard.com/blog/market-pulse-2026-10-15)
-- [Investrade — October 9, 2026](https://investrade.com/?p=1610)
-- [Barchart — Moderna pops 17%](https://www.barchart.com/story/news/37158916/moderna-pops-17-is-there-life-in-mrna-down-90-from-covid-high)
-- [RTTNews — Moderna](https://www.rttnews.com/story.aspx?Id=3695426)
-- [MarketBeat — Refiner stocks near record highs](https://www.marketbeat.com/articles/refiner-stocks-are-near-record-highscan-iran-driven-margins-keep-them-there/)
+Fuentes:
+- [Market pulse 2026-10-15 (Tapeboard)](https://tapeboard.com/blog/market-pulse-2026-10-15)
+- [Market pulse 2026-10-13 (Tapeboard)](https://tapeboard.com/blog/market-pulse-2026-10-13)
+- [PSX Phillips 66 (Earnings Whispers)](https://www.earningswhispers.com/stocks/PSX)
 
 ⚠️ Este análisis cualitativo es generado por un agente con búsqueda web, no está validado por backtest, y sigue siendo parte de una simulación 100% educativa — no es asesoría financiera real.
