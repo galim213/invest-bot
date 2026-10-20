@@ -122,3 +122,73 @@ test('portfolioValue: usa avgCost como fallback cuando no hay precio fresco para
   const value = portfolio.portfolioValue(s, new Map()); // sin precio para AAPL
   assert.ok(Math.abs(value - (s.cash + 2 * 100)) < 1e-9);
 });
+
+test('shortSell: recibe el cash de la venta y reserva margen, no cambia el valor total del portfolio', () => {
+  const s = portfolio.initialState(1000);
+  const valueBefore = portfolio.portfolioValue(s, new Map([['AAPL', 100]]));
+
+  const trade = portfolio.shortSell(s, { ticker: 'AAPL', price: 100, usdAmount: 200, date: '2026-01-01', reason: 'test' });
+
+  assert.equal(trade.action, 'SHORT');
+  assert.equal(trade.shares, 2);
+  assert.ok(Math.abs(s.cash - (1000 + 200 - 200 * FEE)) < 1e-9); // recibe el proceeds de la venta
+  assert.ok(Math.abs(s.marginReserved - 200 * STRATEGY.shortMarginRequirementPct) < 1e-9);
+  assert.equal(s.shorts.AAPL.shares, 2);
+
+  // Abrir el short no debería, por sí solo, inventar valor: el pasivo de la
+  // posición corta compensa el cash recibido (menos la fee pagada).
+  const valueAfter = portfolio.portfolioValue(s, new Map([['AAPL', 100]]));
+  assert.ok(Math.abs(valueAfter - (valueBefore - 200 * FEE)) < 1e-9);
+});
+
+test('shortSell: nunca reserva más colateral del cash disponible', () => {
+  const s = portfolio.initialState(100);
+  portfolio.shortSell(s, { ticker: 'AAPL', price: 10, usdAmount: 10000, date: '2026-01-01', reason: 'test' });
+  assert.ok(s.marginReserved <= 100 + 1e-9, `margen reservado excede el cash inicial: ${s.marginReserved}`);
+});
+
+test('portfolioValue: una posición corta pierde valor si el precio SUBE (riesgo sin techo)', () => {
+  const s = portfolio.initialState(1000);
+  portfolio.shortSell(s, { ticker: 'AAPL', price: 100, usdAmount: 200, date: '2026-01-01', reason: 'test' });
+
+  const valueIfFlat = portfolio.portfolioValue(s, new Map([['AAPL', 100]]));
+  const valueIfUp = portfolio.portfolioValue(s, new Map([['AAPL', 150]])); // +50%
+  const valueIfDown = portfolio.portfolioValue(s, new Map([['AAPL', 50]])); // -50%
+
+  assert.ok(valueIfUp < valueIfFlat, 'el short debería perder valor si el precio sube');
+  assert.ok(valueIfDown > valueIfFlat, 'el short debería ganar valor si el precio baja');
+});
+
+test('coverShort: cubrir a un precio menor que la entrada da PnL realizado positivo y libera margen', () => {
+  const s = portfolio.initialState(1000);
+  portfolio.shortSell(s, { ticker: 'AAPL', price: 100, usdAmount: 200, date: '2026-01-01', reason: 'open' });
+  const marginBefore = s.marginReserved;
+
+  const trade = portfolio.coverShort(s, { ticker: 'AAPL', price: 80, fraction: 1, date: '2026-01-10', reason: 'cover' });
+
+  assert.equal(trade.action, 'COVER');
+  assert.ok(trade.realizedPnl > 0, 'cubrir más abajo de la entrada debería dar ganancia');
+  assert.equal(s.shorts.AAPL, undefined); // posición cerrada por completo
+  assert.ok(s.marginReserved < marginBefore);
+});
+
+test('coverShort: cubrir a un precio mayor que la entrada da PnL realizado negativo', () => {
+  const s = portfolio.initialState(1000);
+  portfolio.shortSell(s, { ticker: 'AAPL', price: 100, usdAmount: 200, date: '2026-01-01', reason: 'open' });
+  const trade = portfolio.coverShort(s, { ticker: 'AAPL', price: 120, fraction: 1, date: '2026-01-10', reason: 'cover' });
+  assert.ok(trade.realizedPnl < 0, 'cubrir más arriba de la entrada debería dar pérdida');
+});
+
+test('coverShort: una cobertura parcial deja el resto de la posición corta abierta', () => {
+  const s = portfolio.initialState(1000);
+  portfolio.shortSell(s, { ticker: 'AAPL', price: 100, usdAmount: 200, date: '2026-01-01', reason: 'open' });
+  const trade = portfolio.coverShort(s, { ticker: 'AAPL', price: 90, fraction: 0.5, date: '2026-01-10', reason: 'cover' });
+
+  assert.equal(trade.action, 'COVER_PARTIAL');
+  assert.ok(Math.abs(s.shorts.AAPL.shares - 1) < 1e-9);
+});
+
+test('coverShort: sobre un ticker sin posición corta no hace nada', () => {
+  const s = portfolio.initialState(1000);
+  assert.equal(portfolio.coverShort(s, { ticker: 'NOPE', price: 10, date: '2026-01-01', reason: 'x' }), null);
+});

@@ -19,6 +19,10 @@ const BACKTEST_DAYS = Number(process.argv[2]) || 120;
 // comparabilidad con los backtests anteriores; `node backtest.js 60 --fundamentals`
 // lo activa (razonable solo en ventanas cortas/recientes).
 const USE_FUNDAMENTALS = process.argv.includes('--fundamentals');
+// Opt-in: la mecánica de shorts existe (lib/portfolio.js, lib/decide.js) pero
+// está apagada en producción (ALLOW_SHORTING_IN_PRODUCTION=false en config.js)
+// hasta que se valide fuera de muestra. `--shorts` la prueba acá.
+const USE_SHORTS = process.argv.includes('--shorts');
 
 async function main() {
   const tickers = WATCHLIST.map((w) => w.ticker);
@@ -64,7 +68,8 @@ async function main() {
       console.warn('[backtest] --fundamentals pedido pero no hay fundamentals-cache.json — corré refresh-fundamentals-cache.js primero.');
     }
   }
-  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, qualityScores });
+  if (USE_SHORTS) console.log('[backtest] Shorts habilitados para esta corrida (experimental, ver GRADUATION_CRITERIA.md).');
+  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, qualityScores, allowShorting: USE_SHORTS });
 
   console.log('');
   console.log('=== Resultado del backtest ===');
@@ -89,6 +94,10 @@ async function main() {
     console.log(`Win rate (sobre cierres): ${result.winRatePct.toFixed(1)}% (${result.winnersCount} ganadores / ${result.losersCount} perdedores)`);
   }
   console.log(`Posiciones abiertas al final: ${result.openPositions.length ? result.openPositions.join(', ') : 'ninguna'}`);
+  if (USE_SHORTS) {
+    console.log(`Cortos abiertos al final: ${result.openShorts.length ? result.openShorts.join(', ') : 'ninguno'}`);
+    console.log(`Shorts abiertos durante la corrida: ${result.trades.filter((t) => t.action === 'SHORT').length}`);
+  }
 
   const outPath = path.join(__dirname, 'reports', `backtest-${result.period.from}_${result.period.to}.json`);
   fs.mkdirSync(path.dirname(outPath), { recursive: true });

@@ -43,7 +43,50 @@ const STRATEGY = {
   // Peso máximo del factor fundamental (ROE, márgenes, crecimiento, deuda, P/E)
   // sobre el score técnico (-100 a 100).
   fundamentalTiltMax: 15,
+
+  // --- Posiciones cortas (short selling) ---
+  // El riesgo es asimétrico: ganancia tope 100% (una acción no baja de $0),
+  // pérdida sin techo (puede subir indefinidamente) — por eso cada parámetro
+  // acá es más estricto que su equivalente largo.
+  shortThreshold: -60, // mucho más estricto que sellThreshold (-35): hace falta convicción bajista alta para asumir riesgo sin techo
+  shortStopLossPct: 0.15, // obligatorio: cubrir si el precio SUBE 15% desde la entrada (no es opcional, dado el riesgo sin techo)
+  shortTakeProfitPct: -0.2, // cubrir si el precio CAYÓ 20% desde la entrada (toma de ganancia)
+  maxShortPositionPct: 0.1, // tope más chico que maxPositionPct (0.25): menor tamaño por el riesgo asimétrico
+  shortMarginRequirementPct: 0.5, // Reg T: ~50% del valor de la posición queda reservado como colateral, no disponible para otras compras
+  // Tope agregado sobre TODOS los shorts simultáneos (no solo por posición):
+  // en un crash muchos tickers a la vez pueden puntuar muy bajista (score
+  // correlacionado), y sin este tope se podría terminar con una apuesta
+  // concentrada de >100% del portfolio en shorts el mismo día — justo lo que
+  // explotó en la validación de COVID 2020 (ver GRADUATION_CRITERIA.md).
+  maxAggregateShortExposurePct: 0.3,
 };
+
+// Apagado por default: la mecánica de shorts ya existe (lib/portfolio.js,
+// lib/decide.js) y se puede probar con `node backtest.js <días> --shorts` o
+// `node validate.js --shorts`, pero recién se prende en producción si
+// sobrevive la misma validación multi-régimen que todo lo demás — ver
+// GRADUATION_CRITERIA.md. Todavía no se corrió esa validación.
+const ALLOW_SHORTING_IN_PRODUCTION = false;
+
+// Mercados más allá de acciones (educativo/contexto, no el motor de trading):
+// materias primas, bonos, REITs, cripto y forex — mismo endpoint de Yahoo que
+// ya usamos para ETFs sectoriales, confirmado en vivo el 2026-10-20 (todos
+// estos tickers devuelven datos sin autenticación).
+const OTHER_MARKETS = [
+  { ticker: 'GC=F', name: 'Oro (futuro)', category: 'Materias primas — metales' },
+  { ticker: 'SI=F', name: 'Plata (futuro)', category: 'Materias primas — metales' },
+  { ticker: 'HG=F', name: 'Cobre (futuro)', category: 'Materias primas — metales' },
+  { ticker: 'CL=F', name: 'Petróleo WTI (futuro)', category: 'Materias primas — energía' },
+  { ticker: 'NG=F', name: 'Gas natural (futuro)', category: 'Materias primas — energía' },
+  { ticker: 'DBC', name: 'Canasta amplia de commodities (ETF)', category: 'Materias primas — diversificado' },
+  { ticker: 'TLT', name: 'Bonos del Tesoro EEUU 20+ años (ETF)', category: 'Renta fija' },
+  { ticker: 'IEF', name: 'Bonos del Tesoro EEUU 7-10 años (ETF)', category: 'Renta fija' },
+  { ticker: 'VNQ', name: 'REITs — bienes raíces EEUU (ETF)', category: 'Real estate' },
+  { ticker: 'BTC-USD', name: 'Bitcoin', category: 'Cripto' },
+  { ticker: 'ETH-USD', name: 'Ethereum', category: 'Cripto' },
+  { ticker: 'EURUSD=X', name: 'EUR/USD', category: 'Forex' },
+  { ticker: 'USDCLP=X', name: 'USD/CLP', category: 'Forex — relevante para Chile' },
+];
 
 // Apagado por default en producción: testeado en backtest.js con --fundamentals
 // y el resultado fue el mismo patrón sospechoso que el filtro de régimen que ya
@@ -108,4 +151,6 @@ module.exports = {
   CORE_ALLOCATION_PCT,
   SATELLITE_ALLOCATION_PCT,
   CORE_HOLDINGS,
+  ALLOW_SHORTING_IN_PRODUCTION,
+  OTHER_MARKETS,
 };

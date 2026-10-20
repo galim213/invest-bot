@@ -1,0 +1,2488 @@
+{
+  "period": {
+    "from": "2026-04-30",
+    "to": "2026-10-20",
+    "days": 120
+  },
+  "startingCapital": 1000,
+  "finalValue": 848.7219720961454,
+  "returnPct": -15.127802790385465,
+  "maxDrawdownPct": -21.760848915123347,
+  "sharpeRatio": -1.2345442279361716,
+  "sortinoRatio": -1.7214167703402383,
+  "benchmark": {
+    "returnPct": 6.88016714050036,
+    "beta": 1.4102607411331984
+  },
+  "winRatePct": 17.46031746031746,
+  "trades": [
+    {
+      "date": "2026-04-30",
+      "action": "BUY",
+      "ticker": "VRT",
+      "shares": 0.4706248505307381,
+      "price": 328.489990234375,
+      "usdAmount": 154.59555255489636,
+      "fee": 0.07729777627744817,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (299.79) por encima de SMA50 (273.97). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.7%. RSI 64: zona neutral."
+    },
+    {
+      "date": "2026-04-30",
+      "action": "BUY",
+      "ticker": "GEV",
+      "shares": 0.13557914960309742,
+      "price": 1083.4599609375,
+      "usdAmount": 146.8945801329114,
+      "fee": 0.0734472900664557,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (1015.04) por encima de SMA50 (917.78). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.7%. RSI 65: zona neutral."
+    },
+    {
+      "date": "2026-04-30",
+      "action": "BUY",
+      "ticker": "APA",
+      "shares": 3.459300441129726,
+      "price": 40.72999954223633,
+      "usdAmount": 140.89730538367166,
+      "fee": 0.07044865269183584,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (38.43) por encima de SMA50 (36.05). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.2%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-04-30",
+      "action": "BUY",
+      "ticker": "ETN",
+      "shares": 0.5734496107991178,
+      "price": 433.010009765625,
+      "usdAmount": 248.30942157221986,
+      "fee": 0.12415471078610993,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (399.67) por encima de SMA50 (375.82). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.3%. RSI 69: zona neutral."
+    },
+    {
+      "date": "2026-04-30",
+      "action": "BUY",
+      "ticker": "EME",
+      "shares": 0.23464524462274947,
+      "price": 891.6699829101562,
+      "usdAmount": 209.22612126271645,
+      "fee": 0.10461306063135822,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (820.51) por encima de SMA50 (773.94). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.5%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-04-30",
+      "action": "BUY",
+      "ticker": "CMI",
+      "shares": 0.06699593500046014,
+      "price": 671.010009765625,
+      "usdAmount": 44.95494299891594,
+      "fee": 0.02247747149945797,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (615.73) por encima de SMA50 (578.14). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.2%. RSI 71: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-05-08",
+      "action": "SELL",
+      "ticker": "APA",
+      "shares": 3.459300441129726,
+      "price": 35.560001373291016,
+      "usdAmount": 122.95122207298067,
+      "fee": 0.06150636421859964,
+      "realizedPnl": -17.94608331069099,
+      "reason": "Stop-loss: precio -12.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-05-08",
+      "action": "BUY",
+      "ticker": "EBAY",
+      "shares": 0.9561467816164718,
+      "price": 107.69000244140625,
+      "usdAmount": 102.96744924662057,
+      "fee": 0.05148372462331029,
+      "reason": "Señal técnica de compra (score 79): Tendencia de corto plazo alcista: SMA20 (103.08) por encima de SMA50 (95.94). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.0%. RSI 51: zona neutral."
+    },
+    {
+      "date": "2026-05-08",
+      "action": "BUY",
+      "ticker": "ECHO",
+      "shares": 0.1228187684867461,
+      "price": 127.1500015258789,
+      "usdAmount": 15.616406600496335,
+      "fee": 0.007808203300248168,
+      "reason": "Señal técnica de compra (score 79): Tendencia de corto plazo alcista: SMA20 (124.90) por encima de SMA50 (118.96). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.2%. RSI 42: zona neutral."
+    },
+    {
+      "date": "2026-05-08",
+      "action": "BUY",
+      "ticker": "BEN",
+      "shares": 0.32208142863581457,
+      "price": 31.049999237060547,
+      "usdAmount": 10.000628113413413,
+      "fee": 0.005000314056706707,
+      "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (27.84) por encima de SMA50 (25.43). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.5%. RSI 72: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-05-19",
+      "action": "SELL",
+      "ticker": "ETN",
+      "shares": 0.5734496107991178,
+      "price": 371.8800048828125,
+      "usdAmount": 213.14781684199085,
+      "fee": 0.10662722203201143,
+      "realizedPnl": -35.16160473022901,
+      "reason": "Stop-loss: precio -14.1% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-05-19",
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 0.7100044398122453,
+      "price": 220.61000061035156,
+      "usdAmount": 156.63407990033176,
+      "fee": 0.07831703995016588,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (211.87) por encima de SMA50 (194.28). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.3%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-05-19",
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 0.07100993552051761,
+      "price": 414.04998779296875,
+      "usdAmount": 29.401662935449814,
+      "fee": 0.014700831467724907,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (385.49) por encima de SMA50 (288.01). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 16.5%. RSI 66: zona neutral."
+    },
+    {
+      "date": "2026-05-19",
+      "action": "BUY",
+      "ticker": "GLW",
+      "shares": 0.08356640447577994,
+      "price": 175.8300018310547,
+      "usdAmount": 14.693481051991043,
+      "fee": 0.0073467405259955215,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (176.85) por encima de SMA50 (158.47). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.5%. RSI 60: zona neutral."
+    },
+    {
+      "date": "2026-05-19",
+      "action": "BUY",
+      "ticker": "CVS",
+      "shares": 0.12325762896136618,
+      "price": 94.18000030517578,
+      "usdAmount": 11.608403533196709,
+      "fee": 0.005804201766598354,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (86.33) por encima de SMA50 (78.75). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 16.7%. RSI 71: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-05-28",
+      "action": "TRIM",
+      "ticker": "AMD",
+      "shares": 0.035504967760258806,
+      "price": 518.0900268554688,
+      "usdAmount": 18.38557231556483,
+      "fee": 0.009197384850207518,
+      "realizedPnl": 3.6847408478399215,
+      "reason": "Toma de ganancias parcial: +25.1% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-05-28",
+      "action": "BUY",
+      "ticker": "QCOM",
+      "shares": 0.04473931579330561,
+      "price": 243.2899932861328,
+      "usdAmount": 10.884627838979497,
+      "fee": 0.005442313919489749,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (206.47) por encima de SMA50 (161.78). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-05-28",
+      "action": "BUY",
+      "ticker": "WST",
+      "shares": 0.03380729004893305,
+      "price": 321.79998779296875,
+      "usdAmount": 10.87918552506001,
+      "fee": 0.0054395927625300045,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (310.09) por encima de SMA50 (282.07). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 6.4%. RSI 50: zona neutral."
+    },
+    {
+      "date": "2026-06-01",
+      "action": "SELL",
+      "ticker": "GEV",
+      "shares": 0.13557914960309742,
+      "price": 950.5399780273438,
+      "usdAmount": 128.80896518375184,
+      "fee": 0.06443670094234709,
+      "realizedPnl": -18.085614949159574,
+      "reason": "Stop-loss: precio -12.3% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-01",
+      "action": "BUY",
+      "ticker": "SWKS",
+      "shares": 0.8546658872934392,
+      "price": 75.48999786376953,
+      "usdAmount": 64.51872600601841,
+      "fee": 0.0322593630030092,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (71.86) por encima de SMA50 (63.38). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.1%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-06-01",
+      "action": "BUY",
+      "ticker": "LRCX",
+      "shares": 0.1181714091554979,
+      "price": 317.1199951171875,
+      "usdAmount": 37.47451669438266,
+      "fee": 0.018737258347191327,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (295.61) por encima de SMA50 (264.90). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.4%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-06-01",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 0.026917829362836026,
+      "price": 546.2000122070312,
+      "usdAmount": 14.702518726567822,
+      "fee": 0.007351259363283911,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (490.37) por encima de SMA50 (402.53). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.3%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-06-01",
+      "action": "BUY",
+      "ticker": "NUE",
+      "shares": 0.04884226981611934,
+      "price": 251.49000549316406,
+      "usdAmount": 12.283342704354453,
+      "fee": 0.006141671352177227,
+      "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (232.39) por encima de SMA50 (205.82). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.8%. RSI 71: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-06-09",
+      "action": "SELL",
+      "ticker": "QCOM",
+      "shares": 0.04473931579330561,
+      "price": 205.4199981689453,
+      "usdAmount": 9.185754993256536,
+      "fee": 0.004595175084170353,
+      "realizedPnl": -1.6988728457229634,
+      "reason": "Stop-loss: precio -15.6% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-09",
+      "action": "BUY",
+      "ticker": "ELV",
+      "shares": 0.025321070895267885,
+      "price": 424.42999267578125,
+      "usdAmount": 10.747021934621486,
+      "fee": 0.005373510967310743,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (395.42) por encima de SMA50 (358.02). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.4%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "SELL",
+      "ticker": "VRT",
+      "shares": 0.4706248505307381,
+      "price": 280.9800109863281,
+      "usdAmount": 132.17005758472953,
+      "fee": 0.06611808783628291,
+      "realizedPnl": -22.425494970166813,
+      "reason": "Stop-loss: precio -14.5% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "SELL",
+      "ticker": "EME",
+      "shares": 0.23464524462274947,
+      "price": 776.719970703125,
+      "usdAmount": 182.16252070524504,
+      "fee": 0.09112682376450477,
+      "realizedPnl": -27.06360055747139,
+      "reason": "Stop-loss: precio -12.9% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "BUY",
+      "ticker": "TWLO",
+      "shares": 0.5169395617994436,
+      "price": 207.08999633789062,
+      "usdAmount": 107.05301195995754,
+      "fee": 0.053526505979978774,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (203.03) por encima de SMA50 (171.88). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "BUY",
+      "ticker": "MRVL",
+      "shares": 0.4134576779992857,
+      "price": 252.58999633789062,
+      "usdAmount": 104.43527337171233,
+      "fee": 0.05221763668585616,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (223.56) por encima de SMA50 (175.82). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 27.1%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "BUY",
+      "ticker": "FTNT",
+      "shares": 0.5201186558943685,
+      "price": 138.8800048828125,
+      "usdAmount": 72.23408147025177,
+      "fee": 0.03611704073512589,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (134.83) por encima de SMA50 (106.42). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.6%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "BUY",
+      "ticker": "HPE",
+      "shares": 0.35296610287047503,
+      "price": 45.4900016784668,
+      "usdAmount": 16.056428612019793,
+      "fee": 0.008028214306009897,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (41.35) por encima de SMA50 (32.80). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 22.3%. RSI 66: zona neutral."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "BUY",
+      "ticker": "CNC",
+      "shares": 0.21293212562469138,
+      "price": 65.33999633789062,
+      "usdAmount": 13.9129843085366,
+      "fee": 0.0069564921542683,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (60.30) por encima de SMA50 (50.46). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.1%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-06-17",
+      "action": "SELL",
+      "ticker": "ECHO",
+      "shares": 0.1228187684867461,
+      "price": 111.69999694824219,
+      "usdAmount": 13.711996637123825,
+      "fee": 0.006859428032578202,
+      "realizedPnl": -1.9044099633725098,
+      "reason": "Stop-loss: precio -12.2% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-17",
+      "action": "TRIM",
+      "ticker": "WDC",
+      "shares": 0.013458914681418013,
+      "price": 712.1300048828125,
+      "usdAmount": 9.57970472930667,
+      "fee": 0.004792248488897783,
+      "realizedPnl": 2.228445366022758,
+      "reason": "Toma de ganancias parcial: +30.4% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-06-17",
+      "action": "BUY",
+      "ticker": "UAL",
+      "shares": 0.10275980508497179,
+      "price": 115.83000183105469,
+      "usdAmount": 11.902668411151105,
+      "fee": 0.005951334205575552,
+      "reason": "Señal técnica de compra (score 79): Tendencia de corto plazo alcista: SMA20 (109.13) por encima de SMA50 (100.47). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.2%. RSI 51: zona neutral."
+    },
+    {
+      "date": "2026-06-17",
+      "action": "BUY",
+      "ticker": "GE",
+      "shares": 0.0300542294803616,
+      "price": 357.0299987792969,
+      "usdAmount": 10.73026151468621,
+      "fee": 0.005365130757343106,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (323.30) por encima de SMA50 (305.89). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.5%. RSI 70: zona neutral."
+    },
+    {
+      "date": "2026-06-22",
+      "action": "TRIM",
+      "ticker": "LRCX",
+      "shares": 0.05908570457774895,
+      "price": 409.5400085449219,
+      "usdAmount": 24.18586097767521,
+      "fee": 0.012098979978827017,
+      "realizedPnl": 5.448602630483878,
+      "reason": "Toma de ganancias parcial: +29.1% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-06-22",
+      "action": "BUY",
+      "ticker": "ON",
+      "shares": 0.09210782258628196,
+      "price": 131.5500030517578,
+      "usdAmount": 12.116784342316159,
+      "fee": 0.006058392171158079,
+      "reason": "Señal técnica de compra (score 77): Tendencia de corto plazo alcista: SMA20 (121.81) por encima de SMA50 (106.86). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.2%. RSI 56: zona neutral."
+    },
+    {
+      "date": "2026-06-22",
+      "action": "BUY",
+      "ticker": "IBKR",
+      "shares": 0.11270328658922867,
+      "price": 96.81999969482422,
+      "usdAmount": 10.911932173174806,
+      "fee": 0.0054559660865874035,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (88.09) por encima de SMA50 (83.84). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.7%. RSI 70: zona neutral."
+    },
+    {
+      "date": "2026-06-24",
+      "action": "SELL",
+      "ticker": "ON",
+      "shares": 0.09210782258628196,
+      "price": 115.73999786376953,
+      "usdAmount": 10.655228909778051,
+      "fee": 0.005330279594686369,
+      "realizedPnl": -1.4615554325381084,
+      "reason": "Stop-loss: precio -12.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-24",
+      "action": "BUY",
+      "ticker": "WSM",
+      "shares": 0.047687855458011394,
+      "price": 235.66000366210938,
+      "usdAmount": 11.238120191873108,
+      "fee": 0.005619060095936554,
+      "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (213.13) por encima de SMA50 (195.72). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.6%. RSI 71: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-06-25",
+      "action": "TRIM",
+      "ticker": "GLW",
+      "shares": 0.04178320223788997,
+      "price": 228.00999450683594,
+      "usdAmount": 9.522224218882938,
+      "fee": 0.004763493856369654,
+      "realizedPnl": 2.1754836928874157,
+      "reason": "Toma de ganancias parcial: +29.7% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-06-25",
+      "action": "BUY",
+      "ticker": "MS",
+      "shares": 0.049464751949418316,
+      "price": 221.0399932861328,
+      "usdAmount": 10.93368843879965,
+      "fee": 0.005466844219399825,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (214.57) por encima de SMA50 (200.31). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.0%. RSI 53: zona neutral."
+    },
+    {
+      "date": "2026-06-26",
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 0.7100044398122453,
+      "price": 192.52999877929688,
+      "usdAmount": 136.62880535338175,
+      "fee": 0.06834857696517346,
+      "realizedPnl": -20.00527454694998,
+      "reason": "Stop-loss: precio -12.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-06-26",
+      "action": "BUY",
+      "ticker": "CAT",
+      "shares": 0.08146740555880982,
+      "price": 997.469970703125,
+      "usdAmount": 81.26129063600564,
+      "fee": 0.04063064531800282,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (937.92) por encima de SMA50 (893.66). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.1%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-06-26",
+      "action": "BUY",
+      "ticker": "TER",
+      "shares": 0.06426322025618127,
+      "price": 436.8599853515625,
+      "usdAmount": 28.074029459759583,
+      "fee": 0.014037014729879792,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (404.26) por encima de SMA50 (379.62). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.5%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-06-26",
+      "action": "BUY",
+      "ticker": "GNRC",
+      "shares": 0.05035530998632685,
+      "price": 278.6199951171875,
+      "usdAmount": 14.02999622251485,
+      "fee": 0.007014998111257425,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (272.68) por encima de SMA50 (258.67). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.3%. RSI 56: zona neutral."
+    },
+    {
+      "date": "2026-06-26",
+      "action": "BUY",
+      "ticker": "NCLH",
+      "shares": 0.4717639968466363,
+      "price": 21.239999771118164,
+      "usdAmount": 10.020267185044345,
+      "fee": 0.005010133592522173,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (19.45) por encima de SMA50 (18.30). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.4%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-07-01",
+      "action": "SELL",
+      "ticker": "SWKS",
+      "shares": 0.8546658872934392,
+      "price": 65.93000030517578,
+      "usdAmount": 56.31994814897473,
+      "fee": 0.028174061105039887,
+      "realizedPnl": -8.198777857043678,
+      "reason": "Stop-loss: precio -12.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-01",
+      "action": "SELL",
+      "ticker": "NUE",
+      "shares": 0.04884226981611934,
+      "price": 219.02000427246094,
+      "usdAmount": 10.692085426731246,
+      "fee": 0.005348717071901574,
+      "realizedPnl": -1.591257277623208,
+      "reason": "Stop-loss: precio -12.9% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-01",
+      "action": "BUY",
+      "ticker": "KLAC",
+      "shares": 0.13177475660276997,
+      "price": 266.19000244140625,
+      "usdAmount": 35.07712278180705,
+      "fee": 0.017538561390903526,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (242.35) por encima de SMA50 (207.34). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.2%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-07-01",
+      "action": "BUY",
+      "ticker": "RDDT",
+      "shares": 0.08864175059229247,
+      "price": 197.75999450683594,
+      "usdAmount": 17.52979211020808,
+      "fee": 0.00876489605510404,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (172.47) por encima de SMA50 (163.95). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.8%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-07-01",
+      "action": "BUY",
+      "ticker": "INCY",
+      "shares": 0.10512652377812427,
+      "price": 113.80999755859375,
+      "usdAmount": 11.96444941453177,
+      "fee": 0.005982224707265885,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (105.29) por encima de SMA50 (100.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-07-02",
+      "action": "SELL",
+      "ticker": "TER",
+      "shares": 0.06426322025618127,
+      "price": 369.0899963378906,
+      "usdAmount": 23.707052273150495,
+      "fee": 0.011859455864507502,
+      "realizedPnl": -4.366977186609088,
+      "reason": "Stop-loss: precio -15.5% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-02",
+      "action": "BUY",
+      "ticker": "IBM",
+      "shares": 0.07813415931939739,
+      "price": 289.5199890136719,
+      "usdAmount": 22.621400947744423,
+      "fee": 0.011310700473872212,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (271.07) por encima de SMA50 (253.12). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.4%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-07-06",
+      "action": "SELL",
+      "ticker": "KLAC",
+      "shares": 0.13177475660276997,
+      "price": 233.30999755859375,
+      "usdAmount": 30.728995957205907,
+      "fee": 0.015372184070638274,
+      "realizedPnl": -4.3481268246011435,
+      "reason": "Stop-loss: precio -12.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-06",
+      "action": "BUY",
+      "ticker": "DOC",
+      "shares": 1.7635726033580417,
+      "price": 21.75,
+      "usdAmount": 38.35770412303741,
+      "fee": 0.019178852061518703,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (20.26) por encima de SMA50 (18.93). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.2%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-07-07",
+      "action": "SELL",
+      "ticker": "GNRC",
+      "shares": 0.05035530998632685,
+      "price": 235.8000030517578,
+      "usdAmount": 11.867845357323858,
+      "fee": 0.005936891124224041,
+      "realizedPnl": -2.1621508651909918,
+      "reason": "Stop-loss: precio -15.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-07",
+      "action": "BUY",
+      "ticker": "HUM",
+      "shares": 0.03195535235832599,
+      "price": 394.6199951171875,
+      "usdAmount": 12.61022099161061,
+      "fee": 0.006305110495805306,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (375.69) por encima de SMA50 (320.67). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.7%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-07-08",
+      "action": "SELL",
+      "ticker": "NCLH",
+      "shares": 0.4717639968466363,
+      "price": 18.469999313354492,
+      "usdAmount": 8.709123957473832,
+      "fee": 0.004356740348911372,
+      "realizedPnl": -1.3111432275705133,
+      "reason": "Stop-loss: precio -13.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-13",
+      "action": "SELL",
+      "ticker": "MRVL",
+      "shares": 0.4134576779992857,
+      "price": 217.52999877929688,
+      "usdAmount": 89.89447846638029,
+      "fee": 0.044969724095237765,
+      "realizedPnl": -14.540794905332033,
+      "reason": "Stop-loss: precio -13.9% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-13",
+      "action": "BUY",
+      "ticker": "ANET",
+      "shares": 0.2723752105257652,
+      "price": 181.14999389648438,
+      "usdAmount": 49.340767724296015,
+      "fee": 0.024670383862148006,
+      "reason": "Señal técnica de compra (score 78): Tendencia de corto plazo alcista: SMA20 (169.53) por encima de SMA50 (160.60). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.9%. RSI 54: zona neutral."
+    },
+    {
+      "date": "2026-07-13",
+      "action": "BUY",
+      "ticker": "HOOD",
+      "shares": 0.22444974088133696,
+      "price": 109.86000061035156,
+      "usdAmount": 24.658048670216928,
+      "fee": 0.012329024335108464,
+      "reason": "Señal técnica de compra (score 78): Tendencia de corto plazo alcista: SMA20 (105.20) por encima de SMA50 (90.33). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.3%. RSI 54: zona neutral."
+    },
+    {
+      "date": "2026-07-13",
+      "action": "BUY",
+      "ticker": "DELL",
+      "shares": 0.03394091482154757,
+      "price": 427.1099853515625,
+      "usdAmount": 14.496503632249814,
+      "fee": 0.007248251816124907,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (417.61) por encima de SMA50 (348.57). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 6.9%. RSI 52: zona neutral."
+    },
+    {
+      "date": "2026-07-13",
+      "action": "BUY",
+      "ticker": "CHRW",
+      "shares": 0.051613067490157205,
+      "price": 196.5,
+      "usdAmount": 10.141967761815891,
+      "fee": 0.005070983880907946,
+      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (186.84) por encima de SMA50 (179.40). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.6%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-07-14",
+      "action": "SELL",
+      "ticker": "IBM",
+      "shares": 0.07813415931939739,
+      "price": 217.07000732421875,
+      "usdAmount": 16.9521022444654,
+      "fee": 0.008480291267866633,
+      "realizedPnl": -5.66929870327902,
+      "reason": "Stop-loss: precio -25.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-14",
+      "action": "BUY",
+      "ticker": "GS",
+      "shares": 0.011645969267363304,
+      "price": 1140,
+      "usdAmount": 13.276404964794168,
+      "fee": 0.006638202482397084,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (1055.93) por encima de SMA50 (1010.58). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.7%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-07-16",
+      "action": "SELL",
+      "ticker": "WDC",
+      "shares": 0.013458914681418013,
+      "price": 466.80999755859375,
+      "usdAmount": 6.279614551609277,
+      "fee": 0.003141377964787032,
+      "realizedPnl": -1.0716448116746338,
+      "reason": "Stop-loss: precio -14.5% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-16",
+      "action": "SELL",
+      "ticker": "ELV",
+      "shares": 0.025321070895267885,
+      "price": 372.8500061035156,
+      "usdAmount": 9.436240957129257,
+      "fee": 0.004720480718924091,
+      "realizedPnl": -1.3107809774922274,
+      "reason": "Stop-loss: precio -12.2% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-16",
+      "action": "SELL",
+      "ticker": "CAT",
+      "shares": 0.08146740555880982,
+      "price": 877.1699829101562,
+      "usdAmount": 71.4250323603851,
+      "fee": 0.035730381370877994,
+      "realizedPnl": -9.836258275620533,
+      "reason": "Stop-loss: precio -12.1% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-16",
+      "action": "BUY",
+      "ticker": "DG",
+      "shares": 0.5771670064426482,
+      "price": 127.16000366210938,
+      "usdAmount": 73.39255865289584,
+      "fee": 0.03669627932644792,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (116.30) por encima de SMA50 (110.82). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.9%. RSI 66: zona neutral."
+    },
+    {
+      "date": "2026-07-16",
+      "action": "BUY",
+      "ticker": "BAX",
+      "shares": 0.5755604175546983,
+      "price": 23.350000381469727,
+      "usdAmount": 13.439335969461082,
+      "fee": 0.006719667984730541,
+      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (21.68) por encima de SMA50 (19.93). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.7%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-07-17",
+      "action": "SELL",
+      "ticker": "GLW",
+      "shares": 0.04178320223788997,
+      "price": 154.61000061035156,
+      "usdAmount": 6.4568708730408595,
+      "fee": 0.0032300504617513055,
+      "realizedPnl": -0.889869652954662,
+      "reason": "Stop-loss: precio -12.1% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-17",
+      "action": "BUY",
+      "ticker": "BBY",
+      "shares": 0.14253783226384553,
+      "price": 85.41000366210938,
+      "usdAmount": 12.174156775644178,
+      "fee": 0.00608707838782209,
+      "reason": "Señal técnica de compra (score 63): Tendencia de corto plazo alcista: SMA20 (78.48) por encima de SMA50 (70.65). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.5%. RSI 75: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-07-22",
+      "action": "SELL",
+      "ticker": "RDDT",
+      "shares": 0.08864175059229247,
+      "price": 170.3800048828125,
+      "usdAmount": 15.095230507786471,
+      "fee": 0.00755139094936792,
+      "realizedPnl": -2.434561602421609,
+      "reason": "Stop-loss: precio -13.8% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-22",
+      "action": "BUY",
+      "ticker": "IR",
+      "shares": 0.15461050491440972,
+      "price": 83.54000091552734,
+      "usdAmount": 12.916161722099934,
+      "fee": 0.006458080861049967,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (80.29) por encima de SMA50 (75.77). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.9%. RSI 56: zona neutral."
+    },
+    {
+      "date": "2026-07-24",
+      "action": "SELL",
+      "ticker": "HOOD",
+      "shares": 0.22444974088133696,
+      "price": 94.91000366210938,
+      "usdAmount": 21.291874466142687,
+      "fee": 0.010651262864503595,
+      "realizedPnl": -3.366174204074241,
+      "reason": "Stop-loss: precio -13.6% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-24",
+      "action": "BUY",
+      "ticker": "IP",
+      "shares": 0.367227970040355,
+      "price": 42.15999984741211,
+      "usdAmount": 15.482331160866826,
+      "fee": 0.0077411655804334135,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (37.42) por encima de SMA50 (34.94). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.2%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-07-28",
+      "action": "SELL",
+      "ticker": "LRCX",
+      "shares": 0.05908570457774895,
+      "price": 269.6099853515625,
+      "usdAmount": 15.922130897720796,
+      "fee": 0.007965047972846822,
+      "realizedPnl": -2.815127449470533,
+      "reason": "Stop-loss: precio -15.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-28",
+      "action": "SELL",
+      "ticker": "CHRW",
+      "shares": 0.051613067490157205,
+      "price": 169.33999633789062,
+      "usdAmount": 8.735786581440639,
+      "fee": 0.004370078329885262,
+      "realizedPnl": -1.4061811803752533,
+      "reason": "Stop-loss: precio -13.8% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-28",
+      "action": "BUY",
+      "ticker": "ROP",
+      "shares": 0.061732004323026585,
+      "price": 390.9200134277344,
+      "usdAmount": 24.13227595887851,
+      "fee": 0.012066137979439255,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (357.56) por encima de SMA50 (340.16). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.8%. RSI 65: zona neutral."
+    },
+    {
+      "date": "2026-07-29",
+      "action": "SELL",
+      "ticker": "ANET",
+      "shares": 0.2723752105257652,
+      "price": 157.97000122070312,
+      "usdAmount": 43.005598783074774,
+      "fee": 0.021513556169622198,
+      "realizedPnl": -6.3351689412212355,
+      "reason": "Stop-loss: precio -12.8% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-29",
+      "action": "SELL",
+      "ticker": "DELL",
+      "shares": 0.03394091482154757,
+      "price": 369.6400146484375,
+      "usdAmount": 12.539647291692305,
+      "fee": 0.006272960125909107,
+      "realizedPnl": -1.956856340557509,
+      "reason": "Stop-loss: precio -13.5% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-29",
+      "action": "SELL",
+      "ticker": "GS",
+      "shares": 0.011645969267363304,
+      "price": 980.75,
+      "usdAmount": 11.416073466787077,
+      "fee": 0.00571089217948328,
+      "realizedPnl": -1.8603314980070895,
+      "reason": "Stop-loss: precio -14.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-07-29",
+      "action": "BUY",
+      "ticker": "ZBRA",
+      "shares": 0.22782347476135964,
+      "price": 282.9800109863281,
+      "usdAmount": 64.469489390913,
+      "fee": 0.0322347446954565,
+      "reason": "Señal técnica de compra (score 76): Tendencia de corto plazo alcista: SMA20 (266.63) por encima de SMA50 (252.71). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.9%. RSI 57: zona neutral."
+    },
+    {
+      "date": "2026-07-29",
+      "action": "BUY",
+      "ticker": "ALL",
+      "shares": 0.04452961871870202,
+      "price": 274.3900146484375,
+      "usdAmount": 12.218482732513984,
+      "fee": 0.006109241366256992,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (252.08) por encima de SMA50 (232.39). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.6%. RSI 70: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-08-04",
+      "action": "TRIM",
+      "ticker": "ZBRA",
+      "shares": 0.11391173738067982,
+      "price": 368.8299865722656,
+      "usdAmount": 41.99305753625532,
+      "fee": 0.021007032284269794,
+      "realizedPnl": 9.758312840798816,
+      "reason": "Toma de ganancias parcial: +30.3% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-08-04",
+      "action": "BUY",
+      "ticker": "CRWD",
+      "shares": 0.09702290002773768,
+      "price": 211.22000122070312,
+      "usdAmount": 20.49317706229491,
+      "fee": 0.010246588531147457,
+      "reason": "Señal técnica de compra (score 78): Tendencia de corto plazo alcista: SMA20 (193.24) por encima de SMA50 (183.18). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.5%. RSI 54: zona neutral."
+    },
+    {
+      "date": "2026-08-04",
+      "action": "BUY",
+      "ticker": "AXON",
+      "shares": 0.016612042500351396,
+      "price": 607.2000122070312,
+      "usdAmount": 10.08683240899709,
+      "fee": 0.005043416204498545,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (539.99) por encima de SMA50 (500.34). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 18.8%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-08-06",
+      "action": "SELL",
+      "ticker": "AXON",
+      "shares": 0.016612042500351396,
+      "price": 522.4600219726562,
+      "usdAmount": 8.674788525699418,
+      "fee": 0.004339564044872146,
+      "realizedPnl": -1.412043883297672,
+      "reason": "Stop-loss: precio -14.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-08-06",
+      "action": "BUY",
+      "ticker": "PANW",
+      "shares": 0.03680868795035142,
+      "price": 359.489990234375,
+      "usdAmount": 13.232354871811989,
+      "fee": 0.0066161774359059945,
+      "reason": "Señal técnica de compra (score 80): Tendencia de corto plazo alcista: SMA20 (339.74) por encima de SMA50 (313.64). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.4%. RSI 50: zona neutral."
+    },
+    {
+      "date": "2026-08-12",
+      "action": "TRIM",
+      "ticker": "HPE",
+      "shares": 0.17648305143523751,
+      "price": 58.790000915527344,
+      "usdAmount": 10.370251036074945,
+      "fee": 0.005187719377726336,
+      "realizedPnl": 2.3420367300650495,
+      "reason": "Toma de ganancias parcial: +29.2% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-08-12",
+      "action": "BUY",
+      "ticker": "IVZ",
+      "shares": 0.42614404932034794,
+      "price": 31.540000915527344,
+      "usdAmount": 13.440583705710303,
+      "fee": 0.006720291852855152,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (30.27) por encima de SMA50 (28.66). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.4%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-08-18",
+      "action": "SELL",
+      "ticker": "AMD",
+      "shares": 0.035504967760258806,
+      "price": 484.3900146484375,
+      "usdAmount": 17.18965272755732,
+      "fee": 0.008599125926742031,
+      "realizedPnl": 2.4888212598324144,
+      "reason": "Señal técnica de venta (score -46): Tendencia de corto plazo bajista: SMA20 (491.36) por debajo de SMA50 (510.42). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: -6.6%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-08-18",
+      "action": "BUY",
+      "ticker": "IQV",
+      "shares": 0.044528960800306445,
+      "price": 240.02999877929688,
+      "usdAmount": 10.688286406540914,
+      "fee": 0.005344143203270458,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (232.31) por encima de SMA50 (208.70). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.2%. RSI 43: zona neutral."
+    },
+    {
+      "date": "2026-08-20",
+      "action": "SELL",
+      "ticker": "CMI",
+      "shares": 0.06699593500046014,
+      "price": 593.239990234375,
+      "usdAmount": 39.72479549150309,
+      "fee": 0.019872333912707898,
+      "realizedPnl": -5.230147507412848,
+      "reason": "Señal técnica de venta (score -35): Tendencia de corto plazo bajista: SMA20 (632.48) por debajo de SMA50 (658.00). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: -7.9%. RSI 34: zona neutral."
+    },
+    {
+      "date": "2026-08-20",
+      "action": "BUY",
+      "ticker": "ILMN",
+      "shares": 0.1528467580851012,
+      "price": 213.24000549316406,
+      "usdAmount": 32.5930435336793,
+      "fee": 0.01629652176683965,
+      "reason": "Señal técnica de compra (score 76): Tendencia de corto plazo alcista: SMA20 (196.25) por encima de SMA50 (186.40). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.1%. RSI 56: zona neutral."
+    },
+    {
+      "date": "2026-08-20",
+      "action": "BUY",
+      "ticker": "CVX",
+      "shares": 0.08034813862645072,
+      "price": 205.77000427246094,
+      "usdAmount": 16.53323682844905,
+      "fee": 0.008266618414224524,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (193.74) por encima de SMA50 (183.83). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.7%. RSI 64: zona neutral."
+    },
+    {
+      "date": "2026-08-25",
+      "action": "SELL",
+      "ticker": "CRWD",
+      "shares": 0.09702290002773768,
+      "price": 185.3800048828125,
+      "usdAmount": 17.9771126280462,
+      "fee": 0.00899305284044332,
+      "realizedPnl": -2.5160644342487135,
+      "reason": "Stop-loss: precio -12.2% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-08-25",
+      "action": "BUY",
+      "ticker": "SOLV",
+      "shares": 0.1899410241755461,
+      "price": 91.61000061035156,
+      "usdAmount": 17.400497340652578,
+      "fee": 0.008700248670326288,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (87.15) por encima de SMA50 (81.47). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.9%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-08-28",
+      "action": "SELL",
+      "ticker": "CVS",
+      "shares": 0.12325762896136618,
+      "price": 93.05999755859375,
+      "usdAmount": 11.46461947289768,
+      "fee": 0.005735177325111395,
+      "realizedPnl": -0.14378406029903043,
+      "reason": "Señal técnica de venta (score -38): Tendencia de corto plazo bajista: SMA20 (95.67) por debajo de SMA50 (101.00). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: -4.2%. RSI 42: zona neutral."
+    },
+    {
+      "date": "2026-08-28",
+      "action": "BUY",
+      "ticker": "GEN",
+      "shares": 0.355204709319639,
+      "price": 31.020000457763672,
+      "usdAmount": 11.018450245695014,
+      "fee": 0.005509225122847507,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (28.73) por encima de SMA50 (26.91). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.4%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-08-31",
+      "action": "SELL",
+      "ticker": "UAL",
+      "shares": 0.10275980508497179,
+      "price": 107.98999786376953,
+      "usdAmount": 11.091482616041672,
+      "fee": 0.0055485155658037385,
+      "realizedPnl": -0.8111857951094319,
+      "reason": "Señal técnica de venta (score -40): Tendencia de corto plazo bajista: SMA20 (120.47) por debajo de SMA50 (123.05). Precio por debajo de la media de 200 días: contexto de fondo bajista. Momentum 10d: -11.7%. RSI 22: sobreventa, posible rebote."
+    },
+    {
+      "date": "2026-08-31",
+      "action": "BUY",
+      "ticker": "JKHY",
+      "shares": 0.06599653765279037,
+      "price": 167.91000366210938,
+      "usdAmount": 11.081478878966571,
+      "fee": 0.005540739439483286,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (160.18) por encima de SMA50 (151.33). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.0%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-09-01",
+      "action": "SELL",
+      "ticker": "IP",
+      "shares": 0.367227970040355,
+      "price": 36.459999084472656,
+      "usdAmount": 13.382436885738363,
+      "fee": 0.006694565725732048,
+      "realizedPnl": -2.099894275128462,
+      "reason": "Stop-loss: precio -13.5% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-09-01",
+      "action": "BUY",
+      "ticker": "RVTY",
+      "shares": 0.11011770374262445,
+      "price": 126.58999633789062,
+      "usdAmount": 13.939799713515754,
+      "fee": 0.006969899856757877,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (120.70) por encima de SMA50 (114.92). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.3%. RSI 66: zona neutral."
+    },
+    {
+      "date": "2026-09-08",
+      "action": "SELL",
+      "ticker": "EBAY",
+      "shares": 0.9561467816164718,
+      "price": 104.58999633789062,
+      "usdAmount": 99.95338669355881,
+      "fee": 0.050001694193876345,
+      "realizedPnl": -3.01406255306176,
+      "reason": "Señal técnica de venta (score -36): Tendencia de corto plazo bajista: SMA20 (104.04) por debajo de SMA50 (108.98). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: -2.0%. RSI 56: zona neutral."
+    },
+    {
+      "date": "2026-09-08",
+      "action": "SELL",
+      "ticker": "IR",
+      "shares": 0.15461050491440972,
+      "price": 75.11000061035156,
+      "usdAmount": 11.606988720928834,
+      "fee": 0.0058063975592440396,
+      "realizedPnl": -1.3091730011710996,
+      "reason": "Señal técnica de venta (score -36): Tendencia de corto plazo bajista: SMA20 (79.55) por debajo de SMA50 (81.53). Precio por debajo de la media de 200 días: contexto de fondo bajista. Momentum 10d: -6.1%. RSI 31: zona neutral."
+    },
+    {
+      "date": "2026-09-08",
+      "action": "BUY",
+      "ticker": "CRWD",
+      "shares": 0.2662061709243858,
+      "price": 210.02000427246094,
+      "usdAmount": 55.90862115489497,
+      "fee": 0.02795431057744749,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (209.80) por encima de SMA50 (201.51). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.1%. RSI 49: zona neutral."
+    },
+    {
+      "date": "2026-09-08",
+      "action": "BUY",
+      "ticker": "HPQ",
+      "shares": 1.178966291288585,
+      "price": 31.170000076293945,
+      "usdAmount": 36.74837938941318,
+      "fee": 0.01837418969470659,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (30.01) por encima de SMA50 (27.11). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.1%. RSI 56: zona neutral."
+    },
+    {
+      "date": "2026-09-08",
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 0.06146083615876123,
+      "price": 225.72999572753906,
+      "usdAmount": 13.87355428352815,
+      "fee": 0.006936777141764075,
+      "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (220.24) por encima de SMA50 (210.99). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.3%. RSI 54: zona neutral."
+    },
+    {
+      "date": "2026-09-14",
+      "action": "SELL",
+      "ticker": "GE",
+      "shares": 0.0300542294803616,
+      "price": 317.55999755859375,
+      "usdAmount": 9.539249029888841,
+      "fee": 0.004772010520204523,
+      "realizedPnl": -1.1910124847973687,
+      "reason": "Señal técnica de venta (score -47): Tendencia de corto plazo bajista: SMA20 (340.35) por debajo de SMA50 (351.82). Precio por debajo de la media de 200 días: contexto de fondo bajista. Momentum 10d: -7.3%. RSI 31: zona neutral."
+    },
+    {
+      "date": "2026-09-14",
+      "action": "BUY",
+      "ticker": "MOS",
+      "shares": 0.45264120690583076,
+      "price": 25.049999237060547,
+      "usdAmount": 11.338661887653226,
+      "fee": 0.0056693309438266126,
+      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (24.16) por encima de SMA50 (22.95). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.0%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-09-21",
+      "action": "TRIM",
+      "ticker": "TWLO",
+      "shares": 0.2584697808997218,
+      "price": 266.05999755859375,
+      "usdAmount": 68.73408504051267,
+      "fee": 0.03438423463757512,
+      "realizedPnl": 15.207579060533888,
+      "reason": "Toma de ganancias parcial: +28.5% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-09-21",
+      "action": "TRIM",
+      "ticker": "FTNT",
+      "shares": 0.2600593279471842,
+      "price": 175.22999572753906,
+      "usdAmount": 45.547409827629224,
+      "fee": 0.022785097462545884,
+      "realizedPnl": 9.430369092503344,
+      "reason": "Toma de ganancias parcial: +26.2% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-09-21",
+      "action": "BUY",
+      "ticker": "COIN",
+      "shares": 0.2875315547908515,
+      "price": 201.0500030517578,
+      "usdAmount": 57.80821996817737,
+      "fee": 0.028904109984088686,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (181.68) por encima de SMA50 (167.50). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.9%. RSI 55: zona neutral."
+    },
+    {
+      "date": "2026-09-21",
+      "action": "BUY",
+      "ticker": "LITE",
+      "shares": 0.03026711461060245,
+      "price": 954.489990234375,
+      "usdAmount": 28.88965792909664,
+      "fee": 0.01444482896454832,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (904.57) por encima de SMA50 (844.82). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.3%. RSI 54: zona neutral."
+    },
+    {
+      "date": "2026-09-21",
+      "action": "BUY",
+      "ticker": "DELL",
+      "shares": 0.025095351395480688,
+      "price": 575.3099975585938,
+      "usdAmount": 14.437606550066047,
+      "fee": 0.0072188032750330235,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (510.33) por encima de SMA50 (465.46). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.8%. RSI 67: zona neutral."
+    },
+    {
+      "date": "2026-09-21",
+      "action": "BUY",
+      "ticker": "TMO",
+      "shares": 0.021905379095378128,
+      "price": 658.760009765625,
+      "usdAmount": 14.430387746791013,
+      "fee": 0.007215193873395507,
+      "reason": "Señal técnica de compra (score 62): Tendencia de corto plazo alcista: SMA20 (624.42) por encima de SMA50 (593.13). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.4%. RSI 67: zona neutral."
+    },
+    {
+      "date": "2026-09-22",
+      "action": "SELL",
+      "ticker": "ALL",
+      "shares": 0.04452961871870202,
+      "price": 229.5,
+      "usdAmount": 10.214437722194143,
+      "fee": 0.005109773747971057,
+      "realizedPnl": -2.0040450103198415,
+      "reason": "Stop-loss: precio -16.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-09-22",
+      "action": "SELL",
+      "ticker": "GEN",
+      "shares": 0.355204709319639,
+      "price": 27.290000915527344,
+      "usdAmount": 9.688690074111305,
+      "fee": 0.004846768421266286,
+      "realizedPnl": -1.3297601715837077,
+      "reason": "Stop-loss: precio -12.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-09-22",
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 0.06819691130461834,
+      "price": 184.99000549316406,
+      "usdAmount": 12.615746996858169,
+      "fee": 0.006307873498429085,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (176.51) por encima de SMA50 (160.48). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.6%. RSI 54: zona neutral."
+    },
+    {
+      "date": "2026-09-24",
+      "action": "TRIM",
+      "ticker": "ILMN",
+      "shares": 0.0764233790425506,
+      "price": 273.8999938964844,
+      "usdAmount": 20.92189687177667,
+      "fee": 0.010466181526651661,
+      "realizedPnl": 4.625375104937021,
+      "reason": "Toma de ganancias parcial: +28.4% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-09-24",
+      "action": "SELL",
+      "ticker": "JKHY",
+      "shares": 0.06599653765279037,
+      "price": 147.75,
+      "usdAmount": 9.746112943980679,
+      "fee": 0.0048754942190998895,
+      "realizedPnl": -1.335365934985893,
+      "reason": "Stop-loss: precio -12.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-09-24",
+      "action": "BUY",
+      "ticker": "SMCI",
+      "shares": 0.44869924561134333,
+      "price": 41.5099983215332,
+      "usdAmount": 18.625504932200077,
+      "fee": 0.00931275246610004,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (38.75) por encima de SMA50 (34.66). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.0%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-09-24",
+      "action": "BUY",
+      "ticker": "CRL",
+      "shares": 0.055849623825463796,
+      "price": 294.44000244140625,
+      "usdAmount": 16.44436337552118,
+      "fee": 0.00822218168776059,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (282.87) por encima de SMA50 (267.77). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.9%. RSI 51: zona neutral."
+    },
+    {
+      "date": "2026-09-28",
+      "action": "SELL",
+      "ticker": "MS",
+      "shares": 0.049464751949418316,
+      "price": 193.63999938964844,
+      "usdAmount": 9.573565360025828,
+      "fee": 0.004789177268647238,
+      "realizedPnl": -1.3601230787738228,
+      "reason": "Stop-loss: precio -12.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-09-28",
+      "action": "BUY",
+      "ticker": "MRK",
+      "shares": 0.08089360896955376,
+      "price": 148.69000244140625,
+      "usdAmount": 12.02807091517711,
+      "fee": 0.006014035457588556,
+      "reason": "Señal técnica de compra (score 58): Tendencia de corto plazo alcista: SMA20 (147.47) por encima de SMA50 (140.15). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 3.3%. RSI 53: zona neutral."
+    },
+    {
+      "date": "2026-09-29",
+      "action": "TRIM",
+      "ticker": "CRWD",
+      "shares": 0.1331030854621929,
+      "price": 262.739990234375,
+      "usdAmount": 34.95401762281449,
+      "fee": 0.01748575168725087,
+      "realizedPnl": 6.999707045367007,
+      "reason": "Toma de ganancias parcial: +25.1% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-09-29",
+      "action": "BUY",
+      "ticker": "SNDK",
+      "shares": 0.010101898769073811,
+      "price": 1729.760009765625,
+      "usdAmount": 17.47386051344447,
+      "fee": 0.008736930256722236,
+      "reason": "Señal técnica de compra (score 81): Tendencia de corto plazo alcista: SMA20 (1683.34) por encima de SMA50 (1530.70). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.0%. RSI 48: zona neutral."
+    },
+    {
+      "date": "2026-09-29",
+      "action": "BUY",
+      "ticker": "MU",
+      "shares": 0.010444477525655802,
+      "price": 1065.0799560546875,
+      "usdAmount": 11.124203664039653,
+      "fee": 0.005562101832019827,
+      "reason": "Señal técnica de compra (score 77): Tendencia de corto plazo alcista: SMA20 (1005.36) por encima de SMA50 (949.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.8%. RSI 55: zona neutral."
+    },
+    {
+      "date": "2026-09-30",
+      "action": "SELL",
+      "ticker": "MOS",
+      "shares": 0.45264120690583076,
+      "price": 21.649999618530273,
+      "usdAmount": 9.794782115863898,
+      "fee": 0.004899840978421159,
+      "realizedPnl": -1.5438797717893282,
+      "reason": "Stop-loss: precio -13.6% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-09-30",
+      "action": "BUY",
+      "ticker": "VEEV",
+      "shares": 0.05689934694740881,
+      "price": 285.45001220703125,
+      "usdAmount": 16.24191928070995,
+      "fee": 0.008120959640354976,
+      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (270.14) por encima de SMA50 (246.91). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.8%. RSI 79: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-10-01",
+      "action": "SELL",
+      "ticker": "ROP",
+      "shares": 0.061732004323026585,
+      "price": 362.5899963378906,
+      "usdAmount": 22.372215517806147,
+      "fee": 0.011191703610708429,
+      "realizedPnl": -1.76006044107236,
+      "reason": "Señal técnica de venta (score -38): Tendencia de corto plazo bajista: SMA20 (375.47) por debajo de SMA50 (389.90). Precio por debajo de la media de 200 días: contexto de fondo bajista. Momentum 10d: -3.2%. RSI 31: zona neutral."
+    },
+    {
+      "date": "2026-10-01",
+      "action": "BUY",
+      "ticker": "INTC",
+      "shares": 0.09217772642937196,
+      "price": 120,
+      "usdAmount": 11.061327171524635,
+      "fee": 0.005530663585762318,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (110.25) por encima de SMA50 (100.49). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.3%. RSI 66: zona neutral."
+    },
+    {
+      "date": "2026-10-01",
+      "action": "BUY",
+      "ticker": "A",
+      "shares": 0.06343551965630696,
+      "price": 166.67999267578125,
+      "usdAmount": 10.573431951697621,
+      "fee": 0.005286715975848811,
+      "reason": "Señal técnica de compra (score 51): Tendencia de corto plazo alcista: SMA20 (158.54) por encima de SMA50 (151.74). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 6.6%. RSI 74: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-10-05",
+      "action": "SELL",
+      "ticker": "DOC",
+      "shares": 1.7635726033580417,
+      "price": 18.84000015258789,
+      "usdAmount": 33.209095262307144,
+      "fee": 0.016612854058182663,
+      "realizedPnl": -5.148608860730261,
+      "reason": "Stop-loss: precio -13.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-05",
+      "action": "BUY",
+      "ticker": "MPC",
+      "shares": 0.06575429842748698,
+      "price": 433.4700012207031,
+      "usdAmount": 28.50251581962926,
+      "fee": 0.01425125790981463,
+      "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (403.57) por encima de SMA50 (367.63). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.7%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-10-08",
+      "action": "SELL",
+      "ticker": "COIN",
+      "shares": 0.2875315547908515,
+      "price": 172,
+      "usdAmount": 49.43069971031445,
+      "fee": 0.02472771371201323,
+      "realizedPnl": -8.377520257862917,
+      "reason": "Stop-loss: precio -14.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-08",
+      "action": "BUY",
+      "ticker": "PSX",
+      "shares": 0.19440444141888558,
+      "price": 281.6000061035156,
+      "usdAmount": 54.74429189010873,
+      "fee": 0.027372145945054365,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (263.14) por encima de SMA50 (245.66). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.1%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-10-09",
+      "action": "SELL",
+      "ticker": "INTC",
+      "shares": 0.09217772642937196,
+      "price": 104.69999694824219,
+      "usdAmount": 9.646182172013221,
+      "fee": 0.004825503837925574,
+      "realizedPnl": -1.4151449995114134,
+      "reason": "Stop-loss: precio -12.8% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-12",
+      "action": "SELL",
+      "ticker": "SNDK",
+      "shares": 0.010101898769073811,
+      "price": 1487.3299560546875,
+      "usdAmount": 15.017344223949316,
+      "fee": 0.007512428326137727,
+      "realizedPnl": -2.4565162894951555,
+      "reason": "Stop-loss: precio -14.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-12",
+      "action": "BUY",
+      "ticker": "FFIV",
+      "shares": 0.05111392172964132,
+      "price": 473.489990234375,
+      "usdAmount": 24.201930300608478,
+      "fee": 0.01210096515030424,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (449.83) por encima de SMA50 (419.97). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.7%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-10-14",
+      "action": "SELL",
+      "ticker": "IBKR",
+      "shares": 0.11270328658922867,
+      "price": 84.13999938964844,
+      "usdAmount": 9.478113037596659,
+      "fee": 0.004741427232414537,
+      "realizedPnl": -1.4338191355781476,
+      "reason": "Stop-loss: precio -13.1% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-14",
+      "action": "SELL",
+      "ticker": "SMCI",
+      "shares": 0.44869924561134333,
+      "price": 35.779998779296875,
+      "usdAmount": 16.04643123101517,
+      "fee": 0.008027229230122647,
+      "realizedPnl": -2.579073701184906,
+      "reason": "Stop-loss: precio -13.8% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-14",
+      "action": "SELL",
+      "ticker": "MU",
+      "shares": 0.010444477525655802,
+      "price": 914.1300048828125,
+      "usdAmount": 9.5428364863804,
+      "fee": 0.004773805145763082,
+      "realizedPnl": -1.5813671776592524,
+      "reason": "Stop-loss: precio -14.2% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-14",
+      "action": "BUY",
+      "ticker": "MRNA",
+      "shares": 0.0794773735055372,
+      "price": 226.3000030517578,
+      "usdAmount": 17.985729866848764,
+      "fee": 0.008992864933424383,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (194.06) por encima de SMA50 (148.05). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 17.5%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-10-14",
+      "action": "BUY",
+      "ticker": "SNPS",
+      "shares": 0.02234321110768495,
+      "price": 479.92999267578125,
+      "usdAmount": 10.723177143264673,
+      "fee": 0.0053615885716323365,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (453.50) por encima de SMA50 (425.69). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.3%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-10-15",
+      "action": "SELL",
+      "ticker": "DELL",
+      "shares": 0.025095351395480688,
+      "price": 473.3900146484375,
+      "usdAmount": 11.873948820331933,
+      "fee": 0.005939944382357145,
+      "realizedPnl": -2.563657729734115,
+      "reason": "Stop-loss: precio -17.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-15",
+      "action": "BUY",
+      "ticker": "MTD",
+      "shares": 0.011587406432660152,
+      "price": 1639.0400390625,
+      "usdAmount": 18.99222309202036,
+      "fee": 0.00949611154601018,
+      "reason": "Señal técnica de compra (score 66): Tendencia de corto plazo alcista: SMA20 (1524.73) por encima de SMA50 (1439.60). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.7%. RSI 73: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-10-16",
+      "action": "SELL",
+      "ticker": "LITE",
+      "shares": 0.03026711461060245,
+      "price": 824.1300048828125,
+      "usdAmount": 24.93156529316853,
+      "fee": 0.012472018655912222,
+      "realizedPnl": -3.958092635928111,
+      "reason": "Stop-loss: precio -13.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-16",
+      "action": "BUY",
+      "ticker": "VLO",
+      "shares": 0.04371228064562963,
+      "price": 444.7099914550781,
+      "usdAmount": 19.43928795239993,
+      "fee": 0.009719643976199965,
+      "reason": "Señal técnica de compra (score 64): Tendencia de corto plazo alcista: SMA20 (413.86) por encima de SMA50 (381.63). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.5%. RSI 74: sobrecompra, riesgo de corrección."
+    }
+  ],
+  "tradesCount": 152,
+  "closedTradesCount": 63,
+  "winnersCount": 11,
+  "losersCount": 52,
+  "dailySnapshots": [
+    {
+      "date": "2026-04-30",
+      "totalValue": 999.5275610380473,
+      "cash": 54.64963713271568,
+      "pnl": -0.4724389619526619,
+      "pnlPct": -0.047243896195266186
+    },
+    {
+      "date": "2026-05-01",
+      "totalValue": 992.1753225718483,
+      "cash": 54.64963713271568,
+      "pnl": -7.824677428151745,
+      "pnlPct": -0.7824677428151745
+    },
+    {
+      "date": "2026-05-04",
+      "totalValue": 1001.2118484354532,
+      "cash": 54.64963713271568,
+      "pnl": 1.2118484354532484,
+      "pnlPct": 0.12118484354532483
+    },
+    {
+      "date": "2026-05-05",
+      "totalValue": 1006.930622010548,
+      "cash": 54.64963713271568,
+      "pnl": 6.93062201054795,
+      "pnlPct": 0.693062201054795
+    },
+    {
+      "date": "2026-05-06",
+      "totalValue": 1018.8105596021742,
+      "cash": 54.64963713271568,
+      "pnl": 18.81055960217418,
+      "pnlPct": 1.881055960217418
+    },
+    {
+      "date": "2026-05-07",
+      "totalValue": 973.2663550558599,
+      "cash": 54.64963713271568,
+      "pnl": -26.73364494414011,
+      "pnlPct": -2.673364494414011
+    },
+    {
+      "date": "2026-05-08",
+      "totalValue": 970.5888460779298,
+      "cash": 48.95208300318575,
+      "pnl": -29.411153922070184,
+      "pnlPct": -2.9411153922070183
+    },
+    {
+      "date": "2026-05-11",
+      "totalValue": 1002.9250797922424,
+      "cash": 48.95208300318575,
+      "pnl": 2.9250797922424,
+      "pnlPct": 0.29250797922424
+    },
+    {
+      "date": "2026-05-12",
+      "totalValue": 993.2064293981621,
+      "cash": 48.95208300318575,
+      "pnl": -6.793570601837928,
+      "pnlPct": -0.6793570601837928
+    },
+    {
+      "date": "2026-05-13",
+      "totalValue": 999.3554813072191,
+      "cash": 48.95208300318575,
+      "pnl": -0.6445186927809345,
+      "pnlPct": -0.06445186927809346
+    },
+    {
+      "date": "2026-05-14",
+      "totalValue": 1009.4069986422811,
+      "cash": 48.95208300318575,
+      "pnl": 9.40699864228111,
+      "pnlPct": 0.940699864228111
+    },
+    {
+      "date": "2026-05-15",
+      "totalValue": 993.9032791312177,
+      "cash": 48.95208300318575,
+      "pnl": -6.096720868782313,
+      "pnlPct": -0.6096720868782314
+    },
+    {
+      "date": "2026-05-18",
+      "totalValue": 952.7710998908077,
+      "cash": 48.95208300318575,
+      "pnl": -47.228900109192296,
+      "pnlPct": -4.7228900109192296
+    },
+    {
+      "date": "2026-05-19",
+      "totalValue": 931.5773718661901,
+      "cash": 49.65610361049677,
+      "pnl": -68.4226281338099,
+      "pnlPct": -6.842262813380989
+    },
+    {
+      "date": "2026-05-20",
+      "totalValue": 940.4402394837662,
+      "cash": 49.65610361049677,
+      "pnl": -59.55976051623384,
+      "pnlPct": -5.9559760516233835
+    },
+    {
+      "date": "2026-05-21",
+      "totalValue": 938.4569404243439,
+      "cash": 49.65610361049677,
+      "pnl": -61.543059575656116,
+      "pnlPct": -6.154305957565612
+    },
+    {
+      "date": "2026-05-22",
+      "totalValue": 936.3515628658012,
+      "cash": 49.65610361049677,
+      "pnl": -63.64843713419884,
+      "pnlPct": -6.3648437134198845
+    },
+    {
+      "date": "2026-05-26",
+      "totalValue": 945.6430817337053,
+      "cash": 49.65610361049677,
+      "pnl": -54.356918266294656,
+      "pnlPct": -5.435691826629466
+    },
+    {
+      "date": "2026-05-27",
+      "totalValue": 929.6778137717546,
+      "cash": 49.65610361049677,
+      "pnl": -70.32218622824541,
+      "pnlPct": -7.032218622824542
+    },
+    {
+      "date": "2026-05-28",
+      "totalValue": 925.4375230553702,
+      "cash": 46.26698065534008,
+      "pnl": -74.5624769446298,
+      "pnlPct": -7.456247694462979
+    },
+    {
+      "date": "2026-05-29",
+      "totalValue": 910.5301087476943,
+      "cash": 46.26698065534008,
+      "pnl": -89.46989125230573,
+      "pnlPct": -8.946989125230573
+    },
+    {
+      "date": "2026-06-01",
+      "totalValue": 920.705386989036,
+      "cash": 46.0323521557029,
+      "pnl": -79.29461301096399,
+      "pnlPct": -7.929461301096398
+    },
+    {
+      "date": "2026-06-02",
+      "totalValue": 932.6852541974412,
+      "cash": 46.0323521557029,
+      "pnl": -67.31474580255883,
+      "pnlPct": -6.731474580255884
+    },
+    {
+      "date": "2026-06-03",
+      "totalValue": 933.1920333114701,
+      "cash": 46.0323521557029,
+      "pnl": -66.80796668852986,
+      "pnlPct": -6.680796668852985
+    },
+    {
+      "date": "2026-06-04",
+      "totalValue": 932.2350613399765,
+      "cash": 46.0323521557029,
+      "pnl": -67.76493866002352,
+      "pnlPct": -6.776493866002352
+    },
+    {
+      "date": "2026-06-05",
+      "totalValue": 885.8782771022882,
+      "cash": 46.0323521557029,
+      "pnl": -114.12172289771183,
+      "pnlPct": -11.412172289771183
+    },
+    {
+      "date": "2026-06-08",
+      "totalValue": 897.023573139932,
+      "cash": 46.0323521557029,
+      "pnl": -102.97642686006805,
+      "pnlPct": -10.297642686006805
+    },
+    {
+      "date": "2026-06-09",
+      "totalValue": 889.4163307757917,
+      "cash": 44.465711703370644,
+      "pnl": -110.58366922420828,
+      "pnlPct": -11.058366922420827
+    },
+    {
+      "date": "2026-06-10",
+      "totalValue": 856.2672497897993,
+      "cash": 44.94966438100594,
+      "pnl": -143.73275021020072,
+      "pnlPct": -14.37327502102007
+    },
+    {
+      "date": "2026-06-11",
+      "totalValue": 891.2371256754241,
+      "cash": 44.94966438100594,
+      "pnl": -108.76287432457593,
+      "pnlPct": -10.876287432457593
+    },
+    {
+      "date": "2026-06-12",
+      "totalValue": 892.9311349757025,
+      "cash": 44.94966438100594,
+      "pnl": -107.06886502429745,
+      "pnlPct": -10.706886502429745
+    },
+    {
+      "date": "2026-06-15",
+      "totalValue": 921.6679275755403,
+      "cash": 44.94966438100594,
+      "pnl": -78.33207242445974,
+      "pnlPct": -7.833207242445973
+    },
+    {
+      "date": "2026-06-16",
+      "totalValue": 892.755280401092,
+      "cash": 44.94966438100594,
+      "pnl": -107.24471959890798,
+      "pnlPct": -10.724471959890797
+    },
+    {
+      "date": "2026-06-17",
+      "totalValue": 888.7092620377213,
+      "cash": 45.5971193566362,
+      "pnl": -111.29073796227874,
+      "pnlPct": -11.129073796227875
+    },
+    {
+      "date": "2026-06-18",
+      "totalValue": 908.1719410925567,
+      "cash": 45.5971193566362,
+      "pnl": -91.82805890744328,
+      "pnlPct": -9.182805890744328
+    },
+    {
+      "date": "2026-06-22",
+      "totalValue": 910.976718635324,
+      "cash": 46.74274946056269,
+      "pnl": -89.023281364676,
+      "pnlPct": -8.902328136467599
+    },
+    {
+      "date": "2026-06-23",
+      "totalValue": 887.546656138035,
+      "cash": 46.74274946056269,
+      "pnl": -112.45334386196498,
+      "pnlPct": -11.245334386196498
+    },
+    {
+      "date": "2026-06-24",
+      "totalValue": 886.1785836385459,
+      "cash": 46.1542391183717,
+      "pnl": -113.82141636145411,
+      "pnlPct": -11.38214163614541
+    },
+    {
+      "date": "2026-06-25",
+      "totalValue": 894.8500311248803,
+      "cash": 44.73730805423559,
+      "pnl": -105.14996887511973,
+      "pnlPct": -10.514996887511971
+    },
+    {
+      "date": "2026-06-26",
+      "totalValue": 878.2559713437392,
+      "cash": 47.913837112541266,
+      "pnl": -121.74402865626075,
+      "pnlPct": -12.174402865626076
+    },
+    {
+      "date": "2026-06-29",
+      "totalValue": 900.751808880289,
+      "cash": 47.913837112541266,
+      "pnl": -99.24819111971101,
+      "pnlPct": -9.9248191119711
+    },
+    {
+      "date": "2026-06-30",
+      "totalValue": 920.6048699211347,
+      "cash": 47.913837112541266,
+      "pnl": -79.39513007886535,
+      "pnlPct": -7.939513007886536
+    },
+    {
+      "date": "2026-07-01",
+      "totalValue": 895.4002168105094,
+      "cash": 50.322220699547074,
+      "pnl": -104.59978318949061,
+      "pnlPct": -10.45997831894906
+    },
+    {
+      "date": "2026-07-02",
+      "totalValue": 867.4095103742054,
+      "cash": 51.39656132447928,
+      "pnl": -132.5904896257946,
+      "pnlPct": -13.25904896257946
+    },
+    {
+      "date": "2026-07-06",
+      "totalValue": 875.3378843208939,
+      "cash": 43.74867430658626,
+      "pnl": -124.66211567910614,
+      "pnlPct": -12.466211567910614
+    },
+    {
+      "date": "2026-07-07",
+      "totalValue": 860.1196683354942,
+      "cash": 42.999993561803706,
+      "pnl": -139.88033166450577,
+      "pnlPct": -13.988033166450577
+    },
+    {
+      "date": "2026-07-08",
+      "totalValue": 861.7417759004303,
+      "cash": 51.70911751927754,
+      "pnl": -138.2582240995697,
+      "pnlPct": -13.82582240995697
+    },
+    {
+      "date": "2026-07-09",
+      "totalValue": 878.5788924227141,
+      "cash": 51.70911751927754,
+      "pnl": -121.42110757728585,
+      "pnlPct": -12.142110757728586
+    },
+    {
+      "date": "2026-07-10",
+      "totalValue": 869.5915029297607,
+      "cash": 51.70911751927754,
+      "pnl": -130.40849707023926,
+      "pnlPct": -13.040849707023927
+    },
+    {
+      "date": "2026-07-13",
+      "totalValue": 858.3918920974214,
+      "cash": 42.916989553184884,
+      "pnl": -141.60810790257858,
+      "pnlPct": -14.160810790257857
+    },
+    {
+      "date": "2026-07-14",
+      "totalValue": 860.115232519917,
+      "cash": 46.58604863037372,
+      "pnl": -139.88476748008304,
+      "pnlPct": -13.988476748008305
+    },
+    {
+      "date": "2026-07-15",
+      "totalValue": 845.630722347738,
+      "cash": 46.58604863037372,
+      "pnl": -154.36927765226199,
+      "pnlPct": -15.4369277652262
+    },
+    {
+      "date": "2026-07-16",
+      "totalValue": 824.0930362615054,
+      "cash": 46.851625929829254,
+      "pnl": -175.9069637384946,
+      "pnlPct": -17.59069637384946
+    },
+    {
+      "date": "2026-07-17",
+      "totalValue": 822.6807134661307,
+      "cash": 41.12825294883811,
+      "pnl": -177.31928653386933,
+      "pnlPct": -17.731928653386934
+    },
+    {
+      "date": "2026-07-20",
+      "totalValue": 819.1235232784023,
+      "cash": 41.12825294883811,
+      "pnl": -180.87647672159767,
+      "pnlPct": -18.08764767215977
+    },
+    {
+      "date": "2026-07-21",
+      "totalValue": 823.1038278954491,
+      "cash": 41.12825294883811,
+      "pnl": -176.89617210455094,
+      "pnlPct": -17.689617210455093
+    },
+    {
+      "date": "2026-07-22",
+      "totalValue": 809.531104220925,
+      "cash": 43.3008636536636,
+      "pnl": -190.46889577907496,
+      "pnlPct": -19.046889577907493
+    },
+    {
+      "date": "2026-07-23",
+      "totalValue": 801.4140612241339,
+      "cash": 43.3008636536636,
+      "pnl": -198.5859387758661,
+      "pnlPct": -19.85859387758661
+    },
+    {
+      "date": "2026-07-24",
+      "totalValue": 802.3073556564083,
+      "cash": 49.10266579335902,
+      "pnl": -197.69264434359172,
+      "pnlPct": -19.769264434359172
+    },
+    {
+      "date": "2026-07-27",
+      "totalValue": 809.9011942700392,
+      "cash": 49.10266579335902,
+      "pnl": -190.09880572996076,
+      "pnlPct": -19.009880572996078
+    },
+    {
+      "date": "2026-07-28",
+      "totalValue": 811.5032964362154,
+      "cash": 49.6162411756625,
+      "pnl": -188.49670356378465,
+      "pnlPct": -18.849670356378464
+    },
+    {
+      "date": "2026-07-29",
+      "totalValue": 797.1087329958224,
+      "cash": 39.85124460772796,
+      "pnl": -202.89126700417762,
+      "pnlPct": -20.28912670041776
+    },
+    {
+      "date": "2026-07-30",
+      "totalValue": 802.3008921295179,
+      "cash": 39.85124460772796,
+      "pnl": -197.69910787048207,
+      "pnlPct": -19.769910787048207
+    },
+    {
+      "date": "2026-07-31",
+      "totalValue": 808.6390694506414,
+      "cash": 39.85124460772796,
+      "pnl": -191.3609305493586,
+      "pnlPct": -19.136093054935863
+    },
+    {
+      "date": "2026-08-03",
+      "totalValue": 808.728042083576,
+      "cash": 39.85124460772796,
+      "pnl": -191.27195791642396,
+      "pnlPct": -19.127195791642396
+    },
+    {
+      "date": "2026-08-04",
+      "totalValue": 833.1463927425672,
+      "cash": 51.24900266795564,
+      "pnl": -166.85360725743283,
+      "pnlPct": -16.685360725743283
+    },
+    {
+      "date": "2026-08-05",
+      "totalValue": 831.3448213688317,
+      "cash": 51.24900266795564,
+      "pnl": -168.65517863116827,
+      "pnlPct": -16.86551786311683
+    },
+    {
+      "date": "2026-08-06",
+      "totalValue": 821.0364408679442,
+      "cash": 46.68482014440716,
+      "pnl": -178.96355913205582,
+      "pnlPct": -17.896355913205582
+    },
+    {
+      "date": "2026-08-07",
+      "totalValue": 852.1755755965213,
+      "cash": 46.68482014440716,
+      "pnl": -147.8244244034787,
+      "pnlPct": -14.78244244034787
+    },
+    {
+      "date": "2026-08-10",
+      "totalValue": 853.0441742738604,
+      "cash": 46.68482014440716,
+      "pnl": -146.95582572613955,
+      "pnlPct": -14.695582572613954
+    },
+    {
+      "date": "2026-08-11",
+      "totalValue": 849.7101755874528,
+      "cash": 46.68482014440716,
+      "pnl": -150.2898244125472,
+      "pnlPct": -15.02898244125472
+    },
+    {
+      "date": "2026-08-12",
+      "totalValue": 842.374144953181,
+      "cash": 43.60776718291895,
+      "pnl": -157.62585504681897,
+      "pnlPct": -15.762585504681898
+    },
+    {
+      "date": "2026-08-13",
+      "totalValue": 851.1022978895802,
+      "cash": 43.60776718291895,
+      "pnl": -148.8977021104198,
+      "pnlPct": -14.88977021104198
+    },
+    {
+      "date": "2026-08-14",
+      "totalValue": 841.7825854506259,
+      "cash": 43.60776718291895,
+      "pnl": -158.2174145493741,
+      "pnlPct": -15.82174145493741
+    },
+    {
+      "date": "2026-08-17",
+      "totalValue": 826.8075788088998,
+      "cash": 43.60776718291895,
+      "pnl": -173.19242119110015,
+      "pnlPct": -17.319242119110015
+    },
+    {
+      "date": "2026-08-18",
+      "totalValue": 827.8385700810518,
+      "cash": 50.10378936073208,
+      "pnl": -172.16142991894822,
+      "pnlPct": -17.216142991894824
+    },
+    {
+      "date": "2026-08-19",
+      "totalValue": 818.9255778554663,
+      "cash": 50.10378936073208,
+      "pnl": -181.07442214453374,
+      "pnlPct": -18.10744221445337
+    },
+    {
+      "date": "2026-08-20",
+      "totalValue": 813.6955962266184,
+      "cash": 40.67774134992575,
+      "pnl": -186.30440377338164,
+      "pnlPct": -18.630440377338164
+    },
+    {
+      "date": "2026-08-21",
+      "totalValue": 824.2242552640529,
+      "cash": 40.67774134992575,
+      "pnl": -175.77574473594711,
+      "pnlPct": -17.577574473594712
+    },
+    {
+      "date": "2026-08-24",
+      "totalValue": 826.8016504735267,
+      "cash": 40.67774134992575,
+      "pnl": -173.1983495264733,
+      "pnlPct": -17.319834952647327
+    },
+    {
+      "date": "2026-08-25",
+      "totalValue": 825.0784324977172,
+      "cash": 41.24565638864905,
+      "pnl": -174.92156750228276,
+      "pnlPct": -17.492156750228276
+    },
+    {
+      "date": "2026-08-26",
+      "totalValue": 828.9869793425249,
+      "cash": 41.24565638864905,
+      "pnl": -171.01302065747507,
+      "pnlPct": -17.101302065747507
+    },
+    {
+      "date": "2026-08-27",
+      "totalValue": 842.806726825632,
+      "cash": 41.24565638864905,
+      "pnl": -157.19327317436796,
+      "pnlPct": -15.719327317436797
+    },
+    {
+      "date": "2026-08-28",
+      "totalValue": 833.8310030919116,
+      "cash": 41.68631639072887,
+      "pnl": -166.1689969080884,
+      "pnlPct": -16.61689969080884
+    },
+    {
+      "date": "2026-08-31",
+      "totalValue": 832.9022024939063,
+      "cash": 41.69077938836449,
+      "pnl": -167.09779750609368,
+      "pnlPct": -16.709779750609368
+    },
+    {
+      "date": "2026-09-01",
+      "totalValue": 822.6613613118852,
+      "cash": 41.126446660730345,
+      "pnl": -177.33863868811477,
+      "pnlPct": -17.73386386881148
+    },
+    {
+      "date": "2026-09-02",
+      "totalValue": 823.1837599585261,
+      "cash": 41.126446660730345,
+      "pnl": -176.81624004147386,
+      "pnlPct": -17.681624004147388
+    },
+    {
+      "date": "2026-09-03",
+      "totalValue": 836.2758376422847,
+      "cash": 41.126446660730345,
+      "pnl": -163.72416235771527,
+      "pnlPct": -16.372416235771528
+    },
+    {
+      "date": "2026-09-04",
+      "totalValue": 829.0348796298533,
+      "cash": 41.126446660730345,
+      "pnl": -170.96512037014668,
+      "pnlPct": -17.09651203701467
+    },
+    {
+      "date": "2026-09-08",
+      "totalValue": 817.3383300311465,
+      "cash": 46.10300196996775,
+      "pnl": -182.66166996885352,
+      "pnlPct": -18.266166996885353
+    },
+    {
+      "date": "2026-09-09",
+      "totalValue": 813.3191148312612,
+      "cash": 46.10300196996775,
+      "pnl": -186.68088516873877,
+      "pnlPct": -18.668088516873876
+    },
+    {
+      "date": "2026-09-10",
+      "totalValue": 813.1530431657902,
+      "cash": 46.10300196996775,
+      "pnl": -186.84695683420978,
+      "pnlPct": -18.684695683420976
+    },
+    {
+      "date": "2026-09-11",
+      "totalValue": 817.5685620188098,
+      "cash": 46.10300196996775,
+      "pnl": -182.43143798119024,
+      "pnlPct": -18.243143798119025
+    },
+    {
+      "date": "2026-09-14",
+      "totalValue": 839.1299724828485,
+      "cash": 44.29791978125954,
+      "pnl": -160.87002751715147,
+      "pnlPct": -16.087002751715147
+    },
+    {
+      "date": "2026-09-15",
+      "totalValue": 844.5668203446511,
+      "cash": 44.29791978125954,
+      "pnl": -155.4331796553489,
+      "pnlPct": -15.543317965534891
+    },
+    {
+      "date": "2026-09-16",
+      "totalValue": 838.6570836222642,
+      "cash": 44.29791978125954,
+      "pnl": -161.34291637773583,
+      "pnlPct": -16.134291637773586
+    },
+    {
+      "date": "2026-09-17",
+      "totalValue": 852.8329711666563,
+      "cash": 44.29791978125954,
+      "pnl": -147.1670288333437,
+      "pnlPct": -14.71670288333437
+    },
+    {
+      "date": "2026-09-18",
+      "totalValue": 842.5555708384502,
+      "cash": 44.29791978125954,
+      "pnl": -157.4444291615498,
+      "pnlPct": -15.74444291615498
+    },
+    {
+      "date": "2026-09-21",
+      "totalValue": 859.2017113248367,
+      "cash": 42.9557595191733,
+      "pnl": -140.79828867516335,
+      "pnlPct": -14.079828867516333
+    },
+    {
+      "date": "2026-09-22",
+      "totalValue": 863.4330598308866,
+      "cash": 50.23683244512215,
+      "pnl": -136.56694016911342,
+      "pnlPct": -13.656694016911342
+    },
+    {
+      "date": "2026-09-23",
+      "totalValue": 869.1978420036156,
+      "cash": 50.23683244512215,
+      "pnl": -130.80215799638438,
+      "pnlPct": -13.08021579963844
+    },
+    {
+      "date": "2026-09-24",
+      "totalValue": 873.0591129954329,
+      "cash": 45.817439019004375,
+      "pnl": -126.94088700456712,
+      "pnlPct": -12.694088700456712
+    },
+    {
+      "date": "2026-09-25",
+      "totalValue": 864.9133912542402,
+      "cash": 45.817439019004375,
+      "pnl": -135.0866087457598,
+      "pnlPct": -13.50866087457598
+    },
+    {
+      "date": "2026-09-28",
+      "totalValue": 867.2526552416043,
+      "cash": 43.35691942839551,
+      "pnl": -132.74734475839568,
+      "pnlPct": -13.27473447583957
+    },
+    {
+      "date": "2026-09-29",
+      "totalValue": 867.2500214543325,
+      "cash": 49.698573841637135,
+      "pnl": -132.74997854566755,
+      "pnlPct": -13.274997854566756
+    },
+    {
+      "date": "2026-09-30",
+      "totalValue": 865.0206125761811,
+      "cash": 43.24331571715072,
+      "pnl": -134.97938742381893,
+      "pnlPct": -13.497938742381892
+    },
+    {
+      "date": "2026-10-01",
+      "totalValue": 869.8467204585907,
+      "cash": 43.96995473217301,
+      "pnl": -130.15327954140935,
+      "pnlPct": -13.015327954140934
+    },
+    {
+      "date": "2026-10-02",
+      "totalValue": 871.7038033367642,
+      "cash": 43.96995473217301,
+      "pnl": -128.29619666323583,
+      "pnlPct": -12.829619666323582
+    },
+    {
+      "date": "2026-10-05",
+      "totalValue": 880.0916128526596,
+      "cash": 48.66228291694108,
+      "pnl": -119.90838714734036,
+      "pnlPct": -11.990838714734037
+    },
+    {
+      "date": "2026-10-06",
+      "totalValue": 879.0447106953004,
+      "cash": 48.66228291694108,
+      "pnl": -120.95528930469959,
+      "pnlPct": -12.095528930469959
+    },
+    {
+      "date": "2026-10-07",
+      "totalValue": 872.1289079647136,
+      "cash": 48.66228291694108,
+      "pnl": -127.87109203528644,
+      "pnlPct": -12.787109203528644
+    },
+    {
+      "date": "2026-10-08",
+      "totalValue": 866.946442596991,
+      "cash": 43.32131859120176,
+      "pnl": -133.053557403009,
+      "pnlPct": -13.3053557403009
+    },
+    {
+      "date": "2026-10-09",
+      "totalValue": 879.3401657171751,
+      "cash": 52.96750076321498,
+      "pnl": -120.65983428282493,
+      "pnlPct": -12.065983428282493
+    },
+    {
+      "date": "2026-10-12",
+      "totalValue": 869.0730999748828,
+      "cash": 43.77081372140552,
+      "pnl": -130.92690002511722,
+      "pnlPct": -13.092690002511723
+    },
+    {
+      "date": "2026-10-13",
+      "totalValue": 869.2989228097655,
+      "cash": 43.77081372140552,
+      "pnl": -130.7010771902345,
+      "pnlPct": -13.070107719023452
+    },
+    {
+      "date": "2026-10-14",
+      "totalValue": 857.3203404004993,
+      "cash": 50.11493301277925,
+      "pnl": -142.67965959950072,
+      "pnlPct": -14.267965959950072
+    },
+    {
+      "date": "2026-10-15",
+      "totalValue": 859.9236787102705,
+      "cash": 42.98716262954481,
+      "pnl": -140.07632128972955,
+      "pnlPct": -14.007632128972954
+    },
+    {
+      "date": "2026-10-16",
+      "totalValue": 835.6823770624967,
+      "cash": 48.46972032633721,
+      "pnl": -164.3176229375033,
+      "pnlPct": -16.431762293750328
+    },
+    {
+      "date": "2026-10-19",
+      "totalValue": 839.9131943681618,
+      "cash": 48.46972032633721,
+      "pnl": -160.08680563183816,
+      "pnlPct": -16.008680563183816
+    },
+    {
+      "date": "2026-10-20",
+      "totalValue": 848.7219720961454,
+      "cash": 48.46972032633721,
+      "pnl": -151.27802790385465,
+      "pnlPct": -15.127802790385465
+    }
+  ],
+  "openPositions": [
+    "BEN",
+    "WST",
+    "TWLO",
+    "FTNT",
+    "HPE",
+    "CNC",
+    "WSM",
+    "INCY",
+    "HUM",
+    "DG",
+    "BAX",
+    "BBY",
+    "ZBRA",
+    "PANW",
+    "IVZ",
+    "IQV",
+    "ILMN",
+    "CVX",
+    "SOLV",
+    "RVTY",
+    "CRWD",
+    "HPQ",
+    "NVDA",
+    "TMO",
+    "PLTR",
+    "CRL",
+    "MRK",
+    "VEEV",
+    "A",
+    "MPC",
+    "PSX",
+    "FFIV",
+    "MRNA",
+    "SNPS",
+    "MTD",
+    "VLO"
+  ],
+  "openShorts": []
+}

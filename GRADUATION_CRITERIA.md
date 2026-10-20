@@ -73,6 +73,23 @@ aceptarla. Dos ya fallaron esa prueba — quedan acá para no repetir el error:
    (`USE_FUNDAMENTAL_TILT_IN_PRODUCTION = false` en `config.js`) hasta tener fundamentales
    point-in-time reales — algo que no está disponible gratis (ver investigación de fuentes
    en el README).
+3. **Shorting (venta en corto) en el satellite** (2026-10-20, `lib/decide.js`/`lib/portfolio.js`,
+   `node validate.js --shorts`): la primera corrida sin tope agregado de exposición
+   **explotó** en COVID 2020 (-2214% de retorno — múltiples shorts correlacionados
+   abiertos simultáneamente durante el crash, todos reventados por el rebote violento
+   posterior). Se agregó `STRATEGY.maxAggregateShortExposurePct` (30% del portfolio como
+   tope sobre TODOS los shorts simultáneos, no solo por posición) y se volvió a correr:
+   ya no explota, pero sigue **empeorando** en 3 de los 4 regímenes genuinamente fuera de
+   muestra — Q4 2018 (-17.6% → -19.7%), COVID 2020 (-4.0% → -14.9%), Bajista 2022
+   (-20.9% → -26.4%) — y no mejora en ninguno (en Recuperación 2023 y el período reciente
+   el score casi nunca llega al umbral de corto, así que casi no shortea y el resultado
+   queda prácticamente igual). Mismo patrón que los dos experimentos anteriores: no
+   sobrevive la validación. **Queda apagado en producción**
+   (`ALLOW_SHORTING_IN_PRODUCTION = false` en `config.js`); la mecánica queda disponible
+   para seguir experimentando (`node backtest.js <días> --shorts`, `node validate.js --shorts`)
+   pero no se prende sin una regla de entrada distinta — shortear por "score técnico muy
+   negativo" tiende a capturar justo las acciones más sobrevendidas en un pánico, que son
+   las que más rebotan después.
 
 ## Los criterios (TODOS tienen que cumplirse, no alcanza con uno o dos)
 

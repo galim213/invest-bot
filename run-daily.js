@@ -12,7 +12,16 @@ const { runDecisionEngine } = require('./lib/decide');
 const { buildReportMarkdown, buildReportJson } = require('./lib/report');
 const { fetchMacroRiskPanel } = require('./lib/macroRisk');
 const { sma } = require('./lib/indicators');
-const { buildSectorRotation, buildQualityCompaniesReport, buildMarketIntelMarkdown, buildResearchReport, buildResearchNotesMarkdown } = require('./lib/marketIntel');
+const {
+  buildSectorRotation,
+  buildQualityCompaniesReport,
+  buildMarketIntelMarkdown,
+  buildResearchReport,
+  buildResearchNotesMarkdown,
+  buildOtherMarketsPanel,
+  loadInvestmentTechniques,
+  buildOtherMarketsMarkdown,
+} = require('./lib/marketIntel');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 
@@ -174,6 +183,28 @@ async function main() {
     }
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudieron generar las research notes (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Mercados más allá de acciones (commodities, bonos, REITs, cripto, forex)
+  // + técnicas de inversión (short selling, opciones) — educativo, no afecta
+  // el trading. Ver investment-techniques.json para el contenido estático.
+  try {
+    console.log('[invest-bot] Generando panel de otros mercados y técnicas de inversión...');
+    const otherMarkets = await buildOtherMarketsPanel();
+    const techniques = loadInvestmentTechniques();
+    const otherMarketsMd = buildOtherMarketsMarkdown({ date, otherMarkets, techniques });
+
+    fs.writeFileSync(path.join(reportsDir, `other-markets-${date}.md`), otherMarketsMd);
+    fs.writeFileSync(path.join(reportsDir, 'other-markets-latest.md'), otherMarketsMd);
+
+    const otherMarketsJson = { date, generatedAt: new Date().toISOString(), otherMarkets: otherMarkets.rows, techniques };
+    fs.writeFileSync(path.join(reportsDir, `other-markets-${date}.json`), JSON.stringify(otherMarketsJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'other-markets-latest.json'), JSON.stringify(otherMarketsJson, null, 2));
+
+    console.log(`[invest-bot] Panel de otros mercados generado: ${otherMarkets.rows.length} activos, ${techniques.length} técnicas documentadas.`);
+    if (otherMarkets.errors.length > 0) console.warn(`[invest-bot] WARN otros mercados: ${otherMarkets.errors.length} activos sin datos.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo generar el panel de otros mercados (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   return { reportPath, combined, trades };

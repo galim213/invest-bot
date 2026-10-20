@@ -9,6 +9,10 @@ const marketData = require('./lib/marketData');
 const { runBacktest } = require('./lib/simulate');
 const { loadHistoricalMembership } = require('./lib/pointInTime');
 
+// Opt-in, igual que --fundamentals en backtest.js: prueba la mecánica de
+// shorts (apagada en producción) contra los mismos regímenes out-of-sample.
+const USE_SHORTS = process.argv.includes('--shorts');
+
 /**
  * Fase 2 — validación fuera de muestra: la estrategia se ajustó (thresholds,
  * stop-loss, etc.) mirando solo 2025-2026. Acá la corremos SIN tocar ningún
@@ -79,7 +83,7 @@ async function main() {
     }
 
     console.log(`[validate] Simulando "${regime.name}" (${simDates[0]} a ${simDates.at(-1)}, ${simDates.length} días)...`);
-    const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime });
+    const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, allowShorting: USE_SHORTS });
 
     results.push({ regime: regime.name, note: regime.note, ...result });
 
