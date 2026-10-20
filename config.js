@@ -86,6 +86,16 @@ const OTHER_MARKETS = [
   { ticker: 'ETH-USD', name: 'Ethereum', category: 'Cripto' },
   { ticker: 'EURUSD=X', name: 'EUR/USD', category: 'Forex' },
   { ticker: 'USDCLP=X', name: 'USD/CLP', category: 'Forex — relevante para Chile' },
+  // ETFs de referencia (2026-10-20): mismo universo que SPY (benchmark) pero con
+  // distintos enfoques — para comparar costo/composición, no para operarlos.
+  { ticker: 'VTI', name: 'Mercado total EEUU (ETF, ~3600 empresas)', category: 'ETF — mercado amplio EEUU' },
+  { ticker: 'QQQ', name: 'Nasdaq-100 (ETF, cargado a tecnología)', category: 'ETF — mercado amplio EEUU' },
+  { ticker: 'SCHD', name: 'Dividendo de calidad EEUU (ETF)', category: 'ETF — dividendos' },
+  { ticker: 'VYM', name: 'Alto dividendo EEUU (ETF)', category: 'ETF — dividendos' },
+  { ticker: 'VXUS', name: 'Resto del mundo ex-EEUU (ETF, un solo fondo)', category: 'ETF — internacional' },
+  { ticker: 'VEA', name: 'Mercados desarrollados ex-EEUU (ETF)', category: 'ETF — internacional' },
+  { ticker: 'VWO', name: 'Mercados emergentes (ETF)', category: 'ETF — internacional' },
+  { ticker: 'BND', name: 'Bonos EEUU diversificados (ETF)', category: 'ETF — renta fija diversificada' },
 ];
 
 // Apagado por default en producción: testeado en backtest.js con --fundamentals
