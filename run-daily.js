@@ -12,6 +12,7 @@ const { runDecisionEngine } = require('./lib/decide');
 const { buildReportMarkdown, buildReportJson } = require('./lib/report');
 const { fetchMacroRiskPanel } = require('./lib/macroRisk');
 const { sma } = require('./lib/indicators');
+const { buildSectorRotation, buildQualityCompaniesReport, buildMarketIntelMarkdown } = require('./lib/marketIntel');
 
 async function main() {
   const date = new Date().toISOString().slice(0, 10);
@@ -76,6 +77,29 @@ async function main() {
   console.log(`[invest-bot] Reporte generado en ${reportPath}`);
   console.log(`[invest-bot] Valor del portfolio: $${snapshot.totalValue.toFixed(2)} (${snapshot.pnlPct.toFixed(2)}%)`);
   console.log(`[invest-bot] Trades ejecutados hoy: ${trades.length}`);
+
+  // Informe de mercado (sectores + empresas de calidad educativo) — no afecta
+  // las decisiones de trading, es contexto/aprendizaje aparte. Si Yahoo bloquea
+  // el endpoint no oficial de fundamentales, esto no debe tirar abajo el resto.
+  try {
+    console.log('[invest-bot] Generando informe de mercado (rotación sectorial + empresas de calidad)...');
+    const [sectorRotation, qualityCompanies] = await Promise.all([buildSectorRotation(), buildQualityCompaniesReport()]);
+    const marketIntelMd = buildMarketIntelMarkdown({ date, sectorRotation, qualityCompanies });
+
+    const intelPath = path.join(reportsDir, `market-intel-${date}.md`);
+    fs.writeFileSync(intelPath, marketIntelMd);
+    fs.writeFileSync(path.join(reportsDir, 'market-intel-latest.md'), marketIntelMd);
+
+    const intelJson = { date, generatedAt: new Date().toISOString(), sectorRotation, qualityCompanies };
+    fs.writeFileSync(path.join(reportsDir, `market-intel-${date}.json`), JSON.stringify(intelJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'market-intel-latest.json'), JSON.stringify(intelJson, null, 2));
+
+    console.log(`[invest-bot] Informe de mercado generado en ${intelPath}`);
+    if (sectorRotation.errors.length > 0) console.warn(`[invest-bot] WARN rotación sectorial: ${sectorRotation.errors.length} ETFs sin datos.`);
+    if (qualityCompanies.errors.length > 0) console.warn(`[invest-bot] WARN fundamentales: ${qualityCompanies.errors.length} empresas sin datos.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo generar el informe de mercado (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
 
   return { reportPath, snapshot, trades };
 }

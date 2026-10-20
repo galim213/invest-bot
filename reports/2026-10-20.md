@@ -9,7 +9,7 @@
 - **VIX**: 18.44 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.4 pts.
 - **Curva de rendimientos (10 años vs 3 meses)**: +1.06 pts — normal (sin inversión).
 - **Spread de crédito (proxy HYG vs LQD, 20d)**: -0.25 pts — normal.
-- **Índice dólar (DXY)**: 101.93 (variación 10d: -0.31) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
+- **Índice dólar (DXY)**: 101.84 (variación 10d: -0.40) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
 - _Nota: el crecimiento del crédito y la pendiente de la curva son los que más respaldo académico tienen como señales tempranas de crisis en estudios de largo plazo multi-país. El spread de crédito y el dólar son más rápidos pero más ruidosos. Ninguno anticipa el tipo ni el momento exacto de una crisis — no son una alarma de "vender todo"._
 
 ## Resumen del portfolio
@@ -226,4 +226,4 @@
   - RSI 27: sobreventa, posible rebote.
 
 ---
-_Generado automáticamente el 2026-10-20T02:14:20.277Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
+_Generado automáticamente el 2026-10-20T03:25:45.220Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._

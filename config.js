@@ -49,6 +49,25 @@ const REPORT_TOP_N = 15;
 // u otra red con allowlist nos corte por ráfaga de cientos de requests a la vez).
 const FETCH_CONCURRENCY = 20;
 
+// ETFs sectoriales (SPDR Select Sector + un par de especializados) para medir
+// rotación sectorial — qué sectores lideran/retrasan en distintas ventanas de
+// tiempo. No son parte del universo operable, solo contexto de mercado.
+const SECTOR_ETFS = [
+  { ticker: 'XLE', sector: 'Energía' },
+  { ticker: 'XLK', sector: 'Tecnología' },
+  { ticker: 'SMH', sector: 'Semiconductores' },
+  { ticker: 'ITA', sector: 'Aeroespacial y Defensa' },
+  { ticker: 'XLF', sector: 'Financiero' },
+  { ticker: 'XLV', sector: 'Salud' },
+  { ticker: 'XLY', sector: 'Consumo discrecional' },
+  { ticker: 'XLP', sector: 'Consumo básico' },
+  { ticker: 'XLI', sector: 'Industrial' },
+  { ticker: 'XLB', sector: 'Materiales' },
+  { ticker: 'XLRE', sector: 'Bienes raíces' },
+  { ticker: 'XLU', sector: 'Servicios públicos' },
+  { ticker: 'XLC', sector: 'Comunicaciones' },
+];
+
 module.exports = {
   STARTING_CAPITAL,
   WATCHLIST,
@@ -56,4 +75,5 @@ module.exports = {
   STRATEGY,
   REPORT_TOP_N,
   FETCH_CONCURRENCY,
+  SECTOR_ETFS,
 };
