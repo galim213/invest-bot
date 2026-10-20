@@ -1,0 +1,279 @@
+{
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T01:39:17.488Z",
+  "portfolio": {
+    "startingCapital": 1000,
+    "cash": 625,
+    "totalValue": 999.432260277825,
+    "pnl": -0.5677397221750198,
+    "pnlPct": -0.05677397221750198,
+    "dayPnl": -0.5677397221750198,
+    "dayPnlPct": -0.05677397221750198,
+    "positions": [
+      {
+        "ticker": "AAPL",
+        "sector": "Tecnología",
+        "shares": 1.091830225731101,
+        "avgCost": 343.4599914550781,
+        "currentPrice": 342.94000244140625,
+        "marketValue": 374.4322602778249,
+        "unrealizedPnl": -0.5677397221750559,
+        "unrealizedPct": -0.15139725924668157,
+        "openedAt": "2026-10-20"
+      }
+    ]
+  },
+  "dailySnapshots": [
+    {
+      "date": "2026-10-20",
+      "totalValue": 1000,
+      "cash": 625,
+      "pnl": 0,
+      "pnlPct": 0
+    },
+    {
+      "date": "2026-10-20",
+      "totalValue": 999.432260277825,
+      "cash": 625,
+      "pnl": -0.5677397221750198,
+      "pnlPct": -0.05677397221750198
+    }
+  ],
+  "signals": [
+    {
+      "ticker": "AAPL",
+      "sector": "Tecnología",
+      "score": 34,
+      "signal": "HOLD",
+      "lastClose": 342.94000244140625,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (337.62) por encima de SMA50 (326.29).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 3.0%.",
+        "RSI 72: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 337.6220016479492,
+        "smaSlow": 326.2916003417969,
+        "smaTrend": 292.82009979248045,
+        "momentum": 0.030190114905015886,
+        "rsi": 71.79660257562851,
+        "volatility": 0.009815484679019982
+      },
+      "error": null
+    },
+    {
+      "ticker": "XOM",
+      "sector": "Energía",
+      "score": 30,
+      "signal": "HOLD",
+      "lastClose": 178.27999877929688,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (167.11) por encima de SMA50 (164.19).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 8.7%.",
+        "RSI 85: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 167.1134994506836,
+        "smaSlow": 164.19340057373046,
+        "smaTrend": 152.00619991302491,
+        "momentum": 0.08707316328839558,
+        "rsi": 85.46296142403644,
+        "volatility": 0.010715581013452543
+      },
+      "error": null
+    },
+    {
+      "ticker": "MSFT",
+      "sector": "Tecnología",
+      "score": 30,
+      "signal": "HOLD",
+      "lastClose": 533.52001953125,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (521.82) por encima de SMA50 (506.20).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 1.6%.",
+        "RSI 65: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 521.8160018920898,
+        "smaSlow": 506.20300048828125,
+        "smaTrend": 435.5014993286133,
+        "momentum": 0.01588032097905422,
+        "rsi": 65.47376921523951,
+        "volatility": 0.013477819138319897
+      },
+      "error": null
+    },
+    {
+      "ticker": "QQQ",
+      "sector": "ETF Nasdaq 100",
+      "score": 18,
+      "signal": "HOLD",
+      "lastClose": 718.3599853515625,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (741.36) por encima de SMA50 (726.68).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: -5.0%.",
+        "RSI 39: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 741.3635040283203,
+        "smaSlow": 726.68,
+        "smaTrend": 675.4294998168946,
+        "momentum": -0.05003970675037356,
+        "rsi": 38.82096742814786,
+        "volatility": 0.009679266603169874
+      },
+      "error": null
+    },
+    {
+      "ticker": "GOOGL",
+      "sector": "Comunicación",
+      "score": 9,
+      "signal": "HOLD",
+      "lastClose": 344.17999267578125,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (345.87) por encima de SMA50 (344.38).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: -0.7%.",
+        "RSI 53: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 345.87449951171874,
+        "smaSlow": 344.3779992675781,
+        "smaTrend": 341.0565493774414,
+        "momentum": -0.0066095435011792785,
+        "rsi": 53.33331669114109,
+        "volatility": 0.013635595081186384
+      },
+      "error": null
+    },
+    {
+      "ticker": "SPY",
+      "sector": "ETF S&P 500",
+      "score": 8,
+      "signal": "HOLD",
+      "lastClose": 766.47998046875,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (770.83) por encima de SMA50 (768.37).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: -1.1%.",
+        "RSI 52: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 770.8329956054688,
+        "smaSlow": 768.3661962890625,
+        "smaTrend": 725.4373992919922,
+        "momentum": -0.010776604464106014,
+        "rsi": 52.245828488564335,
+        "volatility": 0.005477616537659796
+      },
+      "error": null
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductores",
+      "score": 6,
+      "signal": "HOLD",
+      "lastClose": 217.08999633789062,
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (227.66) por encima de SMA50 (222.94).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: -9.1%.",
+        "RSI 39: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 227.66250076293946,
+        "smaSlow": 222.93920043945312,
+        "smaTrend": 203.1239500427246,
+        "momentum": -0.09129342032567839,
+        "rsi": 38.62919792576408,
+        "volatility": 0.014547044965123072
+      },
+      "error": null
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Salud",
+      "score": 5,
+      "signal": "HOLD",
+      "lastClose": 253.7899932861328,
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (260.61) por debajo de SMA50 (265.12).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 0.3%.",
+        "RSI 37: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 260.60850219726564,
+        "smaSlow": 265.1215997314453,
+        "smaTrend": 244.3506502532959,
+        "momentum": 0.0034001527507809474,
+        "rsi": 37.35315741491512,
+        "volatility": 0.016847177126142393
+      },
+      "error": null
+    },
+    {
+      "ticker": "AMZN",
+      "sector": "Consumo discrecional",
+      "score": 4,
+      "signal": "HOLD",
+      "lastClose": 262.45001220703125,
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (253.43) por debajo de SMA50 (256.84).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 4.4%.",
+        "RSI 64: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 253.4259994506836,
+        "smaSlow": 256.83539947509763,
+        "smaTrend": 242.8862498474121,
+        "momentum": 0.04395393229443273,
+        "rsi": 64.13978901865536,
+        "volatility": 0.018175652958365252
+      },
+      "error": null
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financiero",
+      "score": -17,
+      "signal": "HOLD",
+      "lastClose": 333.5299987792969,
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (334.73) por debajo de SMA50 (347.64).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 0.3%.",
+        "RSI 48: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 334.72749786376954,
+        "smaSlow": 347.6397998046875,
+        "smaTrend": 322.42315063476565,
+        "momentum": 0.003459876886667203,
+        "rsi": 47.74633163464713,
+        "volatility": 0.011536722312248978
+      },
+      "error": null
+    }
+  ],
+  "trades": [],
+  "macro": {
+    "vix": 18.440000534057617,
+    "vixClass": {
+      "level": "CALMA",
+      "note": "Dentro del rango histórico normal."
+    },
+    "vixTrend10d": 3.4300003051757812,
+    "yield10y": 5.136000156402588,
+    "yield3m": 4.074999809265137,
+    "yieldSpread": 1.0610003471374512,
+    "inverted": false,
+    "errors": []
+  },
+  "warnings": []
+}

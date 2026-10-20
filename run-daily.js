@@ -9,7 +9,7 @@ const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
 const { runDecisionEngine } = require('./lib/decide');
-const { buildReportMarkdown } = require('./lib/report');
+const { buildReportMarkdown, buildReportJson } = require('./lib/report');
 const { fetchMacroRiskPanel } = require('./lib/macroRisk');
 
 async function main() {
@@ -41,6 +41,8 @@ async function main() {
     macro,
   });
 
+  const json = buildReportJson({ date, state, evaluations, trades, warnings: allWarnings, snapshot, prices, macro });
+
   const reportsDir = path.join(__dirname, 'reports');
   fs.mkdirSync(reportsDir, { recursive: true });
   const reportPath = path.join(reportsDir, `${date}.md`);
@@ -48,6 +50,12 @@ async function main() {
 
   const latestPath = path.join(reportsDir, 'latest.md');
   fs.writeFileSync(latestPath, markdown);
+
+  const jsonPath = path.join(reportsDir, `${date}.json`);
+  fs.writeFileSync(jsonPath, JSON.stringify(json, null, 2));
+
+  const latestJsonPath = path.join(reportsDir, 'latest.json');
+  fs.writeFileSync(latestJsonPath, JSON.stringify(json, null, 2));
 
   console.log(`[invest-bot] Reporte generado en ${reportPath}`);
   console.log(`[invest-bot] Valor del portfolio: $${snapshot.totalValue.toFixed(2)} (${snapshot.pnlPct.toFixed(2)}%)`);
