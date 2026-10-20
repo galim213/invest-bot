@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "generatedAt": "2026-10-20T03:25:45.221Z",
+  "generatedAt": "2026-10-20T10:28:14.682Z",
   "universeSize": 503,
   "regimeBullish": true,
   "portfolio": {
@@ -9,8 +9,8 @@
     "totalValue": 999.5251687350217,
     "pnl": -0.4748312649783202,
     "pnlPct": -0.04748312649783202,
-    "dayPnl": null,
-    "dayPnlPct": null,
+    "dayPnl": 0,
+    "dayPnlPct": 0,
     "positions": [
       {
         "ticker": "MRNA",
@@ -59,6 +59,13 @@
     ]
   },
   "dailySnapshots": [
+    {
+      "date": "2026-10-20",
+      "totalValue": 999.5251687350217,
+      "cash": 49.86263877837996,
+      "pnl": -0.4748312649783202,
+      "pnlPct": -0.04748312649783202
+    },
     {
       "date": "2026-10-20",
       "totalValue": 999.5251687350217,
@@ -126,7 +133,7 @@
       "metrics": {
         "smaFast": 199.06979370117188,
         "smaSlow": 189.0673779296875,
-        "smaTrend": 189.07316165924072,
+        "smaTrend": 189.07316116333007,
         "momentum": 0.22445869701195514,
         "rsi": 81.00705542230055,
         "volatility": 0.04293187786731142
@@ -148,7 +155,7 @@
       "metrics": {
         "smaFast": 432.8875015258789,
         "smaSlow": 399.1984814453125,
-        "smaTrend": 276.86151290893554,
+        "smaTrend": 276.86151298522947,
         "momentum": 0.0927861238550276,
         "rsi": 82.59619088317491,
         "volatility": 0.02228522802992906
@@ -190,7 +197,7 @@
       "metrics": {
         "smaFast": 271.50600204467776,
         "smaSlow": 257.3343060302734,
-        "smaTrend": 191.02845024108888,
+        "smaTrend": 191.02845020294188,
         "momentum": 0.0772281865564027,
         "rsi": 78.77099915636578,
         "volatility": 0.017564474086331928
@@ -232,7 +239,7 @@
       "metrics": {
         "smaFast": 170.82247619628907,
         "smaSlow": 159.18473327636718,
-        "smaTrend": 134.24773082733154,
+        "smaTrend": 134.2477308654785,
         "momentum": -0.006636125596063859,
         "rsi": 41.55658330599329,
         "volatility": 0.01773599515647654
@@ -253,7 +260,7 @@
       "metrics": {
         "smaFast": 17.691000175476074,
         "smaSlow": 16.99310785293579,
-        "smaTrend": 15.461779017448425,
+        "smaTrend": 15.461778979301453,
         "momentum": 0.036322324583741745,
         "rsi": 52.05881362968283,
         "volatility": 0.01694506300241918
@@ -274,7 +281,7 @@
       "metrics": {
         "smaFast": 669.376498413086,
         "smaSlow": 638.162626953125,
-        "smaTrend": 547.0482713317871,
+        "smaTrend": 547.0482725524903,
         "momentum": 0.003871379926977149,
         "rsi": 49.92267482712653,
         "volatility": 0.017121975633854702
@@ -295,7 +302,7 @@
       "metrics": {
         "smaFast": 363.5290008544922,
         "smaSlow": 352.58738586425784,
-        "smaTrend": 351.6095231628418,
+        "smaTrend": 351.60952377319336,
         "momentum": 0.09781111052801093,
         "rsi": 74.8802585954798,
         "volatility": 0.011678671823351269
@@ -316,7 +323,7 @@
       "metrics": {
         "smaFast": 415.85999603271483,
         "smaSlow": 384.3307995605469,
-        "smaTrend": 274.0826605224609,
+        "smaTrend": 274.08265991210936,
         "momentum": 0.03333892503277694,
         "rsi": 68.28134036542293,
         "volatility": 0.025062352533582726
@@ -379,7 +386,7 @@
       "metrics": {
         "smaFast": 70.15399856567383,
         "smaSlow": 68.21140953063964,
-        "smaTrend": 66.33326730728149,
+        "smaTrend": 66.33326723098754,
         "momentum": 0.09148496369687115,
         "rsi": 73.99457829764546,
         "volatility": 0.011133705307430368
@@ -400,7 +407,7 @@
       "metrics": {
         "smaFast": 158.20743560791016,
         "smaSlow": 167.9988998413086,
-        "smaTrend": 159.55317001342775,
+        "smaTrend": 159.55317039489745,
         "momentum": -0.045771147205653645,
         "rsi": 35.387209330623875,
         "volatility": 0.012044932811341072
@@ -442,7 +449,7 @@
       "metrics": {
         "smaFast": 53.849622344970705,
         "smaSlow": 59.37385818481445,
-        "smaTrend": 66.09107610702515,
+        "smaTrend": 66.09107608795166,
         "momentum": 0.04343595925559516,
         "rsi": 86.36415990607311,
         "volatility": 0.014326001575066815
@@ -463,7 +470,7 @@
       "metrics": {
         "smaFast": 103.89650039672851,
         "smaSlow": 118.4516732788086,
-        "smaTrend": 152.18271671295167,
+        "smaTrend": 152.18271663665772,
         "momentum": -0.09322605251394647,
         "rsi": 13.944419837281899,
         "volatility": 0.018594912540401125
@@ -505,7 +512,7 @@
       "metrics": {
         "smaFast": 46.137767219543456,
         "smaSlow": 48.77374610900879,
-        "smaTrend": 48.71558486938476,
+        "smaTrend": 48.71558479309082,
         "momentum": -0.11442894241012867,
         "rsi": 15.5705798823641,
         "volatility": 0.017730023513795913
@@ -610,7 +617,7 @@
       "metrics": {
         "smaFast": 239.964998626709,
         "smaSlow": 254.10295989990234,
-        "smaTrend": 268.4236215209961,
+        "smaTrend": 268.4236220550537,
         "momentum": -0.18744576216936884,
         "rsi": 18.406099683621918,
         "volatility": 0.02347086811789177
@@ -673,7 +680,7 @@
       "metrics": {
         "smaFast": 138.15326080322265,
         "smaSlow": 144.30497650146484,
-        "smaTrend": 158.7179748535156,
+        "smaTrend": 158.7179746246338,
         "momentum": -0.08710490982581082,
         "rsi": 43.273312830716776,
         "volatility": 0.03491208098592014
@@ -701,63 +708,22 @@
       }
     }
   ],
-  "trades": [
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "MRNA",
-      "shares": 0.5509277638338386,
-      "price": 226.88999938964844,
-      "usdAmount": 125,
-      "fee": 0.0625,
-      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (203.87) por encima de SMA50 (158.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.7%. RSI 58: zona neutral."
-    },
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "VEEV",
-      "shares": 0.7540256536980251,
-      "price": 316.79998779296875,
-      "usdAmount": 238.87531788711962,
-      "fee": 0.11943765894355982,
-      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (287.59) por encima de SMA50 (270.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.8%. RSI 74: sobrecompra, riesgo de corrección."
-    },
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "MTD",
-      "shares": 0.1913385202749266,
-      "price": 1625.72998046875,
-      "usdAmount": 311.06476882947595,
-      "fee": 0.155532384414738,
-      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (1545.99) por encima de SMA50 (1447.55). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 67: zona neutral."
-    },
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "PSX",
-      "shares": 0.9455255714407377,
-      "price": 290.54998779296875,
-      "usdAmount": 274.7224432400461,
-      "fee": 0.13736122162002307,
-      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (271.51) por encima de SMA50 (257.33). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.7%. RSI 79: sobrecompra, riesgo de corrección."
-    }
-  ],
+  "trades": [],
   "macro": {
-    "vix": 18.440000534057617,
+    "vix": 18.639999389648438,
     "vixClass": {
       "level": "CALMA",
       "note": "Dentro del rango histórico normal."
     },
-    "vixTrend10d": 3.4300003051757812,
+    "vixTrend10d": 3.559999465942383,
     "yield10y": 5.136000156402588,
     "yield3m": 4.074999809265137,
     "yieldSpread": 1.0610003471374512,
     "inverted": false,
     "creditSpreadProxy20d": -0.0024833587171535915,
     "creditStress": false,
-    "dxy": 101.83899688720703,
-    "dxyTrend10d": -0.4010009765625,
+    "dxy": 101.86100006103516,
+    "dxyTrend10d": -0.378997802734375,
     "errors": []
   },
   "warnings": []
