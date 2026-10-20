@@ -22,6 +22,8 @@ const {
   buildOtherMarketsPanel,
   loadInvestmentTechniques,
   buildOtherMarketsMarkdown,
+  loadChileInvestingGuide,
+  buildChileInvestingGuideMarkdown,
 } = require('./lib/marketIntel');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
@@ -232,6 +234,25 @@ async function main() {
     if (otherMarkets.errors.length > 0) console.warn(`[invest-bot] WARN otros mercados: ${otherMarkets.errors.length} activos sin datos.`);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo generar el panel de otros mercados (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Guía de tributación/brokers para invertir desde Chile en EEUU — contenido
+  // estático, no se regenera con datos de mercado, solo se copia al reporte
+  // del día para que quede versionado junto con el resto.
+  try {
+    const guide = loadChileInvestingGuide();
+    const guideMd = buildChileInvestingGuideMarkdown({ date, guide });
+
+    fs.writeFileSync(path.join(reportsDir, `chile-guide-${date}.md`), guideMd);
+    fs.writeFileSync(path.join(reportsDir, 'chile-guide-latest.md'), guideMd);
+
+    const guideJson = { date, generatedAt: new Date().toISOString(), guide };
+    fs.writeFileSync(path.join(reportsDir, `chile-guide-${date}.json`), JSON.stringify(guideJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'chile-guide-latest.json'), JSON.stringify(guideJson, null, 2));
+
+    console.log(`[invest-bot] Guía de inversión desde Chile copiada al reporte (${guide.length} temas).`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo copiar la guía de inversión desde Chile (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   return { reportPath, combined, trades };
