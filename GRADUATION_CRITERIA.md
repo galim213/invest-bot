@@ -12,12 +12,26 @@ juicio. Esta lista se escribió **antes** de tener ningún resultado lindo que d
 
 ## Estado actual (2026-10-20): NO CUMPLE — por mucho
 
-La primera corrida de validación fuera de muestra (`reports/validation-multi-regime.json`)
-dio un resultado claro: la estrategia, ajustada sobre el período 2025-2026, **pierde contra
-comprar-y-mantener el benchmark en 3 de 4 regímenes históricos que nunca vio durante el
-ajuste**, y en el peor de ellos (selloff de fines de 2018) amplifica la pérdida en vez de
-protegerla (-26.9% vs -13.8% del benchmark). Solo le gana al benchmark en el período que
-ya se usó para tunear los parámetros — el patrón clásico de overfitting.
+La validación fuera de muestra (`reports/validation-multi-regime.json`), corrida con el
+universo **point-in-time real** del S&P 500 (no la lista de hoy aplicada hacia atrás — ver
+`lib/pointInTime.js`), da un resultado mixto pero igual de claro en la conclusión de fondo:
+
+| Régimen | Retorno | Benchmark | Diferencia |
+|---|---|---|---|
+| Selloff Q4 2018 | -17.6% | -13.8% | -3.8pts |
+| Crash COVID 2020 | -4.0% | -11.5% | **+7.5pts** |
+| Bajista 2022 | -20.9% | -14.3% | -6.6pts |
+| Recuperación 2023 | +16.6% | +24.8% | -8.2pts |
+| Reciente (ajustado acá) | +58.7% | +31.1% | +27.6pts |
+
+Le gana al benchmark en **2 de 5 regímenes**, uno de ellos (COVID) de forma genuina y
+buena. El otro "gana" es el período reciente, que es el que se usó para ajustar los
+parámetros — no cuenta como validación real. En el régimen más duro para probar gestión de
+riesgo (un bajista prolongado, 2022), pierde por casi 7 puntos.
+
+Conclusión honesta: **sigue sin ser un sistema con edge validado.** Mejoró respecto a la
+primera corrida (el universo point-in-time sacó el sesgo de "comprar cosas antes de que
+fueran investables"), pero 2 de 5 no es un resultado para confiar plata real — ni cerca.
 
 Conclusión honesta: **lo que tenemos hoy no es un sistema con edge validado, es una
 hipótesis que falló su primera prueba seria fuera de muestra.** Eso no significa que el

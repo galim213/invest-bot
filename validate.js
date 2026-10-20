@@ -7,6 +7,7 @@ const path = require('path');
 const { WATCHLIST, BENCHMARK_TICKER, STRATEGY } = require('./config');
 const marketData = require('./lib/marketData');
 const { runBacktest } = require('./lib/simulate');
+const { loadHistoricalMembership } = require('./lib/pointInTime');
 
 /**
  * Fase 2 — validación fuera de muestra: la estrategia se ajustó (thresholds,
@@ -50,6 +51,15 @@ async function main() {
   }
   const allDates = data.get(refTicker).candles.map((c) => c.date);
 
+  const pointInTime = loadHistoricalMembership();
+  if (pointInTime) {
+    console.log(
+      `[validate] Universo point-in-time cargado (hanshof/sp500_constituents): ${pointInTime.rowCount} cambios de composición, cobertura ${pointInTime.coverage.from} a ${pointInTime.coverage.to}.`
+    );
+  } else {
+    console.warn('[validate] No se encontró sp500_historical_components.csv — se usa el universo actual para todo el período (sesgo de reconstitución sin mitigar).');
+  }
+
   const results = [];
 
   for (const regime of REGIMES) {
@@ -69,7 +79,7 @@ async function main() {
     }
 
     console.log(`[validate] Simulando "${regime.name}" (${simDates[0]} a ${simDates.at(-1)}, ${simDates.length} días)...`);
-    const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles });
+    const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime });
 
     results.push({ regime: regime.name, note: regime.note, ...result });
 
@@ -103,7 +113,10 @@ async function main() {
     JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
-        note: 'Universo = S&P 500 actual (503 tickers de 2026) aplicado retroactivamente a períodos viejos. Sesgo de reconstitución de índice todavía presente — ver README. Parámetros de la estrategia NO se re-ajustaron para estos períodos (fuera de muestra real, excepto el último régimen).',
+        pointInTimeUniverse: !!pointInTime,
+        note: pointInTime
+          ? 'Universo point-in-time real (hanshof/sp500_constituents, MIT) — un ticker solo se puede COMPRAR si realmente integraba el S&P 500 en esa fecha. Limitación que sigue sin resolver: no hay precios confiables de empresas delistadas/adquiridas (Yahoo Finance no las tiene), así que el sesgo de supervivencia se reduce pero no se elimina. Parámetros de la estrategia NO se re-ajustaron para estos períodos (fuera de muestra real, excepto el último régimen).'
+          : 'Universo = S&P 500 actual aplicado retroactivamente a períodos viejos (sin archivo point-in-time disponible). Sesgo de reconstitución de índice sin mitigar.',
         regimes: results,
         summary: { beatBenchmark, totalWithBenchmark },
       },

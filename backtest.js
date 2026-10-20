@@ -7,6 +7,7 @@ const path = require('path');
 const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, STARTING_CAPITAL } = require('./config');
 const marketData = require('./lib/marketData');
 const { runBacktest } = require('./lib/simulate');
+const { loadHistoricalMembership } = require('./lib/pointInTime');
 
 // Cuántos días hábiles de atrás simular. Necesitamos STRATEGY.smaTrend (200) días
 // previos de historia como "calentamiento" para cada día simulado, así que pedimos
@@ -46,7 +47,8 @@ async function main() {
     `[backtest] Simulando ${simDates.length} días hábiles (${simDates[0]} a ${simDates.at(-1)}) con $${STARTING_CAPITAL} iniciales.`
   );
 
-  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles });
+  const pointInTime = loadHistoricalMembership();
+  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime });
 
   console.log('');
   console.log('=== Resultado del backtest ===');
