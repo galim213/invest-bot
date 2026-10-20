@@ -1,78 +1,258 @@
 {
-  "startingCapital": 1000,
-  "cash": 49.86263877837996,
-  "positions": {
-    "MRNA": {
-      "shares": 0.5509277638338386,
-      "avgCost": 226.88999938964844,
-      "openedAt": "2026-10-20"
+  "core": {
+    "startingCapital": 700,
+    "cash": 0,
+    "positions": {
+      "JNJ": {
+        "shares": 0.27260690214491823,
+        "avgCost": 256.7799987792969,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "PG": {
+        "shares": 0.44091712283969575,
+        "avgCost": 158.75999450683594,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "KO": {
+        "shares": 0.7481030269135719,
+        "avgCost": 93.56999969482422,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "XOM": {
+        "shares": 0.3889537118697727,
+        "avgCost": 179.97000122070312,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "CVX": {
+        "shares": 0.30898256039311434,
+        "avgCost": 226.5500030517578,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "JPM": {
+        "shares": 0.2097189773383804,
+        "avgCost": 333.7799987792969,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "MSFT": {
+        "shares": 0.1313715120335494,
+        "avgCost": 532.8400268554688,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "V": {
+        "shares": 0.17317516825003132,
+        "avgCost": 404.2149963378906,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "LMT": {
+        "shares": 0.12719756225375076,
+        "avgCost": 550.3250122070312,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      },
+      "TXN": {
+        "shares": 0.2545926046046753,
+        "avgCost": 273.57501220703125,
+        "openedAt": "2026-10-20",
+        "lastDividendCheck": "2026-10-20"
+      }
     },
-    "VEEV": {
-      "shares": 0.7540256536980251,
-      "avgCost": 316.79998779296875,
-      "openedAt": "2026-10-20"
-    },
-    "MTD": {
-      "shares": 0.1913385202749266,
-      "avgCost": 1625.72998046875,
-      "openedAt": "2026-10-20"
-    },
-    "PSX": {
-      "shares": 0.9455255714407377,
-      "avgCost": 290.54998779296875,
-      "openedAt": "2026-10-20"
-    }
+    "history": [
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "JNJ",
+        "shares": 0.27260690214491823,
+        "price": 256.7799987792969,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "PG",
+        "shares": 0.44091712283969575,
+        "price": 158.75999450683594,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "KO",
+        "shares": 0.7481030269135719,
+        "price": 93.56999969482422,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "XOM",
+        "shares": 0.3889537118697727,
+        "price": 179.97000122070312,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "CVX",
+        "shares": 0.30898256039311434,
+        "price": 226.5500030517578,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "JPM",
+        "shares": 0.2097189773383804,
+        "price": 333.7799987792969,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "MSFT",
+        "shares": 0.1313715120335494,
+        "price": 532.8400268554688,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "V",
+        "shares": 0.17317516825003132,
+        "price": 404.2149963378906,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "LMT",
+        "shares": 0.12719756225375076,
+        "price": 550.3250122070312,
+        "usdAmount": 70,
+        "fee": 0.035,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "TXN",
+        "shares": 0.2545926046046753,
+        "price": 273.57501220703125,
+        "usdAmount": 69.65017491254393,
+        "fee": 0.03482508745627197,
+        "reason": "Compra inicial del core: 10.0% del sleeve de largo plazo en partes iguales."
+      }
+    ],
+    "dailySnapshots": [
+      {
+        "date": "2026-10-20",
+        "totalValue": 699.6501749125439,
+        "cash": 0,
+        "pnl": -0.34982508745611085,
+        "pnlPct": -0.049975012493730125
+      }
+    ],
+    "createdAt": "2026-10-20T13:31:00.841Z"
   },
-  "history": [
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "MRNA",
-      "shares": 0.5509277638338386,
-      "price": 226.88999938964844,
-      "usdAmount": 125,
-      "fee": 0.0625,
-      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (203.87) por encima de SMA50 (158.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.7%. RSI 58: zona neutral."
+  "satellite": {
+    "startingCapital": 300,
+    "cash": 14.95614968662322,
+    "positions": {
+      "MRNA": {
+        "shares": 0.1636911283751138,
+        "avgCost": 229.08999633789062,
+        "openedAt": "2026-10-20"
+      },
+      "VEEV": {
+        "shares": 0.22647487249389997,
+        "avgCost": 318.4403076171875,
+        "openedAt": "2026-10-20"
+      },
+      "TMO": {
+        "shares": 0.12831782403223715,
+        "avgCost": 682.5399780273438,
+        "openedAt": "2026-10-20"
+      },
+      "PSX": {
+        "shares": 0.2998158123916253,
+        "avgCost": 292.5150146484375,
+        "openedAt": "2026-10-20"
+      }
     },
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "VEEV",
-      "shares": 0.7540256536980251,
-      "price": 316.79998779296875,
-      "usdAmount": 238.87531788711962,
-      "fee": 0.11943765894355982,
-      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (287.59) por encima de SMA50 (270.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.8%. RSI 74: sobrecompra, riesgo de corrección."
-    },
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "MTD",
-      "shares": 0.1913385202749266,
-      "price": 1625.72998046875,
-      "usdAmount": 311.06476882947595,
-      "fee": 0.155532384414738,
-      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (1545.99) por encima de SMA50 (1447.55). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 67: zona neutral."
-    },
-    {
-      "date": "2026-10-20",
-      "action": "BUY",
-      "ticker": "PSX",
-      "shares": 0.9455255714407377,
-      "price": 290.54998779296875,
-      "usdAmount": 274.7224432400461,
-      "fee": 0.13736122162002307,
-      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (271.51) por encima de SMA50 (257.33). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.7%. RSI 79: sobrecompra, riesgo de corrección."
-    }
-  ],
-  "dailySnapshots": [
-    {
-      "date": "2026-10-20",
-      "totalValue": 999.5251687350217,
-      "cash": 49.86263877837996,
-      "pnl": -0.4748312649783202,
-      "pnlPct": -0.04748312649783202
-    }
-  ],
-  "createdAt": "2026-10-20T12:24:54.365Z"
+    "history": [
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "MRNA",
+        "shares": 0.1636911283751138,
+        "price": 229.08999633789062,
+        "usdAmount": 37.5,
+        "fee": 0.01875,
+        "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (206.20) por encima de SMA50 (161.67). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 22.2%. RSI 64: zona neutral."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "VEEV",
+        "shares": 0.22647487249389997,
+        "price": 318.4403076171875,
+        "usdAmount": 72.11872806452082,
+        "fee": 0.03605936403226041,
+        "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (290.47) por encima de SMA50 (272.22). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 12.3%. RSI 72: sobrecompra, riesgo de corrección."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "TMO",
+        "shares": 0.12831782403223715,
+        "price": 682.5399780273438,
+        "usdAmount": 87.5820447954797,
+        "fee": 0.043791022397739854,
+        "reason": "Señal técnica de compra (score 59): Tendencia de corto plazo alcista: SMA20 (670.58) por encima de SMA50 (639.83). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 4.0%. RSI 53: zona neutral."
+      },
+      {
+        "date": "2026-10-20",
+        "action": "BUY",
+        "ticker": "PSX",
+        "shares": 0.2998158123916253,
+        "price": 292.5150146484375,
+        "usdAmount": 87.70062675356947,
+        "fee": 0.04385031337678474,
+        "reason": "Señal técnica de compra (score 58): Tendencia de corto plazo alcista: SMA20 (273.29) por encima de SMA50 (258.90). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.4%. RSI 78: sobrecompra, riesgo de corrección."
+      }
+    ],
+    "dailySnapshots": [
+      {
+        "date": "2026-10-20",
+        "totalValue": 299.8575493001932,
+        "cash": 14.95614968662322,
+        "pnl": -0.14245069980677272,
+        "pnlPct": -0.047483566602257575
+      }
+    ],
+    "createdAt": "2026-10-20T13:31:00.841Z"
+  }
 }

@@ -1,23 +1,34 @@
 # invest-bot — paper trading simulado (educativo)
 
-Simula un corredor de bolsa operando con **$1000 USD ficticios** sobre el **S&P 500 completo**
-(~503 tickers, universo objetivo — no una lista elegida a mano). No es asesoría financiera
-real, no ejecuta órdenes en ningún broker de verdad, y las señales pueden estar equivocadas.
+Simula un corredor de bolsa operando con **$1000 USD ficticios**, divididos en dos
+sub-portfolios con lógica distinta (estructura **core-satellite**, como arma una cartera
+real alguien que quiere estabilidad y aprendizaje a la vez):
+
+- **🏛️ Core (70%, $700)**: compra única y diversificada en 10 empresas de calidad con
+  dividendo real (JNJ, PG, KO, XOM, CVX, JPM, MSFT, V, LMT, TXN) — se compra una vez y se
+  mantiene, acreditando dividendos reales cuando se pagan. Lógica de largo plazo: ser
+  dueño de negocios reales y dejar que el tiempo/la composición trabajen.
+- **🛰️ Satellite (30%, $300)**: el motor técnico multi-factor sobre el **S&P 500 completo**
+  (~503 tickers) — señales técnicas (SMA20/50, SMA200, momentum, RSI), gestión de riesgo
+  (stop-loss, toma de ganancias, límites de posición, costo de transacción simulado). Es
+  la porción de corto/mediano plazo, de mayor riesgo y donde se experimenta.
+
+No es asesoría financiera real, no ejecuta órdenes en ningún broker de verdad.
 
 **Antes de pensar en plata real, leé [`GRADUATION_CRITERIA.md`](./GRADUATION_CRITERIA.md).**
-Estado actual: **no cumple los criterios** — la validación fuera de muestra con universo
-point-in-time real (`reports/validation-multi-regime.json`) le gana al benchmark en solo
-2 de 5 regímenes históricos probados.
+El core no necesita "graduarse" (su lógica es la más respaldada estadísticamente que
+existe para largo plazo). El satellite sí: **no cumple los criterios todavía** — la
+validación fuera de muestra con universo point-in-time real
+(`reports/validation-multi-regime.json`) le gana al benchmark en solo 2 de 5 regímenes
+históricos probados.
 
 Este repo es operado por una rutina automática en la nube (al cierre de Wall Street, días
 hábiles) que:
-1. Corre el motor cuantitativo (`npm run invest:daily`) — señales técnicas multi-factor
-   (SMA20/50, SMA200, momentum, RSI sobre precio ajustado por dividendos) sobre las 503
-   acciones del S&P 500 + panel de riesgo macro (VIX, curva de rendimientos, spread de
-   crédito proxy, índice dólar) + ejecución de trades simulados con gestión de riesgo
-   (stop-loss, toma de ganancias, límites de posición, costo de transacción simulado).
-2. Busca noticias financieras reales del día para las señales destacadas y el panorama
-   macro, y agrega una sección de análisis cualitativo al reporte.
+1. Corre el motor cuantitativo (`npm run invest:daily`) — inicializa el core si todavía no
+   compró nada, acredita dividendos, corre el satellite sobre el S&P 500 completo, y genera
+   el reporte combinado.
+2. Busca noticias financieras reales del día para las señales destacadas del satellite y el
+   panorama macro, y agrega una sección de análisis cualitativo al reporte.
 3. Genera el informe de mercado educativo (`reports/market-intel-<fecha>.md`) — rotación
    sectorial (13 ETFs, incluyendo energía, semiconductores y defensa) + fundamentales en
    vivo de 34 empresas de calidad curadas a mano, con el porqué de cada una.
@@ -36,7 +47,8 @@ hábiles) que:
 - `lib/metrics.js` — Sharpe, Sortino, beta, max drawdown
 - `lib/strategy.js` — scoring multi-factor por ticker (-100 a 100) → BUY/SELL/HOLD
 - `lib/decide.js` — motor de decisión (señales + gestión de riesgo + estado del portfolio)
-- `lib/portfolio.js` — estado persistente (cash, posiciones, historial, costo de transacción)
+- `lib/portfolio.js` — funciones genéricas de un sub-portfolio (cash, posiciones, historial, costo de transacción, dividendos)
+- `lib/sleeves.js` — orquesta los dos sleeves (core + satellite): inicializa el core con compra única, acredita dividendos, persiste `data/portfolio.json` como `{core, satellite}`
 - `lib/macroRisk.js` — panel de riesgo macro (VIX, curva de rendimientos, spread de crédito, DXY)
 - `lib/fundamentals.js` — fundamentales en vivo (P/E, márgenes, ROE, dividendos) vía el endpoint no oficial de Yahoo Finance (cookie+crumb, igual que `yfinance`) — requiere `fc.yahoo.com` además de `query1.finance.yahoo.com` en el allowlist de red (ver Limitaciones)
 - `qualityCompanies.json` — base curada de 34 empresas "de calidad" (energía, semiconductores, defensa, y otros sectores rentables) con análisis cualitativo del moat escrito a mano

@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, USE_FUNDAMENTAL_TILT_IN_PRODUCTION } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION } = require('./config');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -14,67 +14,99 @@ const { fetchMacroRiskPanel } = require('./lib/macroRisk');
 const { sma } = require('./lib/indicators');
 const { buildSectorRotation, buildQualityCompaniesReport, buildMarketIntelMarkdown } = require('./lib/marketIntel');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
+const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 
 async function main() {
   const date = new Date().toISOString().slice(0, 10);
   const tickers = WATCHLIST.map((w) => w.ticker);
 
-  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers...`);
-  const [{ data, errors }, macro, benchmarkData] = await Promise.all([
+  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos)...`);
+  const [{ data, errors }, macro, benchmarkData, coreFetch] = await Promise.all([
     marketData.fetchAll(tickers),
     fetchMacroRiskPanel(),
     marketData.fetchDailyCandles(BENCHMARK_TICKER),
+    marketData.fetchAll(CORE_HOLDINGS, { range: '2y', includeDividends: true }),
   ]);
   for (const e of errors) console.warn(`[invest-bot] WARN: ${e.ticker}: ${e.message}`);
+  for (const e of coreFetch.errors) console.warn(`[invest-bot] WARN (core): ${e.ticker}: ${e.message}`);
 
-  // Cache de fundamentales (lectura de disco, sin red — se refresca a mano con
-  // refresh-fundamentals-cache.js porque ese endpoint no funciona en la nube).
-  // Apagado por default en producción: testeado en backtest.js --fundamentals,
-  // empeoró en ventanas cortas (60/120d) y solo "mejoró" en la ventana larga
-  // (250d, contaminada por look-ahead) — mismo patrón sospechoso que el filtro
-  // de régimen ya descartado. Ver USE_FUNDAMENTAL_TILT_IN_PRODUCTION en config.js.
+  // --- Sleeve CORE (70%, largo plazo, dividendos, buy & hold) ---
+  const { core, satellite } = loadPortfolio();
+
+  const corePrices = new Map();
+  const coreDividends = new Map();
+  for (const [ticker, d] of coreFetch.data.entries()) {
+    corePrices.set(ticker, d.candles.at(-1)?.close ?? null);
+    coreDividends.set(ticker, d.dividends || []);
+  }
+
+  const coreInitTrades = initCoreIfEmpty(core, corePrices, date);
+  const dividendsCredited = applyDividends(core, coreDividends, date);
+  const coreSnapshot = portfolio.snapshot(core, { date, pricesByTicker: corePrices });
+
+  if (coreInitTrades.length > 0) {
+    console.log(`[invest-bot] Core inicializado: ${coreInitTrades.length} posiciones compradas con $${core.startingCapital.toFixed(2)}.`);
+  }
+  if (dividendsCredited.length > 0) {
+    const total = dividendsCredited.reduce((a, d) => a + d.usdAmount, 0);
+    console.log(`[invest-bot] Dividendos acreditados hoy: ${dividendsCredited.length} pagos, $${total.toFixed(2)} total.`);
+  }
+
+  // --- Sleeve SATELLITE (30%, técnico, el motor que ya teníamos) ---
   const quality = loadQualityScores();
   if (quality && USE_FUNDAMENTAL_TILT_IN_PRODUCTION) {
     console.log(`[invest-bot] Cache de fundamentales: ${quality.count} tickers (generado ${quality.generatedAt}) — tilt ACTIVO.`);
   } else if (quality) {
     console.log(`[invest-bot] Cache de fundamentales disponible (${quality.count} tickers) pero el tilt está APAGADO en producción (no validado) — score 100% técnico.`);
-  } else {
-    console.log('[invest-bot] Sin cache de fundamentales — el score es 100% técnico hoy.');
   }
 
   const evaluations = strategy.evaluateAll(data, quality && USE_FUNDAMENTAL_TILT_IN_PRODUCTION ? quality.scores : null);
 
   // Régimen de mercado (benchmark vs su propia SMA200): se calcula y se muestra
   // como contexto informativo, pero NO se usa para bloquear compras — lo probamos
-  // en validate.js (ver reports/validation-multi-regime.json) y empeoró el
-  // resultado fuera de muestra en 3 de 4 regímenes probados (solo mejoraba en el
-  // período ya usado para ajustar parámetros, señal clásica de overfitting).
+  // en validate.js y empeoró el resultado fuera de muestra (ver GRADUATION_CRITERIA.md).
   const benchAdjCloses = benchmarkData.candles.map((c) => c.adjClose ?? c.close);
   const benchSma200 = sma(benchAdjCloses, STRATEGY.smaTrend);
   const regimeBullish = benchSma200 === null ? true : benchAdjCloses.at(-1) >= benchSma200;
   console.log(`[invest-bot] Régimen de mercado (${BENCHMARK_TICKER} vs SMA200, solo informativo): ${regimeBullish ? 'ALCISTA' : 'BAJISTA'}`);
 
-  const state = portfolio.load();
-  const { trades, warnings, prices } = runDecisionEngine(state, evaluations, date);
+  const { trades, warnings, prices } = runDecisionEngine(satellite, evaluations, date);
+  const satelliteSnapshot = portfolio.snapshot(satellite, { date, pricesByTicker: prices });
 
-  const snapshot = portfolio.snapshot(state, { date, pricesByTicker: prices });
-  portfolio.save(state);
+  savePortfolio({ core, satellite });
 
-  const allWarnings = [...errors.map((e) => `Sin datos de ${e.ticker}: ${e.message}`), ...warnings];
+  const allWarnings = [
+    ...errors.map((e) => `Sin datos de ${e.ticker}: ${e.message}`),
+    ...coreFetch.errors.map((e) => `Sin datos de ${e.ticker} (core): ${e.message}`),
+    ...warnings,
+  ];
+
+  const combined = {
+    totalValue: coreSnapshot.totalValue + satelliteSnapshot.totalValue,
+    startingCapital: core.startingCapital + satellite.startingCapital,
+  };
+  combined.pnl = combined.totalValue - combined.startingCapital;
+  combined.pnlPct = (combined.pnl / combined.startingCapital) * 100;
 
   const markdown = buildReportMarkdown({
     date,
-    state,
-    evaluations,
-    trades,
+    core: { state: core, snapshot: coreSnapshot, trades: coreInitTrades, dividends: dividendsCredited, prices: corePrices },
+    satellite: { state: satellite, snapshot: satelliteSnapshot, evaluations, trades, prices },
+    combined,
     warnings: allWarnings,
-    snapshot,
-    prices,
     macro,
     regimeBullish,
   });
 
-  const json = buildReportJson({ date, state, evaluations, trades, warnings: allWarnings, snapshot, prices, macro, regimeBullish });
+  const json = buildReportJson({
+    date,
+    core: { state: core, snapshot: coreSnapshot, trades: coreInitTrades, dividends: dividendsCredited, prices: corePrices },
+    satellite: { state: satellite, snapshot: satelliteSnapshot, evaluations, trades, prices },
+    combined,
+    warnings: allWarnings,
+    macro,
+    regimeBullish,
+  });
 
   const reportsDir = path.join(__dirname, 'reports');
   fs.mkdirSync(reportsDir, { recursive: true });
@@ -91,8 +123,10 @@ async function main() {
   fs.writeFileSync(latestJsonPath, JSON.stringify(json, null, 2));
 
   console.log(`[invest-bot] Reporte generado en ${reportPath}`);
-  console.log(`[invest-bot] Valor del portfolio: $${snapshot.totalValue.toFixed(2)} (${snapshot.pnlPct.toFixed(2)}%)`);
-  console.log(`[invest-bot] Trades ejecutados hoy: ${trades.length}`);
+  console.log(
+    `[invest-bot] Total: $${combined.totalValue.toFixed(2)} (${combined.pnlPct.toFixed(2)}%) — Core: $${coreSnapshot.totalValue.toFixed(2)} | Satellite: $${satelliteSnapshot.totalValue.toFixed(2)}`
+  );
+  console.log(`[invest-bot] Trades satellite hoy: ${trades.length}`);
 
   // Informe de mercado (sectores + empresas de calidad educativo) — no afecta
   // las decisiones de trading, es contexto/aprendizaje aparte. Si Yahoo bloquea
@@ -119,7 +153,7 @@ async function main() {
     console.warn(`[invest-bot] WARN: no se pudo generar el informe de mercado (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
-  return { reportPath, snapshot, trades };
+  return { reportPath, combined, trades };
 }
 
 if (require.main === module) {

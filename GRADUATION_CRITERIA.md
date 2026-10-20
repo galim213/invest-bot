@@ -4,6 +4,24 @@ Esto define, en frío y antes de que haya presión de "quiero invertir ya", qué
 pasar para que valga la pena considerar plata real en vez de simulada. Mientras no se
 cumplan estos puntos, la respuesta por defecto es no.
 
+## Estructura actual: core-satellite (desde 2026-10-20)
+
+El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo distintos:
+
+- **Core (70%, $700)**: compra única y diversificada en 10 empresas de calidad con
+  dividendo real (JNJ, PG, KO, XOM, CVX, JPM, MSFT, V, LMT, TXN), repartida en partes
+  iguales. No se tradea con señales técnicas — es la porción de "ser dueño y aguantar"
+  (ver la explicación de por qué esto es lo más confiable en el historial de la
+  conversación). Acredita dividendos reales cuando se pagan.
+- **Satellite (30%, $300)**: el motor técnico multi-factor de siempre, sobre el S&P 500
+  completo. Es la porción donde se busca ganancia de corto/mediano plazo — y es la que
+  está sujeta a TODOS los criterios de este documento, porque es la que todavía no tiene
+  edge comprobado.
+
+**El core no necesita "graduarse"** en el mismo sentido — su lógica (diversificación +
+tiempo + dividendos) es la aproximación más respaldada estadísticamente que existe para
+inversión de largo plazo, no una hipótesis a validar con backtests como el satellite.
+
 ## Por qué existe este documento
 
 Es mucho más fácil decidir con la cabeza fría ahora que decidir el día que el portfolio

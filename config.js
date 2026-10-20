@@ -82,6 +82,20 @@ const SECTOR_ETFS = [
   { ticker: 'XLC', sector: 'Comunicaciones' },
 ];
 
+// --- Estructura core-satellite (2026-10-20) ---
+// En vez de un solo portfolio, se divide en dos sub-portfolios con reglas
+// distintas — así como invierte la mayoría de la gente que arma una
+// estrategia real: una base grande que compone sola a largo plazo, y una
+// porción chica donde se asume más riesgo buscando ganancias de corto plazo.
+const CORE_ALLOCATION_PCT = 0.7; // 70% del capital — largo plazo, dividendos, buy&hold
+const SATELLITE_ALLOCATION_PCT = 0.3; // 30% — el motor técnico que ya tenemos, más activo
+
+// Core: empresas de calidad con dividendo real y moat sólido, diversificadas por
+// sector (salud, consumo básico x2, energía x2, financiero x2, tecnología, defensa,
+// semiconductores) — subconjunto de qualityCompanies.json. Se compran UNA vez, en
+// partes iguales, y se mantienen — no se tradea con señales técnicas diarias.
+const CORE_HOLDINGS = ['JNJ', 'PG', 'KO', 'XOM', 'CVX', 'JPM', 'MSFT', 'V', 'LMT', 'TXN'];
+
 module.exports = {
   STARTING_CAPITAL,
   WATCHLIST,
@@ -91,4 +105,7 @@ module.exports = {
   FETCH_CONCURRENCY,
   SECTOR_ETFS,
   USE_FUNDAMENTAL_TILT_IN_PRODUCTION,
+  CORE_ALLOCATION_PCT,
+  SATELLITE_ALLOCATION_PCT,
+  CORE_HOLDINGS,
 };
