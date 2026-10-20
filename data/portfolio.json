@@ -1,10 +1,25 @@
 {
   "startingCapital": 1000,
-  "cash": 625,
+  "cash": 49.86263877837996,
   "positions": {
-    "AAPL": {
-      "shares": 1.091830225731101,
-      "avgCost": 343.4599914550781,
+    "MRNA": {
+      "shares": 0.5509277638338386,
+      "avgCost": 226.88999938964844,
+      "openedAt": "2026-10-20"
+    },
+    "VEEV": {
+      "shares": 0.7540256536980251,
+      "avgCost": 316.79998779296875,
+      "openedAt": "2026-10-20"
+    },
+    "MTD": {
+      "shares": 0.1913385202749266,
+      "avgCost": 1625.72998046875,
+      "openedAt": "2026-10-20"
+    },
+    "PSX": {
+      "shares": 0.9455255714407377,
+      "avgCost": 290.54998779296875,
       "openedAt": "2026-10-20"
     }
   },
@@ -12,28 +27,52 @@
     {
       "date": "2026-10-20",
       "action": "BUY",
-      "ticker": "AAPL",
-      "shares": 1.091830225731101,
-      "price": 343.4599914550781,
-      "usdAmount": 375,
-      "reason": "Señal técnica de compra (score 44): Tendencia de corto plazo alcista: SMA20 (337.42) por encima de SMA50 (325.70). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 2.9%. RSI 56: zona neutral."
+      "ticker": "MRNA",
+      "shares": 0.5509277638338386,
+      "price": 226.88999938964844,
+      "usdAmount": 125,
+      "fee": 0.0625,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (203.87) por encima de SMA50 (158.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.7%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-10-20",
+      "action": "BUY",
+      "ticker": "VEEV",
+      "shares": 0.7540256536980251,
+      "price": 316.79998779296875,
+      "usdAmount": 238.87531788711962,
+      "fee": 0.11943765894355982,
+      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (287.59) por encima de SMA50 (270.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.8%. RSI 74: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-10-20",
+      "action": "BUY",
+      "ticker": "MTD",
+      "shares": 0.1913385202749266,
+      "price": 1625.72998046875,
+      "usdAmount": 311.06476882947595,
+      "fee": 0.155532384414738,
+      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (1545.99) por encima de SMA50 (1447.55). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 67: zona neutral."
+    },
+    {
+      "date": "2026-10-20",
+      "action": "BUY",
+      "ticker": "PSX",
+      "shares": 0.9455255714407377,
+      "price": 290.54998779296875,
+      "usdAmount": 274.7224432400461,
+      "fee": 0.13736122162002307,
+      "reason": "Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (271.51) por encima de SMA50 (257.33). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.7%. RSI 79: sobrecompra, riesgo de corrección."
     }
   ],
   "dailySnapshots": [
     {
       "date": "2026-10-20",
-      "totalValue": 1000,
-      "cash": 625,
-      "pnl": 0,
-      "pnlPct": 0
-    },
-    {
-      "date": "2026-10-20",
-      "totalValue": 999.432260277825,
-      "cash": 625,
-      "pnl": -0.5677397221750198,
-      "pnlPct": -0.05677397221750198
+      "totalValue": 999.5251687350217,
+      "cash": 49.86263877837996,
+      "pnl": -0.4748312649783202,
+      "pnlPct": -0.04748312649783202
     }
   ],
-  "createdAt": "2026-10-20T01:25:28.276Z"
+  "createdAt": "2026-10-20T02:00:59.348Z"
 }

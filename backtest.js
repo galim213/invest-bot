@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, STRATEGY, STARTING_CAPITAL } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, STARTING_CAPITAL } = require('./config');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -28,9 +28,13 @@ function maxDrawdown(snapshots) {
 
 async function main() {
   const tickers = WATCHLIST.map((w) => w.ticker);
-  console.log(`[backtest] Descargando 2 años de historia para ${tickers.length} tickers...`);
-  const { data, errors } = await marketData.fetchAll(tickers, { range: '2y' });
+  console.log(`[backtest] Descargando 2 años de historia para ${tickers.length} tickers del universo + benchmark...`);
+  const [{ data, errors }, benchmarkData] = await Promise.all([
+    marketData.fetchAll(tickers, { range: '2y' }),
+    marketData.fetchDailyCandles(BENCHMARK_TICKER, { range: '2y' }),
+  ]);
   for (const e of errors) console.warn(`[backtest] WARN: ${e.ticker}: ${e.message}`);
+  console.log(`[backtest] Datos obtenidos para ${data.size}/${tickers.length} tickers (${errors.length} fallaron).`);
 
   if (data.size === 0) throw new Error('No se pudo descargar historia para ningún ticker.');
 
@@ -56,16 +60,27 @@ async function main() {
     `[backtest] Simulando ${simDates.length} días hábiles (${simDates[0]} a ${simDates.at(-1)}) con $${STARTING_CAPITAL} iniciales.`
   );
 
+  // Índice fecha -> posición en el array de candles, precalculado una sola vez
+  // por ticker (evita un findIndex O(n) por ticker en cada día simulado — con
+  // ~500 tickers x días esto importa).
+  const dateIndexByTicker = new Map();
+  for (const [ticker, d] of data.entries()) {
+    const idx = new Map();
+    d.candles.forEach((c, i) => idx.set(c.date, i));
+    dateIndexByTicker.set(ticker, idx);
+  }
+
   const state = portfolio.initialState();
   const tradeLog = [];
+  let processedDays = 0;
 
   for (const date of simDates) {
     // Para cada ticker, recortamos las candles hasta `date` (inclusive) para simular
     // "lo que se sabía ese día" — sin mirar al futuro.
     const slicedData = new Map();
     for (const [ticker, d] of data.entries()) {
-      const idx = d.candles.findIndex((c) => c.date === date);
-      const upTo = idx === -1 ? d.candles.filter((c) => c.date <= date) : d.candles.slice(0, idx + 1);
+      const idx = dateIndexByTicker.get(ticker).get(date);
+      const upTo = idx != null ? d.candles.slice(0, idx + 1) : d.candles.filter((c) => c.date <= date);
       if (upTo.length > 0) slicedData.set(ticker, { ...d, candles: upTo });
     }
 
@@ -75,16 +90,18 @@ async function main() {
 
     const prices = new Map(evaluations.filter((e) => e.lastClose != null).map((e) => [e.ticker, e.lastClose]));
     portfolio.snapshot(state, { date, pricesByTicker: prices });
+
+    processedDays++;
+    if (processedDays % 20 === 0) console.log(`[backtest] ...${processedDays}/${simDates.length} días simulados`);
   }
 
-  // Benchmark pasivo: comprar y mantener SPY (si está en el watchlist) durante el mismo período.
+  // Benchmark pasivo: comprar y mantener el benchmark (SPY) durante el mismo período.
   let benchmark = null;
-  const spy = data.get('SPY');
-  if (spy) {
-    const startClose = spy.candles.find((c) => c.date === simDates[0])?.close;
-    const endClose = spy.candles.find((c) => c.date === simDates.at(-1))?.close;
+  if (benchmarkData) {
+    const startClose = benchmarkData.candles.find((c) => c.date === simDates[0])?.close;
+    const endClose = benchmarkData.candles.find((c) => c.date === simDates.at(-1))?.close;
     if (startClose && endClose) {
-      benchmark = { ticker: 'SPY', returnPct: ((endClose - startClose) / startClose) * 100 };
+      benchmark = { ticker: BENCHMARK_TICKER, returnPct: ((endClose - startClose) / startClose) * 100 };
     }
   }
 

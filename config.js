@@ -1,22 +1,19 @@
 'use strict';
 
+const fs = require('fs');
+const path = require('path');
+
 // Capital inicial ficticio de la simulación.
 const STARTING_CAPITAL = 1000;
 
-// Watchlist diversificada: mega-caps de distintos sectores + 2 ETFs de referencia.
-// (ticker, sector, tipo) — se usa solo para contexto en el reporte.
-const WATCHLIST = [
-  { ticker: 'AAPL', sector: 'Tecnología', type: 'stock' },
-  { ticker: 'MSFT', sector: 'Tecnología', type: 'stock' },
-  { ticker: 'NVDA', sector: 'Semiconductores', type: 'stock' },
-  { ticker: 'AMZN', sector: 'Consumo discrecional', type: 'stock' },
-  { ticker: 'GOOGL', sector: 'Comunicación', type: 'stock' },
-  { ticker: 'JPM', sector: 'Financiero', type: 'stock' },
-  { ticker: 'XOM', sector: 'Energía', type: 'stock' },
-  { ticker: 'JNJ', sector: 'Salud', type: 'stock' },
-  { ticker: 'SPY', sector: 'ETF S&P 500', type: 'etf' },
-  { ticker: 'QQQ', sector: 'ETF Nasdaq 100', type: 'etf' },
-];
+// Universo: S&P 500 completo (sp500.json), no una selección a mano.
+// Elegir 10 acciones "a dedo" sesga cualquier backtest porque uno tiende a
+// elegir nombres que ya sabe que les fue bien (survivorship/selection bias).
+// Usar el índice completo deja que el score decida, no la memoria del lunes.
+const sp500 = JSON.parse(fs.readFileSync(path.join(__dirname, 'sp500.json'), 'utf8'));
+const WATCHLIST = sp500.map((r) => ({ ticker: r.ticker, sector: r.sector, type: 'stock' }));
+// Benchmark de referencia (no forma parte del universo operable, solo para comparar).
+const BENCHMARK_TICKER = 'SPY';
 
 const STRATEGY = {
   // Ventanas de medias móviles para tendencia.
@@ -38,6 +35,25 @@ const STRATEGY = {
   minCashReservePct: 0.05, // dejar al menos 5% en efectivo
   stopLossPct: -0.12, // antes -8%: evitar que la volatilidad normal saque posiciones sanas
   takeProfitTrimPct: 0.25, // antes +20%: dejar correr más la ganancia antes de trimear
+
+  // Costo de transacción simulado (comisión + spread efectivo), ida y vuelta.
+  // Un backtest sin fricción siempre se ve mejor que la realidad.
+  transactionCostPct: 0.0005, // 5 bps por operación
 };
 
-module.exports = { STARTING_CAPITAL, WATCHLIST, STRATEGY };
+// Cuántas señales mostrar en el reporte/dashboard (el universo completo se evalúa
+// igual para decidir trades; esto es solo un recorte para que el reporte sea legible).
+const REPORT_TOP_N = 15;
+
+// Límite de requests HTTP concurrentes al pedir datos de mercado (evita que Yahoo
+// u otra red con allowlist nos corte por ráfaga de cientos de requests a la vez).
+const FETCH_CONCURRENCY = 20;
+
+module.exports = {
+  STARTING_CAPITAL,
+  WATCHLIST,
+  BENCHMARK_TICKER,
+  STRATEGY,
+  REPORT_TOP_N,
+  FETCH_CONCURRENCY,
+};
