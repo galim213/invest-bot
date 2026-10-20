@@ -18,8 +18,12 @@ hábiles) que:
    (stop-loss, toma de ganancias, límites de posición, costo de transacción simulado).
 2. Busca noticias financieras reales del día para las señales destacadas y el panorama
    macro, y agrega una sección de análisis cualitativo al reporte.
-3. Hace commit y push del reporte (`reports/<fecha>.md` + `.json`) y del estado del
-   portfolio (`data/portfolio.json`) para que quede un historial auditable día por día.
+3. Genera el informe de mercado educativo (`reports/market-intel-<fecha>.md`) — rotación
+   sectorial (13 ETFs, incluyendo energía, semiconductores y defensa) + fundamentales en
+   vivo de 34 empresas de calidad curadas a mano, con el porqué de cada una.
+4. Hace commit y push de todo (`reports/<fecha>.md`, `market-intel-<fecha>.md` + `.json`) y
+   del estado del portfolio (`data/portfolio.json`) para que quede un historial auditable
+   día por día.
 
 ## Estructura
 
@@ -34,6 +38,9 @@ hábiles) que:
 - `lib/decide.js` — motor de decisión (señales + gestión de riesgo + estado del portfolio)
 - `lib/portfolio.js` — estado persistente (cash, posiciones, historial, costo de transacción)
 - `lib/macroRisk.js` — panel de riesgo macro (VIX, curva de rendimientos, spread de crédito, DXY)
+- `lib/fundamentals.js` — fundamentales en vivo (P/E, márgenes, ROE, dividendos) vía el endpoint no oficial de Yahoo Finance (cookie+crumb, igual que `yfinance`) — requiere `fc.yahoo.com` además de `query1.finance.yahoo.com` en el allowlist de red (ver Limitaciones)
+- `qualityCompanies.json` — base curada de 34 empresas "de calidad" (energía, semiconductores, defensa, y otros sectores rentables) con análisis cualitativo del moat escrito a mano
+- `lib/marketIntel.js` — arma el informe de mercado (rotación sectorial + fundamentales + educativo)
 - `lib/report.js` — genera el reporte diario (markdown + JSON), recorta a señales destacadas
 - `lib/simulate.js` — motor de simulación compartido (día a día, sin mirar al futuro), usado por `backtest.js` y `validate.js`
 - `run-daily.js` — orquestador del ciclo diario (producción)
@@ -71,6 +78,11 @@ npm run invest:validate           # validación fuera de muestra, 2018 a hoy, po
 ## Limitaciones
 
 - Datos públicos (Yahoo Finance), pueden tener retraso de minutos.
+- **`lib/fundamentals.js` usa un endpoint no oficial** (cookie+crumb) — no está documentado
+  por Yahoo, puede cambiar o bloquearse sin aviso. Falla en silencio (no rompe el resto del
+  pipeline) si eso pasa. Necesita acceso a `fc.yahoo.com` además de
+  `query1.finance.yahoo.com` — si la rutina automática corre en un entorno con red limitada,
+  hay que agregar ese dominio al allowlist o el informe de mercado no se genera ese día.
 - **Sesgo de supervivencia reducido, no eliminado**: con `sp500_historical_components.csv`
   ya no se "compran" tickers antes de que integraran el índice de verdad. Pero Yahoo
   Finance no tiene precios confiables de empresas que salieron del índice (quebraron, las
