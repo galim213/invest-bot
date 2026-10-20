@@ -55,6 +55,7 @@ hábiles) que:
 - `lib/marketIntel.js` — arma el informe de mercado (rotación sectorial + fundamentales + educativo)
 - `fundamentals-cache.json` — fundamentales (P/E, ROE, márgenes, deuda, crecimiento) de los 503 tickers del universo, refrescado manualmente con `node refresh-fundamentals-cache.js` (no corre solo, el endpoint no funciona en la nube)
 - `lib/fundamentalScore.js` — convierte el cache en un "score de calidad" por percentil y un tilt aditivo al score técnico (`STRATEGY.fundamentalTiltMax`, hasta ±15) — **apagado en producción** (`USE_FUNDAMENTAL_TILT_IN_PRODUCTION = false` en `config.js`), ver GRADUATION_CRITERIA.md para el porqué
+- `lib/researchNote.js` — **research notes profesionales**: para el core + posiciones actuales del satellite, sintetiza tendencia de analistas, historial de resultados (beat/miss), upgrades/downgrades recientes, transacciones de insiders y valuación en un veredicto (POSITIVO/CAUTELA/NEUTRAL) con caso alcista, caso bajista y gatillos de venta explícitos — todo por reglas objetivas sobre datos reales, auditables (no "opinión de IA"). Genera `reports/research-notes-<fecha>.md` + `.json` cada corrida.
 - `lib/loadFundamentalsCache.js` — lee el cache del disco (sin red) y arma los quality scores
 - `lib/report.js` — genera el reporte diario (markdown + JSON), recorta a señales destacadas
 - `lib/simulate.js` — motor de simulación compartido (día a día, sin mirar al futuro), usado por `backtest.js` y `validate.js`

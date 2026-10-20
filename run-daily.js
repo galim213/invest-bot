@@ -12,7 +12,7 @@ const { runDecisionEngine } = require('./lib/decide');
 const { buildReportMarkdown, buildReportJson } = require('./lib/report');
 const { fetchMacroRiskPanel } = require('./lib/macroRisk');
 const { sma } = require('./lib/indicators');
-const { buildSectorRotation, buildQualityCompaniesReport, buildMarketIntelMarkdown } = require('./lib/marketIntel');
+const { buildSectorRotation, buildQualityCompaniesReport, buildMarketIntelMarkdown, buildResearchReport, buildResearchNotesMarkdown } = require('./lib/marketIntel');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 
@@ -151,6 +151,29 @@ async function main() {
     }
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo generar el informe de mercado (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Research notes profesionales: core (10) + posiciones actuales del satellite.
+  // Veredicto sintetizado (caso alcista/bajista/gatillos de venta), no solo datos.
+  try {
+    const researchTickers = [...new Set([...CORE_HOLDINGS, ...Object.keys(satellite.positions)])];
+    console.log(`[invest-bot] Generando research notes para ${researchTickers.length} tickers (core + posiciones satellite)...`);
+    const { notes, errors: researchErrors } = await buildResearchReport(researchTickers);
+    const researchMd = buildResearchNotesMarkdown({ date, notes });
+
+    fs.writeFileSync(path.join(reportsDir, `research-notes-${date}.md`), researchMd);
+    fs.writeFileSync(path.join(reportsDir, 'research-notes-latest.md'), researchMd);
+
+    const researchJson = { date, generatedAt: new Date().toISOString(), notes };
+    fs.writeFileSync(path.join(reportsDir, `research-notes-${date}.json`), JSON.stringify(researchJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'research-notes-latest.json'), JSON.stringify(researchJson, null, 2));
+
+    console.log(`[invest-bot] Research notes generadas: ${notes.length} (${notes.filter((n) => n.verdict === 'POSITIVO').length} positivo, ${notes.filter((n) => n.verdict === 'CAUTELA').length} cautela).`);
+    if (researchErrors.length > 0) {
+      console.warn(`[invest-bot] WARN research notes: ${researchErrors.length} tickers sin datos. Motivo (primer caso): ${researchErrors[0].ticker}: ${researchErrors[0].message}`);
+    }
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudieron generar las research notes (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   return { reportPath, combined, trades };
