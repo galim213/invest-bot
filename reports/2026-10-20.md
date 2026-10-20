@@ -2,11 +2,15 @@
 
 > ⚠️ **Simulación educativa con dinero ficticio.** No es asesoría financiera real ni una recomendación de inversión. Las señales se generan con reglas técnicas simples (medias móviles, momentum, RSI) sobre datos públicos y pueden estar equivocadas.
 
+**Régimen de mercado: ALCISTA** (benchmark vs su SMA200) — _solo informativo, no bloquea trades: lo probamos como filtro y empeoró el resultado fuera de muestra (ver validación multi-régimen)._
+
 ## Panorama de riesgo macro (contexto, no predicción)
 
 - **VIX**: 18.44 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.4 pts.
 - **Curva de rendimientos (10 años vs 3 meses)**: +1.06 pts — normal (sin inversión).
-- _Nota: estos dos indicadores (crecimiento del crédito y pendiente de la curva) son los que más respaldo académico tienen como señales tempranas de crisis en estudios de largo plazo multi-país. Aun así, tienen horizontes largos y variables, tasas de falso positivo conocidas, y no anticipan el tipo ni el momento exacto de una crisis — no son una alarma de "vender todo"._
+- **Spread de crédito (proxy HYG vs LQD, 20d)**: -0.25 pts — normal.
+- **Índice dólar (DXY)**: 101.93 (variación 10d: -0.31) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
+- _Nota: el crecimiento del crédito y la pendiente de la curva son los que más respaldo académico tienen como señales tempranas de crisis en estudios de largo plazo multi-país. El spread de crédito y el dólar son más rápidos pero más ruidosos. Ninguno anticipa el tipo ni el momento exacto de una crisis — no son una alarma de "vender todo"._
 
 ## Resumen del portfolio
 
@@ -222,4 +226,4 @@
   - RSI 27: sobreventa, posible rebote.
 
 ---
-_Generado automáticamente el 2026-10-20T02:00:59.356Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
+_Generado automáticamente el 2026-10-20T02:14:20.277Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._

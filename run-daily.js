@@ -4,23 +4,38 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY } = require('./config');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
 const { runDecisionEngine } = require('./lib/decide');
 const { buildReportMarkdown, buildReportJson } = require('./lib/report');
 const { fetchMacroRiskPanel } = require('./lib/macroRisk');
+const { sma } = require('./lib/indicators');
 
 async function main() {
   const date = new Date().toISOString().slice(0, 10);
   const tickers = WATCHLIST.map((w) => w.ticker);
 
   console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers...`);
-  const [{ data, errors }, macro] = await Promise.all([marketData.fetchAll(tickers), fetchMacroRiskPanel()]);
+  const [{ data, errors }, macro, benchmarkData] = await Promise.all([
+    marketData.fetchAll(tickers),
+    fetchMacroRiskPanel(),
+    marketData.fetchDailyCandles(BENCHMARK_TICKER),
+  ]);
   for (const e of errors) console.warn(`[invest-bot] WARN: ${e.ticker}: ${e.message}`);
 
   const evaluations = strategy.evaluateAll(data);
+
+  // Régimen de mercado (benchmark vs su propia SMA200): se calcula y se muestra
+  // como contexto informativo, pero NO se usa para bloquear compras — lo probamos
+  // en validate.js (ver reports/validation-multi-regime.json) y empeoró el
+  // resultado fuera de muestra en 3 de 4 regímenes probados (solo mejoraba en el
+  // período ya usado para ajustar parámetros, señal clásica de overfitting).
+  const benchAdjCloses = benchmarkData.candles.map((c) => c.adjClose ?? c.close);
+  const benchSma200 = sma(benchAdjCloses, STRATEGY.smaTrend);
+  const regimeBullish = benchSma200 === null ? true : benchAdjCloses.at(-1) >= benchSma200;
+  console.log(`[invest-bot] Régimen de mercado (${BENCHMARK_TICKER} vs SMA200, solo informativo): ${regimeBullish ? 'ALCISTA' : 'BAJISTA'}`);
 
   const state = portfolio.load();
   const { trades, warnings, prices } = runDecisionEngine(state, evaluations, date);
@@ -39,9 +54,10 @@ async function main() {
     snapshot,
     prices,
     macro,
+    regimeBullish,
   });
 
-  const json = buildReportJson({ date, state, evaluations, trades, warnings: allWarnings, snapshot, prices, macro });
+  const json = buildReportJson({ date, state, evaluations, trades, warnings: allWarnings, snapshot, prices, macro, regimeBullish });
 
   const reportsDir = path.join(__dirname, 'reports');
   fs.mkdirSync(reportsDir, { recursive: true });

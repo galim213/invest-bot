@@ -6,7 +6,8 @@
   "main": "run-daily.js",
   "scripts": {
     "invest:daily": "node run-daily.js",
-    "invest:backtest": "node backtest.js"
+    "invest:backtest": "node backtest.js",
+    "invest:validate": "node validate.js"
   },
   "license": "UNLICENSED"
 }
