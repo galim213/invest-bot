@@ -74,7 +74,28 @@ npm run invest:backtest -- 120            # backtest sobre los últimos ~120 dí
 npm run invest:backtest -- 60 --fundamentals  # idem + tilt fundamental (experimental, ver GRADUATION_CRITERIA.md)
 npm run invest:validate                   # validación fuera de muestra, 2018 a hoy, por régimen de mercado
 node refresh-fundamentals-cache.js        # refresca fundamentals-cache.json (manual, ~30s para 503 tickers)
+npm test                                  # tests unitarios de las funciones puras (ver abajo)
 ```
+
+## Tests
+
+`test/*.test.js` cubre las funciones puras de `lib/` con el test runner nativo de Node
+(`node:test`, sin dependencias externas — el proyecto no tiene ninguna):
+
+- `indicators.test.js` — SMA, desviación de retornos, momentum, RSI (casos límite: todo
+  ganancia, todo pérdida, serie plana).
+- `metrics.test.js` — Sharpe/Sortino/beta/max drawdown con series sintéticas de resultado
+  conocido.
+- `portfolio.test.js` — compra/venta/dividendos/snapshot: costos de transacción, promedio
+  ponderado de costo, PnL realizado, que nunca se gaste más cash del disponible.
+- `strategy.test.js` — `evaluateTicker`/`evaluateAll`: casos de BUY/SELL/HOLD construidos a
+  propósito, el guardrail de sobrecompra (RSI≥80 bloquea compras), el tilt fundamental, y que
+  un ticker con datos inválidos no rompa el resto del batch.
+
+Corré `npm test` (o `node --test`) antes de confiar en un cambio a `lib/`. No reemplaza a
+`backtest.js`/`validate.js` — esto verifica que la *mecánica* (fórmulas, actualización de
+estado) sea correcta; la validación multi-régimen verifica que el *resultado* de la estrategia
+no esté sobreajustado.
 
 ## Metodología (Fase 1 + Fase 2 del roadmap de validación)
 
