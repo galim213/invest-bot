@@ -15,6 +15,14 @@ const WATCHLIST = sp500.map((r) => ({ ticker: r.ticker, sector: r.sector, type: 
 // Benchmark de referencia (no forma parte del universo operable, solo para comparar).
 const BENCHMARK_TICKER = 'SPY';
 
+// S&P MidCap 400: SOLO seguimiento, no se opera (ver lib/midcapWatch.js). No
+// hay dataset gratuito de membresía histórica punto-en-el-tiempo para este
+// índice (a diferencia de sp500_historical_components.csv para el S&P 500),
+// así que no se puede validar con validate.js el mismo rigor. Constituyentes
+// de hoy (2026-10-20), vía holdings de IJH (iShares Core S&P Mid-Cap ETF).
+const sp400 = JSON.parse(fs.readFileSync(path.join(__dirname, 'sp400.json'), 'utf8'));
+const MIDCAP_WATCHLIST = sp400.map((r) => ({ ticker: r.ticker, sector: r.sector, type: 'stock' }));
+
 const STRATEGY = {
   // Ventanas de medias móviles para tendencia.
   // v2 (tras backtest): SMA10/30 generaba whipsaw (entra y sale del mismo ticker
@@ -163,4 +171,5 @@ module.exports = {
   CORE_HOLDINGS,
   ALLOW_SHORTING_IN_PRODUCTION,
   OTHER_MARKETS,
+  MIDCAP_WATCHLIST,
 };

@@ -4,7 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION, MIDCAP_WATCHLIST } = require('./config');
+const { buildMidcapWatchlist, buildMidcapWatchlistMarkdown } = require('./lib/midcapWatch');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -29,12 +30,14 @@ async function main() {
   const date = new Date().toISOString().slice(0, 10);
   const tickers = WATCHLIST.map((w) => w.ticker);
 
-  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos)...`);
-  const [{ data, errors }, macro, benchmarkData, coreFetch] = await Promise.all([
+  const midcapTickers = MIDCAP_WATCHLIST.map((w) => w.ticker);
+  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${midcapTickers.length} (mid-cap, solo seguimiento)...`);
+  const [{ data, errors }, macro, benchmarkData, coreFetch, midcapFetch] = await Promise.all([
     marketData.fetchAll(tickers),
     fetchMacroRiskPanel(),
     marketData.fetchDailyCandles(BENCHMARK_TICKER),
     marketData.fetchAll(CORE_HOLDINGS, { range: '2y', includeDividends: true }),
+    marketData.fetchAll(midcapTickers),
   ]);
   for (const e of errors) console.warn(`[invest-bot] WARN: ${e.ticker}: ${e.message}`);
   for (const e of coreFetch.errors) console.warn(`[invest-bot] WARN (core): ${e.ticker}: ${e.message}`);
@@ -183,6 +186,30 @@ async function main() {
     }
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudieron generar las research notes (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Seguimiento del S&P MidCap 400: mismo score técnico, pero NUNCA se pasa a
+  // runDecisionEngine — no genera trades. No hay dataset point-in-time
+  // gratuito para este índice, así que no se puede validar con validate.js
+  // el mismo rigor que el S&P 500 — ver lib/midcapWatch.js y GRADUATION_CRITERIA.md.
+  try {
+    console.log(`[invest-bot] Evaluando ${midcapFetch.data.size} empresas del S&P MidCap 400 (solo seguimiento, no se opera)...`);
+    const midcapEvaluations = strategy.evaluateAll(midcapFetch.data);
+    const sectorByTicker = new Map(MIDCAP_WATCHLIST.map((w) => [w.ticker, w.sector]));
+    const midcapWatchlist = buildMidcapWatchlist(midcapEvaluations, sectorByTicker);
+    const midcapMd = buildMidcapWatchlistMarkdown({ date, watchlist: midcapWatchlist });
+
+    fs.writeFileSync(path.join(reportsDir, `midcap-watch-${date}.md`), midcapMd);
+    fs.writeFileSync(path.join(reportsDir, 'midcap-watch-latest.md'), midcapMd);
+
+    const midcapJson = { date, generatedAt: new Date().toISOString(), ...midcapWatchlist };
+    fs.writeFileSync(path.join(reportsDir, `midcap-watch-${date}.json`), JSON.stringify(midcapJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'midcap-watch-latest.json'), JSON.stringify(midcapJson, null, 2));
+
+    console.log(`[invest-bot] Seguimiento mid-cap generado: ${midcapWatchlist.totalEvaluated} evaluadas.`);
+    if (midcapFetch.errors.length > 0) console.warn(`[invest-bot] WARN mid-cap: ${midcapFetch.errors.length} tickers sin datos.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo generar el seguimiento mid-cap (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   // Mercados más allá de acciones (commodities, bonos, REITs, cripto, forex)

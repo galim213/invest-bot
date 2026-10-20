@@ -17,6 +17,16 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   completo. Es la porción donde se busca ganancia de corto/mediano plazo — y es la que
   está sujeta a TODOS los criterios de este documento, porque es la que todavía no tiene
   edge comprobado.
+- **Seguimiento S&P MidCap 400 (sin operar, desde 2026-10-20)**: el mismo motor técnico
+  evalúa también las 400 empresas del S&P MidCap 400 todos los días (ver
+  `lib/midcapWatch.js`, `reports/midcap-watch-latest.md`), pero **nunca genera trades** —
+  es puro seguimiento/contexto. Motivo: no existe un dataset gratuito de membresía
+  histórica punto-en-el-tiempo para el S&P 400 (a diferencia de
+  `sp500_historical_components.csv` para el S&P 500), así que `validate.js` no puede
+  probar con el mismo rigor si esta parte del universo habría sobrevivido 2018/2020/2022.
+  Para habilitarlo en producción algún día haría falta, como mínimo, un track record real
+  en papel de 6+ meses sobre esta lista específica (criterio 2 de este documento) — un
+  backtest histórico riguroso no es posible con datos gratuitos hoy.
 
 **El core no necesita "graduarse"** en el mismo sentido — su lógica (diversificación +
 tiempo + dividendos) es la aproximación más respaldada estadísticamente que existe para
