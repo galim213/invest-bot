@@ -8,11 +8,17 @@ const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, STARTING_CAPITAL } = require('./c
 const marketData = require('./lib/marketData');
 const { runBacktest } = require('./lib/simulate');
 const { loadHistoricalMembership } = require('./lib/pointInTime');
+const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 
 // Cuántos días hábiles de atrás simular. Necesitamos STRATEGY.smaTrend (200) días
 // previos de historia como "calentamiento" para cada día simulado, así que pedimos
 // 2 años de datos y simulamos los últimos `BACKTEST_DAYS` de ese rango.
 const BACKTEST_DAYS = Number(process.argv[2]) || 120;
+// Opt-in: el cache de fundamentales es una foto de HOY, usarlo sobre ventanas
+// largas sesga el resultado (look-ahead). Por default apagado para mantener
+// comparabilidad con los backtests anteriores; `node backtest.js 60 --fundamentals`
+// lo activa (razonable solo en ventanas cortas/recientes).
+const USE_FUNDAMENTALS = process.argv.includes('--fundamentals');
 
 async function main() {
   const tickers = WATCHLIST.map((w) => w.ticker);
@@ -48,7 +54,17 @@ async function main() {
   );
 
   const pointInTime = loadHistoricalMembership();
-  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime });
+  let qualityScores = null;
+  if (USE_FUNDAMENTALS) {
+    const quality = loadQualityScores();
+    if (quality) {
+      qualityScores = quality.scores;
+      console.log(`[backtest] Usando cache de fundamentales (${quality.count} tickers, generado ${quality.generatedAt}) — foto de HOY, no point-in-time.`);
+    } else {
+      console.warn('[backtest] --fundamentals pedido pero no hay fundamentals-cache.json — corré refresh-fundamentals-cache.js primero.');
+    }
+  }
+  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, qualityScores });
 
   console.log('');
   console.log('=== Resultado del backtest ===');

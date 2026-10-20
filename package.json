@@ -7,7 +7,8 @@
   "scripts": {
     "invest:daily": "node run-daily.js",
     "invest:backtest": "node backtest.js",
-    "invest:validate": "node validate.js"
+    "invest:validate": "node validate.js",
+    "invest:refresh-fundamentals": "node refresh-fundamentals-cache.js"
   },
   "license": "UNLICENSED"
 }

@@ -39,7 +39,21 @@ const STRATEGY = {
   // Costo de transacción simulado (comisión + spread efectivo), ida y vuelta.
   // Un backtest sin fricción siempre se ve mejor que la realidad.
   transactionCostPct: 0.0005, // 5 bps por operación
+
+  // Peso máximo del factor fundamental (ROE, márgenes, crecimiento, deuda, P/E)
+  // sobre el score técnico (-100 a 100).
+  fundamentalTiltMax: 15,
 };
+
+// Apagado por default en producción: testeado en backtest.js con --fundamentals
+// y el resultado fue el mismo patrón sospechoso que el filtro de régimen que ya
+// descartamos — empeora en ventanas cortas (60/120 días) y solo "mejora" en la
+// ventana larga (250 días), que es justo la más contaminada por look-ahead bias
+// (el cache es una foto de HOY aplicada retroactivamente a todo el año). No se
+// confía en una mejora que solo aparece en la ventana ya conocida/ajustada — ver
+// GRADUATION_CRITERIA.md. Prender esto en producción requeriría fundamentales
+// point-in-time reales, que no están disponibles gratis.
+const USE_FUNDAMENTAL_TILT_IN_PRODUCTION = false;
 
 // Cuántas señales mostrar en el reporte/dashboard (el universo completo se evalúa
 // igual para decidir trades; esto es solo un recorte para que el reporte sea legible).
@@ -76,4 +90,5 @@ module.exports = {
   REPORT_TOP_N,
   FETCH_CONCURRENCY,
   SECTOR_ETFS,
+  USE_FUNDAMENTAL_TILT_IN_PRODUCTION,
 };

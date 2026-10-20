@@ -41,6 +41,9 @@ hábiles) que:
 - `lib/fundamentals.js` — fundamentales en vivo (P/E, márgenes, ROE, dividendos) vía el endpoint no oficial de Yahoo Finance (cookie+crumb, igual que `yfinance`) — requiere `fc.yahoo.com` además de `query1.finance.yahoo.com` en el allowlist de red (ver Limitaciones)
 - `qualityCompanies.json` — base curada de 34 empresas "de calidad" (energía, semiconductores, defensa, y otros sectores rentables) con análisis cualitativo del moat escrito a mano
 - `lib/marketIntel.js` — arma el informe de mercado (rotación sectorial + fundamentales + educativo)
+- `fundamentals-cache.json` — fundamentales (P/E, ROE, márgenes, deuda, crecimiento) de los 503 tickers del universo, refrescado manualmente con `node refresh-fundamentals-cache.js` (no corre solo, el endpoint no funciona en la nube)
+- `lib/fundamentalScore.js` — convierte el cache en un "score de calidad" por percentil y un tilt aditivo al score técnico (`STRATEGY.fundamentalTiltMax`, hasta ±15) — **apagado en producción** (`USE_FUNDAMENTAL_TILT_IN_PRODUCTION = false` en `config.js`), ver GRADUATION_CRITERIA.md para el porqué
+- `lib/loadFundamentalsCache.js` — lee el cache del disco (sin red) y arma los quality scores
 - `lib/report.js` — genera el reporte diario (markdown + JSON), recorta a señales destacadas
 - `lib/simulate.js` — motor de simulación compartido (día a día, sin mirar al futuro), usado por `backtest.js` y `validate.js`
 - `run-daily.js` — orquestador del ciclo diario (producción)
@@ -53,9 +56,11 @@ hábiles) que:
 ## Correrlo manualmente
 
 ```
-npm run invest:daily              # ciclo diario completo (datos + señales + trades + reporte)
-npm run invest:backtest -- 120    # backtest sobre los últimos ~120 días hábiles
-npm run invest:validate           # validación fuera de muestra, 2018 a hoy, por régimen de mercado
+npm run invest:daily                      # ciclo diario completo (datos + señales + trades + reporte)
+npm run invest:backtest -- 120            # backtest sobre los últimos ~120 días hábiles
+npm run invest:backtest -- 60 --fundamentals  # idem + tilt fundamental (experimental, ver GRADUATION_CRITERIA.md)
+npm run invest:validate                   # validación fuera de muestra, 2018 a hoy, por régimen de mercado
+node refresh-fundamentals-cache.js        # refresca fundamentals-cache.json (manual, ~30s para 503 tickers)
 ```
 
 ## Metodología (Fase 1 + Fase 2 del roadmap de validación)

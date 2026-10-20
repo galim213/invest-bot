@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, BENCHMARK_TICKER, STRATEGY } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, USE_FUNDAMENTAL_TILT_IN_PRODUCTION } = require('./config');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -13,6 +13,7 @@ const { buildReportMarkdown, buildReportJson } = require('./lib/report');
 const { fetchMacroRiskPanel } = require('./lib/macroRisk');
 const { sma } = require('./lib/indicators');
 const { buildSectorRotation, buildQualityCompaniesReport, buildMarketIntelMarkdown } = require('./lib/marketIntel');
+const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 
 async function main() {
   const date = new Date().toISOString().slice(0, 10);
@@ -26,7 +27,22 @@ async function main() {
   ]);
   for (const e of errors) console.warn(`[invest-bot] WARN: ${e.ticker}: ${e.message}`);
 
-  const evaluations = strategy.evaluateAll(data);
+  // Cache de fundamentales (lectura de disco, sin red — se refresca a mano con
+  // refresh-fundamentals-cache.js porque ese endpoint no funciona en la nube).
+  // Apagado por default en producción: testeado en backtest.js --fundamentals,
+  // empeoró en ventanas cortas (60/120d) y solo "mejoró" en la ventana larga
+  // (250d, contaminada por look-ahead) — mismo patrón sospechoso que el filtro
+  // de régimen ya descartado. Ver USE_FUNDAMENTAL_TILT_IN_PRODUCTION en config.js.
+  const quality = loadQualityScores();
+  if (quality && USE_FUNDAMENTAL_TILT_IN_PRODUCTION) {
+    console.log(`[invest-bot] Cache de fundamentales: ${quality.count} tickers (generado ${quality.generatedAt}) — tilt ACTIVO.`);
+  } else if (quality) {
+    console.log(`[invest-bot] Cache de fundamentales disponible (${quality.count} tickers) pero el tilt está APAGADO en producción (no validado) — score 100% técnico.`);
+  } else {
+    console.log('[invest-bot] Sin cache de fundamentales — el score es 100% técnico hoy.');
+  }
+
+  const evaluations = strategy.evaluateAll(data, quality && USE_FUNDAMENTAL_TILT_IN_PRODUCTION ? quality.scores : null);
 
   // Régimen de mercado (benchmark vs su propia SMA200): se calcula y se muestra
   // como contexto informativo, pero NO se usa para bloquear compras — lo probamos

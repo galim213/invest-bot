@@ -32,11 +32,29 @@ riesgo (un bajista prolongado, 2022), pierde por casi 7 puntos.
 Conclusión honesta: **sigue sin ser un sistema con edge validado.** Mejoró respecto a la
 primera corrida (el universo point-in-time sacó el sesgo de "comprar cosas antes de que
 fueran investables"), pero 2 de 5 no es un resultado para confiar plata real — ni cerca.
+Eso no significa que el proyecto esté mal encaminado — significa que recién estamos en el
+punto donde el proceso de validación empieza a ser útil (antes, sin esto, no había forma
+de saberlo).
 
-Conclusión honesta: **lo que tenemos hoy no es un sistema con edge validado, es una
-hipótesis que falló su primera prueba seria fuera de muestra.** Eso no significa que el
-proyecto esté mal encaminado — significa que recién estamos en el punto donde el proceso
-de validación empieza a ser útil (antes, sin esto, no había forma de saberlo).
+## Experimentos descartados (y por qué quedan documentados)
+
+Cada vez que se prueba una mejora, se re-testea contra los regímenes históricos antes de
+aceptarla. Dos ya fallaron esa prueba — quedan acá para no repetir el error:
+
+1. **Filtro de régimen de mercado** (no comprar si el benchmark está bajo su SMA200):
+   mejoraba el período reciente (+75% vs +48%) pero empeoraba 3 de los 4 regímenes
+   genuinamente fuera de muestra. Descartado de producción.
+2. **Tilt fundamental** (ROE/márgenes/crecimiento/deuda/P/E sumando hasta ±15 al score
+   técnico, ver `lib/fundamentalScore.js`): en backtest con `--fundamentals`, **empeoró**
+   en ventanas de 60 días (0.20% → -2.80%) y 120 días (6.55% → -3.27%), y solo "mejoró"
+   en la ventana de 250 días (61.7% → 108.2%) — que es justo la más contaminada por
+   look-ahead bias, porque el cache de fundamentales es una foto de HOY aplicada
+   retroactivamente a todo un año de trading (los márgenes/ROE reales de esas empresas
+   hace un año no eran los de hoy). Mismo patrón que el punto 1: no confiar en una mejora
+   que solo aparece en la ventana ya conocida. **Queda apagado en producción**
+   (`USE_FUNDAMENTAL_TILT_IN_PRODUCTION = false` en `config.js`) hasta tener fundamentales
+   point-in-time reales — algo que no está disponible gratis (ver investigación de fuentes
+   en el README).
 
 ## Los criterios (TODOS tienen que cumplirse, no alcanza con uno o dos)
 

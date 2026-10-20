@@ -6,10 +6,10 @@
 
 ## Panorama de riesgo macro (contexto, no predicción)
 
-- **VIX**: 18.63 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.5 pts.
+- **VIX**: 18.87 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.8 pts.
 - **Curva de rendimientos (10 años vs 3 meses)**: +1.06 pts — normal (sin inversión).
 - **Spread de crédito (proxy HYG vs LQD, 20d)**: -0.25 pts — normal.
-- **Índice dólar (DXY)**: 101.89 (variación 10d: -0.35) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
+- **Índice dólar (DXY)**: 101.82 (variación 10d: -0.42) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
 - _Nota: el crecimiento del crédito y la pendiente de la curva son los que más respaldo académico tienen como señales tempranas de crisis en estudios de largo plazo multi-país. El spread de crédito y el dólar son más rápidos pero más ruidosos. Ninguno anticipa el tipo ni el momento exacto de una crisis — no son una alarma de "vender todo"._
 
 ## Resumen del portfolio
@@ -18,7 +18,6 @@
 - Valor total hoy: **$999.53**
 - Efectivo disponible: $49.86
 - P&L acumulado: $-0.47 (-0.05%)
-- Variación de hoy: $0.00 (0.00%)
 
 ## Posiciones actuales
 
@@ -31,7 +30,10 @@
 
 ## Movimientos ejecutados hoy
 
-_No se ejecutaron movimientos hoy._
+- **COMPRA MRNA** — 0.551 shares a $226.89 ($125.00). _Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (203.87) por encima de SMA50 (158.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.7%. RSI 58: zona neutral._
+- **COMPRA VEEV** — 0.754 shares a $316.80 ($238.88). _Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (287.59) por encima de SMA50 (270.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.8%. RSI 74: sobrecompra, riesgo de corrección._
+- **COMPRA MTD** — 0.191 shares a $1625.73 ($311.06). _Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (1545.99) por encima de SMA50 (1447.55). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 67: zona neutral._
+- **COMPRA PSX** — 0.946 shares a $290.55 ($274.72). _Señal técnica de compra (score 56): Tendencia de corto plazo alcista: SMA20 (271.51) por encima de SMA50 (257.33). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.7%. RSI 79: sobrecompra, riesgo de corrección._
 
 ## Señales destacadas (top 15 + posiciones abiertas, de 503 tickers evaluados)
 
@@ -224,4 +226,4 @@ _No se ejecutaron movimientos hoy._
   - RSI 27: sobreventa, posible rebote.
 
 ---
-_Generado automáticamente el 2026-10-20T10:43:58.383Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
+_Generado automáticamente el 2026-10-20T12:24:54.370Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
