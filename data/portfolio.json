@@ -1,0 +1,32 @@
+{
+  "startingCapital": 1000,
+  "cash": 625,
+  "positions": {
+    "AAPL": {
+      "shares": 1.091830225731101,
+      "avgCost": 343.4599914550781,
+      "openedAt": "2026-10-20"
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "action": "BUY",
+      "ticker": "AAPL",
+      "shares": 1.091830225731101,
+      "price": 343.4599914550781,
+      "usdAmount": 375,
+      "reason": "Señal técnica de compra (score 44): Tendencia de corto plazo alcista: SMA20 (337.42) por encima de SMA50 (325.70). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 2.9%. RSI 56: zona neutral."
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-20",
+      "totalValue": 1000,
+      "cash": 625,
+      "pnl": 0,
+      "pnlPct": 0
+    }
+  ],
+  "createdAt": "2026-10-20T01:25:28.276Z"
+}
