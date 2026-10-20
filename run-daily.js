@@ -96,7 +96,9 @@ async function main() {
 
     console.log(`[invest-bot] Informe de mercado generado en ${intelPath}`);
     if (sectorRotation.errors.length > 0) console.warn(`[invest-bot] WARN rotación sectorial: ${sectorRotation.errors.length} ETFs sin datos.`);
-    if (qualityCompanies.errors.length > 0) console.warn(`[invest-bot] WARN fundamentales: ${qualityCompanies.errors.length} empresas sin datos.`);
+    if (qualityCompanies.errors.length > 0) {
+      console.warn(`[invest-bot] WARN fundamentales: ${qualityCompanies.errors.length} empresas sin datos. Motivo (primer caso): ${qualityCompanies.errors[0].ticker}: ${qualityCompanies.errors[0].message}`);
+    }
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo generar el informe de mercado (${err.message}) — se sigue sin esto, no es crítico.`);
   }
