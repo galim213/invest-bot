@@ -78,11 +78,15 @@ npm run invest:validate           # validación fuera de muestra, 2018 a hoy, po
 ## Limitaciones
 
 - Datos públicos (Yahoo Finance), pueden tener retraso de minutos.
-- **`lib/fundamentals.js` usa un endpoint no oficial** (cookie+crumb) — no está documentado
-  por Yahoo, puede cambiar o bloquearse sin aviso. Falla en silencio (no rompe el resto del
-  pipeline) si eso pasa. Necesita acceso a `fc.yahoo.com` además de
-  `query1.finance.yahoo.com` — si la rutina automática corre en un entorno con red limitada,
-  hay que agregar ese dominio al allowlist o el informe de mercado no se genera ese día.
+- **`lib/fundamentals.js` NO funciona en la rutina automática de la nube** — confirmado:
+  aunque `fc.yahoo.com` esté en el allowlist de red del entorno, la conexión a ese dominio
+  específico no responde desde el sandbox en la nube (probablemente bloqueo por rango de IP
+  de datacenter, algo común en endpoints no oficiales/anti-scraping, no arreglable con
+  allowlist de dominio). Localmente funciona bien. La sección de "empresas de calidad" del
+  informe de mercado sale sin fundamentales en las corridas automáticas por este motivo — la
+  rotación sectorial (que no depende de este endpoint) sí funciona siempre. Para refrescar
+  los fundamentales hay que correrlo manualmente (`npm run invest:daily` desde una máquina
+  normal) y pushear — mismo patrón que el dashboard.
 - **Sesgo de supervivencia reducido, no eliminado**: con `sp500_historical_components.csv`
   ya no se "compran" tickers antes de que integraran el índice de verdad. Pero Yahoo
   Finance no tiene precios confiables de empresas que salieron del índice (quebraron, las

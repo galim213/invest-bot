@@ -6,10 +6,10 @@
 
 ## Panorama de riesgo macro (contexto, no predicción)
 
-- **VIX**: 18.56 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.5 pts.
+- **VIX**: 18.63 — CALMA (Dentro del rango histórico normal.) Variación 10d: +3.5 pts.
 - **Curva de rendimientos (10 años vs 3 meses)**: +1.06 pts — normal (sin inversión).
 - **Spread de crédito (proxy HYG vs LQD, 20d)**: -0.25 pts — normal.
-- **Índice dólar (DXY)**: 101.88 (variación 10d: -0.36) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
+- **Índice dólar (DXY)**: 101.89 (variación 10d: -0.35) — un dólar fortaleciéndose fuerte suele acompañar episodios de "flight to safety".
 - _Nota: el crecimiento del crédito y la pendiente de la curva son los que más respaldo académico tienen como señales tempranas de crisis en estudios de largo plazo multi-país. El spread de crédito y el dólar son más rápidos pero más ruidosos. Ninguno anticipa el tipo ni el momento exacto de una crisis — no son una alarma de "vender todo"._
 
 ## Resumen del portfolio
@@ -224,16 +224,4 @@ _No se ejecutaron movimientos hoy._
   - RSI 27: sobreventa, posible rebote.
 
 ---
-_Generado automáticamente el 2026-10-20T10:34:43.201Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
-## Análisis cualitativo de cierre (agente con búsqueda web)
-
-**Aviso de calidad de datos:** esta corrida se ejecutó a las ~10:34 UTC del 2026-10-20 (antes de la apertura de Wall Street), por lo que los precios provienen del último cierre disponible, no del cierre de hoy: la variación diaria del portfolio es 0.00% y los precios actuales coinciden con el costo promedio de las posiciones. Además, la búsqueda web no encontró un reporte de cierre del 20/10/2026; lo último confirmable es el cierre del 15/10/2026 (S&P 500 ~7,744, +0.33%; Nasdaq ~26,713, +0.08%), tras un rango estrecho cerca de máximos históricos a comienzos de octubre. Las cifras provienen de blogs/agregadores de terceros, no de fuentes oficiales.
-
-No se encontraron noticias recientes y verificables que expliquen el movimiento de MRNA, VEEV, MTD, ACN, MPC, PLTR ni de las señales SELL destacadas, por lo que no se comenta ninguno. Único dato relevante: Phillips 66 (PSX, posición abierta, señal BUY) reportaría resultados del 3T el 2026-10-28 antes de la apertura (consenso ~$10.41/acción); es un posible catalizador de volatilidad para la posición.
-
-Fuentes:
-- [Market pulse 2026-10-15 (Tapeboard)](https://tapeboard.com/blog/market-pulse-2026-10-15)
-- [Market pulse 2026-10-13 (Tapeboard)](https://tapeboard.com/blog/market-pulse-2026-10-13)
-- [PSX Phillips 66 (Earnings Whispers)](https://www.earningswhispers.com/stocks/PSX)
-
-⚠️ Este análisis cualitativo es generado por un agente con búsqueda web, no está validado por backtest, y sigue siendo parte de una simulación 100% educativa — no es asesoría financiera real.
+_Generado automáticamente el 2026-10-20T10:43:58.383Z. Fuente de datos: Yahoo Finance (público, retrasado). Estrategia: cruce de medias móviles + momentum + RSI con stop-loss y toma de ganancias automáticos. No constituye asesoría financiera._
