@@ -26,6 +26,7 @@ const {
   buildChileInvestingGuideMarkdown,
 } = require('./lib/marketIntel');
 const { appendHistory } = require('./lib/trackRecord');
+const { appendScoreHistory } = require('./lib/scoreHistory');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 
@@ -187,6 +188,12 @@ async function main() {
     if (researchErrors.length > 0) {
       console.warn(`[invest-bot] WARN research notes: ${researchErrors.length} tickers sin datos. Motivo (primer caso): ${researchErrors[0].ticker}: ${researchErrors[0].message}`);
     }
+
+    // Historial de scores por ticker (core + posiciones satellite) — para
+    // graficar en el dashboard cómo evolucionó cada acción en el tiempo, no
+    // solo el valor total del portfolio. Ver lib/scoreHistory.js.
+    const addedToScoreHistory = appendScoreHistory(evaluations, researchTickers, date);
+    if (addedToScoreHistory > 0) console.log(`[invest-bot] Historial de scores: ${addedToScoreHistory} entradas nuevas.`);
 
     // Track record (idea de TipRanks: medir el historial de cada veredicto,
     // no solo mostrarlo) — guarda hoy en la bitácora para poder comparar más
