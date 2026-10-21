@@ -25,6 +25,7 @@ const {
   loadChileInvestingGuide,
   buildChileInvestingGuideMarkdown,
 } = require('./lib/marketIntel');
+const { appendHistory } = require('./lib/trackRecord');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 
@@ -186,6 +187,12 @@ async function main() {
     if (researchErrors.length > 0) {
       console.warn(`[invest-bot] WARN research notes: ${researchErrors.length} tickers sin datos. Motivo (primer caso): ${researchErrors[0].ticker}: ${researchErrors[0].message}`);
     }
+
+    // Track record (idea de TipRanks: medir el historial de cada veredicto,
+    // no solo mostrarlo) — guarda hoy en la bitácora para poder comparar más
+    // adelante contra el precio futuro. Ver track-record.js y lib/trackRecord.js.
+    const addedToHistory = appendHistory(notes, date);
+    if (addedToHistory > 0) console.log(`[invest-bot] Track record: ${addedToHistory} entradas nuevas agregadas a la bitácora histórica.`);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudieron generar las research notes (${err.message}) — se sigue sin esto, no es crítico.`);
   }

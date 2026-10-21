@@ -56,6 +56,7 @@ hábiles) que:
 - `fundamentals-cache.json` — fundamentales (P/E, ROE, márgenes, deuda, crecimiento) de los 503 tickers del universo, refrescado manualmente con `node refresh-fundamentals-cache.js` (no corre solo, el endpoint no funciona en la nube)
 - `lib/fundamentalScore.js` — convierte el cache en un "score de calidad" por percentil y un tilt aditivo al score técnico (`STRATEGY.fundamentalTiltMax`, hasta ±15) — **apagado en producción** (`USE_FUNDAMENTAL_TILT_IN_PRODUCTION = false` en `config.js`), ver GRADUATION_CRITERIA.md para el porqué
 - `lib/researchNote.js` — **research notes profesionales**: para el core + posiciones actuales del satellite, sintetiza tendencia de analistas, historial de resultados (beat/miss), upgrades/downgrades recientes, transacciones de insiders y valuación en un veredicto (POSITIVO/CAUTELA/NEUTRAL) con caso alcista, caso bajista y gatillos de venta explícitos — todo por reglas objetivas sobre datos reales, auditables (no "opinión de IA"). Genera `reports/research-notes-<fecha>.md` + `.json` cada corrida.
+- `lib/trackRecord.js` / `track-record.js` — mide si esos veredictos predijeron algo de verdad (idea de cómo TipRanks trackea el historial de cada analista): guarda el veredicto + precio del día en `data/research-notes-history.json`, y una vez pasados 30+ días compara contra el precio actual. Arrancó el 2026-10-20 — no tiene sentido leer resultados antes de que pase al menos un mes.
 - `lib/loadFundamentalsCache.js` — lee el cache del disco (sin red) y arma los quality scores
 - `lib/report.js` — genera el reporte diario (markdown + JSON), recorta a señales destacadas
 - `lib/simulate.js` — motor de simulación compartido (día a día, sin mirar al futuro), usado por `backtest.js` y `validate.js`
@@ -74,6 +75,7 @@ npm run invest:backtest -- 120            # backtest sobre los últimos ~120 dí
 npm run invest:backtest -- 60 --fundamentals  # idem + tilt fundamental (experimental, ver GRADUATION_CRITERIA.md)
 npm run invest:validate                   # validación fuera de muestra, 2018 a hoy, por régimen de mercado
 node refresh-fundamentals-cache.js        # refresca fundamentals-cache.json (manual, ~30s para 503 tickers)
+npm run invest:track-record -- 30         # track record de las research notes (horizonte en días, default 30)
 npm test                                  # tests unitarios de las funciones puras (ver abajo)
 ```
 

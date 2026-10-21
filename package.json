@@ -9,6 +9,7 @@
     "invest:backtest": "node backtest.js",
     "invest:validate": "node validate.js",
     "invest:refresh-fundamentals": "node refresh-fundamentals-cache.js",
+    "invest:track-record": "node track-record.js",
     "test": "node --test"
   },
   "license": "UNLICENSED"

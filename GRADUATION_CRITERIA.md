@@ -28,6 +28,17 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   en papel de 6+ meses sobre esta lista específica (criterio 2 de este documento) — un
   backtest histórico riguroso no es posible con datos gratuitos hoy.
 
+## Track record de las research notes (desde 2026-10-20)
+
+Idea tomada de cómo TipRanks mide el historial de cada analista, no solo su consenso de
+hoy (ver investigación de apps similares): `lib/trackRecord.js` guarda, cada día que se
+generan research notes, el veredicto (POSITIVO/CAUTELA/NEUTRAL) de cada ticker junto al
+precio de ese momento, en `data/research-notes-history.json`. Corriendo
+`node track-record.js [días]` (default 30) se compara ese precio contra el precio actual
+para ver si el veredicto predijo algo — pero **recién tiene sentido una vez que pasen al
+menos 30 días desde que empezó a guardarse** (arrancó el 2026-10-20). Antes de eso,
+cualquier número que salga de ahí es ruido, no una validación. Revisar esto en ~un mes.
+
 **El core no necesita "graduarse"** en el mismo sentido — su lógica (diversificación +
 tiempo + dividendos) es la aproximación más respaldada estadísticamente que existe para
 inversión de largo plazo, no una hipótesis a validar con backtests como el satellite.
