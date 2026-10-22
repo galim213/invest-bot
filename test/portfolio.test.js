@@ -115,6 +115,24 @@ test('snapshot: calcula pnl/pnlPct contra el capital inicial y lo guarda en dail
   assert.equal(s.dailySnapshots[0], snap);
 });
 
+test('snapshot: correr dos veces con la misma fecha reemplaza el snapshot anterior, no lo duplica', () => {
+  const s = portfolio.initialState(1000);
+  portfolio.snapshot(s, { date: '2026-01-10', pricesByTicker: new Map() }); // primera corrida del día
+  const second = portfolio.snapshot(s, { date: '2026-01-10', pricesByTicker: new Map() }); // segunda corrida, misma fecha
+
+  assert.equal(s.dailySnapshots.length, 1); // no dos entradas con la misma fecha
+  assert.equal(s.dailySnapshots[0], second);
+});
+
+test('snapshot: fechas distintas se acumulan normalmente', () => {
+  const s = portfolio.initialState(1000);
+  portfolio.snapshot(s, { date: '2026-01-10', pricesByTicker: new Map() });
+  portfolio.snapshot(s, { date: '2026-01-11', pricesByTicker: new Map() });
+
+  assert.equal(s.dailySnapshots.length, 2);
+  assert.deepEqual(s.dailySnapshots.map((x) => x.date), ['2026-01-10', '2026-01-11']);
+});
+
 test('portfolioValue: usa avgCost como fallback cuando no hay precio fresco para un ticker', () => {
   const s = portfolio.initialState(1000);
   portfolio.buy(s, { ticker: 'AAPL', price: 100, usdAmount: 200, date: '2026-01-01', reason: 'buy' });
