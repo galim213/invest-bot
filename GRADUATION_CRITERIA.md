@@ -111,6 +111,17 @@ aceptarla. Dos ya fallaron esa prueba — quedan acá para no repetir el error:
    pero no se prende sin una regla de entrada distinta — shortear por "score técnico muy
    negativo" tiende a capturar justo las acciones más sobrevendidas en un pánico, que son
    las que más rebotan después.
+4. **Bajar `maxPositionPct` para diversificar el satellite en más posiciones** (2026-10-22,
+   probado 25%→12%, que pasaría de ~4 a ~8 posiciones simultáneas con `node validate.js`):
+   **empeoró en 4 de los 5 regímenes** — Q4 2018 (-17.6%→-20.2%), COVID 2020
+   (-4.0%→-6.1%), Recuperación 2023 (16.6%→7.2%), y sobre todo el período reciente
+   (58.7%→31.1%, pierde casi todo el edge sobre el benchmark). Solo mejoró en el bajista
+   de 2022 (-20.9%→-10.7%). El motivo: la estrategia funciona concentrando capital en sus
+   señales de mayor convicción (score más alto) — repartir en más posiciones diluye esa
+   convicción junto con el riesgo de concentración. **Se mantiene `maxPositionPct = 0.25`**
+   en `config.js`. Si en el futuro se quiere más diversificación, probar primero con
+   valores intermedios (18-20%) o atacarlo por otro lado (ej. límite de correlación
+   sectorial entre posiciones en vez de más posiciones chicas) y revalidar.
 
 ## Los criterios (TODOS tienen que cumplirse, no alcanza con uno o dos)
 
