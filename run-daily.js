@@ -4,8 +4,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION, MIDCAP_WATCHLIST } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION, MIDCAP_WATCHLIST, SMALLCAP_WATCHLIST } = require('./config');
 const { buildMidcapWatchlist, buildMidcapWatchlistMarkdown } = require('./lib/midcapWatch');
+const { buildSmallcapWatchlist, buildSmallcapWatchlistMarkdown } = require('./lib/smallcapWatch');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -36,13 +37,15 @@ async function main() {
   const tickers = WATCHLIST.map((w) => w.ticker);
 
   const midcapTickers = MIDCAP_WATCHLIST.map((w) => w.ticker);
-  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${midcapTickers.length} (mid-cap, solo seguimiento)...`);
-  const [{ data, errors }, macro, benchmarkData, coreFetch, midcapFetch] = await Promise.all([
+  const smallcapTickers = SMALLCAP_WATCHLIST.map((w) => w.ticker);
+  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${midcapTickers.length} (mid-cap) + ${smallcapTickers.length} (small-cap, ambos solo seguimiento)...`);
+  const [{ data, errors }, macro, benchmarkData, coreFetch, midcapFetch, smallcapFetch] = await Promise.all([
     marketData.fetchAll(tickers),
     fetchMacroRiskPanel(),
     marketData.fetchDailyCandles(BENCHMARK_TICKER),
     marketData.fetchAll(CORE_HOLDINGS, { range: '2y', includeDividends: true }),
     marketData.fetchAll(midcapTickers),
+    marketData.fetchAll(smallcapTickers),
   ]);
   for (const e of errors) console.warn(`[invest-bot] WARN: ${e.ticker}: ${e.message}`);
   for (const e of coreFetch.errors) console.warn(`[invest-bot] WARN (core): ${e.ticker}: ${e.message}`);
@@ -239,6 +242,28 @@ async function main() {
     if (midcapFetch.errors.length > 0) console.warn(`[invest-bot] WARN mid-cap: ${midcapFetch.errors.length} tickers sin datos.`);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo generar el seguimiento mid-cap (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Seguimiento del S&P SmallCap 600: mismo trato que el MidCap 400 arriba —
+  // solo seguimiento, nunca genera trades. Ver lib/smallcapWatch.js.
+  try {
+    console.log(`[invest-bot] Evaluando ${smallcapFetch.data.size} empresas del S&P SmallCap 600 (solo seguimiento, no se opera)...`);
+    const smallcapEvaluations = strategy.evaluateAll(smallcapFetch.data);
+    const smallcapSectorByTicker = new Map(SMALLCAP_WATCHLIST.map((w) => [w.ticker, w.sector]));
+    const smallcapWatchlist = buildSmallcapWatchlist(smallcapEvaluations, smallcapSectorByTicker);
+    const smallcapMd = buildSmallcapWatchlistMarkdown({ date, watchlist: smallcapWatchlist });
+
+    fs.writeFileSync(path.join(reportsDir, `smallcap-watch-${date}.md`), smallcapMd);
+    fs.writeFileSync(path.join(reportsDir, 'smallcap-watch-latest.md'), smallcapMd);
+
+    const smallcapJson = { date, generatedAt: new Date().toISOString(), ...smallcapWatchlist };
+    fs.writeFileSync(path.join(reportsDir, `smallcap-watch-${date}.json`), JSON.stringify(smallcapJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'smallcap-watch-latest.json'), JSON.stringify(smallcapJson, null, 2));
+
+    console.log(`[invest-bot] Seguimiento small-cap generado: ${smallcapWatchlist.totalEvaluated} evaluadas.`);
+    if (smallcapFetch.errors.length > 0) console.warn(`[invest-bot] WARN small-cap: ${smallcapFetch.errors.length} tickers sin datos.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo generar el seguimiento small-cap (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   // Mercados más allá de acciones (commodities, bonos, REITs, cripto, forex)

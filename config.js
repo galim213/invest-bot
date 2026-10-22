@@ -23,6 +23,12 @@ const BENCHMARK_TICKER = 'SPY';
 const sp400 = JSON.parse(fs.readFileSync(path.join(__dirname, 'sp400.json'), 'utf8'));
 const MIDCAP_WATCHLIST = sp400.map((r) => ({ ticker: r.ticker, sector: r.sector, type: 'stock' }));
 
+// S&P SmallCap 600: mismo trato que el MidCap 400 — SOLO seguimiento (ver
+// lib/smallcapWatch.js). Constituyentes de hoy (2026-10-22), vía holdings
+// de IJR (iShares Core S&P Small-Cap ETF).
+const sp600 = JSON.parse(fs.readFileSync(path.join(__dirname, 'sp600.json'), 'utf8'));
+const SMALLCAP_WATCHLIST = sp600.map((r) => ({ ticker: r.ticker, sector: r.sector, type: 'stock' }));
+
 const STRATEGY = {
   // Ventanas de medias móviles para tendencia.
   // v2 (tras backtest): SMA10/30 generaba whipsaw (entra y sale del mismo ticker
@@ -177,4 +183,5 @@ module.exports = {
   ALLOW_SHORTING_IN_PRODUCTION,
   OTHER_MARKETS,
   MIDCAP_WATCHLIST,
+  SMALLCAP_WATCHLIST,
 };

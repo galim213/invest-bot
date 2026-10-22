@@ -27,6 +27,10 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   Para habilitarlo en producción algún día haría falta, como mínimo, un track record real
   en papel de 6+ meses sobre esta lista específica (criterio 2 de este documento) — un
   backtest histórico riguroso no es posible con datos gratuitos hoy.
+- **Seguimiento S&P SmallCap 600 (sin operar, desde 2026-10-22)**: mismo trato que el
+  MidCap 400 arriba, por el mismo motivo (sin dataset point-in-time gratuito). Ver
+  `lib/smallcapWatch.js`, `reports/smallcap-watch-latest.md`. 602 empresas, vía holdings
+  de IJR (iShares Core S&P Small-Cap ETF).
 
 ## Track record de las research notes (desde 2026-10-20)
 
