@@ -13,3 +13,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio puramente de cobertura de tests sobre código existente; no se consultó fuente externa nueva (documentación de [node:test](https://nodejs.org/api/test.html) ya es la base de los tests del repo).
 
 **Pendiente para próximos días:** tests para `decide.js`/`simulate.js`/`researchNote.js`/`marketIntel.js` (falta cobertura de `simulate.js`, `researchNote.js`, `marketIntel.js`, `macroRisk.js`); investigar concentración sectorial del satellite.
+
+## 2026-10-22
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir (track record introducido el 2026-10-20) → no hay 30+ días; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/macroRisk.js` (panel macro: VIX, pendiente de curva 10y-3m, proxy de spread de crédito HYG vs LQD, tendencia del dólar), que no tenía tests.
+
+**Decisión:** implementado. `test/macroRisk.test.js` (7 tests, `node:test`, sin dependencias; `marketData.fetchAll` se stubbea, sin red): umbrales de `classifyVix` (20/30/40), curva invertida vs normal, panel sin datos devuelve nulls sin inventar señales, estrés de crédito (HYG rinde >1.5% menos que LQD en 20d), caso sin estrés y caso con pocas velas, tendencia/clasificación del VIX. `npm test`: 121/121 en verde. No se tocó ningún archivo de `lib/` ni lógica de trading → no aplica el gate de `validate.js`. Sin cambios visibles en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** tests para `simulate.js`, `marketIntel.js`; investigar concentración sectorial del satellite (idea (a)), con fuente antes de implementar.
