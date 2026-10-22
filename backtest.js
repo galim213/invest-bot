@@ -23,6 +23,9 @@ const USE_FUNDAMENTALS = process.argv.includes('--fundamentals');
 // está apagada en producción (ALLOW_SHORTING_IN_PRODUCTION=false en config.js)
 // hasta que se valide fuera de muestra. `--shorts` la prueba acá.
 const USE_SHORTS = process.argv.includes('--shorts');
+// Opt-in: tope de concentración sectorial, probado y descartado (ver
+// GRADUATION_CRITERIA.md) — queda disponible para seguir experimentando.
+const USE_SECTOR_CAP = process.argv.includes('--sectorcap');
 
 async function main() {
   const tickers = WATCHLIST.map((w) => w.ticker);
@@ -69,7 +72,7 @@ async function main() {
     }
   }
   if (USE_SHORTS) console.log('[backtest] Shorts habilitados para esta corrida (experimental, ver GRADUATION_CRITERIA.md).');
-  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, qualityScores, allowShorting: USE_SHORTS });
+  const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, qualityScores, allowShorting: USE_SHORTS, enforceSectorCap: USE_SECTOR_CAP });
 
   console.log('');
   console.log('=== Resultado del backtest ===');

@@ -12,6 +12,7 @@ const { loadHistoricalMembership } = require('./lib/pointInTime');
 // Opt-in, igual que --fundamentals en backtest.js: prueba la mecánica de
 // shorts (apagada en producción) contra los mismos regímenes out-of-sample.
 const USE_SHORTS = process.argv.includes('--shorts');
+const USE_SECTOR_CAP = process.argv.includes('--sectorcap');
 
 /**
  * Fase 2 — validación fuera de muestra: la estrategia se ajustó (thresholds,
@@ -83,7 +84,7 @@ async function main() {
     }
 
     console.log(`[validate] Simulando "${regime.name}" (${simDates[0]} a ${simDates.at(-1)}, ${simDates.length} días)...`);
-    const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, allowShorting: USE_SHORTS });
+    const result = runBacktest({ data, simDates, benchmarkCandles: benchmarkData?.candles, pointInTime, allowShorting: USE_SHORTS, enforceSectorCap: USE_SECTOR_CAP });
 
     results.push({ regime: regime.name, note: regime.note, ...result });
 

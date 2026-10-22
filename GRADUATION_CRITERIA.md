@@ -122,6 +122,27 @@ aceptarla. Dos ya fallaron esa prueba — quedan acá para no repetir el error:
    en `config.js`. Si en el futuro se quiere más diversificación, probar primero con
    valores intermedios (18-20%) o atacarlo por otro lado (ej. límite de correlación
    sectorial entre posiciones en vez de más posiciones chicas) y revalidar.
+5. **Tope de concentración sectorial** (2026-10-22, `STRATEGY.maxPositionsPerSector = 2`,
+   `lib/decide.js` con `enforceSectorCap`, `node validate.js --sectorcap`): se probó porque
+   el satellite terminó con sus 4 posiciones concentradas 100% en Health Care (MRNA, VEEV,
+   ISRG, TMO) — exactamente el riesgo que este punto buscaba mitigar. Resultado: **empeoró
+   en 4 de los 5 regímenes** — Q4 2018 (-17.6%→-21.1%), COVID 2020 (-4.0%→-4.5%),
+   Recuperación 2023 (16.6%→16.1%), y sobre todo el período reciente (58.7%→15.2%, pasa de
+   ganarle al benchmark por +27.6pts a perderle por -15.9pts — la peor degradación medida
+   hasta ahora en este documento). Solo mejoró levemente en el bajista 2022
+   (-20.9%→-19.6%). Mismo patrón que el punto 4: forzar diversificación (por tamaño de
+   posición o por sector) sacrifica la convicción que hace funcionar al motor. **Queda
+   apagado por default** (`enforceSectorCap: false`); el mecanismo sirve para seguir
+   experimentando con otro enfoque (ej. tope más alto como 3-4 por sector, o solo aplicar
+   el tope en regímenes bajistas detectados) pero no se prende sin revalidar.
+
+   **Patrón que ya se repite 3 veces** (shorts, bajar maxPositionPct, tope sectorial):
+   cualquier intento de reducir la concentración de este motor técnico lo empeora fuera de
+   muestra. El edge de la estrategia depende de concentrarse en sus señales de mayor
+   convicción — diversificar por cualquier vía probada hasta ahora diluye esa convicción
+   más de lo que reduce el riesgo. No probar una cuarta variante de "diversificar" sin una
+   idea genuinamente distinta (ej. diversificar el CORE en vez del satellite, que es al
+   revés de lo que se probó acá).
 
 ## Los criterios (TODOS tienen que cumplirse, no alcanza con uno o dos)
 

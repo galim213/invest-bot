@@ -10,6 +10,41 @@ function ev(ticker, overrides = {}) {
   return { ticker, lastClose: 100, score: 0, signal: 'HOLD', reasons: ['x'], metrics: {}, ...overrides };
 }
 
+test('runDecisionEngine: con enforceSectorCap apagado (default), no limita la concentración sectorial', () => {
+  const state = portfolio.initialState(1000);
+  const evaluations = [
+    ev('JNJ', { score: 90, signal: 'BUY' }),
+    ev('UNH', { score: 85, signal: 'BUY' }),
+    ev('MRNA', { score: 80, signal: 'BUY' }), // tercer Health Care — sin el flag, no debería bloquearse
+  ];
+
+  runDecisionEngine(state, evaluations, '2026-01-01'); // sin pasar enforceSectorCap
+
+  assert.ok(state.positions.JNJ);
+  assert.ok(state.positions.UNH);
+  assert.ok(state.positions.MRNA); // probado y descartado (ver GRADUATION_CRITERIA.md) — apagado por default
+});
+
+test('runDecisionEngine: con enforceSectorCap prendido, respeta el tope de concentración sectorial', () => {
+  const state = portfolio.initialState(1000);
+  // JNJ y UNH son Health Care de verdad en el universo; MRNA también.
+  // Con maxPositionsPerSector=2, debería comprar como máximo 2 de Health Care
+  // aunque haya más candidatos BUY de ese sector con mejor score.
+  const evaluations = [
+    ev('JNJ', { score: 90, signal: 'BUY' }),
+    ev('UNH', { score: 85, signal: 'BUY' }),
+    ev('MRNA', { score: 80, signal: 'BUY' }), // tercer candidato Health Care, debería saltarse
+    ev('AAPL', { score: 75, signal: 'BUY' }), // otro sector, no debería bloquearse
+  ];
+
+  runDecisionEngine(state, evaluations, '2026-01-01', { enforceSectorCap: true });
+
+  assert.ok(state.positions.JNJ);
+  assert.ok(state.positions.UNH);
+  assert.equal(state.positions.MRNA, undefined); // tercer Health Care, bloqueado por el tope
+  assert.ok(state.positions.AAPL); // Information Technology, no compite por el mismo cupo
+});
+
 test('runDecisionEngine: con allowShorting apagado (default) nunca abre una posición corta nueva', () => {
   const state = portfolio.initialState(1000);
   const evaluations = [ev('BEAR', { lastClose: 50, score: STRATEGY.shortThreshold - 10 })];

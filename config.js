@@ -40,6 +40,11 @@ const STRATEGY = {
 
   // Gestión de riesgo.
   maxPositionPct: 0.25, // máx 25% del valor del portfolio en un solo ticker
+  // Tope de concentración sectorial: probado y DESCARTADO el 2026-10-22
+  // (empeoró en 4/5 regímenes out-of-sample, ver GRADUATION_CRITERIA.md).
+  // Apagado por default (ver `enforceSectorCap` en lib/decide.js) — queda el
+  // valor y el mecanismo para seguir experimentando, no para usar ya.
+  maxPositionsPerSector: 2,
   minCashReservePct: 0.05, // dejar al menos 5% en efectivo
   stopLossPct: -0.12, // antes -8%: evitar que la volatilidad normal saque posiciones sanas
   takeProfitTrimPct: 0.25, // antes +20%: dejar correr más la ganancia antes de trimear
