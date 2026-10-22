@@ -2,7 +2,7 @@
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { dividendStatsByTicker, positionsJson } = require('../lib/report');
+const { dividendStatsByTicker, positionsJson, lastRealDividendByTicker } = require('../lib/report');
 
 function div(ticker, date, amountPerShare, usdAmount) {
   return { action: 'DIVIDEND', ticker, date, price: amountPerShare, usdAmount };
@@ -76,5 +76,30 @@ test('positionsJson: un ticker sin dividendos registrados queda con esos campos 
   const result = positionsJson(positions, new Map([['MRNA', 210]]), new Map(), dividendStats, 1000);
 
   assert.equal(result[0].lastDividendDate, null);
+  assert.equal(result[0].dividendsAllTime, null);
+});
+
+test('lastRealDividendByTicker: toma el dividendo más reciente del historial real (Yahoo), sin importar lo cobrado', () => {
+  const allDividends = new Map([
+    ['JNJ', [{ date: '2026-02-18', amountPerShare: 1.24 }, { date: '2026-05-20', amountPerShare: 1.26 }, { date: '2025-11-19', amountPerShare: 1.24 }]],
+  ]);
+  const result = lastRealDividendByTicker(allDividends);
+  assert.deepEqual(result.get('JNJ'), { date: '2026-05-20', amountPerShare: 1.26 });
+});
+
+test('lastRealDividendByTicker: sin historial o mapa vacío, no explota', () => {
+  assert.equal(lastRealDividendByTicker(null).size, 0);
+  assert.equal(lastRealDividendByTicker(new Map([['JNJ', []]])).size, 0);
+});
+
+test('positionsJson: muestra el dividendo real de la empresa aunque todavía no lo hayamos cobrado nosotros', () => {
+  const positions = { JNJ: { shares: 5, avgCost: 150, openedAt: '2026-10-20' } }; // posición recién abierta
+  const dividendStats = dividendStatsByTicker([], '2026-10-22'); // nosotros todavía no cobramos nada
+  const realDividends = lastRealDividendByTicker(new Map([['JNJ', [{ date: '2026-08-15', amountPerShare: 1.26 }]]]));
+  const result = positionsJson(positions, new Map([['JNJ', 160]]), new Map(), dividendStats, 1000, realDividends);
+
+  assert.equal(result[0].lastRealDividendDate, '2026-08-15'); // la empresa sí pagó
+  assert.equal(result[0].lastRealDividendPerShare, 1.26);
+  assert.equal(result[0].lastDividendDate, null); // pero nosotros todavía no lo cobramos (posición nueva)
   assert.equal(result[0].dividendsAllTime, null);
 });

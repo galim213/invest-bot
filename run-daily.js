@@ -106,7 +106,7 @@ async function main() {
 
   const markdown = buildReportMarkdown({
     date,
-    core: { state: core, snapshot: coreSnapshot, trades: coreInitTrades, dividends: dividendsCredited, prices: corePrices },
+    core: { state: core, snapshot: coreSnapshot, trades: coreInitTrades, dividends: dividendsCredited, prices: corePrices, allDividendsByTicker: coreDividends },
     satellite: { state: satellite, snapshot: satelliteSnapshot, evaluations, trades, prices },
     combined,
     warnings: allWarnings,
@@ -116,7 +116,7 @@ async function main() {
 
   const json = buildReportJson({
     date,
-    core: { state: core, snapshot: coreSnapshot, trades: coreInitTrades, dividends: dividendsCredited, prices: corePrices },
+    core: { state: core, snapshot: coreSnapshot, trades: coreInitTrades, dividends: dividendsCredited, prices: corePrices, allDividendsByTicker: coreDividends },
     satellite: { state: satellite, snapshot: satelliteSnapshot, evaluations, trades, prices },
     combined,
     warnings: allWarnings,
