@@ -27,6 +27,7 @@ const {
 } = require('./lib/marketIntel');
 const { appendHistory } = require('./lib/trackRecord');
 const { appendScoreHistory } = require('./lib/scoreHistory');
+const { appendToJournal, loadJournal, buildDecisionJournalMarkdown } = require('./lib/decisionJournal');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 
@@ -200,6 +201,18 @@ async function main() {
     // adelante contra el precio futuro. Ver track-record.js y lib/trackRecord.js.
     const addedToHistory = appendHistory(notes, date);
     if (addedToHistory > 0) console.log(`[invest-bot] Track record: ${addedToHistory} entradas nuevas agregadas a la bitácora histórica.`);
+
+    // Bitácora de decisiones: cada trade del satellite hoy, junto al research
+    // note vigente de ese ticker (si lo hay) — para poder preguntar más
+    // adelante "¿por qué compramos/vendimos X ese día?" sin buscar el
+    // reporte viejo a mano. Ver lib/decisionJournal.js.
+    if (trades.length > 0) {
+      const notesByTicker = new Map(notes.map((n) => [n.ticker, n]));
+      const addedToJournal = appendToJournal(trades, notesByTicker);
+      if (addedToJournal > 0) console.log(`[invest-bot] Bitácora de decisiones: ${addedToJournal} trade(s) nuevos registrados.`);
+    }
+    const journalMd = buildDecisionJournalMarkdown({ journal: loadJournal() });
+    fs.writeFileSync(path.join(reportsDir, 'decision-journal-latest.md'), journalMd);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudieron generar las research notes (${err.message}) — se sigue sin esto, no es crítico.`);
   }
