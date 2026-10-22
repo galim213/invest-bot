@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026-10-22",
+    "ticker": "MRNA",
+    "action": "SELL",
+    "shares": 0.1554146506006603,
+    "price": 202.6300048828125,
+    "usdAmount": 31.475925574367356,
+    "fee": 0.015745835705036196,
+    "realizedPnl": -6.024074425632642,
+    "reason": "Stop-loss: precio -16.0% desde el precio de entrada (umbral -12%).",
+    "researchAvailable": false,
+    "researchVerdict": null,
+    "researchBull": null,
+    "researchBear": null,
+    "researchSellTriggers": null
+  },
+  {
+    "date": "2026-10-22",
+    "ticker": "CRL",
+    "action": "BUY",
+    "shares": 0.06212594969413036,
+    "price": 339.6600036621094,
+    "usdAmount": 21.10170030062034,
+    "fee": 0.010550850150310171,
+    "realizedPnl": null,
+    "reason": "Señal técnica de compra (score 57): Tendencia de corto plazo alcista: SMA20 (304.03) por encima de SMA50 (292.66). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.0%. RSI 74: sobrecompra, riesgo de corrección.",
+    "researchAvailable": false,
+    "researchVerdict": null,
+    "researchBull": null,
+    "researchBear": null,
+    "researchSellTriggers": null
+  },
+  {
+    "date": "2026-10-22",
+    "ticker": "MAR",
+    "action": "BUY",
+    "shares": 0.026634058099047005,
+    "price": 396.79998779296875,
+    "usdAmount": 10.568393928579072,
+    "fee": 0.005284196964289536,
+    "realizedPnl": null,
+    "reason": "Señal técnica de compra (score 57): Tendencia de corto plazo alcista: SMA20 (370.87) por encima de SMA50 (355.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.9%. RSI 78: sobrecompra, riesgo de corrección.",
+    "researchAvailable": false,
+    "researchVerdict": null,
+    "researchBull": null,
+    "researchBear": null,
+    "researchSellTriggers": null
+  }
+]

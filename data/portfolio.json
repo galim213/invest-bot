@@ -7,61 +7,61 @@
         "shares": 0.26963003922387324,
         "avgCost": 259.614990234375,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "PG": {
         "shares": 0.4424778846418163,
         "avgCost": 158.1999969482422,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "KO": {
         "shares": 0.7549204761597976,
         "avgCost": 92.7249984741211,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "XOM": {
         "shares": 0.39479993734864277,
         "avgCost": 177.30499267578125,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "CVX": {
         "shares": 0.31141560806186497,
         "avgCost": 224.77999877929688,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "JPM": {
         "shares": 0.20850087185935426,
         "avgCost": 335.7300109863281,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "MSFT": {
         "shares": 0.13139864953424787,
         "avgCost": 532.72998046875,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "V": {
         "shares": 0.1720070804742163,
         "avgCost": 406.9599914550781,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "LMT": {
         "shares": 0.1274163591281987,
         "avgCost": 549.3800048828125,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       },
       "TXN": {
         "shares": 0.2490619575637314,
         "avgCost": 279.6499938964844,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-10-21"
+        "lastDividendCheck": "2026-10-22"
       }
     },
     "history": [
@@ -180,19 +180,21 @@
         "cash": 0,
         "pnl": 1.0908745868542837,
         "pnlPct": 0.15583922669346909
+      },
+      {
+        "date": "2026-10-22",
+        "totalValue": 713.0567232829438,
+        "cash": 0,
+        "pnl": 13.056723282943835,
+        "pnlPct": 1.8652461832776908
       }
     ],
     "createdAt": "2026-10-20T18:09:30.329Z"
   },
   "satellite": {
     "startingCapital": 300,
-    "cash": 14.960508015990484,
+    "cash": 14.750504314043825,
     "positions": {
-      "MRNA": {
-        "shares": 0.1554146506006603,
-        "avgCost": 241.2899932861328,
-        "openedAt": "2026-10-20"
-      },
       "VEEV": {
         "shares": 0.22627336536059467,
         "avgCost": 315.4324951171875,
@@ -207,6 +209,16 @@
         "shares": 0.11445624574396125,
         "avgCost": 690.0800170898438,
         "openedAt": "2026-10-20"
+      },
+      "CRL": {
+        "shares": 0.06212594969413036,
+        "avgCost": 339.6600036621094,
+        "openedAt": "2026-10-22"
+      },
+      "MAR": {
+        "shares": 0.026634058099047005,
+        "avgCost": 396.79998779296875,
+        "openedAt": "2026-10-22"
       }
     },
     "history": [
@@ -249,6 +261,37 @@
         "usdAmount": 78.98396801903213,
         "fee": 0.03949198400951607,
         "reason": "Señal técnica de compra (score 61): Tendencia de corto plazo alcista: SMA20 (670.95) por encima de SMA50 (639.98). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.1%. RSI 55: zona neutral."
+      },
+      {
+        "date": "2026-10-22",
+        "action": "SELL",
+        "ticker": "MRNA",
+        "shares": 0.1554146506006603,
+        "price": 202.6300048828125,
+        "usdAmount": 31.475925574367356,
+        "fee": 0.015745835705036196,
+        "realizedPnl": -6.024074425632642,
+        "reason": "Stop-loss: precio -16.0% desde el precio de entrada (umbral -12%)."
+      },
+      {
+        "date": "2026-10-22",
+        "action": "BUY",
+        "ticker": "CRL",
+        "shares": 0.06212594969413036,
+        "price": 339.6600036621094,
+        "usdAmount": 21.10170030062034,
+        "fee": 0.010550850150310171,
+        "reason": "Señal técnica de compra (score 57): Tendencia de corto plazo alcista: SMA20 (304.03) por encima de SMA50 (292.66). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.0%. RSI 74: sobrecompra, riesgo de corrección."
+      },
+      {
+        "date": "2026-10-22",
+        "action": "BUY",
+        "ticker": "MAR",
+        "shares": 0.026634058099047005,
+        "price": 396.79998779296875,
+        "usdAmount": 10.568393928579072,
+        "fee": 0.005284196964289536,
+        "reason": "Señal técnica de compra (score 57): Tendencia de corto plazo alcista: SMA20 (370.87) por encima de SMA50 (355.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.9%. RSI 78: sobrecompra, riesgo de corrección."
       }
     ],
     "dailySnapshots": [
@@ -265,6 +308,13 @@
         "cash": 14.960508015990484,
         "pnl": -0.1073661908392296,
         "pnlPct": -0.035788730279743206
+      },
+      {
+        "date": "2026-10-22",
+        "totalValue": 295.09993517304775,
+        "cash": 14.750504314043825,
+        "pnl": -4.900064826952246,
+        "pnlPct": -1.6333549423174152
       }
     ],
     "createdAt": "2026-10-20T18:09:30.329Z"

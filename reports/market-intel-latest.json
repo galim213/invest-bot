@@ -1,98 +1,98 @@
 {
-  "date": "2026-10-21",
-  "generatedAt": "2026-10-21T20:07:33.657Z",
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T20:08:15.712Z",
   "sectorRotation": {
     "rows": [
       {
-        "ticker": "XLE",
-        "sector": "Energía",
-        "lastClose": 68.16999816894531,
-        "momentum1m": 0.10343152340413761,
-        "momentum3m": 0.14802958812255676
-      },
-      {
-        "ticker": "XLV",
-        "sector": "Salud",
-        "lastClose": 178.94000244140625,
-        "momentum1m": 0.05326978094220441,
-        "momentum3m": 0.10839940371254347
-      },
-      {
         "ticker": "XLP",
         "sector": "Consumo básico",
-        "lastClose": 87.12000274658203,
-        "momentum1m": 0.053064175166390976,
-        "momentum3m": 0.04698958905335451
+        "lastClose": 89.9800033569336,
+        "momentum1m": 0.09159290335807202,
+        "momentum3m": 0.06953531789492547
+      },
+      {
+        "ticker": "XLE",
+        "sector": "Energía",
+        "lastClose": 67.58000183105469,
+        "momentum1m": 0.08353379811437621,
+        "momentum3m": 0.13351229523274805
       },
       {
         "ticker": "XLU",
         "sector": "Servicios públicos",
-        "lastClose": 42.019798278808594,
-        "momentum1m": 0.036757945827344145,
-        "momentum3m": -0.09028362138744483
+        "lastClose": 42.85969924926758,
+        "momentum1m": 0.07823142765453027,
+        "momentum3m": -0.07410459275037772
+      },
+      {
+        "ticker": "XLV",
+        "sector": "Salud",
+        "lastClose": 181.32000732421875,
+        "momentum1m": 0.07417064008359069,
+        "momentum3m": 0.11533492744824853
       },
       {
         "ticker": "XLY",
         "sector": "Consumo discrecional",
-        "lastClose": 115.54000091552734,
-        "momentum1m": 0.028576507007455794,
-        "momentum3m": 0.062339082807339345
+        "lastClose": 115.01000213623047,
+        "momentum1m": 0.039403529599878424,
+        "momentum3m": 0.05118360558158424
       },
       {
         "ticker": "XLF",
         "sector": "Financiero",
-        "lastClose": 56.025001525878906,
-        "momentum1m": 0.022354056676517357,
-        "momentum3m": 0.003492740254859759
+        "lastClose": 56.65999984741211,
+        "momentum1m": 0.038870533485473584,
+        "momentum3m": 0.006215565007730672
       },
       {
         "ticker": "XLB",
         "sector": "Materiales",
-        "lastClose": 51.314998626708984,
-        "momentum1m": 0.01553532290473237,
-        "momentum3m": 0.020381739759825025
+        "lastClose": 51.70500183105469,
+        "momentum1m": 0.028341350166153287,
+        "momentum3m": 0.008681301679531038
       },
       {
         "ticker": "XLRE",
         "sector": "Bienes raíces",
-        "lastClose": 42.04499816894531,
-        "momentum1m": -0.010705925436580882,
-        "momentum3m": -0.06462742034899514
+        "lastClose": 42.529998779296875,
+        "momentum1m": 0.016491362910913052,
+        "momentum3m": -0.07442876881083643
       },
       {
         "ticker": "XLI",
         "sector": "Industrial",
-        "lastClose": 168.3000030517578,
-        "momentum1m": -0.011569866513603819,
-        "momentum3m": -0.07496976589324383
+        "lastClose": 166.7100067138672,
+        "momentum1m": -0.019929448959486975,
+        "momentum3m": -0.08732068667723794
       },
       {
         "ticker": "ITA",
         "sector": "Aeroespacial y Defensa",
-        "lastClose": 205.6999969482422,
-        "momentum1m": -0.03878506098952249,
-        "momentum3m": -0.1365487107530366
-      },
-      {
-        "ticker": "XLK",
-        "sector": "Tecnología",
-        "lastClose": 188.55999755859375,
-        "momentum1m": -0.03928265423158701,
-        "momentum3m": 0.05665452946622284
+        "lastClose": 204.52000427246094,
+        "momentum1m": -0.04394163227815962,
+        "momentum3m": -0.1483301207950405
       },
       {
         "ticker": "XLC",
         "sector": "Comunicaciones",
-        "lastClose": 108.98400115966797,
-        "momentum1m": -0.04004225903733478,
-        "momentum3m": 0.03420007591747309
+        "lastClose": 107.43000030517578,
+        "momentum1m": -0.04557566955123217,
+        "momentum3m": 0.01063026548426127
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Tecnología",
+        "lastClose": 182.3699951171875,
+        "momentum1m": -0.06639705878906735,
+        "momentum3m": 0.03690010265066362
       },
       {
         "ticker": "SMH",
         "sector": "Semiconductores",
-        "lastClose": 556.7000122070312,
-        "momentum1m": -0.08356107057183407,
-        "momentum3m": -0.04045361082867244
+        "lastClose": 523.3499755859375,
+        "momentum1m": -0.1297949835292045,
+        "momentum3m": -0.06742819132708912
       }
     ],
     "errors": []
@@ -333,136 +333,136 @@
     ],
     "errors": [
       {
-        "ticker": "XOM",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "ticker": "CVX",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "SLB",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "NEE",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "NVDA",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "AVGO",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "AMD",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "TSM",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "ASML",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "INTC",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "TXN",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "LMT",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "RTX",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "NOC",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "GD",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "LHX",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "HII",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "MSFT",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "AAPL",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "GOOGL",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "AMZN",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "PG",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "KO",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "COST",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "WMT",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "JPM",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "V",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "MA",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "BRK-B",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "JNJ",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "UNH",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "LLY",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
-        "ticker": "CVX",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "ticker": "XOM",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
         "ticker": "COP",
-        "message": "auth: fc.yahoo.com inalcanzable: fetch failed"
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       }
     ]
   }
