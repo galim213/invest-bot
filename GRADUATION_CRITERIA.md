@@ -31,6 +31,13 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   MidCap 400 arriba, por el mismo motivo (sin dataset point-in-time gratuito). Ver
   `lib/smallcapWatch.js`, `reports/smallcap-watch-latest.md`. 602 empresas, vía holdings
   de IJR (iShares Core S&P Small-Cap ETF).
+- **Seguimiento internacional (sin operar, desde 2026-10-22)**: 541 empresas domiciliadas
+  fuera de EEUU que cotizan en NYSE/Nasdaq/AMEX (ADRs y similares), >= $500M de market cap,
+  vía el screener público de Nasdaq (`api.nasdaq.com`). Mismo trato que mid/small-cap
+  (solo seguimiento) — y acá hay un riesgo ADICIONAL a los otros dos: algunas ADRs (sobre
+  todo chinas) tuvieron casos históricos de fraude contable o deslisting forzado de bolsas
+  de EEUU, un riesgo que no existe en el S&P 500/400/600. Ver `lib/globalWatch.js`,
+  `reports/global-watch-latest.md`.
 
 ## Track record de las research notes (desde 2026-10-20)
 

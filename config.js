@@ -29,6 +29,13 @@ const MIDCAP_WATCHLIST = sp400.map((r) => ({ ticker: r.ticker, sector: r.sector,
 const sp600 = JSON.parse(fs.readFileSync(path.join(__dirname, 'sp600.json'), 'utf8'));
 const SMALLCAP_WATCHLIST = sp600.map((r) => ({ ticker: r.ticker, sector: r.sector, type: 'stock' }));
 
+// Empresas internacionales en bolsas de EEUU (ADRs y similares, >= $500M
+// market cap, sin duplicar lo que ya está en sp500/400/600) — SOLO
+// seguimiento (ver lib/globalWatch.js). Fuente: screener público de Nasdaq
+// (api.nasdaq.com), filtrado 2026-10-22.
+const globalCompanies = JSON.parse(fs.readFileSync(path.join(__dirname, 'global-watchlist.json'), 'utf8'));
+const GLOBAL_WATCHLIST = globalCompanies.map((r) => ({ ticker: r.ticker, sector: r.sector, country: r.country, type: 'stock' }));
+
 const STRATEGY = {
   // Ventanas de medias móviles para tendencia.
   // v2 (tras backtest): SMA10/30 generaba whipsaw (entra y sale del mismo ticker
@@ -184,4 +191,5 @@ module.exports = {
   OTHER_MARKETS,
   MIDCAP_WATCHLIST,
   SMALLCAP_WATCHLIST,
+  GLOBAL_WATCHLIST,
 };

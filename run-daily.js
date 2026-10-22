@@ -4,9 +4,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION, MIDCAP_WATCHLIST, SMALLCAP_WATCHLIST } = require('./config');
+const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION, MIDCAP_WATCHLIST, SMALLCAP_WATCHLIST, GLOBAL_WATCHLIST } = require('./config');
 const { buildMidcapWatchlist, buildMidcapWatchlistMarkdown } = require('./lib/midcapWatch');
 const { buildSmallcapWatchlist, buildSmallcapWatchlistMarkdown } = require('./lib/smallcapWatch');
+const { buildGlobalWatchlist, buildGlobalWatchlistMarkdown } = require('./lib/globalWatch');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -38,14 +39,16 @@ async function main() {
 
   const midcapTickers = MIDCAP_WATCHLIST.map((w) => w.ticker);
   const smallcapTickers = SMALLCAP_WATCHLIST.map((w) => w.ticker);
-  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${midcapTickers.length} (mid-cap) + ${smallcapTickers.length} (small-cap, ambos solo seguimiento)...`);
-  const [{ data, errors }, macro, benchmarkData, coreFetch, midcapFetch, smallcapFetch] = await Promise.all([
+  const globalTickers = GLOBAL_WATCHLIST.map((w) => w.ticker);
+  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${midcapTickers.length} (mid-cap) + ${smallcapTickers.length} (small-cap) + ${globalTickers.length} (internacional, todos solo seguimiento)...`);
+  const [{ data, errors }, macro, benchmarkData, coreFetch, midcapFetch, smallcapFetch, globalFetch] = await Promise.all([
     marketData.fetchAll(tickers),
     fetchMacroRiskPanel(),
     marketData.fetchDailyCandles(BENCHMARK_TICKER),
     marketData.fetchAll(CORE_HOLDINGS, { range: '2y', includeDividends: true }),
     marketData.fetchAll(midcapTickers),
     marketData.fetchAll(smallcapTickers),
+    marketData.fetchAll(globalTickers),
   ]);
   for (const e of errors) console.warn(`[invest-bot] WARN: ${e.ticker}: ${e.message}`);
   for (const e of coreFetch.errors) console.warn(`[invest-bot] WARN (core): ${e.ticker}: ${e.message}`);
@@ -264,6 +267,28 @@ async function main() {
     if (smallcapFetch.errors.length > 0) console.warn(`[invest-bot] WARN small-cap: ${smallcapFetch.errors.length} tickers sin datos.`);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo generar el seguimiento small-cap (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Seguimiento de empresas internacionales (ADRs y similares en bolsas de
+  // EEUU) — mismo trato: solo seguimiento, nunca genera trades. Ver lib/globalWatch.js.
+  try {
+    console.log(`[invest-bot] Evaluando ${globalFetch.data.size} empresas internacionales (solo seguimiento, no se opera)...`);
+    const globalEvaluations = strategy.evaluateAll(globalFetch.data);
+    const globalMetaByTicker = new Map(GLOBAL_WATCHLIST.map((w) => [w.ticker, { sector: w.sector, country: w.country }]));
+    const globalWatchlist = buildGlobalWatchlist(globalEvaluations, globalMetaByTicker);
+    const globalMd = buildGlobalWatchlistMarkdown({ date, watchlist: globalWatchlist });
+
+    fs.writeFileSync(path.join(reportsDir, `global-watch-${date}.md`), globalMd);
+    fs.writeFileSync(path.join(reportsDir, 'global-watch-latest.md'), globalMd);
+
+    const globalJson = { date, generatedAt: new Date().toISOString(), ...globalWatchlist };
+    fs.writeFileSync(path.join(reportsDir, `global-watch-${date}.json`), JSON.stringify(globalJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'global-watch-latest.json'), JSON.stringify(globalJson, null, 2));
+
+    console.log(`[invest-bot] Seguimiento internacional generado: ${globalWatchlist.totalEvaluated} evaluadas.`);
+    if (globalFetch.errors.length > 0) console.warn(`[invest-bot] WARN internacional: ${globalFetch.errors.length} tickers sin datos.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo generar el seguimiento internacional (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   // Mercados más allá de acciones (commodities, bonos, REITs, cripto, forex)
