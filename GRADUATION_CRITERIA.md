@@ -38,6 +38,17 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   todo chinas) tuvieron casos históricos de fraude contable o deslisting forzado de bolsas
   de EEUU, un riesgo que no existe en el S&P 500/400/600. Ver `lib/globalWatch.js`,
   `reports/global-watch-latest.md`.
+- **13F — qué compran los fondos grandes (desde 2026-10-22)**: `lib/thirteenF.js` lee los
+  Form 13F de la SEC (Berkshire Hathaway, Scion Asset Management) — puramente informativo,
+  nunca alimenta al satellite. Limitaciones reales, no evitables con datos gratis: (1)
+  retraso de hasta 45 días, nunca en vivo; (2) el 13F NO reporta posiciones cortas, solo
+  tenencias largas y opciones put/call (por eso los shorts de Burry en 2008 nunca
+  aparecieron en un 13F — lo que sí se ve son sus puts actuales sobre NVDA/PLTR); (3) la
+  SEC da el nombre del emisor y el CUSIP, nunca el ticker — se resuelve cruzando el nombre
+  normalizado contra `sp500.json`/`sp400.json`/`sp600.json`/`global-watchlist.json`, con
+  27/29 y 8/8 de aciertos en la primera prueba, no 100%. Bug encontrado y corregido en el
+  camino: la SEC reporta el valor en dólares completos desde el 3 de enero de 2023 (antes
+  era en miles) — se verificó cruzando valor/acciones contra precios reales conocidos.
 
 ## Track record de las research notes (desde 2026-10-20)
 

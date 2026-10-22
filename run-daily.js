@@ -8,6 +8,7 @@ const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TI
 const { buildMidcapWatchlist, buildMidcapWatchlistMarkdown } = require('./lib/midcapWatch');
 const { buildSmallcapWatchlist, buildSmallcapWatchlistMarkdown } = require('./lib/smallcapWatch');
 const { buildGlobalWatchlist, buildGlobalWatchlistMarkdown } = require('./lib/globalWatch');
+const { buildThirteenFReport, buildThirteenFMarkdown } = require('./lib/thirteenF');
 const marketData = require('./lib/marketData');
 const strategy = require('./lib/strategy');
 const portfolio = require('./lib/portfolio');
@@ -330,6 +331,27 @@ async function main() {
     console.log(`[invest-bot] Guía de inversión desde Chile copiada al reporte (${guide.length} temas).`);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo copiar la guía de inversión desde Chile (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // 13F: qué compran los fondos grandes (Berkshire, Scion) — trimestral,
+  // con retraso de hasta 45 días, nunca en vivo. Solo informativo, no
+  // alimenta al satellite. Ver lib/thirteenF.js.
+  try {
+    console.log('[invest-bot] Generando reporte 13F (fondos grandes)...');
+    const { reports: fundReports, errors: fundErrors } = await buildThirteenFReport();
+    const fundMd = buildThirteenFMarkdown({ date, reports: fundReports });
+
+    fs.writeFileSync(path.join(reportsDir, `thirteen-f-${date}.md`), fundMd);
+    fs.writeFileSync(path.join(reportsDir, 'thirteen-f-latest.md'), fundMd);
+
+    const fundJson = { date, generatedAt: new Date().toISOString(), reports: fundReports };
+    fs.writeFileSync(path.join(reportsDir, `thirteen-f-${date}.json`), JSON.stringify(fundJson, null, 2));
+    fs.writeFileSync(path.join(reportsDir, 'thirteen-f-latest.json'), JSON.stringify(fundJson, null, 2));
+
+    console.log(`[invest-bot] Reporte 13F generado: ${fundReports.length} fondo(s).`);
+    if (fundErrors.length > 0) console.warn(`[invest-bot] WARN 13F: ${JSON.stringify(fundErrors)}`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo generar el reporte 13F (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   return { reportPath, combined, trades };
