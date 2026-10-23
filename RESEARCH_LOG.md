@@ -25,3 +25,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** tests para `simulate.js`, `marketIntel.js`; investigar concentración sectorial del satellite (idea (a)), con fuente antes de implementar.
+
+## 2026-10-23
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/simulate.js` (`runBacktest`, el motor compartido por `backtest.js` y `validate.js`, hasta hoy sin tests).
+
+**Decisión:** implementado. `test/simulate.test.js` (4 tests, `node:test`, sin red ni dependencias): sin tickers deja el capital intacto y sin trades; período y snapshots correctos; retorno del benchmark (100→120 = 20%); benchmark null si no se pasa; consistencia cerrados = ganadores + perdedores en una serie sintética. `npm test`: 142/142 en verde. No se tocó ningún archivo de `lib/` ni lógica de trading → no aplica el gate de `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** tests para `marketIntel.js`; investigar concentración sectorial del satellite (idea (a)) con fuente antes de implementar.
