@@ -33,6 +33,16 @@ const { appendScoreHistory } = require('./lib/scoreHistory');
 const { appendToJournal, loadJournal, buildDecisionJournalMarkdown } = require('./lib/decisionJournal');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
+const { loadVariant, saveVariant, runVariantDay, buildVariantMarkdown, buildVariantJson } = require('./lib/variantPortfolio');
+
+// Carteras paralelas en vivo: mismo motor técnico (lib/decide.js, sin cambios)
+// que el satellite de producción, pero sobre universos que no se pueden
+// backtestear con el mismo rigor (sin dataset point-in-time gratuito para
+// mid/small-cap e internacional, ver GRADUATION_CRITERIA.md) — avanzar día a
+// día en vivo es la única forma de evaluarlos sin look-ahead bias. Capital
+// ficticio propio, igual al que recibe el satellite de producción ($300 =
+// 30% de $1000), para comparar manzanas con manzanas.
+const VARIANTS_STARTING_CAPITAL = 300;
 
 async function main() {
   const date = new Date().toISOString().slice(0, 10);
@@ -290,6 +300,40 @@ async function main() {
     if (globalFetch.errors.length > 0) console.warn(`[invest-bot] WARN internacional: ${globalFetch.errors.length} tickers sin datos.`);
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudo generar el seguimiento internacional (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Carteras paralelas en vivo (ver VARIANTS_STARTING_CAPITAL arriba): mismo
+  // motor técnico que el satellite de producción, aplicado sobre mid+small
+  // cap e internacional. A diferencia de los paneles de seguimiento de
+  // arriba, estas SÍ ejecutan trades reales (ficticios) con su propio
+  // capital, independiente del satellite — es el experimento en vivo, no
+  // solo un ranking de scores.
+  try {
+    console.log('[invest-bot] Corriendo carteras paralelas en vivo (mid+small cap, internacional)...');
+
+    const midsmallCandles = new Map([...midcapFetch.data, ...smallcapFetch.data]);
+    const variantDefs = [
+      { name: 'midsmall', label: 'Mid + Small cap', universeLabel: 'S&P MidCap 400 + SmallCap 600', candles: midsmallCandles },
+      { name: 'global', label: 'Internacional (ADRs)', universeLabel: 'empresas internacionales en bolsas de EEUU', candles: globalFetch.data },
+    ];
+
+    for (const v of variantDefs) {
+      const vState = loadVariant(v.name, VARIANTS_STARTING_CAPITAL);
+      const { trades: vTrades, snapshot: vSnapshot } = runVariantDay({ state: vState, candlesByTicker: v.candles, date });
+      saveVariant(v.name, vState);
+
+      const vMd = buildVariantMarkdown({ date, label: v.label, universeLabel: v.universeLabel, state: vState, snapshot: vSnapshot, trades: vTrades });
+      const vJson = buildVariantJson({ date, name: v.name, label: v.label, universeLabel: v.universeLabel, state: vState, snapshot: vSnapshot, trades: vTrades });
+
+      fs.writeFileSync(path.join(reportsDir, `variant-${v.name}-${date}.md`), vMd);
+      fs.writeFileSync(path.join(reportsDir, `variant-${v.name}-latest.md`), vMd);
+      fs.writeFileSync(path.join(reportsDir, `variant-${v.name}-${date}.json`), JSON.stringify(vJson, null, 2));
+      fs.writeFileSync(path.join(reportsDir, `variant-${v.name}-latest.json`), JSON.stringify(vJson, null, 2));
+
+      console.log(`[invest-bot] Variante "${v.label}": $${vSnapshot.totalValue.toFixed(2)} (${vSnapshot.pnlPct.toFixed(2)}%), ${vTrades.length} trade(s) hoy.`);
+    }
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudieron correr las carteras paralelas (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   // Mercados más allá de acciones (commodities, bonos, REITs, cripto, forex)

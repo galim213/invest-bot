@@ -49,6 +49,24 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   27/29 y 8/8 de aciertos en la primera prueba, no 100%. Bug encontrado y corregido en el
   camino: la SEC reporta el valor en dólares completos desde el 3 de enero de 2023 (antes
   era en miles) — se verificó cruzando valor/acciones contra precios reales conocidos.
+- **Carteras paralelas en vivo (desde 2026-10-23)**: a diferencia de los seguimientos de
+  arriba (que solo rankean scores, nunca operan), estas DOS carteras SÍ ejecutan trades
+  reales (ficticios) — mismo motor técnico y mismos umbrales que el satellite de
+  producción (`lib/decide.js` sin cambios), aplicado sobre un universo distinto, cada una
+  con su propio capital ficticio de $300 (igual al satellite, para comparar manzanas con
+  manzanas) y su propio archivo de estado (`data/portfolio-midsmall.json`,
+  `data/portfolio-global.json`, ver `lib/variantPortfolio.js`). El motivo de que sean
+  "en vivo" y no backtest: mid/small-cap e internacional no tienen dataset point-in-time
+  gratuito (mismo problema que el seguimiento de arriba) — avanzar día a día hacia
+  adelante es la única forma de evaluarlas sin look-ahead bias. Variantes:
+  - **Mid + Small cap**: universo = S&P MidCap 400 + SmallCap 600 combinados.
+  - **Internacional (ADRs)**: universo = `global-watchlist.json`.
+  **Importante sobre cómo leer esto**: es una sola trayectoria por variante, no 5
+  regímenes como `validate.js` — con pocas semanas de datos, cualquier diferencia contra
+  el satellite de producción es ruido, no señal. No evaluar esto en serio antes de
+  **2-3 meses** de historia acumulada (revisar recién a fines de enero de 2027). Ninguna
+  de las dos reemplaza al satellite de producción ni cambia su comportamiento — corren en
+  paralelo, aisladas.
 
 ## Track record de las research notes (desde 2026-10-20)
 
