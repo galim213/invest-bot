@@ -1,0 +1,469 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T20:07:42.853Z",
+  "sectorRotation": {
+    "rows": [
+      {
+        "ticker": "XLE",
+        "sector": "Energía",
+        "lastClose": 69.31999969482422,
+        "momentum1m": 0.10734826492817218,
+        "momentum3m": 0.1877998452681413
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Servicios públicos",
+        "lastClose": 42.564998626708984,
+        "momentum1m": 0.08142779386833945,
+        "momentum3m": -0.06819180511506807
+      },
+      {
+        "ticker": "XLP",
+        "sector": "Consumo básico",
+        "lastClose": 88.26000213623047,
+        "momentum1m": 0.08029382414963998,
+        "momentum3m": 0.0339737758334461
+      },
+      {
+        "ticker": "XLV",
+        "sector": "Salud",
+        "lastClose": 179.27999877929688,
+        "momentum1m": 0.05539532544059789,
+        "momentum3m": 0.09718485603416027
+      },
+      {
+        "ticker": "XLB",
+        "sector": "Materiales",
+        "lastClose": 51.29499816894531,
+        "momentum1m": 0.032508008330291355,
+        "momentum3m": -0.001848632454396589
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumo discrecional",
+        "lastClose": 113.11000061035156,
+        "momentum1m": 0.025290073633477718,
+        "momentum3m": 0.020480010352408654
+      },
+      {
+        "ticker": "XLF",
+        "sector": "Financiero",
+        "lastClose": 55.900001525878906,
+        "momentum1m": 0.025123836003131787,
+        "momentum3m": -0.017229246199604566
+      },
+      {
+        "ticker": "XLRE",
+        "sector": "Bienes raíces",
+        "lastClose": 42.57500076293945,
+        "momentum1m": 0.022208864421908982,
+        "momentum3m": -0.0696022219278577
+      },
+      {
+        "ticker": "XLI",
+        "sector": "Industrial",
+        "lastClose": 164.6199951171875,
+        "momentum1m": -0.0249363659788387,
+        "momentum3m": -0.10141922565808735
+      },
+      {
+        "ticker": "ITA",
+        "sector": "Aeroespacial y Defensa",
+        "lastClose": 202.2899932861328,
+        "momentum1m": -0.04921038489858922,
+        "momentum3m": -0.17063675024019564
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Tecnología",
+        "lastClose": 183.27999877929688,
+        "momentum1m": -0.05870272477247196,
+        "momentum3m": 0.05152034176885518
+      },
+      {
+        "ticker": "XLC",
+        "sector": "Comunicaciones",
+        "lastClose": 105.5199966430664,
+        "momentum1m": -0.074304775677123,
+        "momentum3m": -0.01987745630921001
+      },
+      {
+        "ticker": "SMH",
+        "sector": "Semiconductores",
+        "lastClose": 527.2000122070312,
+        "momentum1m": -0.12209419326511446,
+        "momentum3m": -0.03892074753631261
+      }
+    ],
+    "errors": []
+  },
+  "qualityCompanies": {
+    "companies": [
+      {
+        "ticker": "XOM",
+        "name": "ExxonMobil",
+        "sector": "Energía",
+        "why": "Integración vertical completa (exploración, refinación, química) que le da control de costos en todo el ciclo del petróleo. Balance históricamente más conservador que la mayoría de sus pares, lo que le permitió seguir pagando dividendo incluso en los peores años del sector (2015-2016, 2020).",
+        "fundamentals": null
+      },
+      {
+        "ticker": "CVX",
+        "name": "Chevron",
+        "sector": "Energía",
+        "why": "Segunda integrada de EEUU, con activos de bajo costo de extracción en Permian Basin. Historial de más de 35 años consecutivos aumentando el dividendo — ese tipo de constancia solo se sostiene con disciplina de capital real, no promesas.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "COP",
+        "name": "ConocoPhillips",
+        "sector": "Energía",
+        "why": "Pure-play de exploración y producción (sin refinación), lo que la hace más sensible al precio del crudo pero con menor costo de producción por barril que la mayoría — eficiencia operativa como ventaja central.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "SLB",
+        "name": "Schlumberger (SLB)",
+        "sector": "Energía",
+        "why": "Líder mundial en servicios petroleros (no produce petróleo, vende la tecnología para extraerlo) — modelo de negocio distinto al de las integradas, se beneficia de la inversión en exploración de TODA la industria, no de un solo pozo.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "NEE",
+        "name": "NextEra Energy",
+        "sector": "Energía (renovable/utility)",
+        "why": "La mayor generadora de energía eólica y solar de EEUU, combinada con un negocio regulado de utility (ingresos estables). Puente entre energía tradicional y transición energética, con el perfil de riesgo más bajo de utility.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "sector": "Semiconductores",
+        "why": "Dominancia casi total en GPUs para entrenamiento de IA, reforzada por CUDA (su software propietario) que hace costoso para los clientes migrar a la competencia — el moat no es solo el chip, es el ecosistema de software alrededor.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom",
+        "sector": "Semiconductores",
+        "why": "Diversificación real entre semiconductores (redes, chips a medida para los grandes de la nube) y software empresarial (tras comprar VMware) — menos dependiente de un solo ciclo que un fabricante puro de chips.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "AMD",
+        "name": "Advanced Micro Devices",
+        "sector": "Semiconductores",
+        "why": "Pasó de ser el competidor débil de Intel a liderar en varios segmentos (servidores con EPYC, GPUs para IA con la línea MI) — ejemplo de que el liderazgo en este sector puede cambiar de manos más rápido que en otros.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "TSM",
+        "name": "Taiwan Semiconductor (TSMC)",
+        "sector": "Semiconductores",
+        "why": "Fabrica los chips más avanzados del mundo para Nvidia, Apple, AMD y casi todos los demás — es el 'foundry' que nadie más puede replicar al mismo nodo tecnológico. Riesgo geopolítico real (Taiwán) que hay que tener en cuenta, no es solo una historia de moat.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "ASML",
+        "name": "ASML Holding",
+        "sector": "Semiconductores",
+        "why": "Monopolio efectivo en litografía ultravioleta extrema (EUV) — la máquina que hace posible fabricar los chips más avanzados. Sin ASML, no hay chips de última generación; es uno de los moats más puros que existen en toda la industria.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "INTC",
+        "name": "Intel",
+        "sector": "Semiconductores",
+        "why": "Ejemplo de advertencia, no solo de calidad: perdió años de liderazgo tecnológico frente a TSMC/Samsung en manufactura. Útil para aprender que ni el nombre más histórico del sector está garantizado — el moat se puede erosionar.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "TXN",
+        "name": "Texas Instruments",
+        "sector": "Semiconductores (analógicos)",
+        "why": "Líder en chips analógicos (no los de IA de moda, los que están en cada electrodoméstico, auto, sensor). Negocio menos glamoroso pero con márgenes altísimos y ciclos de producto mucho más largos que los chips digitales.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "LMT",
+        "name": "Lockheed Martin",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Fabricante del F-35, el programa de defensa más caro de la historia — contratos gubernamentales plurianuales que dan visibilidad de ingresos a 10+ años, algo rarísimo fuera de este sector. Barrera de entrada altísima: nadie nuevo puede competir por estos contratos.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "RTX",
+        "name": "RTX Corporation (ex-Raytheon)",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Combina defensa (misiles, sistemas de radar) con motores de avión comerciales (Pratt & Whitney) — expuesto tanto al gasto militar como a la recuperación de la aviación comercial, dos ciclos distintos en una sola empresa.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "NOC",
+        "name": "Northrop Grumman",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Especializada en sistemas espaciales, drones y el bombardero B-21 — más expuesta a programas clasificados/estratégicos que a hardware convencional, lo que le da contratos de muy largo plazo con el gobierno de EEUU.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "GD",
+        "name": "General Dynamics",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Diversificada entre submarinos nucleares (astilleros que literalmente nadie más tiene la capacidad de construir), vehículos blindados y jets privados (Gulfstream) — mezcla rara de defensa pura y aviación de lujo civil.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "LHX",
+        "name": "L3Harris Technologies",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Fusión de dos proveedores de comunicaciones y electrónica de defensa — menos conocida que Lockheed o Boeing pero fundamental en sistemas de comunicación militar, con menor exposición a programas de un solo gran avión/barco.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "HII",
+        "name": "Huntington Ingalls Industries",
+        "sector": "Aeroespacial y Defensa",
+        "why": "El único constructor de portaaviones nucleares de EEUU y uno de los dos constructores de submarinos nucleares — monopolio/duopolio literal en infraestructura que ninguna empresa privada nueva podría replicar en décadas.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "sector": "Tecnología (plataformas)",
+        "why": "Ingresos recurrentes de software empresarial (Office 365, Azure) que generan flujo de caja predecible década tras década — el ejemplo de libro de texto de 'switching costs' altos: migrar una empresa entera fuera de Microsoft es carísimo y lento.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "AAPL",
+        "name": "Apple",
+        "sector": "Tecnología (plataformas)",
+        "why": "El ecosistema (hardware + software + servicios) crea una de las bases de clientes más leales del mundo — los márgenes vienen cada vez más de servicios (App Store, suscripciones) y no solo de vender hardware una vez.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet (Google)",
+        "sector": "Tecnología (plataformas)",
+        "why": "Dominancia en búsqueda (~90% de market share global) financia apuestas de largo plazo (Waymo, IA) sin presión de rentabilidad inmediata — pocas empresas pueden permitirse invertir así de lejos gracias al flujo de caja del negocio central.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "sector": "Tecnología (plataformas)",
+        "why": "AWS (la nube) genera la mayoría de la ganancia operativa mientras el e-commerce, de menor margen, sigue ganando escala — dos negocios con economía muy distinta bajo una sola marca.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "PG",
+        "name": "Procter & Gamble",
+        "sector": "Consumo básico (dividendos)",
+        "why": "Más de 65 años consecutivos aumentando el dividendo (\"Dividend King\") — marcas (Tide, Gillette, Pampers) que la gente sigue comprando en recesiones, lo que hace el negocio muy predecible aunque poco emocionante.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "KO",
+        "name": "Coca-Cola",
+        "sector": "Consumo básico (dividendos)",
+        "why": "Más de 60 años aumentando el dividendo. El negocio real no es la bebida, es la distribución global y la marca — Warren Buffett la tiene en Berkshire desde 1988 como ejemplo clásico de moat de marca.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "COST",
+        "name": "Costco",
+        "sector": "Consumo básico (retail)",
+        "why": "Modelo de membresía (no vende por margen en los productos, vende la membresía anual) que genera lealtad altísima y flujo de caja predecible — tasa de renovación de membresías típicamente >90%.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "WMT",
+        "name": "Walmart",
+        "sector": "Consumo básico (retail)",
+        "why": "Escala logística que ninguna cadena nueva puede replicar rápido — se reinventó exitosamente para competir con Amazon en e-commerce en vez de perder relevancia, algo que muchos retailers tradicionales no lograron.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase",
+        "sector": "Financiero",
+        "why": "El banco más grande de EEUU por activos, con el balance más sólido entre los grandes bancos — salió de la crisis de 2008 y de los problemas bancarios de 2023 (SVB, etc.) comprando activos de competidores en problemas, no necesitando rescate.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "V",
+        "name": "Visa",
+        "sector": "Financiero (pagos)",
+        "why": "No presta plata, solo procesa transacciones — negocio de infraestructura con márgenes altísimos y casi sin riesgo crediticio directo, a diferencia de un banco tradicional.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "MA",
+        "name": "Mastercard",
+        "sector": "Financiero (pagos)",
+        "why": "Duopolio con Visa en procesamiento de pagos global — mismo modelo de negocio de infraestructura, se beneficia estructuralmente de la migración mundial de efectivo a pagos digitales.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "BRK-B",
+        "name": "Berkshire Hathaway",
+        "sector": "Financiero (holding diversificado)",
+        "why": "No es una sola empresa, es una colección de negocios (seguros, ferrocarriles, energía, y una cartera de acciones) bajo la disciplina de capital de Warren Buffett — el ejemplo más estudiado del mundo de inversión de largo plazo con margen de seguridad.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "JNJ",
+        "name": "Johnson & Johnson",
+        "sector": "Salud",
+        "why": "Más de 60 años aumentando el dividendo, diversificada entre farmacéutica y dispositivos médicos — la demanda de salud es mucho menos sensible a recesiones que casi cualquier otro sector.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "UNH",
+        "name": "UnitedHealth Group",
+        "sector": "Salud (seguros)",
+        "why": "La mayor aseguradora de salud de EEUU, con Optum (su brazo de servicios de salud) creciendo más rápido que el negocio de seguros tradicional — verticalización que le da control sobre más partes de la cadena de valor de salud.",
+        "fundamentals": null
+      },
+      {
+        "ticker": "LLY",
+        "name": "Eli Lilly",
+        "sector": "Salud (farmacéutica)",
+        "why": "Líder en medicamentos para diabetes/obesidad (GLP-1, la categoría de mayor crecimiento en farma en años) — ejemplo de cómo un solo avance científico puede cambiar radicalmente la trayectoria de una empresa, para bien o para mal.",
+        "fundamentals": null
+      }
+    ],
+    "errors": [
+      {
+        "ticker": "XOM",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "SLB",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "NEE",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "NVDA",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "AVGO",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "AMD",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "TSM",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "ASML",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "INTC",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "TXN",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "LMT",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "RTX",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "NOC",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "GD",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "LHX",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "HII",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "MSFT",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "AAPL",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "GOOGL",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "AMZN",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "PG",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "KO",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "COST",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "WMT",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "JPM",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "V",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "MA",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "BRK-B",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "JNJ",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "UNH",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "LLY",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "CVX",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      },
+      {
+        "ticker": "COP",
+        "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
+      }
+    ]
+  }
+}
