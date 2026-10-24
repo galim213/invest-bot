@@ -34,6 +34,7 @@ const { appendToJournal, loadJournal, buildDecisionJournalMarkdown } = require('
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
 const { loadVariant, saveVariant, runVariantDay, buildVariantMarkdown, buildVariantJson } = require('./lib/variantPortfolio');
+const { appendPriceHistory } = require('./lib/priceHistory');
 
 // Carteras paralelas en vivo: mismo motor técnico (lib/decide.js, sin cambios)
 // que el satellite de producción, pero sobre universos que no se pueden
@@ -77,6 +78,19 @@ async function main() {
   const coreInitTrades = initCoreIfEmpty(core, corePrices, date);
   const dividendsCredited = applyDividends(core, coreDividends, date);
   const coreSnapshot = portfolio.snapshot(core, { date, pricesByTicker: corePrices });
+
+  // Historial de precio real (core + benchmark) para ver ciclos de mercado de
+  // largo plazo, no solo desde que arrancó esta simulación — ver lib/priceHistory.js
+  // y backfill-price-history.js (10 años de historia real traídos una sola vez).
+  try {
+    const benchmarkClose = benchmarkData.candles.at(-1)?.close ?? null;
+    const priceMapForHistory = new Map(corePrices);
+    if (benchmarkClose != null) priceMapForHistory.set(BENCHMARK_TICKER, benchmarkClose);
+    const addedToPriceHistory = appendPriceHistory(priceMapForHistory, date, [...CORE_HOLDINGS, BENCHMARK_TICKER]);
+    if (addedToPriceHistory > 0) console.log(`[invest-bot] Historial de precios: ${addedToPriceHistory} entradas nuevas.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo actualizar el historial de precios (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
 
   if (coreInitTrades.length > 0) {
     console.log(`[invest-bot] Core inicializado: ${coreInitTrades.length} posiciones compradas con $${core.startingCapital.toFixed(2)}.`);
