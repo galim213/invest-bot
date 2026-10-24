@@ -37,3 +37,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** tests para `marketIntel.js`; investigar concentración sectorial del satellite (idea (a)) con fuente antes de implementar.
+
+## 2026-10-24
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/marketIntel.js` (rotación sectorial y generación de los markdown de informe de mercado y research notes), sin tests hasta hoy.
+
+**Decisión:** implementado. `test/marketIntel.test.js` (4 tests, `node:test`, sin red ni dependencias; `marketData.fetchAll` se stubbea): ranking de `buildSectorRotation` por momentum 1m descendente, momentum null con pocas velas (va al final), formato de nulos (`—`) y agrupado por sector en `buildMarketIntelMarkdown`, y veredictos/aviso sin Yahoo/caso sin señales en `buildResearchNotesMarkdown`. `npm test`: 152/152 en verde. No se tocó ningún archivo de `lib/` ni lógica de trading → no aplica el gate de `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** investigar concentración/correlación sectorial del satellite (idea (a)) con fuente antes de implementar; tests para `decide.js` si faltan casos.
