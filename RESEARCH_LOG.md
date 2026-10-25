@@ -49,3 +49,17 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** investigar concentración/correlación sectorial del satellite (idea (a)) con fuente antes de implementar; tests para `decide.js` si faltan casos.
+
+## 2026-10-25
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** idea (a), solo como métrica INFORMATIVA — concentración/correlación de las posiciones abiertas del satellite. Motivo: el satellite hoy está ~96% en Health Care (VEEV, ISRG, TMO, CRL + MAR) y el reporte no lo mostraba de forma resumida. No se intenta "corregirlo": tope sectorial, menor `maxPositionPct` y shorts ya se descartaron con números (GRADUATION_CRITERIA.md, puntos 4-5).
+
+**Decisión:** implementado. `lib/concentration.js` (+ `test/concentration.test.js`, 5 tests): peso por sector, N efectivo por peso (1/HHI), correlación promedio entre pares (retornos diarios, 60 ruedas) y N efectivo ajustado por correlación `N/(1+(N−1)ρ)` (aproximación para activos equiponderados con ρ medio; ρ<0 se trunca a 0; esta fórmula es de conocimiento general, no de las fuentes citadas). Se muestra como sección "Concentración y correlación (informativo)" bajo la tabla del satellite en el reporte diario y como `satellite.concentration` en el JSON. Smoke test con `node run-daily.js`: 5 posiciones, N efectivo 3.64, correlación media 0.18, N ajustado 2.47, Health Care 96%. `npm test`: 164/164 en verde. No toca lógica de decisión → no aplica `validate.js`. Los artefactos generados por el smoke test no se comitearon (los genera la rutina de apertura/cierre).
+
+**Dashboard/reportes:** el reporte diario (md y `latest.json`) gana la sección/campo `concentration`; el Artifact del dashboard puede leerlo opcionalmente, no es necesario para que siga funcionando.
+
+**Fuentes:** [HHI & Effective Positions (fffinstill)](https://fffinstill.com/learning/concepts/herfindahl-hirschman-index-hhi-effective-positions) (N efectivo = 1/Σw², ejemplo 40/25/15/12/8 → 3.76, usado en el test; nota que HHI ignora correlación); [The Diversification Ratio (Portfolio Optimizer)](https://portfoliooptimizer.io/blog/the-diversification-ratio-measuring-portfolio-diversification) (la diversificación cae al subir concentración o correlación media); [Concentration is up, diversification isn't gone (SSGA)](https://www.ssga.com/us/en/individual/insights/concentration-is-up-diversification-isnt-gone) (uso de N efectivo como medida de concentración).
+
+**Pendiente:** idea de diversificar el CORE (no el satellite) sigue sin probarse; revisar track record a fines de noviembre.
