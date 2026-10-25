@@ -4,7 +4,19 @@
 const fs = require('fs');
 const path = require('path');
 
-const { WATCHLIST, BENCHMARK_TICKER, STRATEGY, CORE_HOLDINGS, USE_FUNDAMENTAL_TILT_IN_PRODUCTION, MIDCAP_WATCHLIST, SMALLCAP_WATCHLIST, GLOBAL_WATCHLIST } = require('./config');
+const {
+  WATCHLIST,
+  BENCHMARK_TICKER,
+  STRATEGY,
+  CORE_HOLDINGS,
+  CORE_V2_HOLDINGS,
+  STARTING_CAPITAL,
+  CORE_ALLOCATION_PCT,
+  USE_FUNDAMENTAL_TILT_IN_PRODUCTION,
+  MIDCAP_WATCHLIST,
+  SMALLCAP_WATCHLIST,
+  GLOBAL_WATCHLIST,
+} = require('./config');
 const { buildMidcapWatchlist, buildMidcapWatchlistMarkdown } = require('./lib/midcapWatch');
 const { buildSmallcapWatchlist, buildSmallcapWatchlistMarkdown } = require('./lib/smallcapWatch');
 const { buildGlobalWatchlist, buildGlobalWatchlistMarkdown } = require('./lib/globalWatch');
@@ -33,7 +45,7 @@ const { appendScoreHistory } = require('./lib/scoreHistory');
 const { appendToJournal, loadJournal, buildDecisionJournalMarkdown } = require('./lib/decisionJournal');
 const { loadQualityScores } = require('./lib/loadFundamentalsCache');
 const { loadPortfolio, savePortfolio, initCoreIfEmpty, applyDividends } = require('./lib/sleeves');
-const { loadVariant, saveVariant, runVariantDay, buildVariantMarkdown, buildVariantJson } = require('./lib/variantPortfolio');
+const { loadVariant, saveVariant, runVariantDay, initBuyAndHoldIfEmpty, buildVariantMarkdown, buildVariantJson } = require('./lib/variantPortfolio');
 const { appendPriceHistory } = require('./lib/priceHistory');
 
 // Carteras paralelas en vivo: mismo motor técnico (lib/decide.js, sin cambios)
@@ -52,12 +64,13 @@ async function main() {
   const midcapTickers = MIDCAP_WATCHLIST.map((w) => w.ticker);
   const smallcapTickers = SMALLCAP_WATCHLIST.map((w) => w.ticker);
   const globalTickers = GLOBAL_WATCHLIST.map((w) => w.ticker);
-  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${midcapTickers.length} (mid-cap) + ${smallcapTickers.length} (small-cap) + ${globalTickers.length} (internacional, todos solo seguimiento)...`);
-  const [{ data, errors }, macro, benchmarkData, coreFetch, midcapFetch, smallcapFetch, globalFetch] = await Promise.all([
+  console.log(`[invest-bot] ${date} — descargando datos de mercado para ${tickers.length} tickers (satellite) + ${CORE_HOLDINGS.length} (core, con dividendos) + ${CORE_V2_HOLDINGS.length} (core v2, con dividendos) + ${midcapTickers.length} (mid-cap) + ${smallcapTickers.length} (small-cap) + ${globalTickers.length} (internacional, todos solo seguimiento)...`);
+  const [{ data, errors }, macro, benchmarkData, coreFetch, core2Fetch, midcapFetch, smallcapFetch, globalFetch] = await Promise.all([
     marketData.fetchAll(tickers),
     fetchMacroRiskPanel(),
     marketData.fetchDailyCandles(BENCHMARK_TICKER),
     marketData.fetchAll(CORE_HOLDINGS, { range: '2y', includeDividends: true }),
+    marketData.fetchAll(CORE_V2_HOLDINGS, { range: '2y', includeDividends: true }),
     marketData.fetchAll(midcapTickers),
     marketData.fetchAll(smallcapTickers),
     marketData.fetchAll(globalTickers),
@@ -348,6 +361,52 @@ async function main() {
     }
   } catch (err) {
     console.warn(`[invest-bot] WARN: no se pudieron correr las carteras paralelas (${err.message}) — se sigue sin esto, no es crítico.`);
+  }
+
+  // Core v2 (desde 2026-10-25): mismo tipo de sleeve que el core real (compra
+  // única en partes iguales, buy & hold, acredita dividendos), pero sobre
+  // CORE_V2_HOLDINGS — un set elegido con un screen cuantitativo objetivo
+  // (ver lib/coreScreen.js) en vez de curación cualitativa a mano. Mismo
+  // capital que el core real ($700 = 70% de $1000) para comparar manzanas
+  // con manzanas. Corre en paralelo, aislado — no reemplaza al core real.
+  try {
+    console.log('[invest-bot] Corriendo core v2 (screen cuantitativo objetivo)...');
+
+    const core2Prices = new Map();
+    const core2Dividends = new Map();
+    for (const [ticker, d] of core2Fetch.data.entries()) {
+      core2Prices.set(ticker, d.candles.at(-1)?.close ?? null);
+      core2Dividends.set(ticker, d.dividends || []);
+    }
+
+    const core2State = loadVariant('core2', STARTING_CAPITAL * CORE_ALLOCATION_PCT);
+    const core2InitTrades = initBuyAndHoldIfEmpty(core2State, CORE_V2_HOLDINGS, core2Prices, date);
+    const core2DividendsCredited = applyDividends(core2State, core2Dividends, date);
+    const core2Snapshot = portfolio.snapshot(core2State, { date, pricesByTicker: core2Prices });
+    saveVariant('core2', core2State);
+
+    const core2Trades = [...core2InitTrades, ...core2DividendsCredited];
+    const core2Md = buildVariantMarkdown({
+      date,
+      label: 'Core v2 (screen cuantitativo)',
+      universeLabel: 'fundamentals-cache.json (503 empresas, foto del 2026-10-20)',
+      state: core2State,
+      snapshot: core2Snapshot,
+      trades: core2Trades,
+      strategyNote:
+        'Compra única en partes iguales y buy & hold (igual que el core real), pero elegido con un criterio cuantitativo objetivo (paga dividendo real >= 2%, es rentable, ranking por quality score) en vez de curación cualitativa a mano — ver lib/coreScreen.js.',
+    });
+    const core2Json = buildVariantJson({ date, name: 'core2', label: 'Core v2 (screen cuantitativo)', universeLabel: 'fundamentals-cache.json', state: core2State, snapshot: core2Snapshot, trades: core2Trades });
+
+    fs.writeFileSync(path.join(reportsDir, `variant-core2-${date}.md`), core2Md);
+    fs.writeFileSync(path.join(reportsDir, `variant-core2-latest.md`), core2Md);
+    fs.writeFileSync(path.join(reportsDir, `variant-core2-${date}.json`), JSON.stringify(core2Json, null, 2));
+    fs.writeFileSync(path.join(reportsDir, `variant-core2-latest.json`), JSON.stringify(core2Json, null, 2));
+
+    console.log(`[invest-bot] Core v2: $${core2Snapshot.totalValue.toFixed(2)} (${core2Snapshot.pnlPct.toFixed(2)}%).`);
+    if (core2Fetch.errors.length > 0) console.warn(`[invest-bot] WARN core v2: ${core2Fetch.errors.length} tickers sin datos.`);
+  } catch (err) {
+    console.warn(`[invest-bot] WARN: no se pudo correr el core v2 (${err.message}) — se sigue sin esto, no es crítico.`);
   }
 
   // Mercados más allá de acciones (commodities, bonos, REITs, cripto, forex)

@@ -175,6 +175,16 @@ const SATELLITE_ALLOCATION_PCT = 0.3; // 30% — el motor técnico que ya tenemo
 // partes iguales, y se mantienen — no se tradea con señales técnicas diarias.
 const CORE_HOLDINGS = ['JNJ', 'PG', 'KO', 'XOM', 'CVX', 'JPM', 'MSFT', 'V', 'LMT', 'TXN'];
 
+// Core alternativo (desde 2026-10-25): resultado de un screen CUANTITATIVO
+// objetivo sobre fundamentals-cache.json (503 empresas) — paga dividendo
+// real (yield >= 2%), es rentable (ROE y margen > 0), ranking por quality
+// score de fundamentalScore.js — sin acomodar nada a mano (ver
+// lib/coreScreen.js, salida real de esa corrida). Fijo desde esta fecha para
+// poder comparar en vivo contra la curación cualitativa de CORE_HOLDINGS —
+// no se re-corre el screen automáticamente (si no, no sería una comparación
+// limpia, cambiaría el universo a comparar cada día).
+const CORE_V2_HOLDINGS = ['CINF', 'CF', 'EOG', 'TROW', 'FIS', 'SPG', 'MKC', 'PNC', 'APA', 'DVN'];
+
 module.exports = {
   STARTING_CAPITAL,
   WATCHLIST,
@@ -187,6 +197,7 @@ module.exports = {
   CORE_ALLOCATION_PCT,
   SATELLITE_ALLOCATION_PCT,
   CORE_HOLDINGS,
+  CORE_V2_HOLDINGS,
   ALLOW_SHORTING_IN_PRODUCTION,
   OTHER_MARKETS,
   MIDCAP_WATCHLIST,

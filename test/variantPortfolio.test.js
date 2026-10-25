@@ -9,6 +9,7 @@ const {
   loadVariant,
   saveVariant,
   runVariantDay,
+  initBuyAndHoldIfEmpty,
   buildVariantMarkdown,
   buildVariantJson,
 } = require('../lib/variantPortfolio');
@@ -79,6 +80,40 @@ test('runVariantDay: sin ninguna señal BUY/SELL, no ejecuta trades y el snapsho
 
   assert.equal(trades.length, 0);
   assert.ok(Math.abs(snapshot.totalValue - 300) < 1e-9);
+});
+
+test('initBuyAndHoldIfEmpty: compra en partes iguales los tickers con precio disponible', () => {
+  const file = tmpFile();
+  const state = loadVariant('test', 300, file);
+  const prices = new Map([['A', 100], ['B', 50]]);
+
+  const trades = initBuyAndHoldIfEmpty(state, ['A', 'B'], prices, '2026-01-01');
+
+  assert.equal(trades.length, 2);
+  // 150 USD por ticker menos la comisión simulada (transactionCostPct) — no exactamente 1.5/3 shares.
+  assert.ok(Math.abs(trades[0].usdAmount - 150) < 0.2);
+  assert.ok(Math.abs(trades[1].usdAmount - 150) < 0.2);
+  assert.ok(Math.abs(state.positions.A.shares - trades[0].usdAmount / 100) < 1e-6);
+  assert.ok(Math.abs(state.positions.B.shares - trades[1].usdAmount / 50) < 1e-6);
+});
+
+test('initBuyAndHoldIfEmpty: no vuelve a comprar si ya hay posiciones (buy-once, no re-balanceo)', () => {
+  const file = tmpFile();
+  const state = loadVariant('test', 300, file);
+  initBuyAndHoldIfEmpty(state, ['A'], new Map([['A', 100]]), '2026-01-01');
+  const secondRun = initBuyAndHoldIfEmpty(state, ['A', 'B'], new Map([['A', 100], ['B', 50]]), '2026-01-02');
+
+  assert.equal(secondRun.length, 0);
+  assert.equal(state.positions.B, undefined);
+});
+
+test('initBuyAndHoldIfEmpty: ignora tickers sin precio disponible', () => {
+  const file = tmpFile();
+  const state = loadVariant('test', 300, file);
+  const trades = initBuyAndHoldIfEmpty(state, ['A', 'MISSING'], new Map([['A', 100]]), '2026-01-01');
+
+  assert.equal(trades.length, 1);
+  assert.equal(state.positions.MISSING, undefined);
 });
 
 test('buildVariantMarkdown: incluye el disclaimer de experimento no validado por backtest y el valor de hoy', () => {

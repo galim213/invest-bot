@@ -67,6 +67,23 @@ El portfolio ya no es uno solo — son dos sub-portfolios con lógica y objetivo
   **2-3 meses** de historia acumulada (revisar recién a fines de enero de 2027). Ninguna
   de las dos reemplaza al satellite de producción ni cambia su comportamiento — corren en
   paralelo, aisladas.
+- **Core v2 — screen cuantitativo objetivo (desde 2026-10-25)**: mismo tipo de sleeve que
+  el core real (compra única en partes iguales, buy & hold, acredita dividendos reales,
+  mismo capital $700 = 70% de $1000), pero el set de 10 empresas (`CORE_V2_HOLDINGS` en
+  `config.js`) no se eligió a mano — sale de aplicar un criterio objetivo y reproducible
+  sobre `fundamentals-cache.json` (503 empresas, foto del 2026-10-20): paga dividendo real
+  (yield >= 2%), es rentable (ROE y margen > 0), y se rankea por el mismo quality score de
+  `fundamentalScore.js` que ya usa el tilt opcional del satellite (ver `lib/coreScreen.js`).
+  Resultado real de esa corrida: CINF, CF, EOG, TROW, FIS, SPG, MKC, PNC, APA, DVN —
+  llamativamente concentrado en Financiero (3) y Energía (3), sin ninguna de Salud, y con
+  SPG (REIT) en deuda/equity ~504% (estructural del sector, no necesariamente una señal de
+  problema, pero vale la pena vigilar). Es el contraste directo con la curación cualitativa
+  del core real (JNJ, PG, KO, etc. — ver arriba) corriendo en vivo con el mismo capital.
+  **Misma limitación de fondo**: el cache de fundamentales es una foto de hoy, no
+  point-in-time histórico — este criterio tampoco se puede backtestear contra los 5
+  regímenes de `validate.js`. Mismo plazo de evaluación que las carteras paralelas de
+  arriba: **2-3 meses** mínimo antes de que la comparación contra el core real signifique
+  algo. No reemplaza al core real ni cambia su comportamiento.
 
 ## Track record de las research notes (desde 2026-10-20)
 
