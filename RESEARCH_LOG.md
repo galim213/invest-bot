@@ -63,3 +63,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** [HHI & Effective Positions (fffinstill)](https://fffinstill.com/learning/concepts/herfindahl-hirschman-index-hhi-effective-positions) (N efectivo = 1/Σw², ejemplo 40/25/15/12/8 → 3.76, usado en el test; nota que HHI ignora correlación); [The Diversification Ratio (Portfolio Optimizer)](https://portfoliooptimizer.io/blog/the-diversification-ratio-measuring-portfolio-diversification) (la diversificación cae al subir concentración o correlación media); [Concentration is up, diversification isn't gone (SSGA)](https://www.ssga.com/us/en/individual/insights/concentration-is-up-diversification-isnt-gone) (uso de N efectivo como medida de concentración).
 
 **Pendiente:** idea de diversificar el CORE (no el satellite) sigue sin probarse; revisar track record a fines de noviembre.
+
+## 2026-10-26
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/fundamentalScore.js` (score de calidad por percentiles y tilt al score técnico), que alimenta la lógica de decisión y no tenía tests.
+
+**Decisión:** implementado. `test/fundamentalScore.test.js` (5 tests, `node:test`, sin red): extremos 100/0 y orden good > mid > bad, P/E negativo = percentil 0, renormalización con factores faltantes y null sin datos, ticker único = 50, tilt lineal (`qualityScoreToTilt`). `npm test`: 177/177 en verde. No se modificó ningún archivo de `lib/` ni lógica de trading → no aplica `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** tests para `midcapWatch.js`/`pointInTime.js`; revisar track record a fines de noviembre; diversificación del CORE sin probar.
