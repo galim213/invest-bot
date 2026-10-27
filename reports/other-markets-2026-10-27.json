@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:34.009Z",
+  "otherMarkets": [
+    {
+      "ticker": "BTC-USD",
+      "name": "Bitcoin",
+      "category": "Cripto",
+      "lastClose": 80643.9375,
+      "momentum1m": -0.057430633323617655,
+      "momentum3m": 0.02646167578050692
+    },
+    {
+      "ticker": "ETH-USD",
+      "name": "Ethereum",
+      "category": "Cripto",
+      "lastClose": 2343.280029296875,
+      "momentum1m": -0.13131943654405043,
+      "momentum3m": -0.04088124317927296
+    },
+    {
+      "ticker": "SCHD",
+      "name": "Dividendo de calidad EEUU (ETF)",
+      "category": "ETF — dividendos",
+      "lastClose": 35.125,
+      "momentum1m": 0.06407154759190434,
+      "momentum3m": 0.038279577264360425
+    },
+    {
+      "ticker": "VYM",
+      "name": "Alto dividendo EEUU (ETF)",
+      "category": "ETF — dividendos",
+      "lastClose": 162.86000061035156,
+      "momentum1m": 0.03897927024147727,
+      "momentum3m": 0.007360688160351782
+    },
+    {
+      "ticker": "VWO",
+      "name": "Mercados emergentes (ETF)",
+      "category": "ETF — internacional",
+      "lastClose": 56.81999969482422,
+      "momentum1m": -0.04808173894982385,
+      "momentum3m": -0.001756824970800006
+    },
+    {
+      "ticker": "VEA",
+      "name": "Mercados desarrollados ex-EEUU (ETF)",
+      "category": "ETF — internacional",
+      "lastClose": 69.88999938964844,
+      "momentum1m": -0.019913030676778992,
+      "momentum3m": 0.013633103451938796
+    },
+    {
+      "ticker": "VXUS",
+      "name": "Resto del mundo ex-EEUU (ETF, un solo fondo)",
+      "category": "ETF — internacional",
+      "lastClose": 83.30000305175781,
+      "momentum1m": -0.02857139298241618,
+      "momentum3m": 0.011045074266910466
+    },
+    {
+      "ticker": "VTI",
+      "name": "Mercado total EEUU (ETF, ~3600 empresas)",
+      "category": "ETF — mercado amplio EEUU",
+      "lastClose": 377.8900146484375,
+      "momentum1m": 0.005454497473717118,
+      "momentum3m": 0.0484712295928204
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Nasdaq-100 (ETF, cargado a tecnología)",
+      "category": "ETF — mercado amplio EEUU",
+      "lastClose": 721.25,
+      "momentum1m": -0.02074596919213465,
+      "momentum3m": 0.08994608267421672
+    },
+    {
+      "ticker": "BND",
+      "name": "Bonos EEUU diversificados (ETF)",
+      "category": "ETF — renta fija diversificada",
+      "lastClose": 71.30999755859375,
+      "momentum1m": 0.01465564594745401,
+      "momentum3m": -0.014783085595843825
+    },
+    {
+      "ticker": "EURUSD=X",
+      "name": "EUR/USD",
+      "category": "Forex",
+      "lastClose": 1.113709807395935,
+      "momentum1m": -0.02117156307454266,
+      "momentum3m": -0.028789389621735714
+    },
+    {
+      "ticker": "USDCLP=X",
+      "name": "USD/CLP",
+      "category": "Forex — relevante para Chile",
+      "lastClose": 984.3499755859375,
+      "momentum1m": 0.024244303718765646,
+      "momentum3m": 0.052882099733214775
+    },
+    {
+      "ticker": "DBC",
+      "name": "Canasta amplia de commodities (ETF)",
+      "category": "Materias primas — diversificado",
+      "lastClose": 33.59000015258789,
+      "momentum1m": 0.033856522539059554,
+      "momentum3m": 0.1417403149381379
+    },
+    {
+      "ticker": "NG=F",
+      "name": "Gas natural (futuro)",
+      "category": "Materias primas — energía",
+      "lastClose": 3.063999891281128,
+      "momentum1m": 0.02133329709370931,
+      "momentum3m": 0.12440366917894238
+    },
+    {
+      "ticker": "CL=F",
+      "name": "Petróleo WTI (futuro)",
+      "category": "Materias primas — energía",
+      "lastClose": 99.94999694824219,
+      "momentum1m": 0.07937363493774999,
+      "momentum3m": 0.1834004029324842
+    },
+    {
+      "ticker": "HG=F",
+      "name": "Cobre (futuro)",
+      "category": "Materias primas — metales",
+      "lastClose": 6.65749979019165,
+      "momentum1m": 0.01393539531877501,
+      "momentum3m": 0.061209823324364115
+    },
+    {
+      "ticker": "SI=F",
+      "name": "Plata (futuro)",
+      "category": "Materias primas — metales",
+      "lastClose": 54.53499984741211,
+      "momentum1m": -0.10919636131974315,
+      "momentum3m": -0.05751515086787446
+    },
+    {
+      "ticker": "GC=F",
+      "name": "Oro (futuro)",
+      "category": "Materias primas — metales",
+      "lastClose": 4075.39990234375,
+      "momentum1m": -0.022310719263693785,
+      "momentum3m": 0.009687053252390642
+    },
+    {
+      "ticker": "VNQ",
+      "name": "REITs — bienes raíces EEUU (ETF)",
+      "category": "Real estate",
+      "lastClose": 92.37000274658203,
+      "momentum1m": 0.01964903941548005,
+      "momentum3m": -0.08235645354588718
+    },
+    {
+      "ticker": "TLT",
+      "name": "Bonos del Tesoro EEUU 20+ años (ETF)",
+      "category": "Renta fija",
+      "lastClose": 81.62999725341797,
+      "momentum1m": 0.03828535234904702,
+      "momentum3m": -0.014725422367801284
+    },
+    {
+      "ticker": "IEF",
+      "name": "Bonos del Tesoro EEUU 7-10 años (ETF)",
+      "category": "Renta fija",
+      "lastClose": 91.0999984741211,
+      "momentum1m": 0.01753601827577897,
+      "momentum3m": -0.02221744913068137
+    }
+  ],
+  "techniques": [
+    {
+      "id": "short-selling",
+      "name": "Venta en corto (short selling)",
+      "riskLevel": "ALTO",
+      "howItWorks": "Pedís prestadas acciones que no tenés, las vendés al precio actual, y más adelante las recomprás para devolverlas. Ganás si el precio bajó entre la venta y la recompra; perdés si subió. Necesita una cuenta de margen: el bróker exige dejar una fracción del valor de la posición como colateral (Reg T en EEUU: ~50%) y puede forzar el cierre (margin call) si la posición se mueve mucho en contra.",
+      "example": "Shorteás 10 acciones a $100 (recibís $1000). Si bajan a $80, recomprás por $800 y ganás $200 menos comisiones. Si en cambio suben a $150, recomprás por $1500 y perdés $500 — el doble de lo que habrías perdido comprando 10 acciones y que cayeran un 50%.",
+      "risks": [
+        "Pérdida sin techo: una acción puede subir indefinidamente (a diferencia de comprar, donde lo máximo que perdés es el 100% invertido).",
+        "Short squeeze: si muchos shorteistas cubren al mismo tiempo porque el precio sube, la propia carrera por recomprar empuja el precio más arriba todavía.",
+        "Costo de mantener la posición (borrow fee) y tenés que pagar los dividendos que reparta la acción mientras la tengas shorteada.",
+        "Un bróker puede prohibir temporalmente el short selling en una acción (circuit breakers regulatorios) justo cuando más necesitarías cerrar la posición."
+      ],
+      "whenAProUsesIt": "Convicción bajista fuerte sobre un nombre específico (no solo 'el mercado puede bajar'), o para cubrir (hedge) una cartera larga sin vender las posiciones de largo plazo.",
+      "implementedInBot": {
+        "status": "Implementado en el motor del satellite (lib/portfolio.js: shortSell/coverShort, lib/decide.js), con stop obligatorio (no opcional, dado el riesgo sin techo) y tamaño de posición más chico que las compras largas. Apagado en producción (ALLOW_SHORTING_IN_PRODUCTION=false en config.js) hasta validarlo fuera de muestra con validate.js — ver GRADUATION_CRITERIA.md para el resultado.",
+        "simulatedInPaperBot": true
+      }
+    },
+    {
+      "id": "options-basics",
+      "name": "Opciones: conceptos base (call y put)",
+      "riskLevel": "MEDIO-ALTO",
+      "howItWorks": "Una opción es un contrato que da el derecho (no la obligación) de comprar (call) o vender (put) 100 acciones a un precio fijo (strike) antes de una fecha (vencimiento). El comprador paga una prima; el vendedor la cobra pero asume la obligación si el comprador ejerce.",
+      "example": "Call de AAPL, strike $200, vencimiento en 30 días, prima $3/acción ($300 por el contrato de 100 acciones). Si AAPL sube a $220, el call vale al menos $20/acción — ganaste $17 netos de la prima pagada. Si AAPL se queda en $190, el call vence sin valor y perdés toda la prima ($300).",
+      "risks": [
+        "Comprar opciones: podés perder el 100% de la prima pagada si el precio no se mueve como esperabas antes del vencimiento — el tiempo juega en contra (decay).",
+        "Vender opciones 'descubiertas' (sin tener el activo subyacente o el colateral): riesgo potencialmente ilimitado, similar o peor al short selling.",
+        "Requiere entender griegas básicas (delta, theta) para no subestimar cuánto valor se pierde solo por el paso del tiempo."
+      ],
+      "whenAProUsesIt": "Base para estrategias más acotadas en riesgo como covered call o protective put (ver abajo) — rara vez se compran/venden opciones sueltas sin un objetivo de hedge o de generar ingreso.",
+      "implementedInBot": {
+        "status": "No implementado todavía. Requiere un modelo de pricing (Black-Scholes con volatilidad histórica, ya que no hay datos gratuitos de cadenas de opciones en vivo) y lógica de vencimiento/ejercicio día por día en el motor de simulación — más trabajo que shorts, queda como próximo paso.",
+        "simulatedInPaperBot": false
+      }
+    },
+    {
+      "id": "covered-call",
+      "name": "Covered call (venta de call cubierta)",
+      "riskLevel": "BAJO-MEDIO",
+      "howItWorks": "Tenés 100+ acciones de algo y vendés una call contra ellas. Cobrás la prima ahora mismo. Si el precio se queda por debajo del strike, te quedás con las acciones Y la prima (ingreso extra). Si sube por encima del strike, te las 'llaman' (assignment): vendés tus acciones al strike, perdiendo la suba por encima de ese precio, pero quedándote con la prima.",
+      "example": "Tenés 100 acciones de JNJ a $160. Vendés un call strike $170 a 30 días por $2/acción ($200). Si JNJ cierra en $165: te quedás con las acciones y los $200 (ingreso extra de ~1.25% en 30 días). Si cierra en $185: te las llaman a $170 — vendiste $15 más bajo de lo que hubieras podido, pero igual ganaste $10/acción + la prima de $2.",
+      "risks": [
+        "Limita la ganancia si la acción sube fuerte por encima del strike — 'cap' en el upside.",
+        "No protege de una caída: si la acción se desploma, seguís teniendo toda la pérdida de las acciones, solo amortiguada levemente por la prima cobrada."
+      ],
+      "whenAProUsesIt": "Generar ingreso extra (yield enhancement) sobre posiciones de largo plazo en las que no esperás una suba explosiva en el corto plazo — calza natural con el sleeve core de este bot (acciones con dividendo, buy & hold).",
+      "implementedInBot": {
+        "status": "No implementado todavía (mismo motivo que options-basics: necesita modelo de pricing). Es el candidato más natural para el core (JNJ, PG, KO, XOM, etc. — posiciones que ya se mantienen a largo plazo sin tradearse).",
+        "simulatedInPaperBot": false
+      }
+    },
+    {
+      "id": "protective-put",
+      "name": "Protective put (compra de put como seguro)",
+      "riskLevel": "BAJO-MEDIO",
+      "howItWorks": "Tenés acciones y comprás una put sobre ellas como seguro. Si el precio cae por debajo del strike, la put gana valor y compensa gran parte de la pérdida de las acciones. Si el precio sube o se mantiene, la put vence sin valor y perdiste solo la prima — como pagar un seguro que no usaste.",
+      "example": "Tenés 100 acciones de XOM a $120. Comprás una put strike $110 a 60 días por $3/acción ($300). Si XOM cae a $95: sin la put perderías $2500; con la put, la put vale al menos $15/acción ($1500), así que la pérdida neta es mucho menor. Si XOM sube a $130, perdiste los $300 de prima, pero tus acciones ganaron $1000.",
+      "risks": [
+        "Cuesta la prima siempre, se use o no — en mercados que suben la mayoría del tiempo, comprar seguro todos los meses erosiona el retorno.",
+        "Solo protege hasta donde alcance el tamaño/duración del put comprado — no es una garantía permanente."
+      ],
+      "whenAProUsesIt": "Proteger ganancias no realizadas antes de un evento con incertidumbre alta (resultados trimestrales, una decisión regulatoria) sin tener que vender la posición y pagar impuestos por la ganancia.",
+      "implementedInBot": {
+        "status": "No implementado todavía (mismo motivo: necesita modelo de pricing). Candidato natural para posiciones del satellite con ganancia no realizada grande antes de resultados.",
+        "simulatedInPaperBot": false
+      }
+    }
+  ]
+}

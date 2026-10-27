@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:33.811Z",
+  "name": "global",
+  "label": "Internacional (ADRs)",
+  "universeLabel": "empresas internacionales en bolsas de EEUU",
+  "startingCapital": 300,
+  "snapshot": {
+    "date": "2026-10-27",
+    "totalValue": 300.0551834629714,
+    "cash": 14.984887648201891,
+    "pnl": 0.05518346297139942,
+    "pnlPct": 0.01839448765713314
+  },
+  "trades": [],
+  "positions": [
+    {
+      "ticker": "BB",
+      "shares": 4.082343709802438,
+      "avgCost": 9.18589973449707,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "MTC",
+      "shares": 6.805807339795702,
+      "avgCost": 5.510000228881836,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CD",
+      "shares": 3.8382802705194194,
+      "avgCost": 9.770000457763672,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "DAO",
+      "shares": 2.2644267528956243,
+      "avgCost": 19.209999084472656,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "GMAB",
+      "shares": 0.9478728335160727,
+      "avgCost": 44.685001373291016,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "SSL",
+      "shares": 3.2305675847890503,
+      "avgCost": 17.424999237060547,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "MTLS",
+      "shares": 3.4941855409415212,
+      "avgCost": 8.649999618530273,
+      "openedAt": "2026-10-26"
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-26",
+      "totalValue": 299.8575636619931,
+      "cash": 14.984887648201891,
+      "pnl": -0.14243633800691669,
+      "pnlPct": -0.0474787793356389
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.0551834629714,
+      "cash": 14.984887648201891,
+      "pnl": 0.05518346297139942,
+      "pnlPct": 0.01839448765713314
+    }
+  ]
+}

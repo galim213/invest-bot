@@ -1,189 +1,88 @@
 {
-  "date": "2026-10-26",
-  "generatedAt": "2026-10-26T20:07:55.811Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:33.812Z",
   "name": "core2",
   "label": "Core v2 (screen cuantitativo)",
   "universeLabel": "fundamentals-cache.json",
   "startingCapital": 700,
   "snapshot": {
-    "date": "2026-10-26",
-    "totalValue": 699.6501749125439,
+    "date": "2026-10-27",
+    "totalValue": 695.6438747909217,
     "cash": 0,
-    "pnl": -0.34982508745611085,
-    "pnlPct": -0.049975012493730125
+    "pnl": -4.3561252090783,
+    "pnlPct": -0.6223036012969
   },
-  "trades": [
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "CINF",
-      "shares": 0.3947887934343231,
-      "price": 177.30999755859375,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "CF",
-      "shares": 0.5791585755778447,
-      "price": 120.86499786376953,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "EOG",
-      "shares": 0.42762452651568117,
-      "price": 163.69500732421875,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "TROW",
-      "shares": 0.6763938684407498,
-      "price": 103.48999786376953,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "FIS",
-      "shares": 1.8993352562595762,
-      "price": 36.85499954223633,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "SPG",
-      "shares": 0.3290246768507638,
-      "price": 212.75,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "MKC",
-      "shares": 1.4583333333333333,
-      "price": 48,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "PNC",
-      "shares": 0.3099676722863758,
-      "price": 225.8300018310547,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "APA",
-      "shares": 1.3550135541377983,
-      "price": 51.65999984741211,
-      "usdAmount": 70,
-      "fee": 0.035,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "DVN",
-      "shares": 1.348894687259008,
-      "price": 51.6349983215332,
-      "usdAmount": 69.65017491254393,
-      "fee": 0.03482508745627197,
-      "reason": "Compra inicial: 10.0% en partes iguales."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "CINF",
       "shares": 0.3947887934343231,
       "avgCost": 177.30999755859375,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "CF",
       "shares": 0.5791585755778447,
       "avgCost": 120.86499786376953,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "EOG",
       "shares": 0.42762452651568117,
       "avgCost": 163.69500732421875,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "TROW",
       "shares": 0.6763938684407498,
       "avgCost": 103.48999786376953,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "FIS",
       "shares": 1.8993352562595762,
       "avgCost": 36.85499954223633,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "SPG",
       "shares": 0.3290246768507638,
       "avgCost": 212.75,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "MKC",
       "shares": 1.4583333333333333,
       "avgCost": 48,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "PNC",
       "shares": 0.3099676722863758,
       "avgCost": 225.8300018310547,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "APA",
       "shares": 1.3550135541377983,
       "avgCost": 51.65999984741211,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     },
     {
       "ticker": "DVN",
       "shares": 1.348894687259008,
       "avgCost": 51.6349983215332,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-26"
+      "lastDividendCheck": "2026-10-27"
     }
   ],
   "dailySnapshots": [
@@ -193,6 +92,13 @@
       "cash": 0,
       "pnl": -0.34982508745611085,
       "pnlPct": -0.049975012493730125
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 695.6438747909217,
+      "cash": 0,
+      "pnl": -4.3561252090783,
+      "pnlPct": -0.6223036012969
     }
   ]
 }

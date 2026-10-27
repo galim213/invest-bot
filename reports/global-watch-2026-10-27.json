@@ -1,0 +1,931 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:33.777Z",
+  "top": [
+    {
+      "ticker": "CD",
+      "lastClose": 10.130000114440918,
+      "score": 80,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (7.98) por encima de SMA50 (5.42).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 46.5%.",
+        "RSI 50: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 7.977999973297119,
+        "smaSlow": 5.418500013351441,
+        "smaTrend": 5.134699983596802,
+        "momentum": 0.4649313333801321,
+        "rsi": 49.904308599860194,
+        "volatility": 0.10749891606524681
+      },
+      "fundamentalTilt": null,
+      "sector": "Finance",
+      "country": "China"
+    },
+    {
+      "ticker": "BB",
+      "lastClose": 9.545000076293945,
+      "score": 76,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (8.85) por encima de SMA50 (8.38).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 12.7%.",
+        "RSI 57: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 8.85425000190735,
+        "smaSlow": 8.383099975585937,
+        "smaTrend": 6.788174978494644,
+        "momentum": 0.12691850948928435,
+        "rsi": 57.2092987770258,
+        "volatility": 0.04909165707183909
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Canada"
+    },
+    {
+      "ticker": "MTLS",
+      "lastClose": 8.619999885559082,
+      "score": 65,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (8.39) por encima de SMA50 (7.80).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 6.0%.",
+        "RSI 55: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 8.387000036239623,
+        "smaSlow": 7.803200035095215,
+        "smaTrend": 6.365850002765655,
+        "momentum": 0.06027057370488859,
+        "rsi": 55.0847437079686,
+        "volatility": 0.012135378658845569
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Belgium"
+    },
+    {
+      "ticker": "SSL",
+      "lastClose": 17.139999389648438,
+      "score": 65,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (15.56) por encima de SMA50 (14.14).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 10.0%.",
+        "RSI 74: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 15.557499980926513,
+        "smaSlow": 14.135400047302246,
+        "smaTrend": 11.741400005817413,
+        "momentum": 0.10012833591666037,
+        "rsi": 74.17760946972768,
+        "volatility": 0.02708021333180086
+      },
+      "fundamentalTilt": null,
+      "sector": "Energy",
+      "country": "South Africa"
+    },
+    {
+      "ticker": "VEON",
+      "lastClose": 87.83000183105469,
+      "score": 62,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (79.77) por encima de SMA50 (71.17).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 8.6%.",
+        "RSI 73: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 79.77349967956543,
+        "smaSlow": 71.17100006103516,
+        "smaTrend": 57.259300003051756,
+        "momentum": 0.08619838199470453,
+        "rsi": 72.56147514462836,
+        "volatility": 0.021791502134845986
+      },
+      "fundamentalTilt": null,
+      "sector": "Telecommunications",
+      "country": "Netherlands"
+    },
+    {
+      "ticker": "GMAB",
+      "lastClose": 44.66999816894531,
+      "score": 61,
+      "signal": "HOLD",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (38.35) por encima de SMA50 (35.71).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 22.1%.",
+        "RSI 82: sobrecompra, riesgo de corrección.",
+        "Compra bloqueada por sobrecompra extrema (RSI 82 >= 80): se espera una corrección antes de entrar."
+      ],
+      "metrics": {
+        "smaFast": 38.34799976348877,
+        "smaSlow": 35.71020004272461,
+        "smaTrend": 30.16532501220703,
+        "momentum": 0.22149298719484248,
+        "rsi": 82.10565698892547,
+        "volatility": 0.03549767153181785
+      },
+      "fundamentalTilt": null,
+      "sector": "Health Care",
+      "country": "Denmark"
+    },
+    {
+      "ticker": "NICE",
+      "lastClose": 121.58000183105469,
+      "score": 61,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (115.88) por encima de SMA50 (109.74).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 5.8%.",
+        "RSI 60: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 115.8849998474121,
+        "smaSlow": 109.73599975585938,
+        "smaTrend": 105.14130027770996,
+        "momentum": 0.05767729498764363,
+        "rsi": 60.20569777836259,
+        "volatility": 0.021646495292221263
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Israel"
+    },
+    {
+      "ticker": "BUUU",
+      "lastClose": 6.510000228881836,
+      "score": 60,
+      "signal": "HOLD",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (4.43) por encima de SMA50 (4.00).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 53.8%.",
+        "RSI 86: sobrecompra, riesgo de corrección.",
+        "Compra bloqueada por sobrecompra extrema (RSI 86 >= 80): se espera una corrección antes de entrar."
+      ],
+      "metrics": {
+        "smaFast": 4.431074988842011,
+        "smaSlow": 3.9977099990844724,
+        "smaTrend": 2.259538000524044,
+        "momentum": 0.5382798729981599,
+        "rsi": 85.89941122790513,
+        "volatility": 0.06317905075135007
+      },
+      "fundamentalTilt": null,
+      "sector": "Consumer Discretionary",
+      "country": "Hong Kong"
+    },
+    {
+      "ticker": "DSGX",
+      "lastClose": 92.18000030517578,
+      "score": 59,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (85.97) por encima de SMA50 (81.42).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 8.6%.",
+        "RSI 78: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 85.97150001525878,
+        "smaSlow": 81.4245997619629,
+        "smaTrend": 74.66075012207031,
+        "momentum": 0.08600380876501329,
+        "rsi": 78.38726730868557,
+        "volatility": 0.01809702497628675
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Canada"
+    },
+    {
+      "ticker": "DCBO",
+      "lastClose": 29.6200008392334,
+      "score": 57,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (26.87) por encima de SMA50 (25.18).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 8.1%.",
+        "RSI 79: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 26.870000076293945,
+        "smaSlow": 25.17880012512207,
+        "smaTrend": 20.306750020980836,
+        "momentum": 0.0814166301306217,
+        "rsi": 79.107511780682,
+        "volatility": 0.02613127848401032
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Canada"
+    },
+    {
+      "ticker": "TEAM",
+      "lastClose": 219.41000366210938,
+      "score": 56,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (207.71) por encima de SMA50 (193.15).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 5.5%.",
+        "RSI 67: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 207.71099929809571,
+        "smaSlow": 193.14969970703126,
+        "smaTrend": 116.78532508850098,
+        "momentum": 0.05465300299418172,
+        "rsi": 66.85459065069287,
+        "volatility": 0.027390333424474955
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Australia"
+    },
+    {
+      "ticker": "DAO",
+      "lastClose": 19.1299991607666,
+      "score": 55,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (17.63) por encima de SMA50 (16.32).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 5.6%.",
+        "RSI 69: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 17.63200001716614,
+        "smaSlow": 16.317199993133546,
+        "smaTrend": 12.98300000667572,
+        "momentum": 0.055739419136579524,
+        "rsi": 69.47958909662259,
+        "volatility": 0.03459017215695362
+      },
+      "fundamentalTilt": null,
+      "sector": "Real Estate",
+      "country": "China"
+    },
+    {
+      "ticker": "MTC",
+      "lastClose": 5.300000190734863,
+      "score": 55,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (5.39) por encima de SMA50 (4.94).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 2.3%.",
+        "RSI 53: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 5.38600001335144,
+        "smaSlow": 4.940199999809265,
+        "smaTrend": 4.557199989557266,
+        "momentum": 0.023166093894394557,
+        "rsi": 53.18275654628043,
+        "volatility": 0.0664760180076019
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "China"
+    },
+    {
+      "ticker": "BSP",
+      "lastClose": 46.970001220703125,
+      "score": 54,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (41.50) por encima de SMA50 (40.10).",
+        "Momentum 10d: 24.1%.",
+        "RSI 57: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 41.50149993896484,
+        "smaSlow": 40.09639991760254,
+        "smaTrend": null,
+        "momentum": 0.2406233614233153,
+        "rsi": 57.29115518033358,
+        "volatility": 0.11394369442126309
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Italy"
+    },
+    {
+      "ticker": "KRNT",
+      "lastClose": 18.200000762939453,
+      "score": 54,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (17.64) por encima de SMA50 (16.71).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 2.0%.",
+        "RSI 53: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 17.64375,
+        "smaSlow": 16.705700035095216,
+        "smaTrend": 15.734099998474122,
+        "momentum": 0.020179406237243805,
+        "rsi": 53.253016367343264,
+        "volatility": 0.02110175319498777
+      },
+      "fundamentalTilt": null,
+      "sector": "Industrials",
+      "country": "Israel"
+    },
+    {
+      "ticker": "RDWR",
+      "lastClose": 35.5,
+      "score": 53,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (30.13) por encima de SMA50 (29.28).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 20.9%.",
+        "RSI 67: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 30.125,
+        "smaSlow": 29.27919998168945,
+        "smaTrend": 27.574100027084352,
+        "momentum": 0.20912804025908757,
+        "rsi": 67.37725664396126,
+        "volatility": 0.03525727081205004
+      },
+      "fundamentalTilt": null,
+      "sector": "Consumer Discretionary",
+      "country": "Israel"
+    },
+    {
+      "ticker": "QGEN",
+      "lastClose": 50.18000030517578,
+      "score": 53,
+      "signal": "HOLD",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (46.60) por encima de SMA50 (44.73).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 10.4%.",
+        "RSI 91: sobrecompra, riesgo de corrección.",
+        "Compra bloqueada por sobrecompra extrema (RSI 91 >= 80): se espera una corrección antes de entrar."
+      ],
+      "metrics": {
+        "smaFast": 46.59550018310547,
+        "smaSlow": 44.72720031738281,
+        "smaTrend": 42.32463180541992,
+        "momentum": 0.10431342037234771,
+        "rsi": 91.14506226405643,
+        "volatility": 0.022110213511984313
+      },
+      "fundamentalTilt": null,
+      "sector": "Health Care",
+      "country": "Netherlands"
+    },
+    {
+      "ticker": "HCM",
+      "lastClose": 13.800000190734863,
+      "score": 52,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (14.15) por encima de SMA50 (13.60).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 2.2%.",
+        "RSI 44: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 14.150500011444091,
+        "smaSlow": 13.602299976348878,
+        "smaTrend": 13.249524998664857,
+        "momentum": 0.022222236350730614,
+        "rsi": 44.02985711967615,
+        "volatility": 0.02378903660958643
+      },
+      "fundamentalTilt": null,
+      "sector": "Health Care",
+      "country": "Hong Kong"
+    },
+    {
+      "ticker": "CGNT",
+      "lastClose": 10.1899995803833,
+      "score": 49,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (8.97) por encima de SMA50 (8.70).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 16.6%.",
+        "RSI 76: sobrecompra, riesgo de corrección."
+      ],
+      "metrics": {
+        "smaFast": 8.966499948501587,
+        "smaSlow": 8.702799949645996,
+        "smaTrend": 8.829049937725067,
+        "momentum": 0.16590387268163842,
+        "rsi": 75.60975366616469,
+        "volatility": 0.02419130918860441
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Israel"
+    },
+    {
+      "ticker": "LKFT",
+      "lastClose": 31.81999969482422,
+      "score": 49,
+      "signal": "BUY",
+      "reasons": [
+        "Tendencia de corto plazo alcista: SMA20 (30.07) por encima de SMA50 (29.27).",
+        "Precio por encima de la media de 200 días: contexto de fondo alcista.",
+        "Momentum 10d: 9.5%.",
+        "RSI 69: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 30.073999977111818,
+        "smaSlow": 29.267799949645998,
+        "smaTrend": 29.939749946594237,
+        "momentum": 0.09535285819318862,
+        "rsi": 69.03765857333478,
+        "volatility": 0.014764351720334738
+      },
+      "fundamentalTilt": null,
+      "sector": "Health Care",
+      "country": "Belgium"
+    }
+  ],
+  "bottom": [
+    {
+      "ticker": "FSM",
+      "lastClose": 9.555000305175781,
+      "score": -75,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (10.46) por debajo de SMA50 (11.34).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -9.7%.",
+        "RSI 43: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 10.463250112533569,
+        "smaSlow": 11.340700035095216,
+        "smaTrend": 10.330975036621094,
+        "momentum": -0.09688087201528331,
+        "rsi": 42.9286658752403,
+        "volatility": 0.03448610410769897
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "SCZM",
+      "lastClose": 7.510000228881836,
+      "score": -73,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (8.28) por debajo de SMA50 (8.97).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -11.3%.",
+        "RSI 39: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 8.284500026702881,
+        "smaSlow": 8.972200050354004,
+        "smaTrend": 8.865381996631623,
+        "momentum": -0.11334120518082712,
+        "rsi": 38.91510118280336,
+        "volatility": 0.04397678613050804
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "SSRM",
+      "lastClose": 29.260000228881836,
+      "score": -72,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (32.12) por debajo de SMA50 (34.77).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -11.6%.",
+        "RSI 37: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 32.11799955368042,
+        "smaSlow": 34.77400001525879,
+        "smaTrend": 30.24267660140991,
+        "momentum": -0.11601203692627124,
+        "rsi": 37.02601837209933,
+        "volatility": 0.034433572784473045
+      },
+      "fundamentalTilt": null,
+      "sector": "Industrials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "NEXA",
+      "lastClose": 11.930000305175781,
+      "score": -72,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (12.32) por debajo de SMA50 (13.03).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -9.0%.",
+        "RSI 42: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 12.318499994277953,
+        "smaSlow": 13.033399982452393,
+        "smaTrend": 12.937022137641907,
+        "momentum": -0.09000758065622542,
+        "rsi": 42.369018571234925,
+        "volatility": 0.029432794418124474
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Luxembourg"
+    },
+    {
+      "ticker": "THM",
+      "lastClose": 2.049999952316284,
+      "score": -71,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (2.22) por debajo de SMA50 (2.45).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -8.9%.",
+        "RSI 40: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 2.2234999895095826,
+        "smaSlow": 2.449599986076355,
+        "smaTrend": 2.430999990105629,
+        "momentum": -0.08888891008165148,
+        "rsi": 40.18691567960648,
+        "volatility": 0.04054546020536485
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "GRND",
+      "lastClose": 12.930000305175781,
+      "score": -71,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (14.27) por debajo de SMA50 (15.06).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -16.4%.",
+        "RSI 34: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 14.269000053405762,
+        "smaSlow": 15.057600002288819,
+        "smaTrend": 13.63059998035431,
+        "momentum": -0.16418874712410483,
+        "rsi": 34.437090135893314,
+        "volatility": 0.03351257010251976
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Singapore"
+    },
+    {
+      "ticker": "CSIQ",
+      "lastClose": 9.670000076293945,
+      "score": -71,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (10.47) por debajo de SMA50 (11.91).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -13.7%.",
+        "RSI 35: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 10.473000049591064,
+        "smaSlow": 11.906999988555908,
+        "smaTrend": 15.557899980545043,
+        "momentum": -0.13737733778880445,
+        "rsi": 35.09433283250411,
+        "volatility": 0.03906686745217409
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "Canada"
+    },
+    {
+      "ticker": "BLSH",
+      "lastClose": 28.969999313354492,
+      "score": -71,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (31.12) por debajo de SMA50 (33.08).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -8.8%.",
+        "RSI 41: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 31.123999881744385,
+        "smaSlow": 33.08360008239746,
+        "smaTrend": 32.5259499168396,
+        "momentum": -0.08813349399008083,
+        "rsi": 41.03209734220837,
+        "volatility": 0.03682328534327339
+      },
+      "fundamentalTilt": null,
+      "sector": "Finance",
+      "country": "Cayman Islands"
+    },
+    {
+      "ticker": "BAK",
+      "lastClose": 1.3799999952316284,
+      "score": -71,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (1.65) por debajo de SMA50 (1.73).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -26.2%.",
+        "RSI 37: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 1.6495000004768372,
+        "smaSlow": 1.7343999934196472,
+        "smaTrend": 3.0594749981164933,
+        "momentum": -0.26203208999319616,
+        "rsi": 37.08609616587488,
+        "volatility": 0.10428863318748388
+      },
+      "fundamentalTilt": null,
+      "sector": "Industrials",
+      "country": "Brazil"
+    },
+    {
+      "ticker": "KC",
+      "lastClose": 8.539999961853027,
+      "score": -70,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (8.87) por debajo de SMA50 (9.68).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -8.4%.",
+        "RSI 41: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 8.872249984741211,
+        "smaSlow": 9.680499992370606,
+        "smaTrend": 12.116774969100952,
+        "momentum": -0.08369096121369592,
+        "rsi": 40.921058608554105,
+        "volatility": 0.032000093185834765
+      },
+      "fundamentalTilt": null,
+      "sector": "Technology",
+      "country": "China"
+    },
+    {
+      "ticker": "FIGR",
+      "lastClose": 22.84000015258789,
+      "score": -70,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (26.47) por debajo de SMA50 (31.86).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -16.2%.",
+        "RSI 33: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 26.46750020980835,
+        "smaSlow": 31.861099967956545,
+        "smaTrend": 34.78119999885559,
+        "momentum": -0.16183485678576548,
+        "rsi": 32.53968275811958,
+        "volatility": 0.0395486369670269
+      },
+      "fundamentalTilt": null,
+      "sector": "Finance",
+      "country": "U.S. Virgin Islands"
+    },
+    {
+      "ticker": "SVM",
+      "lastClose": 8.625,
+      "score": -69,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (9.77) por debajo de SMA50 (11.19).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -14.1%.",
+        "RSI 32: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 9.769250059127808,
+        "smaSlow": 11.185299968719482,
+        "smaTrend": 11.289911384582519,
+        "momentum": -0.1409362517160676,
+        "rsi": 32.42234656197169,
+        "volatility": 0.03121191668644571
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "MLCO",
+      "lastClose": 3.75,
+      "score": -69,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (4.13) por debajo de SMA50 (4.67).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -11.6%.",
+        "RSI 32: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 4.130499982833863,
+        "smaSlow": 4.666999979019165,
+        "smaTrend": 5.432399995326996,
+        "momentum": -0.11556598999271699,
+        "rsi": 31.578949569884657,
+        "volatility": 0.027103984012430096
+      },
+      "fundamentalTilt": null,
+      "sector": "Consumer Discretionary",
+      "country": "Hong Kong"
+    },
+    {
+      "ticker": "MMYT",
+      "lastClose": 41.36000061035156,
+      "score": -69,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (44.52) por debajo de SMA50 (49.80).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -7.5%.",
+        "RSI 44: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 44.51949977874756,
+        "smaSlow": 49.79520004272461,
+        "smaTrend": 51.21165004730224,
+        "momentum": -0.07472036008010693,
+        "rsi": 43.92412754340491,
+        "volatility": 0.033262044247414566
+      },
+      "fundamentalTilt": null,
+      "sector": "Consumer Discretionary",
+      "country": "India"
+    },
+    {
+      "ticker": "FUTU",
+      "lastClose": 102.36000061035156,
+      "score": -69,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (107.16) por debajo de SMA50 (112.33).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -10.3%.",
+        "RSI 37: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 107.15550003051757,
+        "smaSlow": 112.33200012207031,
+        "smaTrend": 125.8629071044922,
+        "momentum": -0.10257756618162106,
+        "rsi": 37.13984551949986,
+        "volatility": 0.03180203749584617
+      },
+      "fundamentalTilt": null,
+      "sector": "Finance",
+      "country": "Hong Kong"
+    },
+    {
+      "ticker": "MUX",
+      "lastClose": 15.395000457763672,
+      "score": -68,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (16.56) por debajo de SMA50 (18.41).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -8.8%.",
+        "RSI 37: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 16.558249855041502,
+        "smaSlow": 18.410700035095214,
+        "smaTrend": 20.91137498855591,
+        "momentum": -0.08797386118682063,
+        "rsi": 36.57370453745487,
+        "volatility": 0.03168929286451049
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "HBM",
+      "lastClose": 23.3799991607666,
+      "score": -68,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (24.81) por debajo de SMA50 (26.50).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -9.0%.",
+        "RSI 35: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 24.807500076293945,
+        "smaSlow": 26.49835750579834,
+        "smaTrend": 24.832452058792114,
+        "momentum": -0.08956390642821045,
+        "rsi": 34.798529082982455,
+        "volatility": 0.031017384352214086
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Canada"
+    },
+    {
+      "ticker": "AIFU",
+      "lastClose": 10.359999656677246,
+      "score": -68,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (11.09) por debajo de SMA50 (13.61).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -12.7%.",
+        "RSI 31: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 11.08550009727478,
+        "smaSlow": 13.609400062561035,
+        "smaTrend": 31.544050045013428,
+        "momentum": -0.12721147796461957,
+        "rsi": 30.516427300395904,
+        "volatility": 0.06714380982463292
+      },
+      "fundamentalTilt": null,
+      "sector": "Finance",
+      "country": "China"
+    },
+    {
+      "ticker": "BVN",
+      "lastClose": 28.735000610351562,
+      "score": -68,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (30.67) por debajo de SMA50 (32.74).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -8.8%.",
+        "RSI 36: zona neutral."
+      ],
+      "metrics": {
+        "smaFast": 30.66524991989136,
+        "smaSlow": 32.74429985046387,
+        "smaTrend": 33.63100469589234,
+        "momentum": -0.0877777584015377,
+        "rsi": 35.98596530701393,
+        "volatility": 0.021577250833699605
+      },
+      "fundamentalTilt": null,
+      "sector": "Basic Materials",
+      "country": "Peru"
+    },
+    {
+      "ticker": "NNNN",
+      "lastClose": 3.7100000381469727,
+      "score": -67,
+      "signal": "SELL",
+      "reasons": [
+        "Tendencia de corto plazo bajista: SMA20 (4.32) por debajo de SMA50 (5.72).",
+        "Precio por debajo de la media de 200 días: contexto de fondo bajista.",
+        "Momentum 10d: -12.9%.",
+        "RSI 28: sobreventa, posible rebote."
+      ],
+      "metrics": {
+        "smaFast": 4.318500018119812,
+        "smaSlow": 5.717800016403198,
+        "smaTrend": 17.85609997987747,
+        "momentum": -0.12910801905736685,
+        "rsi": 27.881036378249277,
+        "volatility": 0.06570747997342126
+      },
+      "fundamentalTilt": null,
+      "sector": "Health Care",
+      "country": "Germany"
+    }
+  ],
+  "totalEvaluated": 541
+}

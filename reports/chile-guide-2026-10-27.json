@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:34.011Z",
+  "guide": [
+    {
+      "id": "convenio-doble-tributacion",
+      "question": "¿Existe un tratado entre Chile y EEUU para no pagar impuestos dos veces?",
+      "answer": "Sí. El Convenio para Evitar la Doble Tributación entre Chile y Estados Unidos entró en vigor el 19 de diciembre de 2023. Las normas sobre retención en la fuente (lo que te retienen en EEUU sobre dividendos) empezaron a aplicar desde el 1 de febrero de 2024; el resto de las disposiciones, desde el 1 de enero de 2024. Antes de esta fecha, la retención por defecto sobre dividendos de EEUU para un extranjero era 30%; con el convenio vigente y el formulario W-8BEN presentado, baja a 15% para un inversionista individual con menos del 10% de la empresa (que es el caso de cualquiera comprando acciones normales en bolsa).",
+      "caveats": [
+        "Esta fecha de entrada en vigor es la que encontré en fuentes de 2023 — no confirmé si hubo cambios posteriores hasta 2026. Verificá el estado actual en sii.cl antes de asumir la tasa."
+      ],
+      "sources": [
+        "https://www.dlapiper.com/es-cl/news/2023/12/legal-alert-entry-into-force-of-double-taxation-avoidance-treaty-between-chile-and-the-united-states",
+        "https://www.cuatrecasas.com/es/latam/art/se-aprueba-convenio-para-evitar-doble-tributacion-entre-chile-y-estados-unidos"
+      ]
+    },
+    {
+      "id": "tributacion-dividendos",
+      "question": "¿Cómo tributa un dividendo de una acción de EEUU (ej. JNJ, MSFT) si lo cobro desde Chile?",
+      "answer": "Dos pasos. (1) En EEUU: tu broker retiene un % del dividendo antes de pagártelo — 30% por defecto, o 15% si ya presentaste el formulario W-8BEN (lo pide el broker al abrir la cuenta, es estándar, no es nada raro de llenar). (2) En Chile: ese dividendo se declara como renta de fuente extranjera y tributa con el Impuesto Global Complementario (el impuesto progresivo a la renta de personas — la misma escala que tu sueldo). Lo que ya te retuvieron en EEUU se puede usar como crédito contra ese impuesto chileno, para no pagar dos veces sobre lo mismo.",
+      "caveats": [
+        "El crédito tiene techo: no puede ser mayor a lo efectivamente retenido en EEUU, y además está limitado por un tope individual y un tope global que define el SII (Circular N°31 de 2021) — no es un crédito ilimitado.",
+        "Si ese año tuviste pérdidas tributarias, el crédito se pierde por completo — no se puede arrastrar a otro año.",
+        "El SII puede pedir el comprobante de la retención hecha en EEUU (tu broker lo genera, usualmente el formulario 1042-S) para aceptar el crédito — guardalo."
+      ],
+      "sources": [
+        "https://www.sii.cl/normativa_legislacion/circulares/2021/circu31.pdf",
+        "https://www.bcn.cl/leychile/navegar?idNorma=258378",
+        "https://ayuda.fintual.cl/es/articles/6460928-tengo-que-pagar-impuestos-por-mis-acciones"
+      ]
+    },
+    {
+      "id": "tributacion-ganancias-capital",
+      "question": "¿Y si vendo una acción con ganancia (no es dividendo, es la diferencia de precio)?",
+      "answer": "La ganancia (precio de venta menos precio de compra) tributa SOLO en Chile, vía Global Complementario — EEUU generalmente no cobra impuesto a un extranjero no-residente por vender una acción. Importante: esto es distinto al régimen del artículo 107 de la Ley de Impuesto a la Renta chilena, que exime de impuesto a las ganancias de ciertos instrumentos con 'presencia bursátil' en Chile (ej. acciones chilenas líquidas, algunos ETFs listados localmente) — ese beneficio NO aplica a comprar directamente una acción de EEUU en un broker extranjero como Interactive Brokers.",
+      "caveats": [
+        "Esto asume que comprás directo en un broker extranjero (IBKR y similares). Si en algún momento usás un vehículo listado en la bolsa chilena que replique acciones de EEUU, el tratamiento puede ser distinto — consultar."
+      ],
+      "sources": [
+        "https://ayuda.fintual.cl/es/articles/6460928-tengo-que-pagar-impuestos-por-mis-acciones",
+        "https://www.el-fondo.com/es/aprende/invertir-desde-chile"
+      ]
+    },
+    {
+      "id": "brokers-accesibles",
+      "question": "¿Qué broker uso desde Chile para comprar acciones/ETFs de EEUU de verdad (no en el simulador)?",
+      "answer": "La opción más mencionada es Interactive Brokers (IBKR): acepta residentes chilenos, cuenta 100% online, sin mínimo de saldo, KYC digital, apertura en días. No acepta financiar la cuenta directo en pesos chilenos — hay que fondear vía transferencia SWIFT en USD (o un servicio tipo Wise para cambiar CLP a USD antes). Pide el formulario W-8BEN al abrir la cuenta (así te retienen 15% y no 30% en los dividendos). También existen corredoras locales que dan acceso a mercados de EEUU, pero para operar legalmente en Chile una corredora tiene que estar inscrita en la CMF — confirmá esa inscripción antes de usar cualquiera que no sea un nombre muy establecido.",
+      "caveats": [
+        "La protección regulatoria de IBKR (SEC/FINRA/SIPC en EEUU) es distinta a la supervisión de una corredora chilena fiscalizada por la CMF — no son lo mismo, aunque ambas sean legítimas.",
+        "El costo real no es solo la comisión por operación (hoy casi todos cobran $0 en acciones/ETFs) — fijate en el spread de cambio de moneda al fondear, que es donde más se pierde si no comparás."
+      ],
+      "sources": [
+        "https://finantres.com/interactive-brokers-chile/",
+        "https://www.rankia.cl/foros/bolsa/temas/3159627-como-abrir-cuenta-interactive-broker-ib-chile"
+      ]
+    },
+    {
+      "id": "como-se-conecta-con-el-bot",
+      "question": "¿Cómo se conecta todo esto con los $1000 ficticios del bot?",
+      "answer": "El bot simula exactamente la estructura core-satellite que armamos (70% largo plazo con dividendos, 30% técnico) para que puedas ver, sin arriesgar nada, cómo se comportaría una cartera real con esta lógica. Si en algún momento decidís llevar esto a plata real (recién cuando se cumplan los criterios de GRADUATION_CRITERIA.md), la diferencia práctica va a ser: (1) definir un aporte mensual real en vez de $1000 de una vez, (2) abrir la cuenta en el broker elegido y presentar el W-8BEN, y (3) declarar cada año en el Formulario 22 los dividendos y ganancias de fuente extranjera, usando el crédito por lo retenido en EEUU.",
+      "caveats": [],
+      "sources": []
+    }
+  ]
+}

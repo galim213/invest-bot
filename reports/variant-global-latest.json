@@ -1,89 +1,18 @@
 {
-  "date": "2026-10-26",
-  "generatedAt": "2026-10-26T20:07:55.809Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:33.811Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-10-26",
-    "totalValue": 299.8575636619931,
+    "date": "2026-10-27",
+    "totalValue": 300.0551834629714,
     "cash": 14.984887648201891,
-    "pnl": -0.14243633800691669,
-    "pnlPct": -0.0474787793356389
+    "pnl": 0.05518346297139942,
+    "pnlPct": 0.01839448765713314
   },
-  "trades": [
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "BB",
-      "shares": 4.082343709802438,
-      "price": 9.18589973449707,
-      "usdAmount": 37.5,
-      "fee": 0.01875,
-      "reason": "Señal técnica de compra (score 78): Tendencia de corto plazo alcista: SMA20 (8.81) por encima de SMA50 (8.37). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.7%. RSI 47: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "MTC",
-      "shares": 6.805807339795702,
-      "price": 5.510000228881836,
-      "usdAmount": 37.5,
-      "fee": 0.01875,
-      "reason": "Señal técnica de compra (score 77): Tendencia de corto plazo alcista: SMA20 (5.37) por encima de SMA50 (4.89). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.6%. RSI 55: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "CD",
-      "shares": 3.8382802705194194,
-      "price": 9.770000457763672,
-      "usdAmount": 37.5,
-      "fee": 0.01875,
-      "reason": "Señal técnica de compra (score 76): Tendencia de corto plazo alcista: SMA20 (7.77) por encima de SMA50 (5.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 36.1%. RSI 56: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "DAO",
-      "shares": 2.2644267528956243,
-      "price": 19.209999084472656,
-      "usdAmount": 43.499635849980336,
-      "fee": 0.02174981792499017,
-      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (17.41) por encima de SMA50 (16.26). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.5%. RSI 65: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "GMAB",
-      "shares": 0.9478728335160727,
-      "price": 44.685001373291016,
-      "usdAmount": 42.355698867370954,
-      "fee": 0.02117784943368548,
-      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (37.89) por encima de SMA50 (35.47). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 19.6%. RSI 75: sobrecompra, riesgo de corrección."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "SSL",
-      "shares": 3.2305675847890503,
-      "price": 17.424999237060547,
-      "usdAmount": 56.29263770022173,
-      "fee": 0.028146318850110867,
-      "reason": "Señal técnica de compra (score 64): Tendencia de corto plazo alcista: SMA20 (15.39) por encima de SMA50 (14.03). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.9%. RSI 77: sobrecompra, riesgo de corrección."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "MTLS",
-      "shares": 3.4941855409415212,
-      "price": 8.649999618530273,
-      "usdAmount": 30.224703596218156,
-      "fee": 0.015112351798109078,
-      "reason": "Señal técnica de compra (score 62): Tendencia de corto plazo alcista: SMA20 (8.39) por encima de SMA50 (7.77). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 4.6%. RSI 54: zona neutral."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "BB",
@@ -135,6 +64,13 @@
       "cash": 14.984887648201891,
       "pnl": -0.14243633800691669,
       "pnlPct": -0.0474787793356389
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.0551834629714,
+      "cash": 14.984887648201891,
+      "pnl": 0.05518346297139942,
+      "pnlPct": 0.01839448765713314
     }
   ]
 }

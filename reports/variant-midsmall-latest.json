@@ -1,89 +1,18 @@
 {
-  "date": "2026-10-26",
-  "generatedAt": "2026-10-26T20:07:55.797Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T20:08:33.801Z",
   "name": "midsmall",
   "label": "Mid + Small cap",
   "universeLabel": "S&P MidCap 400 + SmallCap 600",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-10-26",
-    "totalValue": 299.86125571966613,
+    "date": "2026-10-27",
+    "totalValue": 300.7334917004205,
     "cash": 22.372695052005255,
-    "pnl": -0.1387442803338672,
-    "pnlPct": -0.046248093444622405
+    "pnl": 0.7334917004204726,
+    "pnlPct": 0.24449723347349087
   },
-  "trades": [
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "RNG",
-      "shares": 0.5329345724569629,
-      "price": 86.3499984741211,
-      "usdAmount": 46.01889951846512,
-      "fee": 0.02300944975923256,
-      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (78.80) por encima de SMA50 (74.29). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.5%. RSI 63: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "WS",
-      "shares": 1.0979796458752813,
-      "price": 42.25,
-      "usdAmount": 46.38964003823064,
-      "fee": 0.02319482001911532,
-      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (38.50) por encima de SMA50 (36.14). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.2%. RSI 64: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "QLYS",
-      "shares": 0.20753274571499433,
-      "price": 225.14999389648438,
-      "usdAmount": 46.72599643105162,
-      "fee": 0.023362998215525812,
-      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (196.06) por encima de SMA50 (185.10). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.4%. RSI 64: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "CERT",
-      "shares": 3.9691688964096543,
-      "price": 10.609999656677246,
-      "usdAmount": 42.112880628200436,
-      "fee": 0.021056440314100217,
-      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (9.55) por encima de SMA50 (8.78). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.8%. RSI 67: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "EFOR",
-      "shares": 0.9661395099499821,
-      "price": 41.8224983215332,
-      "usdAmount": 40.40636803325004,
-      "fee": 0.02020318401662502,
-      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (37.58) por encima de SMA50 (34.26). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.8%. RSI 69: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "TENB",
-      "shares": 0.6872664456718482,
-      "price": 48.209999084472656,
-      "usdAmount": 33.13311471662858,
-      "fee": 0.01656655735831429,
-      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (39.60) por encima de SMA50 (36.85). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 18.2%. RSI 70: zona neutral."
-    },
-    {
-      "date": "2026-10-26",
-      "action": "BUY",
-      "ticker": "CVLT",
-      "shares": 0.13534646086029303,
-      "price": 167.72999572753906,
-      "usdAmount": 22.701661301834484,
-      "fee": 0.011350830650917243,
-      "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (155.76) por encima de SMA50 (145.68). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 61: zona neutral."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "RNG",
@@ -135,6 +64,13 @@
       "cash": 22.372695052005255,
       "pnl": -0.1387442803338672,
       "pnlPct": -0.046248093444622405
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.7334917004205,
+      "cash": 22.372695052005255,
+      "pnl": 0.7334917004204726,
+      "pnlPct": 0.24449723347349087
     }
   ]
 }
