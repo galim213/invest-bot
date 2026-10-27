@@ -75,3 +75,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** tests para `midcapWatch.js`/`pointInTime.js`; revisar track record a fines de noviembre; diversificación del CORE sin probar.
+
+## 2026-10-27
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/pointInTime.js` (membresía histórica del S&P 500 usada por backtest/validate para evitar sesgo de look-ahead), sin tests hasta hoy.
+
+**Decisión:** implementado. `test/pointInTime.test.js` (3 tests, `node:test`, sin red): `normalizeTicker`, universo en la primera fecha de cobertura (Set con >100 tickers) y fallback a `WATCHLIST` para fechas fuera de cobertura (antes y después). `npm test` en verde. No se tocó ningún archivo de `lib/` ni lógica de trading → no aplica `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** tests para `midcapWatch.js`; revisar track record a fines de noviembre; diversificación del CORE sin probar.
