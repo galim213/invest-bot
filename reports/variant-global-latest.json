@@ -1,18 +1,51 @@
 {
-  "date": "2026-10-27",
-  "generatedAt": "2026-10-27T20:08:33.811Z",
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T20:08:30.139Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-10-27",
-    "totalValue": 300.0551834629714,
-    "cash": 14.984887648201891,
-    "pnl": 0.05518346297139942,
-    "pnlPct": 0.01839448765713314
+    "date": "2026-10-28",
+    "totalValue": 301.2035817534746,
+    "cash": 17.839271379848945,
+    "pnl": 1.203581753474623,
+    "pnlPct": 0.4011939178248743
   },
-  "trades": [],
+  "trades": [
+    {
+      "date": "2026-10-28",
+      "action": "TRIM",
+      "ticker": "GMAB",
+      "shares": 0.4739364167580363,
+      "price": 57.290000915527344,
+      "usdAmount": 27.138241841094665,
+      "fee": 0.013575908874984825,
+      "realizedPnl": 5.960392407409189,
+      "reason": "Toma de ganancias parcial: +28.2% desde la entrada (umbral +25%). Se vende el 50% de la posición."
+    },
+    {
+      "date": "2026-10-28",
+      "action": "SELL",
+      "ticker": "MTLS",
+      "shares": 3.4941855409415212,
+      "price": 6.78000020980835,
+      "usdAmount": 23.678733411342467,
+      "fee": 0.011845289350346407,
+      "realizedPnl": -6.545970184875687,
+      "reason": "Stop-loss: precio -21.6% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-28",
+      "action": "BUY",
+      "ticker": "KRNT",
+      "shares": 2.6412464582501816,
+      "price": 18.149999618530273,
+      "usdAmount": 47.938622209685235,
+      "fee": 0.023969311104842617,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (17.72) por encima de SMA50 (16.73). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 6.5%. RSI 50: zona neutral."
+    }
+  ],
   "positions": [
     {
       "ticker": "BB",
@@ -40,9 +73,10 @@
     },
     {
       "ticker": "GMAB",
-      "shares": 0.9478728335160727,
+      "shares": 0.4739364167580363,
       "avgCost": 44.685001373291016,
-      "openedAt": "2026-10-26"
+      "openedAt": "2026-10-26",
+      "trimmedProfit": true
     },
     {
       "ticker": "SSL",
@@ -51,10 +85,10 @@
       "openedAt": "2026-10-26"
     },
     {
-      "ticker": "MTLS",
-      "shares": 3.4941855409415212,
-      "avgCost": 8.649999618530273,
-      "openedAt": "2026-10-26"
+      "ticker": "KRNT",
+      "shares": 2.6412464582501816,
+      "avgCost": 18.149999618530273,
+      "openedAt": "2026-10-28"
     }
   ],
   "dailySnapshots": [
@@ -71,6 +105,13 @@
       "cash": 14.984887648201891,
       "pnl": 0.05518346297139942,
       "pnlPct": 0.01839448765713314
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 301.2035817534746,
+      "cash": 17.839271379848945,
+      "pnl": 1.203581753474623,
+      "pnlPct": 0.4011939178248743
     }
   ]
 }

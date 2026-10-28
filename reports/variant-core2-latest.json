@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-27",
-  "generatedAt": "2026-10-27T20:08:33.812Z",
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T20:08:30.140Z",
   "name": "core2",
   "label": "Core v2 (screen cuantitativo)",
   "universeLabel": "fundamentals-cache.json",
   "startingCapital": 700,
   "snapshot": {
-    "date": "2026-10-27",
-    "totalValue": 695.6438747909217,
+    "date": "2026-10-28",
+    "totalValue": 694.6094136483914,
     "cash": 0,
-    "pnl": -4.3561252090783,
-    "pnlPct": -0.6223036012969
+    "pnl": -5.39058635160859,
+    "pnlPct": -0.7700837645155129
   },
   "trades": [],
   "positions": [
@@ -19,70 +19,70 @@
       "shares": 0.3947887934343231,
       "avgCost": 177.30999755859375,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "CF",
       "shares": 0.5791585755778447,
       "avgCost": 120.86499786376953,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "EOG",
       "shares": 0.42762452651568117,
       "avgCost": 163.69500732421875,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "TROW",
       "shares": 0.6763938684407498,
       "avgCost": 103.48999786376953,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "FIS",
       "shares": 1.8993352562595762,
       "avgCost": 36.85499954223633,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "SPG",
       "shares": 0.3290246768507638,
       "avgCost": 212.75,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "MKC",
       "shares": 1.4583333333333333,
       "avgCost": 48,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "PNC",
       "shares": 0.3099676722863758,
       "avgCost": 225.8300018310547,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "APA",
       "shares": 1.3550135541377983,
       "avgCost": 51.65999984741211,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     },
     {
       "ticker": "DVN",
       "shares": 1.348894687259008,
       "avgCost": 51.6349983215332,
       "openedAt": "2026-10-26",
-      "lastDividendCheck": "2026-10-27"
+      "lastDividendCheck": "2026-10-28"
     }
   ],
   "dailySnapshots": [
@@ -99,6 +99,13 @@
       "cash": 0,
       "pnl": -4.3561252090783,
       "pnlPct": -0.6223036012969
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 694.6094136483914,
+      "cash": 0,
+      "pnl": -5.39058635160859,
+      "pnlPct": -0.7700837645155129
     }
   ]
 }
