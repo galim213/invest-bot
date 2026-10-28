@@ -87,3 +87,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** tests para `midcapWatch.js`; revisar track record a fines de noviembre; diversificación del CORE sin probar.
+
+## 2026-10-28
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/midcapWatch.js` (seguimiento del S&P MidCap 400, sin operar), sin tests hasta hoy.
+
+**Decisión:** implementado. `test/midcapWatch.test.js` (3 tests, `node:test`, sin red): orden y recorte por topN, exclusión de errores/sin precio con sector adjunto, y el markdown aclara que no opera y lista ambas tablas. `npm test`: 183/183 en verde. No se tocó ningún archivo de `lib/` ni lógica de trading → no aplica `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
