@@ -99,3 +99,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
+
+## 2026-10-29
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/loadFundamentalsCache.js` (carga del cache de fundamentales que alimenta `qualityScores`; `fundamentals.js` es solo red y no es testeable sin red).
+
+**Decisión:** implementado. `test/loadFundamentalsCache.test.js` (4 tests, `node:test`, sin red): sin archivo → null, JSON corrupto → null, cache sin tickers → null, cache válido → `count`/`generatedAt`/`scores`. El test respalda y restaura `fundamentals-cache.json` en un `finally`. `npm test`: 187/187 en verde. No se tocó ningún archivo de `lib/` ni lógica de trading → no aplica `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
