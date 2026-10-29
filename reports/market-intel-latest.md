@@ -1,4 +1,4 @@
-# Informe de mercado — sectores y empresas de calidad — 2026-10-28
+# Informe de mercado — sectores y empresas de calidad — 2026-10-29
 
 > 📚 **Sección educativa.** Esto es contexto de mercado y análisis fundamental para aprender, no son señales del motor de trading (que opera sobre el S&P 500 completo con reglas técnicas — ver el reporte diario). No es asesoría financiera.
 
@@ -8,19 +8,19 @@ Qué sectores lideran y cuáles están rezagados, por momentum de precio.
 
 | Sector | ETF | Momentum 1m | Momentum 3m | Precio |
 |---|---|---|---|---|
-| Energía | XLE | 11.3% | 16.1% | $68.48 |
-| Servicios públicos | XLU | 7.0% | -4.8% | $42.49 |
-| Consumo básico | XLP | 6.1% | 1.6% | $86.85 |
-| Consumo discrecional | XLY | 5.7% | 2.6% | $115.32 |
-| Materiales | XLB | 5.6% | 0.4% | $51.87 |
-| Salud | XLV | 5.3% | 9.9% | $179.76 |
-| Financiero | XLF | 3.9% | -1.6% | $56.12 |
-| Bienes raíces | XLRE | 1.9% | -7.0% | $42.13 |
-| Industrial | XLI | -0.4% | -5.5% | $168.52 |
-| Aeroespacial y Defensa | ITA | -0.8% | -12.8% | $207.62 |
-| Tecnología | XLK | -1.7% | 8.8% | $191.18 |
-| Semiconductores | SMH | -6.5% | 5.3% | $567.67 |
-| Comunicaciones | XLC | -7.5% | -3.2% | $103.16 |
+| Energía | XLE | 11.7% | 15.4% | $68.71 |
+| Servicios públicos | XLU | 9.4% | -2.7% | $43.14 |
+| Consumo básico | XLP | 9.4% | 3.6% | $88.14 |
+| Salud | XLV | 9.3% | 13.2% | $184.07 |
+| Materiales | XLB | 7.8% | 4.1% | $52.52 |
+| Consumo discrecional | XLY | 6.7% | 0.1% | $116.15 |
+| Financiero | XLF | 6.6% | -0.1% | $56.91 |
+| Bienes raíces | XLRE | 5.2% | -4.5% | $43.05 |
+| Aeroespacial y Defensa | ITA | 3.5% | -10.5% | $214.49 |
+| Industrial | XLI | 1.9% | -5.4% | $170.11 |
+| Tecnología | XLK | -3.6% | 7.6% | $188.72 |
+| Semiconductores | SMH | -7.8% | 3.9% | $561.67 |
+| Comunicaciones | XLC | -8.8% | -6.5% | $101.21 |
 
 _Momentum = retorno de precio en la ventana, no es una recomendación de comprar el sector — un sector "caliente" también puede estar sobrecomprado._
 
@@ -189,4 +189,4 @@ Selección curada de empresas con posición competitiva reconocida en su sector,
 - _Sin datos fundamentales disponibles hoy (falla ocasional del endpoint no oficial de Yahoo)._
 
 ---
-_Generado automáticamente el 2026-10-28T20:08:30.073Z. Fundamentales: endpoint no oficial de Yahoo Finance (mismo mecanismo que usa la librería yfinance) — puede fallar sin aviso. Los textos "por qué" son análisis cualitativo, no se actualizan automáticamente y pueden quedar desactualizados; revisalos cada tanto._
+_Generado automáticamente el 2026-10-29T20:10:17.423Z. Fundamentales: endpoint no oficial de Yahoo Finance (mismo mecanismo que usa la librería yfinance) — puede fallar sin aviso. Los textos "por qué" son análisis cualitativo, no se actualizan automáticamente y pueden quedar desactualizados; revisalos cada tanto._

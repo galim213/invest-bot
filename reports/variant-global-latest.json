@@ -1,49 +1,48 @@
 {
-  "date": "2026-10-28",
-  "generatedAt": "2026-10-28T20:08:30.139Z",
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T20:10:17.527Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-10-28",
-    "totalValue": 301.2035817534746,
-    "cash": 17.839271379848945,
-    "pnl": 1.203581753474623,
-    "pnlPct": 0.4011939178248743
+    "date": "2026-10-29",
+    "totalValue": 292.0412980907114,
+    "cash": 18.25991352209568,
+    "pnl": -7.958701909288607,
+    "pnlPct": -2.6529006364295356
   },
   "trades": [
     {
-      "date": "2026-10-28",
-      "action": "TRIM",
-      "ticker": "GMAB",
-      "shares": 0.4739364167580363,
-      "price": 57.290000915527344,
-      "usdAmount": 27.138241841094665,
-      "fee": 0.013575908874984825,
-      "realizedPnl": 5.960392407409189,
-      "reason": "Toma de ganancias parcial: +28.2% desde la entrada (umbral +25%). Se vende el 50% de la posición."
-    },
-    {
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "action": "SELL",
-      "ticker": "MTLS",
-      "shares": 3.4941855409415212,
-      "price": 6.78000020980835,
-      "usdAmount": 23.678733411342467,
-      "fee": 0.011845289350346407,
-      "realizedPnl": -6.545970184875687,
-      "reason": "Stop-loss: precio -21.6% desde el precio de entrada (umbral -12%)."
+      "ticker": "CD",
+      "shares": 3.8382802705194194,
+      "price": 7.539999961853027,
+      "usdAmount": 28.926162776751,
+      "fee": 0.014470316546648824,
+      "realizedPnl": -8.573837223248997,
+      "reason": "Stop-loss: precio -22.8% desde el precio de entrada (umbral -12%)."
     },
     {
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "action": "BUY",
-      "ticker": "KRNT",
-      "shares": 2.6412464582501816,
-      "price": 18.149999618530273,
-      "usdAmount": 47.938622209685235,
-      "fee": 0.023969311104842617,
-      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (17.72) por encima de SMA50 (16.73). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 6.5%. RSI 50: zona neutral."
+      "ticker": "CD",
+      "shares": 2.1328021971425293,
+      "price": 7.539999961853027,
+      "usdAmount": 16.081328485094723,
+      "fee": 0.008040664242547362,
+      "reason": "Señal técnica de compra (score 77): Tendencia de corto plazo alcista: SMA20 (8.18) por encima de SMA50 (5.61). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 44: zona neutral."
+    },
+    {
+      "date": "2026-10-29",
+      "action": "BUY",
+      "ticker": "TRMD",
+      "shares": 0.28830170844017267,
+      "price": 43.04499816894531,
+      "usdAmount": 12.409946511911038,
+      "fee": 0.006204973255955519,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (39.87) por encima de SMA50 (36.06). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.3%. RSI 62: zona neutral."
     }
   ],
   "positions": [
@@ -57,12 +56,6 @@
       "ticker": "MTC",
       "shares": 6.805807339795702,
       "avgCost": 5.510000228881836,
-      "openedAt": "2026-10-26"
-    },
-    {
-      "ticker": "CD",
-      "shares": 3.8382802705194194,
-      "avgCost": 9.770000457763672,
       "openedAt": "2026-10-26"
     },
     {
@@ -89,6 +82,18 @@
       "shares": 2.6412464582501816,
       "avgCost": 18.149999618530273,
       "openedAt": "2026-10-28"
+    },
+    {
+      "ticker": "CD",
+      "shares": 2.1328021971425293,
+      "avgCost": 7.539999961853027,
+      "openedAt": "2026-10-29"
+    },
+    {
+      "ticker": "TRMD",
+      "shares": 0.28830170844017267,
+      "avgCost": 43.04499816894531,
+      "openedAt": "2026-10-29"
     }
   ],
   "dailySnapshots": [
@@ -112,6 +117,13 @@
       "cash": 17.839271379848945,
       "pnl": 1.203581753474623,
       "pnlPct": 0.4011939178248743
+    },
+    {
+      "date": "2026-10-29",
+      "totalValue": 292.0412980907114,
+      "cash": 18.25991352209568,
+      "pnl": -7.958701909288607,
+      "pnlPct": -2.6529006364295356
     }
   ]
 }

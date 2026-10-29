@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T20:10:17.527Z",
+  "name": "global",
+  "label": "Internacional (ADRs)",
+  "universeLabel": "empresas internacionales en bolsas de EEUU",
+  "startingCapital": 300,
+  "snapshot": {
+    "date": "2026-10-29",
+    "totalValue": 292.0412980907114,
+    "cash": 18.25991352209568,
+    "pnl": -7.958701909288607,
+    "pnlPct": -2.6529006364295356
+  },
+  "trades": [
+    {
+      "date": "2026-10-29",
+      "action": "SELL",
+      "ticker": "CD",
+      "shares": 3.8382802705194194,
+      "price": 7.539999961853027,
+      "usdAmount": 28.926162776751,
+      "fee": 0.014470316546648824,
+      "realizedPnl": -8.573837223248997,
+      "reason": "Stop-loss: precio -22.8% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-10-29",
+      "action": "BUY",
+      "ticker": "CD",
+      "shares": 2.1328021971425293,
+      "price": 7.539999961853027,
+      "usdAmount": 16.081328485094723,
+      "fee": 0.008040664242547362,
+      "reason": "Señal técnica de compra (score 77): Tendencia de corto plazo alcista: SMA20 (8.18) por encima de SMA50 (5.61). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 44: zona neutral."
+    },
+    {
+      "date": "2026-10-29",
+      "action": "BUY",
+      "ticker": "TRMD",
+      "shares": 0.28830170844017267,
+      "price": 43.04499816894531,
+      "usdAmount": 12.409946511911038,
+      "fee": 0.006204973255955519,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (39.87) por encima de SMA50 (36.06). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.3%. RSI 62: zona neutral."
+    }
+  ],
+  "positions": [
+    {
+      "ticker": "BB",
+      "shares": 4.082343709802438,
+      "avgCost": 9.18589973449707,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "MTC",
+      "shares": 6.805807339795702,
+      "avgCost": 5.510000228881836,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "DAO",
+      "shares": 2.2644267528956243,
+      "avgCost": 19.209999084472656,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "GMAB",
+      "shares": 0.4739364167580363,
+      "avgCost": 44.685001373291016,
+      "openedAt": "2026-10-26",
+      "trimmedProfit": true
+    },
+    {
+      "ticker": "SSL",
+      "shares": 3.2305675847890503,
+      "avgCost": 17.424999237060547,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "KRNT",
+      "shares": 2.6412464582501816,
+      "avgCost": 18.149999618530273,
+      "openedAt": "2026-10-28"
+    },
+    {
+      "ticker": "CD",
+      "shares": 2.1328021971425293,
+      "avgCost": 7.539999961853027,
+      "openedAt": "2026-10-29"
+    },
+    {
+      "ticker": "TRMD",
+      "shares": 0.28830170844017267,
+      "avgCost": 43.04499816894531,
+      "openedAt": "2026-10-29"
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-26",
+      "totalValue": 299.8575636619931,
+      "cash": 14.984887648201891,
+      "pnl": -0.14243633800691669,
+      "pnlPct": -0.0474787793356389
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.0551834629714,
+      "cash": 14.984887648201891,
+      "pnl": 0.05518346297139942,
+      "pnlPct": 0.01839448765713314
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 301.2035817534746,
+      "cash": 17.839271379848945,
+      "pnl": 1.203581753474623,
+      "pnlPct": 0.4011939178248743
+    },
+    {
+      "date": "2026-10-29",
+      "totalValue": 292.0412980907114,
+      "cash": 18.25991352209568,
+      "pnl": -7.958701909288607,
+      "pnlPct": -2.6529006364295356
+    }
+  ]
+}
