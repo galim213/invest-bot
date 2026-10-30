@@ -1,98 +1,98 @@
 {
-  "date": "2026-10-29",
-  "generatedAt": "2026-10-29T20:10:17.423Z",
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-30T20:10:43.768Z",
   "sectorRotation": {
     "rows": [
       {
         "ticker": "XLE",
         "sector": "Energía",
-        "lastClose": 68.70999908447266,
-        "momentum1m": 0.1172357574711001,
-        "momentum3m": 0.15382031846797142
-      },
-      {
-        "ticker": "XLU",
-        "sector": "Servicios públicos",
-        "lastClose": 43.13999938964844,
-        "momentum1m": 0.09381341003480137,
-        "momentum3m": -0.027282956620138542
+        "lastClose": 70.01000213623047,
+        "momentum1m": 0.11658694233400697,
+        "momentum3m": 0.19084880159850023
       },
       {
         "ticker": "XLP",
         "sector": "Consumo básico",
-        "lastClose": 88.1449966430664,
-        "momentum1m": 0.09361040089061351,
-        "momentum3m": 0.03639028195478267
+        "lastClose": 89.41999816894531,
+        "momentum1m": 0.11315817416521623,
+        "momentum3m": 0.05373553530280677
       },
       {
         "ticker": "XLV",
         "sector": "Salud",
-        "lastClose": 184.06500244140625,
-        "momentum1m": 0.09289279445762216,
-        "momentum3m": 0.132359267829714
+        "lastClose": 184.83999633789062,
+        "momentum1m": 0.11215402967458107,
+        "momentum3m": 0.13929974161446146
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Servicios públicos",
+        "lastClose": 43.45000076293945,
+        "momentum1m": 0.09501009145082896,
+        "momentum3m": -0.02051397283343945
       },
       {
         "ticker": "XLB",
         "sector": "Materiales",
-        "lastClose": 52.52000045776367,
-        "momentum1m": 0.07843941755605117,
-        "momentum3m": 0.04144358794250072
-      },
-      {
-        "ticker": "XLY",
-        "sector": "Consumo discrecional",
-        "lastClose": 116.1500015258789,
-        "momentum1m": 0.0671628577172548,
-        "momentum3m": 0.000516885088131372
-      },
-      {
-        "ticker": "XLF",
-        "sector": "Financiero",
-        "lastClose": 56.90999984741211,
-        "momentum1m": 0.06573030376847788,
-        "momentum3m": -0.000526848964179697
+        "lastClose": 52.75,
+        "momentum1m": 0.08673257117978195,
+        "momentum3m": 0.0341109926626341
       },
       {
         "ticker": "XLRE",
         "sector": "Bienes raíces",
-        "lastClose": 43.04999923706055,
-        "momentum1m": 0.05230993394354192,
-        "momentum3m": -0.04481918063992457
+        "lastClose": 43.16999816894531,
+        "momentum1m": 0.06120938655579913,
+        "momentum3m": -0.04448875880154
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumo discrecional",
+        "lastClose": 115.38999938964844,
+        "momentum1m": 0.060472401237867714,
+        "momentum3m": -0.023855847362024358
+      },
+      {
+        "ticker": "XLF",
+        "sector": "Financiero",
+        "lastClose": 56.529998779296875,
+        "momentum1m": 0.05742610825662909,
+        "momentum3m": -0.014813563488946786
       },
       {
         "ticker": "ITA",
         "sector": "Aeroespacial y Defensa",
-        "lastClose": 214.49000549316406,
-        "momentum1m": 0.035283391619876876,
-        "momentum3m": -0.10502377444853861
+        "lastClose": 209.72999572753906,
+        "momentum1m": 0.008123449797856244,
+        "momentum3m": -0.14771621356078982
       },
       {
         "ticker": "XLI",
         "sector": "Industrial",
-        "lastClose": 170.11000061035156,
-        "momentum1m": 0.018744789572996055,
-        "momentum3m": -0.054103625031541674
-      },
-      {
-        "ticker": "XLK",
-        "sector": "Tecnología",
-        "lastClose": 188.72000122070312,
-        "momentum1m": -0.0359131482978129,
-        "momentum3m": 0.07624747448993355
-      },
-      {
-        "ticker": "SMH",
-        "sector": "Semiconductores",
-        "lastClose": 561.6699829101562,
-        "momentum1m": -0.07771759784867611,
-        "momentum3m": 0.03910967470351322
+        "lastClose": 167.4199981689453,
+        "momentum1m": -0.007234352615741363,
+        "momentum3m": -0.08593582211431362
       },
       {
         "ticker": "XLC",
         "sector": "Comunicaciones",
-        "lastClose": 101.20999908447266,
-        "momentum1m": -0.087951716940322,
-        "momentum3m": -0.064948253123072
+        "lastClose": 99.91000366210938,
+        "momentum1m": -0.09123156773297758,
+        "momentum3m": -0.10265846103581608
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Tecnología",
+        "lastClose": 179.52000427246094,
+        "momentum1m": -0.09246243118078545,
+        "momentum3m": 0.008312800730954646
+      },
+      {
+        "ticker": "SMH",
+        "sector": "Semiconductores",
+        "lastClose": 512.719970703125,
+        "momentum1m": -0.17010088420510208,
+        "momentum3m": -0.060022824681315506
       }
     ],
     "errors": []

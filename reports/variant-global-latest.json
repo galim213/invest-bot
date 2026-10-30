@@ -1,50 +1,18 @@
 {
-  "date": "2026-10-29",
-  "generatedAt": "2026-10-29T20:10:17.527Z",
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-30T20:10:43.838Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-10-29",
-    "totalValue": 292.0412980907114,
+    "date": "2026-10-30",
+    "totalValue": 287.15884218304404,
     "cash": 18.25991352209568,
-    "pnl": -7.958701909288607,
-    "pnlPct": -2.6529006364295356
+    "pnl": -12.841157816955956,
+    "pnlPct": -4.280385938985319
   },
-  "trades": [
-    {
-      "date": "2026-10-29",
-      "action": "SELL",
-      "ticker": "CD",
-      "shares": 3.8382802705194194,
-      "price": 7.539999961853027,
-      "usdAmount": 28.926162776751,
-      "fee": 0.014470316546648824,
-      "realizedPnl": -8.573837223248997,
-      "reason": "Stop-loss: precio -22.8% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-10-29",
-      "action": "BUY",
-      "ticker": "CD",
-      "shares": 2.1328021971425293,
-      "price": 7.539999961853027,
-      "usdAmount": 16.081328485094723,
-      "fee": 0.008040664242547362,
-      "reason": "Señal técnica de compra (score 77): Tendencia de corto plazo alcista: SMA20 (8.18) por encima de SMA50 (5.61). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 44: zona neutral."
-    },
-    {
-      "date": "2026-10-29",
-      "action": "BUY",
-      "ticker": "TRMD",
-      "shares": 0.28830170844017267,
-      "price": 43.04499816894531,
-      "usdAmount": 12.409946511911038,
-      "fee": 0.006204973255955519,
-      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (39.87) por encima de SMA50 (36.06). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.3%. RSI 62: zona neutral."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "BB",
@@ -124,6 +92,13 @@
       "cash": 18.25991352209568,
       "pnl": -7.958701909288607,
       "pnlPct": -2.6529006364295356
+    },
+    {
+      "date": "2026-10-30",
+      "totalValue": 287.15884218304404,
+      "cash": 18.25991352209568,
+      "pnl": -12.841157816955956,
+      "pnlPct": -4.280385938985319
     }
   ]
 }

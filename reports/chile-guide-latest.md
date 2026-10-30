@@ -1,4 +1,4 @@
-# Invertir desde Chile en EEUU: tributación y brokers — 2026-10-29
+# Invertir desde Chile en EEUU: tributación y brokers — 2026-10-30
 
 > 📚 **Información general, no asesoría tributaria ni legal personalizada.** Las reglas tributarias cambian y dependen de tu situación particular — antes de actuar con plata real, confirmá con un contador o asesor tributario. Esto es para entender el panorama, no para declarar impuestos solo con esto. No es asesoría financiera real.
 
@@ -46,4 +46,4 @@ La opción más mencionada es Interactive Brokers (IBKR): acepta residentes chil
 El bot simula exactamente la estructura core-satellite que armamos (70% largo plazo con dividendos, 30% técnico) para que puedas ver, sin arriesgar nada, cómo se comportaría una cartera real con esta lógica. Si en algún momento decidís llevar esto a plata real (recién cuando se cumplan los criterios de GRADUATION_CRITERIA.md), la diferencia práctica va a ser: (1) definir un aporte mensual real en vez de $1000 de una vez, (2) abrir la cuenta en el broker elegido y presentar el W-8BEN, y (3) declarar cada año en el Formulario 22 los dividendos y ganancias de fuente extranjera, usando el crédito por lo retenido en EEUU.
 
 ---
-_Generado el 2026-10-29T20:10:17.748Z. Contenido estático (chile-investing-guide.json), investigado con búsqueda web — no se actualiza solo, puede quedar desactualizado si cambia la normativa. No es asesoría tributaria ni legal real._
+_Generado el 2026-10-30T20:10:44.063Z. Contenido estático (chile-investing-guide.json), investigado con búsqueda web — no se actualiza solo, puede quedar desactualizado si cambia la normativa. No es asesoría tributaria ni legal real._
