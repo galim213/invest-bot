@@ -111,3 +111,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
+
+## 2026-10-30
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/marketData.js` (fetch de velas Yahoo, base de todo el sistema), sin tests hasta hoy. Se mockea `global.fetch`, sin red.
+
+**Decisión:** implementado. `test/marketData.test.js` (3 tests): descarte de velas sin close + adjClose + dividendos ordenados + regularMarketPrice; error ante HTTP no-ok y respuesta sin resultado; `fetchAll` tolera fallos individuales y los reporta aparte. `npm test` en verde. No se tocó `lib/` ni lógica de trading → no aplica `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** único módulo sin tests restante es `fundamentals.js` (solo red/auth); revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
