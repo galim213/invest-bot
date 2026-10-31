@@ -123,3 +123,15 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** único módulo sin tests restante es `fundamentals.js` (solo red/auth); revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
+
+## 2026-10-31
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no hay 30+ días de track record; no se corrió `track-record.js`. Re-chequear a fines de noviembre de 2026.
+
+**Idea elegida:** cobertura de tests para `lib/fundamentals.js` (auth cookie+crumb de Yahoo y mapeo de quoteSummary, que alimenta el score de calidad). Se mockea `global.fetch`, sin red.
+
+**Decisión:** implementado. `test/fundamentals.test.js` (3 tests): error diagnosticado sin Set-Cookie, causa real (`err.cause`) en fetch caído, mapeo de campos `raw` + `fetchFundamentalsAll` separando errores. Módulo recargado por test porque `cachedAuth` es estado de módulo. `npm test`: 193/193 en verde. No se tocó `lib/` ni lógica de trading → no aplica `validate.js`. Sin cambios en dashboard ni reportes.
+
+**Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
+
+**Pendiente:** ya todos los módulos de `lib/` con red/pureza testeable tienen tests; revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
