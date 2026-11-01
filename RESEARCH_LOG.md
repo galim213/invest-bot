@@ -135,3 +135,13 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Fuentes:** cambio de cobertura sobre código existente; no se consultó fuente externa nueva.
 
 **Pendiente:** ya todos los módulos de `lib/` con red/pureza testeable tienen tests; revisar track record a fines de noviembre; diversificación del CORE sin probar (requiere fuente antes de implementar).
+
+## 2026-11-01
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no se corrió `track-record.js`.
+
+**Hallazgo (diagnóstico, sin cambios de código):** el track record NO está acumulando datos. Corrí `node run-daily.js` como smoke test y las research notes salen vacías ("Research notes generadas: 0", "30 tickers sin datos", causa: `fc.yahoo.com inalcanzable: ENOTFOUND`). `reports/research-notes-2026-10-30.md` también está vacío (solo cabecera y pie), o sea que el mismo fallo de auth de Yahoo (cookie+crumb) ocurre en el entorno de las rutinas diarias. Como `appendHistory` ignora notas sin precio, la bitácora nunca se crea, y el chequeo "re-mirar a fines de noviembre" no tendrá datos. Lo mismo afecta al tilt de fundamentales (503 tickers en cache, pero 33 empresas sin datos frescos) y a 13F (`fetch failed`).
+
+**Decisión:** no se implementó nada: no hay fuente alternativa gratuita validada para reemplazar los fundamentales de Yahoo desde este entorno (la red bloquea ese host), y inventar un workaround sin fuente iría contra las reglas. Se revirtieron los cambios de estado del smoke test (`data/`, `reports/`) para no pisar a la rutina de apertura. Sin impacto en trading ni en `validate.js`.
+
+**Pendiente (requiere decisión humana):** permitir `fc.yahoo.com`/`query2.finance.yahoo.com` en la política de red del entorno de las rutinas, o evaluar SEC EDGAR (`lib/secEdgar.js` ya existe) como fuente alternativa de fundamentales para las research notes.
