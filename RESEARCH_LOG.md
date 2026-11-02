@@ -145,3 +145,13 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Decisión:** no se implementó nada: no hay fuente alternativa gratuita validada para reemplazar los fundamentales de Yahoo desde este entorno (la red bloquea ese host), y inventar un workaround sin fuente iría contra las reglas. Se revirtieron los cambios de estado del smoke test (`data/`, `reports/`) para no pisar a la rutina de apertura. Sin impacto en trading ni en `validate.js`.
 
 **Pendiente (requiere decisión humana):** permitir `fc.yahoo.com`/`query2.finance.yahoo.com` en la política de red del entorno de las rutinas, o evaluar SEC EDGAR (`lib/secEdgar.js` ya existe) como fuente alternativa de fundamentales para las research notes.
+
+## 2026-11-02
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no se corrió `track-record.js`.
+
+**Re-chequeo del hallazgo de ayer:** desde el entorno de esta rutina `fc.yahoo.com` y `data.sec.gov` siguen sin conectar (curl código 000), y `query1.finance.yahoo.com` responde 429. Por lo tanto las research notes siguen saliendo vacías y el track record no acumula datos. Tests: `npm test` en verde.
+
+**Decisión:** sin cambios de código; no hay fuente alternativa validada accesible desde este entorno. No aplica `validate.js`. Sin impacto en dashboard.
+
+**Pendiente (requiere decisión humana):** habilitar `fc.yahoo.com`, `query2.finance.yahoo.com` y `data.sec.gov` en la política de red del entorno de las rutinas.
