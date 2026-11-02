@@ -1,6 +1,6 @@
 {
   "startingCapital": 300,
-  "cash": 18.25991352209568,
+  "cash": 19.811808028812017,
   "positions": {
     "BB": {
       "shares": 4.082343709802438,
@@ -33,15 +33,15 @@
       "avgCost": 18.149999618530273,
       "openedAt": "2026-10-28"
     },
-    "CD": {
-      "shares": 2.1328021971425293,
-      "avgCost": 7.539999961853027,
-      "openedAt": "2026-10-29"
-    },
     "TRMD": {
       "shares": 0.28830170844017267,
       "avgCost": 43.04499816894531,
       "openedAt": "2026-10-29"
+    },
+    "DHT": {
+      "shares": 0.4283323774987937,
+      "avgCost": 24.235000610351562,
+      "openedAt": "2026-11-02"
     }
   },
   "shorts": {},
@@ -179,6 +179,27 @@
       "usdAmount": 12.409946511911038,
       "fee": 0.006204973255955519,
       "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (39.87) por encima de SMA50 (36.06). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.3%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-11-02",
+      "action": "SELL",
+      "ticker": "CD",
+      "shares": 2.1328021971425293,
+      "price": 5.599999904632568,
+      "usdAmount": 11.937720254547997,
+      "fee": 0.005971846050299148,
+      "realizedPnl": -4.143608230546726,
+      "reason": "Stop-loss: precio -25.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-02",
+      "action": "BUY",
+      "ticker": "DHT",
+      "shares": 0.4283323774987937,
+      "price": 24.235000610351562,
+      "usdAmount": 10.380635430116602,
+      "fee": 0.005190317715058301,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (24.42) por encima de SMA50 (22.61). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.2%. RSI 35: zona neutral."
     }
   ],
   "dailySnapshots": [
@@ -216,6 +237,13 @@
       "cash": 18.25991352209568,
       "pnl": -12.841157816955956,
       "pnlPct": -4.280385938985319
+    },
+    {
+      "date": "2026-11-02",
+      "totalValue": 280.5389417309069,
+      "cash": 19.811808028812017,
+      "pnl": -19.461058269093087,
+      "pnlPct": -6.487019423031029
     }
   ],
   "createdAt": "2026-10-26T20:07:55.797Z"
