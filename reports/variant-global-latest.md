@@ -1,15 +1,14 @@
-# Cartera paralela — Internacional (ADRs) — 2026-11-02
+# Cartera paralela — Internacional (ADRs) — 2026-11-03
 
 > 🧪 **Experimento en vivo, no validado por backtest** (no hay dataset point-in-time gratuito para empresas internacionales en bolsas de EEUU, así que no se puede correr validate.js con el mismo rigor que el S&P 500). Mismo motor técnico y mismos umbrales que el satellite de producción, aplicados sobre empresas internacionales en bolsas de EEUU en vez de S&P 500. Capital ficticio independiente — simulación 100% educativa, no es asesoría financiera real.
 
 - Capital inicial: $300.00
-- Valor hoy: **$280.54**
-- P&L: $-19.46 (-6.49%)
+- Valor hoy: **$279.95**
+- P&L: $-20.05 (-6.68%)
 
 ## Movimientos de hoy
 
-- **SELL CD**: 2.1328 shares @ $5.60 ($11.94). Stop-loss: precio -25.7% desde el precio de entrada (umbral -12%).
-- **BUY DHT**: 0.4283 shares @ $24.24 ($10.38). Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (24.42) por encima de SMA50 (22.61). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.2%. RSI 35: zona neutral.
+_Sin movimientos hoy._
 
 ## Posiciones abiertas
 
@@ -24,4 +23,4 @@
 | TRMD | 0.2883 | $43.04 |
 | DHT | 0.4283 | $24.24 |
 
-_Generado automáticamente el 2026-11-02T20:09:15.520Z. Simulación 100% educativa, no es asesoría financiera real._
+_Generado automáticamente el 2026-11-03T20:08:28.108Z. Simulación 100% educativa, no es asesoría financiera real._

@@ -1,6 +1,6 @@
 {
   "startingCapital": 300,
-  "cash": 22.372695052005255,
+  "cash": 20.49544790194402,
   "positions": {
     "RNG": {
       "shares": 0.5329345724569629,
@@ -22,11 +22,6 @@
       "avgCost": 10.609999656677246,
       "openedAt": "2026-10-26"
     },
-    "EFOR": {
-      "shares": 0.9661395099499821,
-      "avgCost": 41.8224983215332,
-      "openedAt": "2026-10-26"
-    },
     "TENB": {
       "shares": 0.6872664456718482,
       "avgCost": 48.209999084472656,
@@ -36,6 +31,16 @@
       "shares": 0.13534646086029303,
       "avgCost": 167.72999572753906,
       "openedAt": "2026-10-26"
+    },
+    "SEI": {
+      "shares": 0.3008003335284182,
+      "avgCost": 69.37000274658203,
+      "openedAt": "2026-11-03"
+    },
+    "VSXY": {
+      "shares": 0.14479838851280144,
+      "avgCost": 100.41500091552734,
+      "openedAt": "2026-11-03"
     }
   },
   "shorts": {},
@@ -110,6 +115,37 @@
       "usdAmount": 22.701661301834484,
       "fee": 0.011350830650917243,
       "reason": "Señal técnica de compra (score 67): Tendencia de corto plazo alcista: SMA20 (155.76) por encima de SMA50 (145.68). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-11-03",
+      "action": "SELL",
+      "ticker": "EFOR",
+      "shares": 0.9661395099499821,
+      "price": 34.7400016784668,
+      "usdAmount": 33.546906353196825,
+      "fee": 0.016781844098647736,
+      "realizedPnl": -6.859461680053219,
+      "reason": "Stop-loss: precio -16.9% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-03",
+      "action": "BUY",
+      "ticker": "SEI",
+      "shares": 0.3008003335284182,
+      "price": 69.37000274658203,
+      "usdAmount": 20.86651996303916,
+      "fee": 0.01043325998151958,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (68.36) por encima de SMA50 (65.53). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.5%. RSI 50: zona neutral."
+    },
+    {
+      "date": "2026-11-03",
+      "action": "BUY",
+      "ticker": "VSXY",
+      "shares": 0.14479838851280144,
+      "price": 100.41500091552734,
+      "usdAmount": 14.539930315079841,
+      "fee": 0.007269965157539921,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (91.13) por encima de SMA50 (85.96). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 68: zona neutral."
     }
   ],
   "dailySnapshots": [
@@ -154,6 +190,13 @@
       "cash": 22.372695052005255,
       "pnl": -11.63533055187338,
       "pnlPct": -3.8784435172911267
+    },
+    {
+      "date": "2026-11-03",
+      "totalValue": 283.71352635733615,
+      "cash": 20.49544790194402,
+      "pnl": -16.28647364266385,
+      "pnlPct": -5.428824547554616
     }
   ],
   "createdAt": "2026-10-26T20:07:55.768Z"

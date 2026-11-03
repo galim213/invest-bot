@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T20:08:28.100Z",
+  "name": "midsmall",
+  "label": "Mid + Small cap",
+  "universeLabel": "S&P MidCap 400 + SmallCap 600",
+  "startingCapital": 300,
+  "snapshot": {
+    "date": "2026-11-03",
+    "totalValue": 283.71352635733615,
+    "cash": 20.49544790194402,
+    "pnl": -16.28647364266385,
+    "pnlPct": -5.428824547554616
+  },
+  "trades": [
+    {
+      "date": "2026-11-03",
+      "action": "SELL",
+      "ticker": "EFOR",
+      "shares": 0.9661395099499821,
+      "price": 34.7400016784668,
+      "usdAmount": 33.546906353196825,
+      "fee": 0.016781844098647736,
+      "realizedPnl": -6.859461680053219,
+      "reason": "Stop-loss: precio -16.9% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-03",
+      "action": "BUY",
+      "ticker": "SEI",
+      "shares": 0.3008003335284182,
+      "price": 69.37000274658203,
+      "usdAmount": 20.86651996303916,
+      "fee": 0.01043325998151958,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (68.36) por encima de SMA50 (65.53). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.5%. RSI 50: zona neutral."
+    },
+    {
+      "date": "2026-11-03",
+      "action": "BUY",
+      "ticker": "VSXY",
+      "shares": 0.14479838851280144,
+      "price": 100.41500091552734,
+      "usdAmount": 14.539930315079841,
+      "fee": 0.007269965157539921,
+      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (91.13) por encima de SMA50 (85.96). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 68: zona neutral."
+    }
+  ],
+  "positions": [
+    {
+      "ticker": "RNG",
+      "shares": 0.5329345724569629,
+      "avgCost": 86.3499984741211,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "WS",
+      "shares": 1.0979796458752813,
+      "avgCost": 42.25,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "QLYS",
+      "shares": 0.20753274571499433,
+      "avgCost": 225.14999389648438,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CERT",
+      "shares": 3.9691688964096543,
+      "avgCost": 10.609999656677246,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "TENB",
+      "shares": 0.6872664456718482,
+      "avgCost": 48.209999084472656,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CVLT",
+      "shares": 0.13534646086029303,
+      "avgCost": 167.72999572753906,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "SEI",
+      "shares": 0.3008003335284182,
+      "avgCost": 69.37000274658203,
+      "openedAt": "2026-11-03"
+    },
+    {
+      "ticker": "VSXY",
+      "shares": 0.14479838851280144,
+      "avgCost": 100.41500091552734,
+      "openedAt": "2026-11-03"
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-26",
+      "totalValue": 299.86125571966613,
+      "cash": 22.372695052005255,
+      "pnl": -0.1387442803338672,
+      "pnlPct": -0.046248093444622405
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.7334917004205,
+      "cash": 22.372695052005255,
+      "pnl": 0.7334917004204726,
+      "pnlPct": 0.24449723347349087
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 300.1827765099732,
+      "cash": 22.372695052005255,
+      "pnl": 0.18277650997322326,
+      "pnlPct": 0.06092550332440775
+    },
+    {
+      "date": "2026-10-29",
+      "totalValue": 300.0625627708601,
+      "cash": 22.372695052005255,
+      "pnl": 0.06256277086009732,
+      "pnlPct": 0.02085425695336577
+    },
+    {
+      "date": "2026-10-30",
+      "totalValue": 292.98759021519186,
+      "cash": 22.372695052005255,
+      "pnl": -7.012409784808142,
+      "pnlPct": -2.337469928269381
+    },
+    {
+      "date": "2026-11-02",
+      "totalValue": 288.3646694481266,
+      "cash": 22.372695052005255,
+      "pnl": -11.63533055187338,
+      "pnlPct": -3.8784435172911267
+    },
+    {
+      "date": "2026-11-03",
+      "totalValue": 283.71352635733615,
+      "cash": 20.49544790194402,
+      "pnl": -16.28647364266385,
+      "pnlPct": -5.428824547554616
+    }
+  ]
+}
