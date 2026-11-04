@@ -1,48 +1,48 @@
 {
-  "date": "2026-11-03",
-  "generatedAt": "2026-11-03T20:08:28.100Z",
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T20:08:07.896Z",
   "name": "midsmall",
   "label": "Mid + Small cap",
   "universeLabel": "S&P MidCap 400 + SmallCap 600",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-03",
-    "totalValue": 283.71352635733615,
-    "cash": 20.49544790194402,
-    "pnl": -16.28647364266385,
-    "pnlPct": -5.428824547554616
+    "date": "2026-11-04",
+    "totalValue": 282.4685455051199,
+    "cash": 14.118921734121386,
+    "pnl": -17.53145449488011,
+    "pnlPct": -5.843818164960036
   },
   "trades": [
     {
-      "date": "2026-11-03",
+      "date": "2026-11-04",
       "action": "SELL",
-      "ticker": "EFOR",
-      "shares": 0.9661395099499821,
-      "price": 34.7400016784668,
-      "usdAmount": 33.546906353196825,
-      "fee": 0.016781844098647736,
-      "realizedPnl": -6.859461680053219,
-      "reason": "Stop-loss: precio -16.9% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-11-03",
-      "action": "BUY",
       "ticker": "SEI",
       "shares": 0.3008003335284182,
-      "price": 69.37000274658203,
-      "usdAmount": 20.86651996303916,
-      "fee": 0.01043325998151958,
-      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (68.36) por encima de SMA50 (65.53). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.5%. RSI 50: zona neutral."
+      "price": 56.404998779296875,
+      "usdAmount": 16.95815912425978,
+      "fee": 0.00848332122274126,
+      "realizedPnl": -3.908360838779381,
+      "reason": "Stop-loss: precio -18.7% desde el precio de entrada (umbral -12%)."
     },
     {
-      "date": "2026-11-03",
+      "date": "2026-11-04",
       "action": "BUY",
-      "ticker": "VSXY",
-      "shares": 0.14479838851280144,
-      "price": 100.41500091552734,
-      "usdAmount": 14.539930315079841,
-      "fee": 0.007269965157539921,
-      "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (91.13) por encima de SMA50 (85.96). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 68: zona neutral."
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "price": 96.20500183105469,
+      "usdAmount": 13.145790321963844,
+      "fee": 0.006572895160981922,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (86.37) por encima de SMA50 (79.26). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.3%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "MTN",
+      "shares": 0.0635382129815841,
+      "price": 160.1750030517578,
+      "usdAmount": 10.177233458228471,
+      "fee": 0.005088616729114236,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (150.84) por encima de SMA50 (142.34). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 61: zona neutral."
     }
   ],
   "positions": [
@@ -83,16 +83,22 @@
       "openedAt": "2026-10-26"
     },
     {
-      "ticker": "SEI",
-      "shares": 0.3008003335284182,
-      "avgCost": 69.37000274658203,
-      "openedAt": "2026-11-03"
-    },
-    {
       "ticker": "VSXY",
       "shares": 0.14479838851280144,
       "avgCost": 100.41500091552734,
       "openedAt": "2026-11-03"
+    },
+    {
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "avgCost": 96.20500183105469,
+      "openedAt": "2026-11-04"
+    },
+    {
+      "ticker": "MTN",
+      "shares": 0.0635382129815841,
+      "avgCost": 160.1750030517578,
+      "openedAt": "2026-11-04"
     }
   ],
   "dailySnapshots": [
@@ -144,6 +150,13 @@
       "cash": 20.49544790194402,
       "pnl": -16.28647364266385,
       "pnlPct": -5.428824547554616
+    },
+    {
+      "date": "2026-11-04",
+      "totalValue": 282.4685455051199,
+      "cash": 14.118921734121386,
+      "pnl": -17.53145449488011,
+      "pnlPct": -5.843818164960036
     }
   ]
 }

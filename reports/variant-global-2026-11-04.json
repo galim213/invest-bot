@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T20:08:07.902Z",
+  "name": "global",
+  "label": "Internacional (ADRs)",
+  "universeLabel": "empresas internacionales en bolsas de EEUU",
+  "startingCapital": 300,
+  "snapshot": {
+    "date": "2026-11-04",
+    "totalValue": 278.29226544611436,
+    "cash": 13.910467322483278,
+    "pnl": -21.707734553885643,
+    "pnlPct": -7.235911517961881
+  },
+  "trades": [
+    {
+      "date": "2026-11-04",
+      "action": "SELL",
+      "ticker": "SSL",
+      "shares": 3.2305675847890503,
+      "price": 15.125,
+      "usdAmount": 48.837903552574424,
+      "fee": 0.024431167359967195,
+      "realizedPnl": -7.454734147647317,
+      "reason": "Stop-loss: precio -13.2% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "SELL",
+      "ticker": "TRMD",
+      "shares": 0.28830170844017267,
+      "price": 37.33000183105469,
+      "usdAmount": 10.756922152315857,
+      "fee": 0.005381151651983921,
+      "realizedPnl": -1.6530243595951815,
+      "reason": "Stop-loss: precio -13.3% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "HLF",
+      "shares": 2.768313055063142,
+      "price": 15.289999961853027,
+      "usdAmount": 42.32750650631268,
+      "fee": 0.02116375325315634,
+      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (13.73) por encima de SMA50 (12.81). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.5%. RSI 58: zona neutral."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "BUUU",
+      "shares": 2.009038619850765,
+      "price": 5.759399890899658,
+      "usdAmount": 11.570856807981695,
+      "fee": 0.005785428403990847,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (5.11) por encima de SMA50 (4.38). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 36.6%. RSI 60: zona neutral."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "BZ",
+      "shares": 0.6587907250658347,
+      "price": 17.55500030517578,
+      "usdAmount": 11.565071379577702,
+      "fee": 0.005782535689788851,
+      "reason": "Señal técnica de compra (score 58): Tendencia de corto plazo alcista: SMA20 (16.44) por encima de SMA50 (15.75). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 68: zona neutral."
+    }
+  ],
+  "positions": [
+    {
+      "ticker": "BB",
+      "shares": 4.082343709802438,
+      "avgCost": 9.18589973449707,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "MTC",
+      "shares": 6.805807339795702,
+      "avgCost": 5.510000228881836,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "DAO",
+      "shares": 2.2644267528956243,
+      "avgCost": 19.209999084472656,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "GMAB",
+      "shares": 0.4739364167580363,
+      "avgCost": 44.685001373291016,
+      "openedAt": "2026-10-26",
+      "trimmedProfit": true
+    },
+    {
+      "ticker": "KRNT",
+      "shares": 2.6412464582501816,
+      "avgCost": 18.149999618530273,
+      "openedAt": "2026-10-28"
+    },
+    {
+      "ticker": "DHT",
+      "shares": 0.4283323774987937,
+      "avgCost": 24.235000610351562,
+      "openedAt": "2026-11-02"
+    },
+    {
+      "ticker": "HLF",
+      "shares": 2.768313055063142,
+      "avgCost": 15.289999961853027,
+      "openedAt": "2026-11-04"
+    },
+    {
+      "ticker": "BUUU",
+      "shares": 2.009038619850765,
+      "avgCost": 5.759399890899658,
+      "openedAt": "2026-11-04"
+    },
+    {
+      "ticker": "BZ",
+      "shares": 0.6587907250658347,
+      "avgCost": 17.55500030517578,
+      "openedAt": "2026-11-04"
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-26",
+      "totalValue": 299.8575636619931,
+      "cash": 14.984887648201891,
+      "pnl": -0.14243633800691669,
+      "pnlPct": -0.0474787793356389
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.0551834629714,
+      "cash": 14.984887648201891,
+      "pnl": 0.05518346297139942,
+      "pnlPct": 0.01839448765713314
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 301.2035817534746,
+      "cash": 17.839271379848945,
+      "pnl": 1.203581753474623,
+      "pnlPct": 0.4011939178248743
+    },
+    {
+      "date": "2026-10-29",
+      "totalValue": 292.0412980907114,
+      "cash": 18.25991352209568,
+      "pnl": -7.958701909288607,
+      "pnlPct": -2.6529006364295356
+    },
+    {
+      "date": "2026-10-30",
+      "totalValue": 287.15884218304404,
+      "cash": 18.25991352209568,
+      "pnl": -12.841157816955956,
+      "pnlPct": -4.280385938985319
+    },
+    {
+      "date": "2026-11-02",
+      "totalValue": 280.5389417309069,
+      "cash": 19.811808028812017,
+      "pnl": -19.461058269093087,
+      "pnlPct": -6.487019423031029
+    },
+    {
+      "date": "2026-11-03",
+      "totalValue": 279.9486715181337,
+      "cash": 19.811808028812017,
+      "pnl": -20.05132848186628,
+      "pnlPct": -6.683776160622093
+    },
+    {
+      "date": "2026-11-04",
+      "totalValue": 278.29226544611436,
+      "cash": 13.910467322483278,
+      "pnl": -21.707734553885643,
+      "pnlPct": -7.235911517961881
+    }
+  ]
+}

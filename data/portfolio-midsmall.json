@@ -1,6 +1,6 @@
 {
   "startingCapital": 300,
-  "cash": 20.49544790194402,
+  "cash": 14.118921734121386,
   "positions": {
     "RNG": {
       "shares": 0.5329345724569629,
@@ -32,15 +32,20 @@
       "avgCost": 167.72999572753906,
       "openedAt": "2026-10-26"
     },
-    "SEI": {
-      "shares": 0.3008003335284182,
-      "avgCost": 69.37000274658203,
-      "openedAt": "2026-11-03"
-    },
     "VSXY": {
       "shares": 0.14479838851280144,
       "avgCost": 100.41500091552734,
       "openedAt": "2026-11-03"
+    },
+    "ETSY": {
+      "shares": 0.1366435223924129,
+      "avgCost": 96.20500183105469,
+      "openedAt": "2026-11-04"
+    },
+    "MTN": {
+      "shares": 0.0635382129815841,
+      "avgCost": 160.1750030517578,
+      "openedAt": "2026-11-04"
     }
   },
   "shorts": {},
@@ -146,6 +151,37 @@
       "usdAmount": 14.539930315079841,
       "fee": 0.007269965157539921,
       "reason": "Señal técnica de compra (score 69): Tendencia de corto plazo alcista: SMA20 (91.13) por encima de SMA50 (85.96). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 14.1%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "SELL",
+      "ticker": "SEI",
+      "shares": 0.3008003335284182,
+      "price": 56.404998779296875,
+      "usdAmount": 16.95815912425978,
+      "fee": 0.00848332122274126,
+      "realizedPnl": -3.908360838779381,
+      "reason": "Stop-loss: precio -18.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "price": 96.20500183105469,
+      "usdAmount": 13.145790321963844,
+      "fee": 0.006572895160981922,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (86.37) por encima de SMA50 (79.26). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.3%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "MTN",
+      "shares": 0.0635382129815841,
+      "price": 160.1750030517578,
+      "usdAmount": 10.177233458228471,
+      "fee": 0.005088616729114236,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (150.84) por encima de SMA50 (142.34). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 61: zona neutral."
     }
   ],
   "dailySnapshots": [
@@ -197,6 +233,13 @@
       "cash": 20.49544790194402,
       "pnl": -16.28647364266385,
       "pnlPct": -5.428824547554616
+    },
+    {
+      "date": "2026-11-04",
+      "totalValue": 282.4685455051199,
+      "cash": 14.118921734121386,
+      "pnl": -17.53145449488011,
+      "pnlPct": -5.843818164960036
     }
   ],
   "createdAt": "2026-10-26T20:07:55.768Z"

@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T20:08:07.896Z",
+  "name": "midsmall",
+  "label": "Mid + Small cap",
+  "universeLabel": "S&P MidCap 400 + SmallCap 600",
+  "startingCapital": 300,
+  "snapshot": {
+    "date": "2026-11-04",
+    "totalValue": 282.4685455051199,
+    "cash": 14.118921734121386,
+    "pnl": -17.53145449488011,
+    "pnlPct": -5.843818164960036
+  },
+  "trades": [
+    {
+      "date": "2026-11-04",
+      "action": "SELL",
+      "ticker": "SEI",
+      "shares": 0.3008003335284182,
+      "price": 56.404998779296875,
+      "usdAmount": 16.95815912425978,
+      "fee": 0.00848332122274126,
+      "realizedPnl": -3.908360838779381,
+      "reason": "Stop-loss: precio -18.7% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "price": 96.20500183105469,
+      "usdAmount": 13.145790321963844,
+      "fee": 0.006572895160981922,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (86.37) por encima de SMA50 (79.26). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.3%. RSI 59: zona neutral."
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "MTN",
+      "shares": 0.0635382129815841,
+      "price": 160.1750030517578,
+      "usdAmount": 10.177233458228471,
+      "fee": 0.005088616729114236,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (150.84) por encima de SMA50 (142.34). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 61: zona neutral."
+    }
+  ],
+  "positions": [
+    {
+      "ticker": "RNG",
+      "shares": 0.5329345724569629,
+      "avgCost": 86.3499984741211,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "WS",
+      "shares": 1.0979796458752813,
+      "avgCost": 42.25,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "QLYS",
+      "shares": 0.20753274571499433,
+      "avgCost": 225.14999389648438,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CERT",
+      "shares": 3.9691688964096543,
+      "avgCost": 10.609999656677246,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "TENB",
+      "shares": 0.6872664456718482,
+      "avgCost": 48.209999084472656,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CVLT",
+      "shares": 0.13534646086029303,
+      "avgCost": 167.72999572753906,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "VSXY",
+      "shares": 0.14479838851280144,
+      "avgCost": 100.41500091552734,
+      "openedAt": "2026-11-03"
+    },
+    {
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "avgCost": 96.20500183105469,
+      "openedAt": "2026-11-04"
+    },
+    {
+      "ticker": "MTN",
+      "shares": 0.0635382129815841,
+      "avgCost": 160.1750030517578,
+      "openedAt": "2026-11-04"
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-26",
+      "totalValue": 299.86125571966613,
+      "cash": 22.372695052005255,
+      "pnl": -0.1387442803338672,
+      "pnlPct": -0.046248093444622405
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.7334917004205,
+      "cash": 22.372695052005255,
+      "pnl": 0.7334917004204726,
+      "pnlPct": 0.24449723347349087
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 300.1827765099732,
+      "cash": 22.372695052005255,
+      "pnl": 0.18277650997322326,
+      "pnlPct": 0.06092550332440775
+    },
+    {
+      "date": "2026-10-29",
+      "totalValue": 300.0625627708601,
+      "cash": 22.372695052005255,
+      "pnl": 0.06256277086009732,
+      "pnlPct": 0.02085425695336577
+    },
+    {
+      "date": "2026-10-30",
+      "totalValue": 292.98759021519186,
+      "cash": 22.372695052005255,
+      "pnl": -7.012409784808142,
+      "pnlPct": -2.337469928269381
+    },
+    {
+      "date": "2026-11-02",
+      "totalValue": 288.3646694481266,
+      "cash": 22.372695052005255,
+      "pnl": -11.63533055187338,
+      "pnlPct": -3.8784435172911267
+    },
+    {
+      "date": "2026-11-03",
+      "totalValue": 283.71352635733615,
+      "cash": 20.49544790194402,
+      "pnl": -16.28647364266385,
+      "pnlPct": -5.428824547554616
+    },
+    {
+      "date": "2026-11-04",
+      "totalValue": 282.4685455051199,
+      "cash": 14.118921734121386,
+      "pnl": -17.53145449488011,
+      "pnlPct": -5.843818164960036
+    }
+  ]
+}
