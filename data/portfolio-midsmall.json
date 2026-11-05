@@ -1,17 +1,7 @@
 {
   "startingCapital": 300,
-  "cash": 14.118921734121386,
+  "cash": 17.168985701453735,
   "positions": {
-    "RNG": {
-      "shares": 0.5329345724569629,
-      "avgCost": 86.3499984741211,
-      "openedAt": "2026-10-26"
-    },
-    "WS": {
-      "shares": 1.0979796458752813,
-      "avgCost": 42.25,
-      "openedAt": "2026-10-26"
-    },
     "QLYS": {
       "shares": 0.20753274571499433,
       "avgCost": 225.14999389648438,
@@ -46,6 +36,21 @@
       "shares": 0.0635382129815841,
       "avgCost": 160.1750030517578,
       "openedAt": "2026-11-04"
+    },
+    "PVH": {
+      "shares": 0.5615754418142761,
+      "avgCost": 92.56500244140625,
+      "openedAt": "2026-11-05"
+    },
+    "RRC": {
+      "shares": 0.2766696963778415,
+      "avgCost": 50.5,
+      "openedAt": "2026-11-05"
+    },
+    "COLM": {
+      "shares": 0.15125888400567475,
+      "avgCost": 68.91500091552734,
+      "openedAt": "2026-11-05"
     }
   },
   "shorts": {},
@@ -182,6 +187,58 @@
       "usdAmount": 10.177233458228471,
       "fee": 0.005088616729114236,
       "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (150.84) por encima de SMA50 (142.34). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 61: zona neutral."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "SELL",
+      "ticker": "RNG",
+      "shares": 0.5329345724569629,
+      "price": 73.94499969482422,
+      "usdAmount": 39.38814287429255,
+      "fee": 0.019703923398845698,
+      "realizedPnl": -6.630756644172572,
+      "reason": "Stop-loss: precio -14.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "SELL",
+      "ticker": "WS",
+      "shares": 1.0979796458752813,
+      "price": 36.52000045776367,
+      "usdAmount": 40.07816806139547,
+      "fee": 0.020049108584990233,
+      "realizedPnl": -6.311471976835158,
+      "reason": "Stop-loss: precio -13.6% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "PVH",
+      "shares": 0.5615754418142761,
+      "price": 92.56500244140625,
+      "usdAmount": 51.982232142572265,
+      "fee": 0.02599111607128613,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (86.58) por encima de SMA50 (79.17). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.9%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "RRC",
+      "shares": 0.2766696963778415,
+      "price": 50.5,
+      "usdAmount": 13.971819667080997,
+      "fee": 0.006985909833540498,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (47.79) por encima de SMA50 (43.08). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 15.1%. RSI 67: zona neutral."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "COLM",
+      "shares": 0.15125888400567475,
+      "price": 68.91500091552734,
+      "usdAmount": 10.42400612973272,
+      "fee": 0.0052120030648663595,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (62.41) por encima de SMA50 (59.31). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.0%. RSI 70: sobrecompra, riesgo de corrección."
     }
   ],
   "dailySnapshots": [
@@ -240,6 +297,13 @@
       "cash": 14.118921734121386,
       "pnl": -17.53145449488011,
       "pnlPct": -5.843818164960036
+    },
+    {
+      "date": "2026-11-05",
+      "totalValue": 272.62921251110765,
+      "cash": 17.168985701453735,
+      "pnl": -27.370787488892347,
+      "pnlPct": -9.123595829630782
     }
   ],
   "createdAt": "2026-10-26T20:07:55.768Z"

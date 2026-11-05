@@ -1,98 +1,98 @@
 {
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T20:08:07.839Z",
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T20:07:49.082Z",
   "sectorRotation": {
     "rows": [
       {
-        "ticker": "XLV",
-        "sector": "Salud",
-        "lastClose": 189.4647979736328,
-        "momentum1m": 0.1339086846976506,
-        "momentum3m": 0.15211189716995618
-      },
-      {
         "ticker": "XLP",
         "sector": "Consumo básico",
-        "lastClose": 92.12999725341797,
-        "momentum1m": 0.126283542986227,
-        "momentum3m": 0.08248145450268736
+        "lastClose": 91.5250015258789,
+        "momentum1m": 0.12025709846551112,
+        "momentum3m": 0.07524669375735031
       },
       {
-        "ticker": "XLY",
-        "sector": "Consumo discrecional",
-        "lastClose": 122.4749984741211,
-        "momentum1m": 0.09626742871378462,
-        "momentum3m": 0.037044877701320894
+        "ticker": "XLV",
+        "sector": "Salud",
+        "lastClose": 185.7100067138672,
+        "momentum1m": 0.10011260825596223,
+        "momentum3m": 0.12089579263371057
       },
       {
         "ticker": "XLRE",
         "sector": "Bienes raíces",
-        "lastClose": 44.96500015258789,
-        "momentum1m": 0.09403897377028914,
-        "momentum3m": 0.0034590219715829327
+        "lastClose": 44.26499938964844,
+        "momentum1m": 0.09107714376679214,
+        "momentum3m": -0.015895957311349098
       },
       {
         "ticker": "XLF",
         "sector": "Financiero",
-        "lastClose": 58.98500061035156,
-        "momentum1m": 0.09211261698623086,
-        "momentum3m": 0.020325189571841318
+        "lastClose": 57.60499954223633,
+        "momentum1m": 0.0717209217160247,
+        "momentum3m": 0.00008682410152287223
       },
       {
         "ticker": "XLB",
         "sector": "Materiales",
-        "lastClose": 53.724998474121094,
-        "momentum1m": 0.08033378179486532,
-        "momentum3m": 0.029806409042609665
+        "lastClose": 52.060001373291016,
+        "momentum1m": 0.0628828472813428,
+        "momentum3m": -0.015134302455983763
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumo discrecional",
+        "lastClose": 117.24500274658203,
+        "momentum1m": 0.05284664245667599,
+        "momentum3m": -0.021817102039491314
       },
       {
         "ticker": "XLU",
         "sector": "Servicios públicos",
-        "lastClose": 43.665000915527344,
-        "momentum1m": 0.06086008448497926,
-        "momentum3m": 0.006569844176919288
-      },
-      {
-        "ticker": "ITA",
-        "sector": "Aeroespacial y Defensa",
-        "lastClose": 212.97999572753906,
-        "momentum1m": 0.022663984179391666,
-        "momentum3m": -0.14804595764784298
+        "lastClose": 43.20000076293945,
+        "momentum1m": 0.04981771958796451,
+        "momentum3m": -0.009401509783854236
       },
       {
         "ticker": "XLE",
         "sector": "Energía",
-        "lastClose": 63.07500076293945,
-        "momentum1m": -0.01058822332643995,
-        "momentum3m": 0.08450826905815478
+        "lastClose": 62.54499816894531,
+        "momentum1m": -0.012863043458890014,
+        "momentum3m": 0.08773909859035327
       },
       {
         "ticker": "XLI",
         "sector": "Industrial",
-        "lastClose": 169.46499633789062,
-        "momentum1m": -0.012326643376811426,
-        "momentum3m": -0.08278306247935839
+        "lastClose": 162.91000366210938,
+        "momentum1m": -0.02937316958620716,
+        "momentum3m": -0.12026131274701392
       },
       {
         "ticker": "XLC",
         "sector": "Comunicaciones",
-        "lastClose": 105.04499816894531,
-        "momentum1m": -0.0591581125541019,
-        "momentum3m": -0.05518080697419161
+        "lastClose": 104.25499725341797,
+        "momentum1m": -0.06296067542975002,
+        "momentum3m": -0.06287642918275983
       },
       {
         "ticker": "XLK",
         "sector": "Tecnología",
-        "lastClose": 176.72000122070312,
-        "momentum1m": -0.12514850880840037,
-        "momentum3m": -0.046457672936302936
+        "lastClose": 164.50999450683594,
+        "momentum1m": -0.1831272903053008,
+        "momentum3m": -0.12480718498438403
       },
       {
         "ticker": "SMH",
         "sector": "Semiconductores",
-        "lastClose": 502.70001220703125,
-        "momentum1m": -0.20521737200469367,
-        "momentum3m": -0.1203541167011708
+        "lastClose": 457.30999755859375,
+        "momentum1m": -0.2683391579232717,
+        "momentum3m": -0.21518793894222002
+      },
+      {
+        "ticker": "ITA",
+        "sector": "Aeroespacial y Defensa",
+        "lastClose": 68.125,
+        "momentum1m": -0.6653978489304984,
+        "momentum3m": -0.7283150548354935
       }
     ],
     "errors": []
@@ -333,7 +333,7 @@
     ],
     "errors": [
       {
-        "ticker": "XOM",
+        "ticker": "CVX",
         "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
@@ -457,7 +457,7 @@
         "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {
-        "ticker": "CVX",
+        "ticker": "XOM",
         "message": "auth: fc.yahoo.com inalcanzable: fetch failed (cause: ENOTFOUND)"
       },
       {

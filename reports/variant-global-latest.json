@@ -1,69 +1,28 @@
 {
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T20:08:07.902Z",
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T20:07:49.159Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-04",
-    "totalValue": 278.29226544611436,
-    "cash": 13.910467322483278,
-    "pnl": -21.707734553885643,
-    "pnlPct": -7.235911517961881
+    "date": "2026-11-05",
+    "totalValue": 271.19090898582425,
+    "cash": 22.83887242337729,
+    "pnl": -28.80909101417575,
+    "pnlPct": -9.603030338058582
   },
   "trades": [
     {
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "action": "SELL",
-      "ticker": "SSL",
-      "shares": 3.2305675847890503,
-      "price": 15.125,
-      "usdAmount": 48.837903552574424,
-      "fee": 0.024431167359967195,
-      "realizedPnl": -7.454734147647317,
-      "reason": "Stop-loss: precio -13.2% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-11-04",
-      "action": "SELL",
-      "ticker": "TRMD",
-      "shares": 0.28830170844017267,
-      "price": 37.33000183105469,
-      "usdAmount": 10.756922152315857,
-      "fee": 0.005381151651983921,
-      "realizedPnl": -1.6530243595951815,
-      "reason": "Stop-loss: precio -13.3% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-11-04",
-      "action": "BUY",
-      "ticker": "HLF",
-      "shares": 2.768313055063142,
-      "price": 15.289999961853027,
-      "usdAmount": 42.32750650631268,
-      "fee": 0.02116375325315634,
-      "reason": "Señal técnica de compra (score 75): Tendencia de corto plazo alcista: SMA20 (13.73) por encima de SMA50 (12.81). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.5%. RSI 58: zona neutral."
-    },
-    {
-      "date": "2026-11-04",
-      "action": "BUY",
-      "ticker": "BUUU",
-      "shares": 2.009038619850765,
-      "price": 5.759399890899658,
-      "usdAmount": 11.570856807981695,
-      "fee": 0.005785428403990847,
-      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (5.11) por encima de SMA50 (4.38). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 36.6%. RSI 60: zona neutral."
-    },
-    {
-      "date": "2026-11-04",
-      "action": "BUY",
-      "ticker": "BZ",
-      "shares": 0.6587907250658347,
-      "price": 17.55500030517578,
-      "usdAmount": 11.565071379577702,
-      "fee": 0.005782535689788851,
-      "reason": "Señal técnica de compra (score 58): Tendencia de corto plazo alcista: SMA20 (16.44) por encima de SMA50 (15.75). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 68: zona neutral."
+      "ticker": "DHT",
+      "shares": 0.4283323774987937,
+      "price": 20.854999542236328,
+      "usdAmount": 8.928405100894011,
+      "fee": 0.004466435768331171,
+      "realizedPnl": -1.4522303292225918,
+      "reason": "Stop-loss: precio -13.9% desde el precio de entrada (umbral -12%)."
     }
   ],
   "positions": [
@@ -97,12 +56,6 @@
       "shares": 2.6412464582501816,
       "avgCost": 18.149999618530273,
       "openedAt": "2026-10-28"
-    },
-    {
-      "ticker": "DHT",
-      "shares": 0.4283323774987937,
-      "avgCost": 24.235000610351562,
-      "openedAt": "2026-11-02"
     },
     {
       "ticker": "HLF",
@@ -179,6 +132,13 @@
       "cash": 13.910467322483278,
       "pnl": -21.707734553885643,
       "pnlPct": -7.235911517961881
+    },
+    {
+      "date": "2026-11-05",
+      "totalValue": 271.19090898582425,
+      "cash": 22.83887242337729,
+      "pnl": -28.80909101417575,
+      "pnlPct": -9.603030338058582
     }
   ]
 }

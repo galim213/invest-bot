@@ -1,0 +1,196 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T20:07:49.152Z",
+  "name": "midsmall",
+  "label": "Mid + Small cap",
+  "universeLabel": "S&P MidCap 400 + SmallCap 600",
+  "startingCapital": 300,
+  "snapshot": {
+    "date": "2026-11-05",
+    "totalValue": 272.62921251110765,
+    "cash": 17.168985701453735,
+    "pnl": -27.370787488892347,
+    "pnlPct": -9.123595829630782
+  },
+  "trades": [
+    {
+      "date": "2026-11-05",
+      "action": "SELL",
+      "ticker": "RNG",
+      "shares": 0.5329345724569629,
+      "price": 73.94499969482422,
+      "usdAmount": 39.38814287429255,
+      "fee": 0.019703923398845698,
+      "realizedPnl": -6.630756644172572,
+      "reason": "Stop-loss: precio -14.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "SELL",
+      "ticker": "WS",
+      "shares": 1.0979796458752813,
+      "price": 36.52000045776367,
+      "usdAmount": 40.07816806139547,
+      "fee": 0.020049108584990233,
+      "realizedPnl": -6.311471976835158,
+      "reason": "Stop-loss: precio -13.6% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "PVH",
+      "shares": 0.5615754418142761,
+      "price": 92.56500244140625,
+      "usdAmount": 51.982232142572265,
+      "fee": 0.02599111607128613,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (86.58) por encima de SMA50 (79.17). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.9%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "RRC",
+      "shares": 0.2766696963778415,
+      "price": 50.5,
+      "usdAmount": 13.971819667080997,
+      "fee": 0.006985909833540498,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (47.79) por encima de SMA50 (43.08). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 15.1%. RSI 67: zona neutral."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "COLM",
+      "shares": 0.15125888400567475,
+      "price": 68.91500091552734,
+      "usdAmount": 10.42400612973272,
+      "fee": 0.0052120030648663595,
+      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (62.41) por encima de SMA50 (59.31). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.0%. RSI 70: sobrecompra, riesgo de corrección."
+    }
+  ],
+  "positions": [
+    {
+      "ticker": "QLYS",
+      "shares": 0.20753274571499433,
+      "avgCost": 225.14999389648438,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CERT",
+      "shares": 3.9691688964096543,
+      "avgCost": 10.609999656677246,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "TENB",
+      "shares": 0.6872664456718482,
+      "avgCost": 48.209999084472656,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "CVLT",
+      "shares": 0.13534646086029303,
+      "avgCost": 167.72999572753906,
+      "openedAt": "2026-10-26"
+    },
+    {
+      "ticker": "VSXY",
+      "shares": 0.14479838851280144,
+      "avgCost": 100.41500091552734,
+      "openedAt": "2026-11-03"
+    },
+    {
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "avgCost": 96.20500183105469,
+      "openedAt": "2026-11-04"
+    },
+    {
+      "ticker": "MTN",
+      "shares": 0.0635382129815841,
+      "avgCost": 160.1750030517578,
+      "openedAt": "2026-11-04"
+    },
+    {
+      "ticker": "PVH",
+      "shares": 0.5615754418142761,
+      "avgCost": 92.56500244140625,
+      "openedAt": "2026-11-05"
+    },
+    {
+      "ticker": "RRC",
+      "shares": 0.2766696963778415,
+      "avgCost": 50.5,
+      "openedAt": "2026-11-05"
+    },
+    {
+      "ticker": "COLM",
+      "shares": 0.15125888400567475,
+      "avgCost": 68.91500091552734,
+      "openedAt": "2026-11-05"
+    }
+  ],
+  "dailySnapshots": [
+    {
+      "date": "2026-10-26",
+      "totalValue": 299.86125571966613,
+      "cash": 22.372695052005255,
+      "pnl": -0.1387442803338672,
+      "pnlPct": -0.046248093444622405
+    },
+    {
+      "date": "2026-10-27",
+      "totalValue": 300.7334917004205,
+      "cash": 22.372695052005255,
+      "pnl": 0.7334917004204726,
+      "pnlPct": 0.24449723347349087
+    },
+    {
+      "date": "2026-10-28",
+      "totalValue": 300.1827765099732,
+      "cash": 22.372695052005255,
+      "pnl": 0.18277650997322326,
+      "pnlPct": 0.06092550332440775
+    },
+    {
+      "date": "2026-10-29",
+      "totalValue": 300.0625627708601,
+      "cash": 22.372695052005255,
+      "pnl": 0.06256277086009732,
+      "pnlPct": 0.02085425695336577
+    },
+    {
+      "date": "2026-10-30",
+      "totalValue": 292.98759021519186,
+      "cash": 22.372695052005255,
+      "pnl": -7.012409784808142,
+      "pnlPct": -2.337469928269381
+    },
+    {
+      "date": "2026-11-02",
+      "totalValue": 288.3646694481266,
+      "cash": 22.372695052005255,
+      "pnl": -11.63533055187338,
+      "pnlPct": -3.8784435172911267
+    },
+    {
+      "date": "2026-11-03",
+      "totalValue": 283.71352635733615,
+      "cash": 20.49544790194402,
+      "pnl": -16.28647364266385,
+      "pnlPct": -5.428824547554616
+    },
+    {
+      "date": "2026-11-04",
+      "totalValue": 282.4685455051199,
+      "cash": 14.118921734121386,
+      "pnl": -17.53145449488011,
+      "pnlPct": -5.843818164960036
+    },
+    {
+      "date": "2026-11-05",
+      "totalValue": 272.62921251110765,
+      "cash": 17.168985701453735,
+      "pnl": -27.370787488892347,
+      "pnlPct": -9.123595829630782
+    }
+  ]
+}

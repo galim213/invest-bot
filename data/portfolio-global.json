@@ -1,6 +1,6 @@
 {
   "startingCapital": 300,
-  "cash": 13.910467322483278,
+  "cash": 22.83887242337729,
   "positions": {
     "BB": {
       "shares": 4.082343709802438,
@@ -27,11 +27,6 @@
       "shares": 2.6412464582501816,
       "avgCost": 18.149999618530273,
       "openedAt": "2026-10-28"
-    },
-    "DHT": {
-      "shares": 0.4283323774987937,
-      "avgCost": 24.235000610351562,
-      "openedAt": "2026-11-02"
     },
     "HLF": {
       "shares": 2.768313055063142,
@@ -257,6 +252,17 @@
       "usdAmount": 11.565071379577702,
       "fee": 0.005782535689788851,
       "reason": "Señal técnica de compra (score 58): Tendencia de corto plazo alcista: SMA20 (16.44) por encima de SMA50 (15.75). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 8.0%. RSI 68: zona neutral."
+    },
+    {
+      "date": "2026-11-05",
+      "action": "SELL",
+      "ticker": "DHT",
+      "shares": 0.4283323774987937,
+      "price": 20.854999542236328,
+      "usdAmount": 8.928405100894011,
+      "fee": 0.004466435768331171,
+      "realizedPnl": -1.4522303292225918,
+      "reason": "Stop-loss: precio -13.9% desde el precio de entrada (umbral -12%)."
     }
   ],
   "dailySnapshots": [
@@ -315,6 +321,13 @@
       "cash": 13.910467322483278,
       "pnl": -21.707734553885643,
       "pnlPct": -7.235911517961881
+    },
+    {
+      "date": "2026-11-05",
+      "totalValue": 271.19090898582425,
+      "cash": 22.83887242337729,
+      "pnl": -28.80909101417575,
+      "pnlPct": -9.603030338058582
     }
   ],
   "createdAt": "2026-10-26T20:07:55.797Z"
