@@ -1,88 +1,76 @@
 {
-  "date": "2026-11-05",
-  "generatedAt": "2026-11-05T20:07:49.152Z",
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T20:07:29.119Z",
   "name": "midsmall",
   "label": "Mid + Small cap",
   "universeLabel": "S&P MidCap 400 + SmallCap 600",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-05",
-    "totalValue": 272.62921251110765,
-    "cash": 17.168985701453735,
-    "pnl": -27.370787488892347,
-    "pnlPct": -9.123595829630782
+    "date": "2026-11-06",
+    "totalValue": 267.33744359123824,
+    "cash": 19.328871321187567,
+    "pnl": -32.66255640876176,
+    "pnlPct": -10.887518802920585
   },
   "trades": [
     {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "action": "SELL",
-      "ticker": "RNG",
-      "shares": 0.5329345724569629,
-      "price": 73.94499969482422,
-      "usdAmount": 39.38814287429255,
-      "fee": 0.019703923398845698,
-      "realizedPnl": -6.630756644172572,
-      "reason": "Stop-loss: precio -14.4% desde el precio de entrada (umbral -12%)."
+      "ticker": "QLYS",
+      "shares": 0.20753274571499433,
+      "price": 191.39999389648438,
+      "usdAmount": 39.70190538003897,
+      "fee": 0.01986088313158528,
+      "realizedPnl": -7.024091051012644,
+      "reason": "Stop-loss: precio -15.0% desde el precio de entrada (umbral -12%)."
     },
     {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "action": "SELL",
-      "ticker": "WS",
-      "shares": 1.0979796458752813,
-      "price": 36.52000045776367,
-      "usdAmount": 40.07816806139547,
-      "fee": 0.020049108584990233,
-      "realizedPnl": -6.311471976835158,
-      "reason": "Stop-loss: precio -13.6% desde el precio de entrada (umbral -12%)."
+      "ticker": "TENB",
+      "shares": 0.6872664456718482,
+      "price": 41.95000076293945,
+      "usdAmount": 28.816412506316585,
+      "fee": 0.014415413960138361,
+      "realizedPnl": -4.316702210311999,
+      "reason": "Stop-loss: precio -13.0% desde el precio de entrada (umbral -12%)."
     },
     {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "action": "BUY",
-      "ticker": "PVH",
-      "shares": 0.5615754418142761,
-      "price": 92.56500244140625,
-      "usdAmount": 51.982232142572265,
-      "fee": 0.02599111607128613,
-      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (86.58) por encima de SMA50 (79.17). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.9%. RSI 63: zona neutral."
+      "ticker": "KMPR",
+      "shares": 1.1165441143490114,
+      "price": 33.68000030517578,
+      "usdAmount": 37.60520611201692,
+      "fee": 0.018802603056008463,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (30.78) por encima de SMA50 (28.36). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 16.9%. RSI 63: zona neutral."
     },
     {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "action": "BUY",
-      "ticker": "RRC",
-      "shares": 0.2766696963778415,
-      "price": 50.5,
-      "usdAmount": 13.971819667080997,
-      "fee": 0.006985909833540498,
-      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (47.79) por encima de SMA50 (43.08). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 15.1%. RSI 67: zona neutral."
+      "ticker": "SEZL",
+      "shares": 0.11529181339798664,
+      "price": 150.46499633789062,
+      "usdAmount": 17.34738228071683,
+      "fee": 0.008673691140358415,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (132.80) por encima de SMA50 (122.40). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.9%. RSI 64: zona neutral."
     },
     {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "action": "BUY",
-      "ticker": "COLM",
-      "shares": 0.15125888400567475,
-      "price": 68.91500091552734,
-      "usdAmount": 10.42400612973272,
-      "fee": 0.0052120030648663595,
-      "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (62.41) por encima de SMA50 (59.31). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.0%. RSI 70: sobrecompra, riesgo de corrección."
+      "ticker": "AEO",
+      "shares": 0.5673575054021517,
+      "price": 20.045000076293945,
+      "usdAmount": 11.372681239072072,
+      "fee": 0.005686340619536036,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (18.84) por encima de SMA50 (17.44). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.9%. RSI 65: zona neutral."
     }
   ],
   "positions": [
     {
-      "ticker": "QLYS",
-      "shares": 0.20753274571499433,
-      "avgCost": 225.14999389648438,
-      "openedAt": "2026-10-26"
-    },
-    {
       "ticker": "CERT",
       "shares": 3.9691688964096543,
       "avgCost": 10.609999656677246,
-      "openedAt": "2026-10-26"
-    },
-    {
-      "ticker": "TENB",
-      "shares": 0.6872664456718482,
-      "avgCost": 48.209999084472656,
       "openedAt": "2026-10-26"
     },
     {
@@ -126,6 +114,24 @@
       "shares": 0.15125888400567475,
       "avgCost": 68.91500091552734,
       "openedAt": "2026-11-05"
+    },
+    {
+      "ticker": "KMPR",
+      "shares": 1.1165441143490114,
+      "avgCost": 33.68000030517578,
+      "openedAt": "2026-11-06"
+    },
+    {
+      "ticker": "SEZL",
+      "shares": 0.11529181339798664,
+      "avgCost": 150.46499633789062,
+      "openedAt": "2026-11-06"
+    },
+    {
+      "ticker": "AEO",
+      "shares": 0.5673575054021517,
+      "avgCost": 20.045000076293945,
+      "openedAt": "2026-11-06"
     }
   ],
   "dailySnapshots": [
@@ -191,6 +197,13 @@
       "cash": 17.168985701453735,
       "pnl": -27.370787488892347,
       "pnlPct": -9.123595829630782
+    },
+    {
+      "date": "2026-11-06",
+      "totalValue": 267.33744359123824,
+      "cash": 19.328871321187567,
+      "pnl": -32.66255640876176,
+      "pnlPct": -10.887518802920585
     }
   ]
 }

@@ -1,20 +1,10 @@
 {
   "startingCapital": 300,
-  "cash": 17.168985701453735,
+  "cash": 19.328871321187567,
   "positions": {
-    "QLYS": {
-      "shares": 0.20753274571499433,
-      "avgCost": 225.14999389648438,
-      "openedAt": "2026-10-26"
-    },
     "CERT": {
       "shares": 3.9691688964096543,
       "avgCost": 10.609999656677246,
-      "openedAt": "2026-10-26"
-    },
-    "TENB": {
-      "shares": 0.6872664456718482,
-      "avgCost": 48.209999084472656,
       "openedAt": "2026-10-26"
     },
     "CVLT": {
@@ -51,6 +41,21 @@
       "shares": 0.15125888400567475,
       "avgCost": 68.91500091552734,
       "openedAt": "2026-11-05"
+    },
+    "KMPR": {
+      "shares": 1.1165441143490114,
+      "avgCost": 33.68000030517578,
+      "openedAt": "2026-11-06"
+    },
+    "SEZL": {
+      "shares": 0.11529181339798664,
+      "avgCost": 150.46499633789062,
+      "openedAt": "2026-11-06"
+    },
+    "AEO": {
+      "shares": 0.5673575054021517,
+      "avgCost": 20.045000076293945,
+      "openedAt": "2026-11-06"
     }
   },
   "shorts": {},
@@ -239,6 +244,58 @@
       "usdAmount": 10.42400612973272,
       "fee": 0.0052120030648663595,
       "reason": "Señal técnica de compra (score 68): Tendencia de corto plazo alcista: SMA20 (62.41) por encima de SMA50 (59.31). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.0%. RSI 70: sobrecompra, riesgo de corrección."
+    },
+    {
+      "date": "2026-11-06",
+      "action": "SELL",
+      "ticker": "QLYS",
+      "shares": 0.20753274571499433,
+      "price": 191.39999389648438,
+      "usdAmount": 39.70190538003897,
+      "fee": 0.01986088313158528,
+      "realizedPnl": -7.024091051012644,
+      "reason": "Stop-loss: precio -15.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-06",
+      "action": "SELL",
+      "ticker": "TENB",
+      "shares": 0.6872664456718482,
+      "price": 41.95000076293945,
+      "usdAmount": 28.816412506316585,
+      "fee": 0.014415413960138361,
+      "realizedPnl": -4.316702210311999,
+      "reason": "Stop-loss: precio -13.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-06",
+      "action": "BUY",
+      "ticker": "KMPR",
+      "shares": 1.1165441143490114,
+      "price": 33.68000030517578,
+      "usdAmount": 37.60520611201692,
+      "fee": 0.018802603056008463,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (30.78) por encima de SMA50 (28.36). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 16.9%. RSI 63: zona neutral."
+    },
+    {
+      "date": "2026-11-06",
+      "action": "BUY",
+      "ticker": "SEZL",
+      "shares": 0.11529181339798664,
+      "price": 150.46499633789062,
+      "usdAmount": 17.34738228071683,
+      "fee": 0.008673691140358415,
+      "reason": "Señal técnica de compra (score 72): Tendencia de corto plazo alcista: SMA20 (132.80) por encima de SMA50 (122.40). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.9%. RSI 64: zona neutral."
+    },
+    {
+      "date": "2026-11-06",
+      "action": "BUY",
+      "ticker": "AEO",
+      "shares": 0.5673575054021517,
+      "price": 20.045000076293945,
+      "usdAmount": 11.372681239072072,
+      "fee": 0.005686340619536036,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (18.84) por encima de SMA50 (17.44). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 11.9%. RSI 65: zona neutral."
     }
   ],
   "dailySnapshots": [
@@ -304,6 +361,13 @@
       "cash": 17.168985701453735,
       "pnl": -27.370787488892347,
       "pnlPct": -9.123595829630782
+    },
+    {
+      "date": "2026-11-06",
+      "totalValue": 267.33744359123824,
+      "cash": 19.328871321187567,
+      "pnl": -32.66255640876176,
+      "pnlPct": -10.887518802920585
     }
   ],
   "createdAt": "2026-10-26T20:07:55.768Z"
