@@ -185,3 +185,13 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Decisión:** sin cambios de código; sin fuente alternativa accesible/validada y sin experimentos nuevos que justifiquen `validate.js`. Sin impacto en dashboard ni reportes.
 
 **Pendiente (requiere decisión humana):** habilitar `fc.yahoo.com`, `query2.finance.yahoo.com` y `data.sec.gov` en la política de red del entorno de las rutinas; sin eso el track record de research notes no acumula datos.
+
+## 2026-11-06
+
+**Estado revisado:** `data/research-notes-history.json` sigue sin existir → no se corrió `track-record.js`.
+
+**Re-chequeo de conectividad (sexto día consecutivo):** `fc.yahoo.com`, `query2.finance.yahoo.com` y `data.sec.gov` siguen sin conectar (curl 000). `npm test`: 193/193 en verde.
+
+**Decisión:** sin cambios de código; sin fuente alternativa accesible/validada y sin experimentos nuevos que justifiquen `validate.js`. Sin impacto en dashboard ni reportes.
+
+**Pendiente (requiere decisión humana):** habilitar `fc.yahoo.com`, `query2.finance.yahoo.com` y `data.sec.gov` en la política de red del entorno de las rutinas; sin eso el track record de research notes no acumula datos.
