@@ -1,4 +1,4 @@
-# Más allá de acciones: mercados y técnicas — 2026-11-10
+# Más allá de acciones: mercados y técnicas — 2026-11-11
 
 > 📚 **Sección educativa.** El motor de trading de este bot opera solo acciones del S&P 500 (satellite) + 10 empresas de calidad (core) — esto es contexto sobre otros mercados y herramientas que existen, para decidir con información, no es asesoría financiera real.
 
@@ -6,27 +6,27 @@
 
 | Categoría | Activo | Precio | Momentum 1m | Momentum 3m |
 |---|---|---|---|---|
-| Cripto | Ethereum (`ETH-USD`) | $2039.98 | -16.6% | -17.9% |
-| Cripto | Bitcoin (`BTC-USD`) | $73290.59 | -11.6% | -6.6% |
-| ETF — dividendos | Alto dividendo EEUU (ETF) (`VYM`) | $163.34 | 2.6% | -2.0% |
-| ETF — dividendos | Dividendo de calidad EEUU (ETF) (`SCHD`) | $35.81 | 7.7% | 4.5% |
-| ETF — internacional | Mercados desarrollados ex-EEUU (ETF) (`VEA`) | $69.26 | -1.0% | -5.5% |
-| ETF — internacional | Mercados emergentes (ETF) (`VWO`) | $56.42 | -5.5% | -6.6% |
-| ETF — internacional | Resto del mundo ex-EEUU (ETF, un solo fondo) (`VXUS`) | $82.56 | -2.2% | -5.7% |
-| ETF — mercado amplio EEUU | Mercado total EEUU (ETF, ~3600 empresas) (`VTI`) | $368.77 | -3.4% | -3.4% |
-| ETF — mercado amplio EEUU | Nasdaq-100 (ETF, cargado a tecnología) (`QQQ`) | $672.20 | -9.9% | -7.1% |
-| ETF — renta fija diversificada | Bonos EEUU diversificados (ETF) (`BND`) | $71.14 | 1.3% | -1.6% |
-| Forex | EUR/USD (`EURUSD=X`) | $1.12 | -0.3% | -3.2% |
-| Forex — relevante para Chile | USD/CLP (`USDCLP=X`) | $983.69 | 0.8% | 7.6% |
-| Materias primas — diversificado | Canasta amplia de commodities (ETF) (`DBC`) | $30.72 | -7.8% | 2.0% |
-| Materias primas — energía | Gas natural (futuro) (`NG=F`) | $3.32 | 4.7% | 18.2% |
-| Materias primas — energía | Petróleo WTI (futuro) (`CL=F`) | $86.24 | -8.0% | 3.6% |
-| Materias primas — metales | Oro (futuro) (`GC=F`) | $4038.20 | -3.6% | -9.6% |
-| Materias primas — metales | Plata (futuro) (`SI=F`) | $51.42 | -14.5% | -21.6% |
-| Materias primas — metales | Cobre (futuro) (`HG=F`) | $6.26 | -6.5% | -5.1% |
-| Real estate | REITs — bienes raíces EEUU (ETF) (`VNQ`) | $97.06 | 6.2% | -0.3% |
-| Renta fija | Bonos del Tesoro EEUU 20+ años (ETF) (`TLT`) | $80.91 | 3.7% | -1.5% |
-| Renta fija | Bonos del Tesoro EEUU 7-10 años (ETF) (`IEF`) | $91.06 | 1.8% | -2.0% |
+| Cripto | Ethereum (`ETH-USD`) | $2075.48 | -16.0% | -15.9% |
+| Cripto | Bitcoin (`BTC-USD`) | $74287.51 | -11.6% | -5.1% |
+| ETF — dividendos | Dividendo de calidad EEUU (ETF) (`SCHD`) | $35.97 | 7.8% | 4.5% |
+| ETF — dividendos | Alto dividendo EEUU (ETF) (`VYM`) | $165.04 | 3.7% | -1.2% |
+| ETF — internacional | Resto del mundo ex-EEUU (ETF, un solo fondo) (`VXUS`) | $83.46 | -1.3% | -4.9% |
+| ETF — internacional | Mercados emergentes (ETF) (`VWO`) | $57.23 | -4.1% | -5.2% |
+| ETF — internacional | Mercados desarrollados ex-EEUU (ETF) (`VEA`) | $69.93 | -0.2% | -4.9% |
+| ETF — mercado amplio EEUU | Mercado total EEUU (ETF, ~3600 empresas) (`VTI`) | $374.44 | -1.8% | -2.6% |
+| ETF — mercado amplio EEUU | Nasdaq-100 (ETF, cargado a tecnología) (`QQQ`) | $691.39 | -7.0% | -5.6% |
+| ETF — renta fija diversificada | Bonos EEUU diversificados (ETF) (`BND`) | $71.08 | 1.1% | -1.9% |
+| Forex | EUR/USD (`EURUSD=X`) | $1.11 | -0.6% | -3.8% |
+| Forex — relevante para Chile | USD/CLP (`USDCLP=X`) | $982.13 | 0.6% | 7.5% |
+| Materias primas — diversificado | Canasta amplia de commodities (ETF) (`DBC`) | $30.81 | -8.0% | 3.5% |
+| Materias primas — energía | Gas natural (futuro) (`NG=F`) | $3.22 | -1.8% | 18.2% |
+| Materias primas — energía | Petróleo WTI (futuro) (`CL=F`) | $86.25 | -8.4% | 6.2% |
+| Materias primas — metales | Cobre (futuro) (`HG=F`) | $6.27 | -6.1% | -4.8% |
+| Materias primas — metales | Oro (futuro) (`GC=F`) | $3993.50 | -4.4% | -9.7% |
+| Materias primas — metales | Plata (futuro) (`SI=F`) | $51.83 | -12.4% | -20.1% |
+| Real estate | REITs — bienes raíces EEUU (ETF) (`VNQ`) | $96.90 | 6.3% | -1.7% |
+| Renta fija | Bonos del Tesoro EEUU 20+ años (ETF) (`TLT`) | $80.89 | 3.2% | -2.1% |
+| Renta fija | Bonos del Tesoro EEUU 7-10 años (ETF) (`IEF`) | $90.90 | 1.5% | -2.6% |
 
 _Futuros de materias primas (`=F`) y pares de forex (`=X`) pueden tener mayor volatilidad y mecánica de apalancamiento distinta a una acción — ver la sección de técnicas abajo. Cripto cotiza 24/7, el resto sigue horario de mercado._
 
@@ -94,4 +94,4 @@ Cada técnica tiene un nivel de riesgo y un caso de uso típico. "Implementado e
 **En este bot:** No implementado todavía (mismo motivo: necesita modelo de pricing). Candidato natural para posiciones del satellite con ganancia no realizada grande antes de resultados.
 
 ---
-_Generado automáticamente el 2026-11-10T20:07:49.563Z. Precios: Yahoo Finance (público, retrasado). Las técnicas son contenido educativo estático (investment-techniques.json) — no son recomendaciones de uso, cada una tiene riesgo real de pérdida. No es asesoría financiera real._
+_Generado automáticamente el 2026-11-11T20:07:30.626Z. Precios: Yahoo Finance (público, retrasado). Las técnicas son contenido educativo estático (investment-techniques.json) — no son recomendaciones de uso, cada una tiene riesgo real de pérdida. No es asesoría financiera real._

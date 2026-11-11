@@ -1,10 +1,10 @@
-# Cartera paralela — Mid + Small cap — 2026-11-10
+# Cartera paralela — Mid + Small cap — 2026-11-11
 
 > 🧪 **Experimento en vivo, no validado por backtest** (no hay dataset point-in-time gratuito para S&P MidCap 400 + SmallCap 600, así que no se puede correr validate.js con el mismo rigor que el S&P 500). Mismo motor técnico y mismos umbrales que el satellite de producción, aplicados sobre S&P MidCap 400 + SmallCap 600 en vez de S&P 500. Capital ficticio independiente — simulación 100% educativa, no es asesoría financiera real.
 
 - Capital inicial: $300.00
-- Valor hoy: **$272.52**
-- P&L: $-27.48 (-9.16%)
+- Valor hoy: **$272.15**
+- P&L: $-27.85 (-9.28%)
 
 ## Movimientos de hoy
 
@@ -26,4 +26,4 @@ _Sin movimientos hoy._
 | SEZL | 0.1153 | $150.46 |
 | AEO | 0.5674 | $20.05 |
 
-_Generado automáticamente el 2026-11-10T20:07:49.380Z. Simulación 100% educativa, no es asesoría financiera real._
+_Generado automáticamente el 2026-11-11T20:07:30.493Z. Simulación 100% educativa, no es asesoría financiera real._

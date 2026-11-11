@@ -1,10 +1,10 @@
-# Cartera paralela — Internacional (ADRs) — 2026-11-10
+# Cartera paralela — Internacional (ADRs) — 2026-11-11
 
 > 🧪 **Experimento en vivo, no validado por backtest** (no hay dataset point-in-time gratuito para empresas internacionales en bolsas de EEUU, así que no se puede correr validate.js con el mismo rigor que el S&P 500). Mismo motor técnico y mismos umbrales que el satellite de producción, aplicados sobre empresas internacionales en bolsas de EEUU en vez de S&P 500. Capital ficticio independiente — simulación 100% educativa, no es asesoría financiera real.
 
 - Capital inicial: $300.00
-- Valor hoy: **$280.04**
-- P&L: $-19.96 (-6.65%)
+- Valor hoy: **$281.89**
+- P&L: $-18.11 (-6.04%)
 
 ## Movimientos de hoy
 
@@ -23,4 +23,4 @@ _Sin movimientos hoy._
 | BZ | 0.6588 | $17.56 |
 | TAC | 1.0146 | $13.65 |
 
-_Generado automáticamente el 2026-11-10T20:07:49.388Z. Simulación 100% educativa, no es asesoría financiera real._
+_Generado automáticamente el 2026-11-11T20:07:30.501Z. Simulación 100% educativa, no es asesoría financiera real._
