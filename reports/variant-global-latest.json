@@ -1,18 +1,40 @@
 {
-  "date": "2026-11-11",
-  "generatedAt": "2026-11-11T20:07:30.501Z",
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T20:07:40.719Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-11",
-    "totalValue": 281.8941770462981,
-    "cash": 19.043562589509452,
-    "pnl": -18.105822953701875,
-    "pnlPct": -6.035274317900625
+    "date": "2026-11-12",
+    "totalValue": 274.00288368242985,
+    "cash": 14.860792972172023,
+    "pnl": -25.997116317570146,
+    "pnlPct": -8.665705439190049
   },
-  "trades": [],
+  "trades": [
+    {
+      "date": "2026-11-12",
+      "action": "SELL",
+      "ticker": "BZ",
+      "shares": 0.6587907250658347,
+      "price": 12.635000228881836,
+      "usdAmount": 8.319659051511056,
+      "fee": 0.0041619104809960256,
+      "realizedPnl": -3.2454123280666463,
+      "reason": "Stop-loss: precio -28.0% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-12",
+      "action": "BUY",
+      "ticker": "DEO",
+      "shares": 0.12484320321856954,
+      "price": 100.09500122070312,
+      "usdAmount": 12.496180578559207,
+      "fee": 0.006248090289279603,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (96.22) por encima de SMA50 (90.10). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.6%. RSI 58: zona neutral."
+    }
+  ],
   "positions": [
     {
       "ticker": "BB",
@@ -52,16 +74,16 @@
       "openedAt": "2026-11-04"
     },
     {
-      "ticker": "BZ",
-      "shares": 0.6587907250658347,
-      "avgCost": 17.55500030517578,
-      "openedAt": "2026-11-04"
-    },
-    {
       "ticker": "TAC",
       "shares": 1.0145521762484635,
       "avgCost": 13.649999618530273,
       "openedAt": "2026-11-09"
+    },
+    {
+      "ticker": "DEO",
+      "shares": 0.12484320321856954,
+      "avgCost": 100.09500122070312,
+      "openedAt": "2026-11-12"
     }
   ],
   "dailySnapshots": [
@@ -155,6 +177,13 @@
       "cash": 19.043562589509452,
       "pnl": -18.105822953701875,
       "pnlPct": -6.035274317900625
+    },
+    {
+      "date": "2026-11-12",
+      "totalValue": 274.00288368242985,
+      "cash": 14.860792972172023,
+      "pnl": -25.997116317570146,
+      "pnlPct": -8.665705439190049
     }
   ]
 }
