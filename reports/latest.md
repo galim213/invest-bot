@@ -1,22 +1,22 @@
-# Reporte diario de inversión (simulado) — 2026-11-13
+# Reporte diario de inversión (simulado) — 2026-11-16
 
 > ⚠️ **Simulación educativa con dinero ficticio.** No es asesoría financiera real ni una recomendación de inversión. No constituye asesoría financiera.
 
 ## Resumen combinado (core + satellite)
 
 - Capital inicial total: $1000.00
-- Valor total hoy: **$1022.79**
-- P&L acumulado: $22.79 (+2.28%)
-- Core (70%, largo plazo): $728.39 (+4.06%) | Satellite (30%, técnico): $294.40 (-1.87%)
+- Valor total hoy: **$1012.67**
+- P&L acumulado: $12.67 (+1.27%)
+- Core (70%, largo plazo): $721.41 (+3.06%) | Satellite (30%, técnico): $291.27 (-2.91%)
 
 **Régimen de mercado: ALCISTA** (benchmark vs su SMA200) — _solo informativo, no bloquea trades del satellite: lo probamos como filtro y empeoró el resultado fuera de muestra (ver validación multi-régimen)._
 
 ## Panorama de riesgo macro (contexto, no predicción)
 
-- **VIX**: 19.15 — CALMA (Dentro del rango histórico normal.) Variación 10d: -2.0 pts.
-- **Curva de rendimientos (10 años vs 3 meses)**: +1.03 pts — normal (sin inversión).
-- **Spread de crédito (proxy HYG vs LQD, 20d)**: 0.68 pts — normal.
-- **Índice dólar (DXY)**: 103.41 (variación 10d: +1.66)
+- **VIX**: 23.92 — ELEVADO (Por encima del promedio histórico (~15-20).) Variación 10d: +3.1 pts.
+- **Curva de rendimientos (10 años vs 3 meses)**: +1.00 pts — normal (sin inversión).
+- **Spread de crédito (proxy HYG vs LQD, 20d)**: -0.05 pts — normal.
+- **Índice dólar (DXY)**: 103.55 (variación 10d: +1.68)
 
 ## 🏛️ Core — largo plazo, dividendos (70% del capital)
 
@@ -24,16 +24,16 @@ Comprado una sola vez, en partes iguales, en empresas de calidad con dividendo r
 
 | Ticker | Sector | Shares | Costo prom. | Precio actual | Valor total | % del sleeve | P&L no realizado | Último dividendo (de la empresa) | Cobrado este año | Cobrado desde el inicio |
 |---|---|---|---|---|---|---|---|---|---|---|
-| JNJ | Health Care | 0.270 | $259.61 | $286.94 | $77.37 | 10.6% | $7.37 (+10.53%) | $1.3400/acción (2026-08-25) | $0.00 | $0.00 |
-| PG | Consumer Staples | 0.442 | $158.20 | $169.79 | $75.13 | 10.3% | $5.13 (+7.33%) | $1.0890/acción (2026-10-23) | $0.00 | $0.00 |
-| KO | Consumer Staples | 0.755 | $92.72 | $99.20 | $74.89 | 10.3% | $4.89 (+6.98%) | $0.5300/acción (2026-09-15) | $0.00 | $0.00 |
-| XOM | Energy | 0.395 | $177.30 | $170.01 | $67.12 | 9.2% | $-2.88 (-4.11%) | $1.0300/acción (2026-08-17) | $0.00 | $0.00 |
-| CVX | Energy | 0.311 | $224.78 | $218.82 | $68.14 | 9.4% | $-1.86 (-2.65%) | $1.7800/acción (2026-08-19) | $0.00 | $0.00 |
-| JPM | Financials | 0.209 | $335.73 | $345.07 | $71.95 | 9.9% | $1.95 (+2.78%) | $1.6500/acción (2026-10-06) | $0.00 | $0.00 |
-| MSFT | Information Technology | 0.131 | $532.73 | $524.81 | $68.96 | 9.5% | $-1.04 (-1.49%) | $0.9100/acción (2026-08-20) | $0.00 | $0.00 |
-| V | Financials | 0.172 | $406.96 | $425.98 | $73.27 | 10.1% | $3.27 (+4.67%) | $0.7800/acción (2026-11-10) | $0.00 | $0.00 |
-| LMT | Industrials | 0.127 | $549.38 | $595.64 | $75.89 | 10.4% | $5.89 (+8.42%) | $3.4500/acción (2026-09-01) | $0.00 | $0.00 |
-| TXN | Information Technology | 0.249 | $279.65 | $303.82 | $75.67 | 10.4% | $6.02 (+8.64%) | $1.5200/acción (2026-10-30) | $0.00 | $0.00 |
+| JNJ | Health Care | 0.270 | $259.61 | $283.15 | $76.35 | 10.6% | $6.35 (+9.07%) | $1.3400/acción (2026-08-25) | $0.00 | $0.00 |
+| PG | Consumer Staples | 0.442 | $158.20 | $172.74 | $76.43 | 10.6% | $6.43 (+9.19%) | $1.0890/acción (2026-10-23) | $0.00 | $0.00 |
+| KO | Consumer Staples | 0.755 | $92.72 | $99.30 | $74.96 | 10.4% | $4.96 (+7.09%) | $0.5300/acción (2026-09-15) | $0.00 | $0.00 |
+| XOM | Energy | 0.395 | $177.30 | $167.04 | $65.95 | 9.1% | $-4.05 (-5.79%) | $1.0300/acción (2026-08-17) | $0.00 | $0.00 |
+| CVX | Energy | 0.311 | $224.78 | $217.43 | $67.71 | 9.4% | $-2.29 (-3.27%) | $1.7800/acción (2026-08-19) | $0.00 | $0.00 |
+| JPM | Financials | 0.209 | $335.73 | $338.24 | $70.52 | 9.8% | $0.52 (+0.75%) | $1.6500/acción (2026-10-06) | $0.00 | $0.00 |
+| MSFT | Information Technology | 0.131 | $532.73 | $518.51 | $68.13 | 9.4% | $-1.87 (-2.67%) | $0.9100/acción (2026-08-20) | $0.00 | $0.00 |
+| V | Financials | 0.172 | $406.96 | $426.29 | $73.32 | 10.2% | $3.32 (+4.75%) | $0.7800/acción (2026-11-10) | $0.00 | $0.00 |
+| LMT | Industrials | 0.127 | $549.38 | $582.37 | $74.20 | 10.3% | $4.20 (+6.00%) | $3.4500/acción (2026-09-01) | $0.00 | $0.00 |
+| TXN | Information Technology | 0.249 | $279.65 | $296.40 | $73.82 | 10.2% | $4.17 (+5.99%) | $1.5200/acción (2026-10-30) | $0.00 | $0.00 |
 
 **Dividendos acumulados desde el inicio: $0.00**
 
@@ -43,16 +43,16 @@ El motor multi-factor sobre el S&P 500 completo (SMA, momentum, RSI). ⚠️ Est
 
 | Ticker | Sector | Shares | Costo prom. | Precio actual | Valor total | % del sleeve | P&L no realizado |
 |---|---|---|---|---|---|---|---|
-| VEEV | Health Care | 0.226 | $315.43 | $302.30 | $68.40 | 23.2% | $-2.97 (-4.16%) |
-| ISRG | Health Care | 0.221 | $438.48 | $446.25 | $98.76 | 33.5% | $1.72 (+1.77%) |
-| TMO | Health Care | 0.114 | $690.08 | $699.51 | $80.06 | 27.2% | $1.08 (+1.37%) |
-| CRL | Health Care | 0.062 | $339.66 | $340.44 | $21.15 | 7.2% | $0.05 (+0.23%) |
-| MAR | Consumer Discretionary | 0.027 | $396.80 | $423.31 | $11.27 | 3.8% | $0.71 (+6.68%) |
+| VEEV | Health Care | 0.226 | $315.43 | $300.22 | $67.93 | 23.3% | $-3.44 (-4.82%) |
+| ISRG | Health Care | 0.221 | $438.48 | $438.93 | $97.14 | 33.4% | $0.10 (+0.10%) |
+| TMO | Health Care | 0.114 | $690.08 | $692.52 | $79.26 | 27.2% | $0.28 (+0.35%) |
+| CRL | Health Care | 0.062 | $339.66 | $335.60 | $20.85 | 7.2% | $-0.25 (-1.20%) |
+| MAR | Consumer Discretionary | 0.027 | $396.80 | $425.47 | $11.33 | 3.9% | $0.76 (+7.23%) |
 
 ### Concentración y correlación (informativo)
 
-- Posiciones: 5 · N efectivo por peso (1/HHI): **3.65**
-- Correlación promedio entre posiciones (retornos diarios, últimas 60 ruedas): **0.17** → N efectivo ajustado por correlación: **2.53**
+- Posiciones: 5 · N efectivo por peso (1/HHI): **3.66**
+- Correlación promedio entre posiciones (retornos diarios, últimas 60 ruedas): **0.17** → N efectivo ajustado por correlación: **2.52**
 - Por sector: Health Care 96% · Consumer Discretionary 4%
 
 _Solo mide el riesgo; no cambia decisiones. Un tope sectorial y otras formas de diversificar ya se probaron y empeoraron el resultado fuera de muestra (ver `GRADUATION_CRITERIA.md`)._
@@ -65,230 +65,240 @@ _No se ejecutaron movimientos hoy._
 
 | Ticker | Sector | Score | Señal | Precio | Motivo principal |
 |---|---|---|---|---|---|
-| CDW | Information Technology | 76 | BUY | $171.83 | Tendencia de corto plazo alcista: SMA20 (161.91) por encima de SMA50 (150.72). |
-| ZBH | Health Care | 72 | BUY | $102.93 | Tendencia de corto plazo alcista: SMA20 (100.64) por encima de SMA50 (95.68). |
-| BBY | Consumer Discretionary | 71 | BUY | $104.04 | Tendencia de corto plazo alcista: SMA20 (99.08) por encima de SMA50 (93.49). |
-| JKHY | Financials | 69 | BUY | $178.79 | Tendencia de corto plazo alcista: SMA20 (165.99) por encima de SMA50 (157.69). |
-| ALGN | Health Care | 68 | BUY | $170.22 | Tendencia de corto plazo alcista: SMA20 (158.80) por encima de SMA50 (151.71). |
-| CBOE | Financials | 67 | BUY | $376.77 | Tendencia de corto plazo alcista: SMA20 (340.80) por encima de SMA50 (305.06). |
-| DD | Industrials | 67 | BUY | $153.96 | Tendencia de corto plazo alcista: SMA20 (143.73) por encima de SMA50 (135.37). |
-| SWK | Industrials | 67 | BUY | $113.52 | Tendencia de corto plazo alcista: SMA20 (106.08) por encima de SMA50 (96.58). |
-| GWW | Industrials | 67 | BUY | $1491.34 | Tendencia de corto plazo alcista: SMA20 (1400.52) por encima de SMA50 (1327.66). |
-| IDXX | Health Care | 66 | BUY | $703.90 | Tendencia de corto plazo alcista: SMA20 (625.63) por encima de SMA50 (562.40). |
-| BF-B | Consumer Staples | 65 | BUY | $30.72 | Tendencia de corto plazo alcista: SMA20 (29.46) por encima de SMA50 (27.70). |
-| MCK | Health Care | 65 | BUY | $1097.82 | Tendencia de corto plazo alcista: SMA20 (1028.10) por encima de SMA50 (954.99). |
-| ABNB | Consumer Discretionary | 64 | BUY | $186.46 | Tendencia de corto plazo alcista: SMA20 (175.55) por encima de SMA50 (169.11). |
-| STE | Health Care | 64 | BUY | $264.29 | Tendencia de corto plazo alcista: SMA20 (239.34) por encima de SMA50 (223.27). |
-| TYL | Information Technology | 64 | BUY | $425.33 | Tendencia de corto plazo alcista: SMA20 (399.32) por encima de SMA50 (362.50). |
-| ISRG | Health Care | 61 | BUY | $446.25 | Tendencia de corto plazo alcista: SMA20 (447.26) por encima de SMA50 (417.65). |
-| MAR | Consumer Discretionary | 55 | BUY | $423.31 | Tendencia de corto plazo alcista: SMA20 (408.59) por encima de SMA50 (374.81). |
-| VEEV | Health Care | 49 | BUY | $302.30 | Tendencia de corto plazo alcista: SMA20 (311.52) por encima de SMA50 (291.44). |
-| TMO | Health Care | 39 | BUY | $699.51 | Tendencia de corto plazo alcista: SMA20 (695.74) por encima de SMA50 (670.55). |
-| CRL | Health Care | 37 | BUY | $340.44 | Tendencia de corto plazo alcista: SMA20 (343.06) por encima de SMA50 (311.11). |
-| MRVL | Information Technology | -67 | SELL | $156.44 | Tendencia de corto plazo bajista: SMA20 (194.73) por debajo de SMA50 (229.17). |
-| TPL | Energy | -67 | SELL | $290.31 | Tendencia de corto plazo bajista: SMA20 (312.92) por debajo de SMA50 (337.09). |
-| COIN | Financials | -68 | SELL | $128.61 | Tendencia de corto plazo bajista: SMA20 (150.36) por debajo de SMA50 (170.41). |
-| TER | Information Technology | -68 | SELL | $250.25 | Tendencia de corto plazo bajista: SMA20 (281.76) por debajo de SMA50 (342.62). |
-| DELL | Information Technology | -70 | SELL | $342.36 | Tendencia de corto plazo bajista: SMA20 (413.06) por debajo de SMA50 (492.99). |
-| SNDK | Information Technology | -70 | SELL | $873.48 | Tendencia de corto plazo bajista: SMA20 (1123.77) por debajo de SMA50 (1441.20). |
-| BKR | Energy | -71 | SELL | $49.18 | Tendencia de corto plazo bajista: SMA20 (52.29) por debajo de SMA50 (55.19). |
-| LITE | Information Technology | -71 | SELL | $592.59 | Tendencia de corto plazo bajista: SMA20 (723.08) por debajo de SMA50 (867.15). |
-| STX | Information Technology | -72 | SELL | $526.04 | Tendencia de corto plazo bajista: SMA20 (598.80) por debajo de SMA50 (740.38). |
-| SMCI | Information Technology | -72 | SELL | $26.67 | Tendencia de corto plazo bajista: SMA20 (31.28) por debajo de SMA50 (36.53). |
-| WDC | Information Technology | -73 | SELL | $294.43 | Tendencia de corto plazo bajista: SMA20 (336.35) por debajo de SMA50 (391.69). |
-| CIEN | Information Technology | -74 | SELL | $280.42 | Tendencia de corto plazo bajista: SMA20 (307.68) por debajo de SMA50 (343.25). |
-| FIX | Industrials | -75 | SELL | $1108.84 | Tendencia de corto plazo bajista: SMA20 (1214.89) por debajo de SMA50 (1467.62). |
-| FLEX | Information Technology | -79 | SELL | $75.27 | Tendencia de corto plazo bajista: SMA20 (81.01) por debajo de SMA50 (99.27). |
-| VRT | Industrials | -80 | SELL | $202.23 | Tendencia de corto plazo bajista: SMA20 (208.99) por debajo de SMA50 (231.31). |
+| CDW | Information Technology | 78 | BUY | $166.70 | Tendencia de corto plazo alcista: SMA20 (162.60) por encima de SMA50 (151.00). |
+| BBY | Consumer Discretionary | 69 | BUY | $103.54 | Tendencia de corto plazo alcista: SMA20 (99.71) por encima de SMA50 (93.78). |
+| CNC | Health Care | 68 | BUY | $74.49 | Tendencia de corto plazo alcista: SMA20 (70.12) por encima de SMA50 (67.23). |
+| VTRS | Health Care | 67 | BUY | $20.71 | Tendencia de corto plazo alcista: SMA20 (19.39) por encima de SMA50 (18.18). |
+| STE | Health Care | 64 | BUY | $262.19 | Tendencia de corto plazo alcista: SMA20 (241.35) por encima de SMA50 (224.02). |
+| HCA | Health Care | 63 | BUY | $507.63 | Tendencia de corto plazo alcista: SMA20 (482.88) por encima de SMA50 (454.73). |
+| ABNB | Consumer Discretionary | 62 | BUY | $186.45 | Tendencia de corto plazo alcista: SMA20 (176.12) por encima de SMA50 (169.21). |
+| JKHY | Financials | 62 | BUY | $177.76 | Tendencia de corto plazo alcista: SMA20 (167.18) por encima de SMA50 (157.91). |
+| TSN | Consumer Staples | 62 | BUY | $62.89 | Tendencia de corto plazo alcista: SMA20 (58.04) por encima de SMA50 (54.62). |
+| DD | Industrials | 61 | BUY | $150.50 | Tendencia de corto plazo alcista: SMA20 (144.78) por encima de SMA50 (135.75). |
+| GWW | Industrials | 61 | BUY | $1497.17 | Tendencia de corto plazo alcista: SMA20 (1409.49) por encima de SMA50 (1331.12). |
+| CAH | Health Care | 60 | HOLD | $283.73 | Tendencia de corto plazo alcista: SMA20 (262.24) por encima de SMA50 (244.74). |
+| CLX | Consumer Staples | 60 | HOLD | $110.43 | Tendencia de corto plazo alcista: SMA20 (95.35) por encima de SMA50 (88.24). |
+| EW | Health Care | 60 | HOLD | $106.44 | Tendencia de corto plazo alcista: SMA20 (97.01) por encima de SMA50 (90.76). |
+| FISV | Financials | 60 | HOLD | $63.47 | Tendencia de corto plazo alcista: SMA20 (55.84) por encima de SMA50 (50.61). |
+| ISRG | Health Care | 53 | BUY | $438.93 | Tendencia de corto plazo alcista: SMA20 (447.42) por encima de SMA50 (419.04). |
+| CRL | Health Care | 52 | BUY | $335.60 | Tendencia de corto plazo alcista: SMA20 (344.72) por encima de SMA50 (312.01). |
+| VEEV | Health Care | 52 | BUY | $300.22 | Tendencia de corto plazo alcista: SMA20 (310.66) por encima de SMA50 (291.93). |
+| TMO | Health Care | 43 | BUY | $692.52 | Tendencia de corto plazo alcista: SMA20 (696.43) por encima de SMA50 (672.15). |
+| MAR | Consumer Discretionary | 40 | BUY | $425.47 | Tendencia de corto plazo alcista: SMA20 (410.32) por encima de SMA50 (376.58). |
+| TER | Information Technology | -67 | SELL | $234.89 | Tendencia de corto plazo bajista: SMA20 (276.69) por debajo de SMA50 (340.16). |
+| FCX | Materials | -68 | SELL | $55.58 | Tendencia de corto plazo bajista: SMA20 (62.93) por debajo de SMA50 (68.08). |
+| SNDK | Information Technology | -68 | SELL | $816.61 | Tendencia de corto plazo bajista: SMA20 (1096.62) por debajo de SMA50 (1422.96). |
+| TPL | Energy | -68 | SELL | $291.86 | Tendencia de corto plazo bajista: SMA20 (310.36) por debajo de SMA50 (335.71). |
+| WDC | Information Technology | -68 | SELL | $283.29 | Tendencia de corto plazo bajista: SMA20 (332.96) por debajo de SMA50 (388.04). |
+| STX | Information Technology | -69 | SELL | $503.90 | Tendencia de corto plazo bajista: SMA20 (591.06) por debajo de SMA50 (733.53). |
+| BE | Industrials | -71 | SELL | $178.16 | Tendencia de corto plazo bajista: SMA20 (203.02) por debajo de SMA50 (242.56). |
+| GEV | Industrials | -71 | SELL | $767.60 | Tendencia de corto plazo bajista: SMA20 (840.59) por debajo de SMA50 (909.31). |
+| MU | Information Technology | -71 | SELL | $725.27 | Tendencia de corto plazo bajista: SMA20 (829.02) por debajo de SMA50 (937.87). |
+| GLW | Information Technology | -72 | SELL | $106.60 | Tendencia de corto plazo bajista: SMA20 (120.68) por debajo de SMA50 (140.19). |
+| FIX | Industrials | -73 | SELL | $1062.62 | Tendencia de corto plazo bajista: SMA20 (1195.07) por debajo de SMA50 (1456.77). |
+| DASH | Consumer Discretionary | -73 | SELL | $169.37 | Tendencia de corto plazo bajista: SMA20 (179.52) por debajo de SMA50 (187.31). |
+| SKYD | Communication Services | -74 | SELL | $7.03 | Tendencia de corto plazo bajista: SMA20 (7.84) por debajo de SMA50 (8.90). |
+| FLEX | Information Technology | -76 | SELL | $74.57 | Tendencia de corto plazo bajista: SMA20 (80.34) por debajo de SMA50 (98.56). |
+| VRT | Industrials | -77 | SELL | $188.36 | Tendencia de corto plazo bajista: SMA20 (208.10) por debajo de SMA50 (229.46). |
 
 #### Detalle de razonamiento (señales destacadas)
 
-**CDW** (score 76, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (161.91) por encima de SMA50 (150.72).
+**CDW** (score 78, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (162.60) por encima de SMA50 (151.00).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 11.7%.
-  - RSI 56: zona neutral.
-**ZBH** (score 72, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (100.64) por encima de SMA50 (95.68).
+  - Momentum 10d: 10.7%.
+  - RSI 54: zona neutral.
+**BBY** (score 69, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (99.71) por encima de SMA50 (93.78).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 8.9%.
-  - RSI 58: zona neutral.
-**BBY** (score 71, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (99.08) por encima de SMA50 (93.49).
+  - Momentum 10d: 7.7%.
+  - RSI 57: zona neutral.
+**CNC** (score 68, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (70.12) por encima de SMA50 (67.23).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 12.0%.
+  - RSI 60: zona neutral.
+**VTRS** (score 67, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (19.39) por encima de SMA50 (18.18).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 10.9%.
+  - RSI 72: sobrecompra, riesgo de corrección.
+**STE** (score 64, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (241.35) por encima de SMA50 (224.02).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 12.4%.
+  - RSI 77: sobrecompra, riesgo de corrección.
+**HCA** (score 63, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (482.88) por encima de SMA50 (454.73).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 8.5%.
+  - RSI 71: sobrecompra, riesgo de corrección.
+**ABNB** (score 62, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (176.12) por encima de SMA50 (169.21).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 9.0%.
+  - RSI 63: zona neutral.
+**JKHY** (score 62, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (167.18) por encima de SMA50 (157.91).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
   - Momentum 10d: 8.8%.
-  - RSI 59: zona neutral.
-**JKHY** (score 69, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (165.99) por encima de SMA50 (157.69).
+  - RSI 74: sobrecompra, riesgo de corrección.
+**TSN** (score 62, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (58.04) por encima de SMA50 (54.62).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 10.8%.
-  - RSI 68: zona neutral.
-**ALGN** (score 68, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (158.80) por encima de SMA50 (151.71).
+  - Momentum 10d: 10.2%.
+  - RSI 80: sobrecompra, riesgo de corrección.
+**DD** (score 61, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (144.78) por encima de SMA50 (135.75).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 13.6%.
-  - RSI 66: zona neutral.
-**CBOE** (score 67, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (340.80) por encima de SMA50 (305.06).
+  - Momentum 10d: 6.5%.
+  - RSI 65: zona neutral.
+**GWW** (score 61, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (1409.49) por encima de SMA50 (1331.12).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 12.3%.
-  - RSI 72: sobrecompra, riesgo de corrección.
-**DD** (score 67, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (143.73) por encima de SMA50 (135.37).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 9.9%.
-  - RSI 71: sobrecompra, riesgo de corrección.
-**SWK** (score 67, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (106.08) por encima de SMA50 (96.58).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 9.7%.
-  - RSI 70: zona neutral.
-**GWW** (score 67, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (1400.52) por encima de SMA50 (1327.66).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 9.9%.
-  - RSI 72: sobrecompra, riesgo de corrección.
-**IDXX** (score 66, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (625.63) por encima de SMA50 (562.40).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 27.7%.
-  - RSI 73: sobrecompra, riesgo de corrección.
-**BF-B** (score 65, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (29.46) por encima de SMA50 (27.70).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 7.0%.
-  - RSI 60: zona neutral.
-**MCK** (score 65, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (1028.10) por encima de SMA50 (954.99).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 10.4%.
+  - Momentum 10d: 8.9%.
   - RSI 75: sobrecompra, riesgo de corrección.
-**ABNB** (score 64, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (175.55) por encima de SMA50 (169.11).
+**CAH** (score 60, señal HOLD)
+  - Tendencia de corto plazo alcista: SMA20 (262.24) por encima de SMA50 (244.74).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 13.4%.
-  - RSI 61: zona neutral.
-**STE** (score 64, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (239.34) por encima de SMA50 (223.27).
+  - Momentum 10d: 11.6%.
+  - RSI 92: sobrecompra, riesgo de corrección.
+  - Compra bloqueada por sobrecompra extrema (RSI 92 >= 80): se espera una corrección antes de entrar.
+**CLX** (score 60, señal HOLD)
+  - Tendencia de corto plazo alcista: SMA20 (95.35) por encima de SMA50 (88.24).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 16.4%.
-  - RSI 77: sobrecompra, riesgo de corrección.
-**TYL** (score 64, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (399.32) por encima de SMA50 (362.50).
+  - Momentum 10d: 22.8%.
+  - RSI 97: sobrecompra, riesgo de corrección.
+  - Compra bloqueada por sobrecompra extrema (RSI 97 >= 80): se espera una corrección antes de entrar.
+**EW** (score 60, señal HOLD)
+  - Tendencia de corto plazo alcista: SMA20 (97.01) por encima de SMA50 (90.76).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 7.9%.
-  - RSI 66: zona neutral.
-**ISRG** (score 61, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (447.26) por encima de SMA50 (417.65).
+  - Momentum 10d: 14.1%.
+  - RSI 83: sobrecompra, riesgo de corrección.
+  - Compra bloqueada por sobrecompra extrema (RSI 83 >= 80): se espera una corrección antes de entrar.
+**FISV** (score 60, señal HOLD)
+  - Tendencia de corto plazo alcista: SMA20 (55.84) por encima de SMA50 (50.61).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 3.3%.
+  - Momentum 10d: 22.2%.
+  - RSI 87: sobrecompra, riesgo de corrección.
+  - Compra bloqueada por sobrecompra extrema (RSI 87 >= 80): se espera una corrección antes de entrar.
+**ISRG** (score 53, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (447.42) por encima de SMA50 (419.04).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 0.5%.
   - RSI 48: zona neutral.
-**MAR** (score 55, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (408.59) por encima de SMA50 (374.81).
+**CRL** (score 52, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (344.72) por encima de SMA50 (312.01).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 6.0%.
-  - RSI 71: sobrecompra, riesgo de corrección.
-**VEEV** (score 49, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (311.52) por encima de SMA50 (291.44).
+  - Momentum 10d: -0.9%.
+  - RSI 43: zona neutral.
+**VEEV** (score 52, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (310.66) por encima de SMA50 (291.93).
   - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: -3.4%.
-  - RSI 34: zona neutral.
-**TMO** (score 39, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (695.74) por encima de SMA50 (670.55).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: 0.4%.
-  - RSI 54: zona neutral.
-**CRL** (score 37, señal BUY)
-  - Tendencia de corto plazo alcista: SMA20 (343.06) por encima de SMA50 (311.11).
-  - Precio por encima de la media de 200 días: contexto de fondo alcista.
-  - Momentum 10d: -5.3%.
-  - RSI 45: zona neutral.
-**MRVL** (score -67, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (194.73) por debajo de SMA50 (229.17).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -20.3%.
-  - RSI 29: sobreventa, posible rebote.
-**TPL** (score -67, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (312.92) por debajo de SMA50 (337.09).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -12.5%.
-  - RSI 29: sobreventa, posible rebote.
-**COIN** (score -68, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (150.36) por debajo de SMA50 (170.41).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -10.4%.
-  - RSI 29: sobreventa, posible rebote.
-**TER** (score -68, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (281.76) por debajo de SMA50 (342.62).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -8.8%.
+  - Momentum 10d: -2.2%.
   - RSI 36: zona neutral.
-**DELL** (score -70, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (413.06) por debajo de SMA50 (492.99).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -19.3%.
-  - RSI 33: zona neutral.
-**SNDK** (score -70, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (1123.77) por debajo de SMA50 (1441.20).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -24.1%.
-  - RSI 34: zona neutral.
-**BKR** (score -71, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (52.29) por debajo de SMA50 (55.19).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -10.5%.
-  - RSI 35: zona neutral.
-**LITE** (score -71, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (723.08) por debajo de SMA50 (867.15).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -29.5%.
-  - RSI 34: zona neutral.
-**STX** (score -72, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (598.80) por debajo de SMA50 (740.38).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -18.4%.
-  - RSI 37: zona neutral.
-**SMCI** (score -72, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (31.28) por debajo de SMA50 (36.53).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -19.0%.
-  - RSI 37: zona neutral.
-**WDC** (score -73, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (336.35) por debajo de SMA50 (391.69).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -19.6%.
-  - RSI 38: zona neutral.
-**CIEN** (score -74, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (307.68) por debajo de SMA50 (343.25).
-  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -12.6%.
-  - RSI 40: zona neutral.
-**FIX** (score -75, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (1214.89) por debajo de SMA50 (1467.62).
+**TMO** (score 43, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (696.43) por encima de SMA50 (672.15).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 1.4%.
+  - RSI 50: zona neutral.
+**MAR** (score 40, señal BUY)
+  - Tendencia de corto plazo alcista: SMA20 (410.32) por encima de SMA50 (376.58).
+  - Precio por encima de la media de 200 días: contexto de fondo alcista.
+  - Momentum 10d: 2.2%.
+  - RSI 77: sobrecompra, riesgo de corrección.
+**TER** (score -67, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (276.69) por debajo de SMA50 (340.16).
   - Precio por debajo de la media de 200 días: contexto de fondo bajista.
   - Momentum 10d: -10.0%.
-  - RSI 43: zona neutral.
-**FLEX** (score -79, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (81.01) por debajo de SMA50 (99.27).
+  - RSI 29: sobreventa, posible rebote.
+**FCX** (score -68, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (62.93) por debajo de SMA50 (68.08).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -11.7%.
+  - RSI 31: zona neutral.
+**SNDK** (score -68, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (1096.62) por debajo de SMA50 (1422.96).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -24.0%.
+  - RSI 29: sobreventa, posible rebote.
+**TPL** (score -68, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (310.36) por debajo de SMA50 (335.71).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -11.5%.
+  - RSI 31: zona neutral.
+**WDC** (score -68, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (332.96) por debajo de SMA50 (388.04).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -16.3%.
+  - RSI 30: zona neutral.
+**STX** (score -69, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (591.06) por debajo de SMA50 (733.53).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -15.1%.
+  - RSI 32: zona neutral.
+**BE** (score -71, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (203.02) por debajo de SMA50 (242.56).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -9.2%.
+  - RSI 40: zona neutral.
+**GEV** (score -71, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (840.59) por debajo de SMA50 (909.31).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -11.0%.
+  - RSI 35: zona neutral.
+**MU** (score -71, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (829.02) por debajo de SMA50 (937.87).
   - Precio por debajo de la media de 200 días: contexto de fondo bajista.
   - Momentum 10d: -13.0%.
+  - RSI 35: zona neutral.
+**GLW** (score -72, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (120.68) por debajo de SMA50 (140.19).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -13.3%.
+  - RSI 37: zona neutral.
+**FIX** (score -73, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (1195.07) por debajo de SMA50 (1456.77).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -11.4%.
+  - RSI 38: zona neutral.
+**DASH** (score -73, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (179.52) por debajo de SMA50 (187.31).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -10.9%.
   - RSI 49: zona neutral.
-**VRT** (score -80, señal SELL)
-  - Tendencia de corto plazo bajista: SMA20 (208.99) por debajo de SMA50 (231.31).
+**SKYD** (score -74, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (7.84) por debajo de SMA50 (8.90).
   - Precio por debajo de la media de 200 días: contexto de fondo bajista.
-  - Momentum 10d: -13.0%.
-  - RSI 51: zona neutral.
+  - Momentum 10d: -12.9%.
+  - RSI 39: zona neutral.
+**FLEX** (score -76, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (80.34) por debajo de SMA50 (98.56).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -11.4%.
+  - RSI 43: zona neutral.
+**VRT** (score -77, señal SELL)
+  - Tendencia de corto plazo bajista: SMA20 (208.10) por debajo de SMA50 (229.46).
+  - Precio por debajo de la media de 200 días: contexto de fondo bajista.
+  - Momentum 10d: -16.0%.
+  - RSI 45: zona neutral.
 
 ---
-_Generado automáticamente el 2026-11-13T20:07:34.919Z. Fuente de datos: Yahoo Finance (público, retrasado). No constituye asesoría financiera._
+_Generado automáticamente el 2026-11-16T20:07:21.647Z. Fuente de datos: Yahoo Finance (público, retrasado). No constituye asesoría financiera._
 ## Análisis cualitativo de cierre (agente con búsqueda web)
 
-No se pudo obtener una crónica verificable del cierre del 2026-11-13: la búsqueda web solo devolvió notas de la misma fecha de 2025 y un cierre del 2026-11-06 (S&P 500 7,376.86, +0.3%; Nasdaq 24,579.42, +1.1%), que no corresponde a hoy. Además, las research notes quedaron vacías porque Yahoo Finance fue inalcanzable desde el entorno (ENOTFOUND), por lo que no hay veredicto por ticker para contrastar. No se menciona ningún ticker del core ni del satellite al no haber noticia real verificada.
+No se pudo obtener un reporte de cierre confiable para el 2026-11-16: la búsqueda web no devolvió noticias de hoy sobre S&P 500/Nasdaq ni sobre los tickers del core o del satellite (solo resultados del 10-nov-2026 y de años anteriores, con cifras contradictorias entre fuentes). Por eso no se atribuye el movimiento del día a ninguna causa. Además, las research notes quedaron vacías porque Yahoo Finance fue inalcanzable desde este entorno (ENOTFOUND), así que no hay veredicto sintetizado contra el cual contrastar noticias.
 
-Contexto cuantitativo del propio reporte: valor total $1022.79 (+0.04% vs. ayer), sin trades en el satellite, VIX 19.15 (calma).
+### Core (largo plazo)
+Sin noticia relevante verificada hoy.
 
-Fuentes consultadas:
-- [Stock market news for Nov 4 2026 (Zacks)](https://www.zacks.com/stock/news/3022827/stock-market-news-for-nov-4-2026)
-- [How major US stock indexes fared Friday 11/6/2026](https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-1162026-nid06112026/)
+### Satellite (técnico)
+Sin noticia relevante verificada hoy. Sin trades hoy.
+
+Chequeo de alertas: sin ventas hoy, sin sellTriggers (notas vacías) y caída combinada de ~-0.99% (de $1022.79 a $1012.67), menor al umbral de 3%. No se envió email.
+
+Fuentes consultadas (no concluyentes):
+- [Zacks: stock market news for Nov 10 2026](https://www.zacks.com/stock/news/3026944/stock-market-news-for-nov-10-2026)
+- [Tapeboard: market pulse 2026-11-10](https://tapeboard.com/blog/market-pulse-2026-11-10)
 
 ⚠️ Este análisis cualitativo es generado por un agente con búsqueda web, no está validado por backtest, y sigue siendo parte de una simulación 100% educativa — no es asesoría financiera real.
