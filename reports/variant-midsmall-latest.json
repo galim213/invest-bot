@@ -1,48 +1,38 @@
 {
-  "date": "2026-11-16",
-  "generatedAt": "2026-11-16T20:07:21.898Z",
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T20:07:15.391Z",
   "name": "midsmall",
   "label": "Mid + Small cap",
   "universeLabel": "S&P MidCap 400 + SmallCap 600",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-16",
-    "totalValue": 265.644257688805,
-    "cash": 15.416415135371656,
-    "pnl": -34.355742311195,
-    "pnlPct": -11.451914103731667
+    "date": "2026-11-17",
+    "totalValue": 262.24431936451765,
+    "cash": 15.808712279085334,
+    "pnl": -37.75568063548235,
+    "pnlPct": -12.585226878494115
   },
   "trades": [
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "action": "SELL",
-      "ticker": "CVLT",
-      "shares": 0.13534646086029303,
-      "price": 146.98500061035156,
-      "usdAmount": 19.883952682343015,
-      "fee": 0.009946949816079548,
-      "realizedPnl": -2.8177086194914676,
-      "reason": "Stop-loss: precio -12.4% desde el precio de entrada (umbral -12%)."
+      "ticker": "ETSY",
+      "shares": 0.1366435223924129,
+      "price": 82.29000091552734,
+      "usdAmount": 11.238773384981153,
+      "fee": 0.00562219779138627,
+      "realizedPnl": -1.9070169369826928,
+      "reason": "Stop-loss: precio -14.5% desde el precio de entrada (umbral -12%)."
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "action": "BUY",
-      "ticker": "AZTA",
-      "shares": 0.27664585060805863,
-      "price": 46.8650016784668,
-      "usdAmount": 12.965008253087543,
-      "fee": 0.006482504126543772,
-      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (39.86) por encima de SMA50 (36.83). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 31.8%. RSI 62: zona neutral."
-    },
-    {
-      "date": "2026-11-16",
-      "action": "BUY",
-      "ticker": "PRVA",
-      "shares": 0.43071289790198297,
-      "price": 25.1200008392334,
-      "usdAmount": 10.81950835676646,
-      "fee": 0.00540975417838323,
-      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (22.99) por encima de SMA50 (21.49). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 18.0%. RSI 75: sobrecompra, riesgo de corrección."
+      "ticker": "ICUI",
+      "shares": 0.06076825159367008,
+      "price": 178.39999389648438,
+      "usdAmount": 10.84105571341077,
+      "fee": 0.005420527856705385,
+      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (170.82) por encima de SMA50 (164.36). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.2%. RSI 62: zona neutral."
     }
   ],
   "positions": [
@@ -57,12 +47,6 @@
       "shares": 0.14479838851280144,
       "avgCost": 100.41500091552734,
       "openedAt": "2026-11-03"
-    },
-    {
-      "ticker": "ETSY",
-      "shares": 0.1366435223924129,
-      "avgCost": 96.20500183105469,
-      "openedAt": "2026-11-04"
     },
     {
       "ticker": "MTN",
@@ -117,6 +101,12 @@
       "shares": 0.43071289790198297,
       "avgCost": 25.1200008392334,
       "openedAt": "2026-11-16"
+    },
+    {
+      "ticker": "ICUI",
+      "shares": 0.06076825159367008,
+      "avgCost": 178.39999389648438,
+      "openedAt": "2026-11-17"
     }
   ],
   "dailySnapshots": [
@@ -231,6 +221,13 @@
       "cash": 15.416415135371656,
       "pnl": -34.355742311195,
       "pnlPct": -11.451914103731667
+    },
+    {
+      "date": "2026-11-17",
+      "totalValue": 262.24431936451765,
+      "cash": 15.808712279085334,
+      "pnl": -37.75568063548235,
+      "pnlPct": -12.585226878494115
     }
   ]
 }
