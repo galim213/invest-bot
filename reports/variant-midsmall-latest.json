@@ -1,40 +1,18 @@
 {
-  "date": "2026-11-17",
-  "generatedAt": "2026-11-17T20:07:15.391Z",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T20:07:13.861Z",
   "name": "midsmall",
   "label": "Mid + Small cap",
   "universeLabel": "S&P MidCap 400 + SmallCap 600",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-17",
-    "totalValue": 262.24431936451765,
+    "date": "2026-11-18",
+    "totalValue": 267.58463700933794,
     "cash": 15.808712279085334,
-    "pnl": -37.75568063548235,
-    "pnlPct": -12.585226878494115
+    "pnl": -32.41536299066206,
+    "pnlPct": -10.805120996887354
   },
-  "trades": [
-    {
-      "date": "2026-11-17",
-      "action": "SELL",
-      "ticker": "ETSY",
-      "shares": 0.1366435223924129,
-      "price": 82.29000091552734,
-      "usdAmount": 11.238773384981153,
-      "fee": 0.00562219779138627,
-      "realizedPnl": -1.9070169369826928,
-      "reason": "Stop-loss: precio -14.5% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-11-17",
-      "action": "BUY",
-      "ticker": "ICUI",
-      "shares": 0.06076825159367008,
-      "price": 178.39999389648438,
-      "usdAmount": 10.84105571341077,
-      "fee": 0.005420527856705385,
-      "reason": "Señal técnica de compra (score 65): Tendencia de corto plazo alcista: SMA20 (170.82) por encima de SMA50 (164.36). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 10.2%. RSI 62: zona neutral."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "CERT",
@@ -228,6 +206,13 @@
       "cash": 15.808712279085334,
       "pnl": -37.75568063548235,
       "pnlPct": -12.585226878494115
+    },
+    {
+      "date": "2026-11-18",
+      "totalValue": 267.58463700933794,
+      "cash": 15.808712279085334,
+      "pnl": -32.41536299066206,
+      "pnlPct": -10.805120996887354
     }
   ]
 }

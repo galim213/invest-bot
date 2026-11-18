@@ -1,18 +1,50 @@
 {
-  "date": "2026-11-17",
-  "generatedAt": "2026-11-17T20:07:15.397Z",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T20:07:13.877Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-17",
-    "totalValue": 267.7372761838444,
-    "cash": 14.860792972172023,
-    "pnl": -32.262723816155585,
-    "pnlPct": -10.754241272051862
+    "date": "2026-11-18",
+    "totalValue": 257.27322000854366,
+    "cash": 20.983127282913674,
+    "pnl": -42.72677999145634,
+    "pnlPct": -14.242259997152113
   },
-  "trades": [],
+  "trades": [
+    {
+      "date": "2026-11-18",
+      "action": "SELL",
+      "ticker": "KRNT",
+      "shares": 2.6412464582501816,
+      "price": 13.15999984741211,
+      "usdAmount": 34.741423586056385,
+      "fee": 0.017379401493775083,
+      "realizedPnl": -13.197198623628843,
+      "reason": "Stop-loss: precio -27.5% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-18",
+      "action": "BUY",
+      "ticker": "GFR",
+      "shares": 2.390230365105357,
+      "price": 7.684999942779541,
+      "usdAmount": 18.368920219064588,
+      "fee": 0.009184460109532295,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (6.93) por encima de SMA50 (6.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 35.8%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-11-18",
+      "action": "BUY",
+      "ticker": "LION",
+      "shares": 0.737986066854002,
+      "price": 13.869999885559082,
+      "usdAmount": 10.235866662809205,
+      "fee": 0.005117933331404602,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (13.20) por encima de SMA50 (12.01). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 62: zona neutral."
+    }
+  ],
   "positions": [
     {
       "ticker": "BB",
@@ -40,12 +72,6 @@
       "trimmedProfit": true
     },
     {
-      "ticker": "KRNT",
-      "shares": 2.6412464582501816,
-      "avgCost": 18.149999618530273,
-      "openedAt": "2026-10-28"
-    },
-    {
       "ticker": "HLF",
       "shares": 2.768313055063142,
       "avgCost": 15.289999961853027,
@@ -62,6 +88,18 @@
       "shares": 0.12484320321856954,
       "avgCost": 100.09500122070312,
       "openedAt": "2026-11-12"
+    },
+    {
+      "ticker": "GFR",
+      "shares": 2.390230365105357,
+      "avgCost": 7.684999942779541,
+      "openedAt": "2026-11-18"
+    },
+    {
+      "ticker": "LION",
+      "shares": 0.737986066854002,
+      "avgCost": 13.869999885559082,
+      "openedAt": "2026-11-18"
     }
   ],
   "dailySnapshots": [
@@ -183,6 +221,13 @@
       "cash": 14.860792972172023,
       "pnl": -32.262723816155585,
       "pnlPct": -10.754241272051862
+    },
+    {
+      "date": "2026-11-18",
+      "totalValue": 257.27322000854366,
+      "cash": 20.983127282913674,
+      "pnl": -42.72677999145634,
+      "pnlPct": -14.242259997152113
     }
   ]
 }

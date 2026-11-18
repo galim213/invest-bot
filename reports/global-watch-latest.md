@@ -1,4 +1,4 @@
-# Seguimiento global — empresas internacionales en bolsas de EEUU (candidatos, sin operar) — 2026-11-17
+# Seguimiento global — empresas internacionales en bolsas de EEUU (candidatos, sin operar) — 2026-11-18
 
 > 🌍 **Solo seguimiento — el satellite NO compra ni vende nada de esta lista todavía.** Empresas domiciliadas fuera de EEUU que cotizan en NYSE/Nasdaq/AMEX (ADRs y similares), >= $500M de market cap. Mismo motor técnico, sin validación histórica posible (no hay dataset point-in-time gratuito) — ver GRADUATION_CRITERIA.md. Riesgo adicional a tener en cuenta: algunas ADRs (sobre todo chinas) tuvieron casos históricos de fraude contable o deslisting forzado — no es lo mismo que una empresa del S&P 500. No es asesoría financiera real.
 
@@ -8,51 +8,51 @@ _541 empresas evaluadas hoy._
 
 | Ticker | País | Sector | Score | Señal | Precio | Motivo principal |
 |---|---|---|---|---|---|---|
-| GFR | Canada | Energy | 74 | BUY | $7.70 | Tendencia de corto plazo alcista: SMA20 (6.89) por encima de SMA50 (6.53). |
-| CHKP | Israel | Technology | 70 | BUY | $148.63 | Tendencia de corto plazo alcista: SMA20 (149.22) por encima de SMA50 (140.26). |
-| LION | Canada | Consumer Discretionary | 70 | BUY | $13.74 | Tendencia de corto plazo alcista: SMA20 (13.14) por encima de SMA50 (11.96). |
-| ONC | Cayman Islands | Health Care | 69 | BUY | $411.03 | Tendencia de corto plazo alcista: SMA20 (390.15) por encima de SMA50 (371.43). |
-| TGLS | Colombia | Consumer Discretionary | 68 | BUY | $45.17 | Tendencia de corto plazo alcista: SMA20 (42.06) por encima de SMA50 (38.79). |
-| HELE | Bermuda | Consumer Discretionary | 65 | BUY | $37.00 | Tendencia de corto plazo alcista: SMA20 (33.29) por encima de SMA50 (29.93). |
-| HLF | Cayman Islands | Health Care | 65 | BUY | $15.63 | Tendencia de corto plazo alcista: SMA20 (14.50) por encima de SMA50 (13.43). |
-| TM | Japan | Industrials | 65 | BUY | $213.01 | Tendencia de corto plazo alcista: SMA20 (204.46) por encima de SMA50 (195.59). |
-| IBEX | Bermuda | Technology | 64 | BUY | $55.64 | Tendencia de corto plazo alcista: SMA20 (48.89) por encima de SMA50 (45.25). |
-| ASND | Denmark | Health Care | 62 | BUY | $269.81 | Tendencia de corto plazo alcista: SMA20 (254.86) por encima de SMA50 (242.69). |
-| DEO | United Kingdom | Consumer Staples | 61 | BUY | $100.94 | Tendencia de corto plazo alcista: SMA20 (97.35) por encima de SMA50 (90.91). |
-| DDI | South Korea | Technology | 60 | HOLD | $15.68 | Tendencia de corto plazo alcista: SMA20 (14.30) por encima de SMA50 (13.65). |
-| HTHT | China | Consumer Discretionary | 60 | HOLD | $54.26 | Tendencia de corto plazo alcista: SMA20 (49.05) por encima de SMA50 (45.68). |
-| IBN | India | Finance | 60 | HOLD | $34.86 | Tendencia de corto plazo alcista: SMA20 (31.73) por encima de SMA50 (29.68). |
-| PLGO | Bermuda | Finance | 60 | BUY | $28.25 | Tendencia de corto plazo alcista: SMA20 (27.12) por encima de SMA50 (25.46). |
-| CHA | China | Consumer Discretionary | 59 | BUY | $13.93 | Tendencia de corto plazo alcista: SMA20 (12.70) por encima de SMA50 (12.19). |
-| DCBO | Canada | Technology | 59 | BUY | $29.11 | Tendencia de corto plazo alcista: SMA20 (28.46) por encima de SMA50 (25.03). |
-| STN | Canada | Consumer Discretionary | 59 | BUY | $82.96 | Tendencia de corto plazo alcista: SMA20 (75.53) por encima de SMA50 (71.42). |
-| CCEP | United Kingdom | Consumer Staples | 58 | BUY | $118.46 | Tendencia de corto plazo alcista: SMA20 (114.81) por encima de SMA50 (108.14). |
-| LKFT | Belgium | Health Care | 58 | BUY | $34.42 | Tendencia de corto plazo alcista: SMA20 (32.82) por encima de SMA50 (30.62). |
+| GFR | Canada | Energy | 73 | BUY | $7.68 | Tendencia de corto plazo alcista: SMA20 (6.93) por encima de SMA50 (6.56). |
+| LION | Canada | Consumer Discretionary | 70 | BUY | $13.87 | Tendencia de corto plazo alcista: SMA20 (13.20) por encima de SMA50 (12.01). |
+| BHC | Canada | Health Care | 67 | BUY | $8.78 | Tendencia de corto plazo alcista: SMA20 (7.88) por encima de SMA50 (6.70). |
+| IBEX | Bermuda | Technology | 66 | BUY | $54.51 | Tendencia de corto plazo alcista: SMA20 (49.26) por encima de SMA50 (45.60). |
+| TGLS | Colombia | Consumer Discretionary | 65 | BUY | $46.65 | Tendencia de corto plazo alcista: SMA20 (42.50) por encima de SMA50 (38.93). |
+| CHKP | Israel | Technology | 62 | BUY | $153.49 | Tendencia de corto plazo alcista: SMA20 (149.71) por encima de SMA50 (140.63). |
+| DDI | South Korea | Technology | 62 | BUY | $15.50 | Tendencia de corto plazo alcista: SMA20 (14.38) por encima de SMA50 (13.71). |
+| ONC | Cayman Islands | Health Care | 62 | BUY | $403.25 | Tendencia de corto plazo alcista: SMA20 (391.10) por encima de SMA50 (372.52). |
+| IBN | India | Finance | 60 | HOLD | $34.97 | Tendencia de corto plazo alcista: SMA20 (32.00) por encima de SMA50 (29.80). |
+| ENTX | Israel | Health Care | 59 | BUY | $3.24 | Tendencia de corto plazo alcista: SMA20 (3.10) por encima de SMA50 (2.91). |
+| RDWR | Israel | Consumer Discretionary | 59 | BUY | $33.20 | Tendencia de corto plazo alcista: SMA20 (32.56) por encima de SMA50 (30.74). |
+| DCBO | Canada | Technology | 58 | BUY | $30.18 | Tendencia de corto plazo alcista: SMA20 (28.56) por encima de SMA50 (25.20). |
+| STN | Canada | Consumer Discretionary | 58 | BUY | $84.01 | Tendencia de corto plazo alcista: SMA20 (76.21) por encima de SMA50 (71.69). |
+| MGRT | Hong Kong | Technology | 57 | BUY | $127.00 | Tendencia de corto plazo alcista: SMA20 (119.78) por encima de SMA50 (114.91). |
+| TM | Japan | Industrials | 56 | BUY | $210.65 | Tendencia de corto plazo alcista: SMA20 (205.25) por encima de SMA50 (195.98). |
+| ATAT | China | Consumer Discretionary | 55 | HOLD | $38.96 | Tendencia de corto plazo alcista: SMA20 (34.94) por encima de SMA50 (33.51). |
+| ASND | Denmark | Health Care | 54 | BUY | $271.05 | Tendencia de corto plazo alcista: SMA20 (256.53) por encima de SMA50 (242.92). |
+| CHA | China | Consumer Discretionary | 54 | BUY | $13.64 | Tendencia de corto plazo alcista: SMA20 (12.72) por encima de SMA50 (12.21). |
+| PLBL | Indonesia | Consumer Discretionary | 53 | HOLD | $8.86 | Tendencia de corto plazo alcista: SMA20 (6.00) por encima de SMA50 (5.76). |
+| HTHT | China | Consumer Discretionary | 52 | BUY | $52.82 | Tendencia de corto plazo alcista: SMA20 (49.37) por encima de SMA50 (45.85). |
 
 ## Las más bajistas (score más bajo)
 
 | Ticker | País | Sector | Score | Señal | Precio | Motivo principal |
 |---|---|---|---|---|---|---|
-| STM | Switzerland | Technology | -74 | SELL | $43.66 | Tendencia de corto plazo bajista: SMA20 (45.73) por debajo de SMA50 (48.98). |
-| MTLS | Belgium | Technology | -74 | SELL | $6.25 | Tendencia de corto plazo bajista: SMA20 (7.28) por debajo de SMA50 (7.77). |
-| IQ | China | Consumer Discretionary | -74 | SELL | $0.70 | Tendencia de corto plazo bajista: SMA20 (0.87) por debajo de SMA50 (0.95). |
-| LU | China | Finance | -73 | SELL | $6.81 | Tendencia de corto plazo bajista: SMA20 (7.95) por debajo de SMA50 (9.75). |
-| BILI | China | Technology | -73 | SELL | $11.98 | Tendencia de corto plazo bajista: SMA20 (13.44) por debajo de SMA50 (14.33). |
-| URGN | Israel | Health Care | -72 | SELL | $28.75 | Tendencia de corto plazo bajista: SMA20 (30.41) por debajo de SMA50 (36.38). |
-| POET | Canada | Technology | -72 | SELL | $4.43 | Tendencia de corto plazo bajista: SMA20 (5.18) por debajo de SMA50 (6.41). |
-| SATL | Uruguay | Technology | -72 | SELL | $2.90 | Tendencia de corto plazo bajista: SMA20 (3.52) por debajo de SMA50 (4.46). |
-| PSNY | Sweden | Industrials | -72 | SELL | $2.85 | Tendencia de corto plazo bajista: SMA20 (3.99) por debajo de SMA50 (5.33). |
-| NWCL | United Kingdom | Industrials | -72 | SELL | $3.85 | Tendencia de corto plazo bajista: SMA20 (4.47) por debajo de SMA50 (6.58). |
-| CSIQ | Canada | Technology | -72 | SELL | $7.82 | Tendencia de corto plazo bajista: SMA20 (9.74) por debajo de SMA50 (10.70). |
-| QURE | Netherlands | Health Care | -71 | SELL | $20.85 | Tendencia de corto plazo bajista: SMA20 (23.15) por debajo de SMA50 (28.55). |
-| KEEL | Canada | Finance | -71 | SELL | $1.73 | Tendencia de corto plazo bajista: SMA20 (2.05) por debajo de SMA50 (2.83). |
-| AZUL | Brazil | Consumer Discretionary | -71 | SELL | $3.90 | Tendencia de corto plazo bajista: SMA20 (4.61) por debajo de SMA50 (5.96). |
-| WRD | China | Technology | -70 | SELL | $3.91 | Tendencia de corto plazo bajista: SMA20 (4.25) por debajo de SMA50 (4.81). |
-| VNET | China | Technology | -70 | SELL | $2.55 | Tendencia de corto plazo bajista: SMA20 (3.32) por debajo de SMA50 (4.75). |
-| SID | Brazil | Industrials | -70 | SELL | $0.63 | Tendencia de corto plazo bajista: SMA20 (0.82) por debajo de SMA50 (1.04). |
-| GIL | Canada | Consumer Discretionary | -70 | SELL | $33.10 | Tendencia de corto plazo bajista: SMA20 (38.11) por debajo de SMA50 (41.44). |
-| GHRS | Ireland | Health Care | -70 | SELL | $18.14 | Tendencia de corto plazo bajista: SMA20 (19.40) por debajo de SMA50 (21.92). |
-| FUTU | Hong Kong | Finance | -70 | SELL | $87.35 | Tendencia de corto plazo bajista: SMA20 (98.46) por debajo de SMA50 (105.72). |
+| SCZM | Canada | Basic Materials | -78 | SELL | $6.84 | Tendencia de corto plazo bajista: SMA20 (7.20) por debajo de SMA50 (8.17). |
+| MLCO | Hong Kong | Consumer Discretionary | -78 | SELL | $4.24 | Tendencia de corto plazo bajista: SMA20 (4.17) por debajo de SMA50 (4.34). |
+| NEWP | Canada | Basic Materials | -77 | SELL | $4.88 | Tendencia de corto plazo bajista: SMA20 (5.32) por debajo de SMA50 (5.89). |
+| WPM | Canada | Basic Materials | -76 | SELL | $119.41 | Tendencia de corto plazo bajista: SMA20 (127.44) por debajo de SMA50 (135.19). |
+| SVM | Canada | Basic Materials | -76 | SELL | $7.59 | Tendencia de corto plazo bajista: SMA20 (8.50) por debajo de SMA50 (9.87). |
+| PSNYW | Sweden | Industrials | -76 | SELL | $2.78 | Tendencia de corto plazo bajista: SMA20 (3.03) por debajo de SMA50 (3.68). |
+| IAG | Canada | Basic Materials | -76 | SELL | $15.80 | Tendencia de corto plazo bajista: SMA20 (17.09) por debajo de SMA50 (18.19). |
+| AU | South Africa | Basic Materials | -76 | SELL | $78.81 | Tendencia de corto plazo bajista: SMA20 (86.64) por debajo de SMA50 (92.32). |
+| AGI | Canada | Basic Materials | -75 | SELL | $26.65 | Tendencia de corto plazo bajista: SMA20 (29.54) por debajo de SMA50 (31.85). |
+| EQX | Canada | Basic Materials | -75 | SELL | $9.23 | Tendencia de corto plazo bajista: SMA20 (10.46) por debajo de SMA50 (11.08). |
+| VZLA | Canada | Basic Materials | -74 | SELL | $2.95 | Tendencia de corto plazo bajista: SMA20 (3.16) por debajo de SMA50 (3.47). |
+| QFIN | China | Finance | -73 | SELL | $4.82 | Tendencia de corto plazo bajista: SMA20 (5.33) por debajo de SMA50 (6.26). |
+| MTA | Canada | Basic Materials | -73 | SELL | $6.61 | Tendencia de corto plazo bajista: SMA20 (7.50) por debajo de SMA50 (8.53). |
+| HMY | South Africa | Basic Materials | -73 | SELL | $13.76 | Tendencia de corto plazo bajista: SMA20 (15.76) por debajo de SMA50 (16.92). |
+| ELE | Canada | Basic Materials | -73 | SELL | $13.09 | Tendencia de corto plazo bajista: SMA20 (15.00) por debajo de SMA50 (17.37). |
+| EGO | Canada | Basic Materials | -73 | SELL | $28.21 | Tendencia de corto plazo bajista: SMA20 (32.69) por debajo de SMA50 (36.57). |
+| CMPR | Netherlands | Consumer Discretionary | -73 | SELL | $54.76 | Tendencia de corto plazo bajista: SMA20 (63.06) por debajo de SMA50 (72.16). |
+| BILI | China | Technology | -73 | SELL | $11.48 | Tendencia de corto plazo bajista: SMA20 (13.33) por debajo de SMA50 (14.24). |
+| NWCL | United Kingdom | Industrials | -72 | SELL | $3.72 | Tendencia de corto plazo bajista: SMA20 (4.45) por debajo de SMA50 (6.44). |
+| POET | Canada | Technology | -72 | SELL | $4.31 | Tendencia de corto plazo bajista: SMA20 (5.11) por debajo de SMA50 (6.34). |
 
 ---
-_Generado automáticamente el 2026-11-17T20:07:15.374Z. Fuente del universo: screener público de Nasdaq (api.nasdaq.com), filtrado por país != EEUU y market cap >= $500M. No genera trades._
+_Generado automáticamente el 2026-11-18T20:07:13.839Z. Fuente del universo: screener público de Nasdaq (api.nasdaq.com), filtrado por país != EEUU y market cap >= $500M. No genera trades._

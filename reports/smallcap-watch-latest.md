@@ -1,4 +1,4 @@
-# Seguimiento S&P SmallCap 600 (candidatos, sin operar) — 2026-11-17
+# Seguimiento S&P SmallCap 600 (candidatos, sin operar) — 2026-11-18
 
 > 🔭 **Solo seguimiento — el satellite NO compra ni vende nada de esta lista todavía.** El motor técnico puntúa estas 600 empresas igual que el S&P 500, pero no hay dataset gratuito de membresía histórica para validar esto con `validate.js` (a diferencia del S&P 500). Hasta tener esa validación o un track record real en papel, esto es contexto — ver GRADUATION_CRITERIA.md. No es asesoría financiera real.
 
@@ -8,51 +8,51 @@ _602 empresas evaluadas hoy._
 
 | Ticker | Sector | Score | Señal | Precio | Motivo principal |
 |---|---|---|---|---|---|
-| AZTA | Health Care | 75 | BUY | $46.24 | Tendencia de corto plazo alcista: SMA20 (40.41) por encima de SMA50 (37.14). |
-| DXC | Information Technology | 73 | BUY | $14.42 | Tendencia de corto plazo alcista: SMA20 (15.19) por encima de SMA50 (13.17). |
-| XNCR | Health Care | 73 | BUY | $34.59 | Tendencia de corto plazo alcista: SMA20 (32.63) por encima de SMA50 (27.70). |
-| EPAM | Information Technology | 72 | BUY | $155.82 | Tendencia de corto plazo alcista: SMA20 (148.20) por encima de SMA50 (128.05). |
-| ENOV | Health Care | 71 | BUY | $27.43 | Tendencia de corto plazo alcista: SMA20 (24.43) por encima de SMA50 (20.86). |
-| SEZL | Financials | 71 | BUY | $153.65 | Tendencia de corto plazo alcista: SMA20 (141.53) por encima de SMA50 (127.08). |
-| ADMA | Health Care | 70 | BUY | $13.46 | Tendencia de corto plazo alcista: SMA20 (12.02) por encima de SMA50 (10.73). |
-| EXTR | Information Technology | 70 | BUY | $26.09 | Tendencia de corto plazo alcista: SMA20 (24.03) por encima de SMA50 (23.06). |
-| AEO | Consumer Discretionary | 68 | BUY | $21.18 | Tendencia de corto plazo alcista: SMA20 (20.11) por encima de SMA50 (18.10). |
-| CNXC | Industrials | 68 | BUY | $30.84 | Tendencia de corto plazo alcista: SMA20 (31.36) por encima de SMA50 (28.77). |
-| COTY | Consumer Staples | 68 | BUY | $4.09 | Tendencia de corto plazo alcista: SMA20 (3.66) por encima de SMA50 (3.12). |
-| YOU | Information Technology | 68 | BUY | $54.69 | Tendencia de corto plazo alcista: SMA20 (51.18) por encima de SMA50 (45.56). |
-| ASO | Consumer Discretionary | 67 | BUY | $70.05 | Tendencia de corto plazo alcista: SMA20 (64.53) por encima de SMA50 (57.02). |
-| ATMU | Industrials | 67 | BUY | $53.44 | Tendencia de corto plazo alcista: SMA20 (49.31) por encima de SMA50 (46.39). |
-| VYX | Information Technology | 67 | BUY | $9.97 | Tendencia de corto plazo alcista: SMA20 (9.18) por encima de SMA50 (8.04). |
-| ALGT | Industrials | 65 | BUY | $91.82 | Tendencia de corto plazo alcista: SMA20 (81.89) por encima de SMA50 (78.15). |
-| ENR | Consumer Staples | 65 | BUY | $26.89 | Tendencia de corto plazo alcista: SMA20 (23.90) por encima de SMA50 (22.44). |
-| ICUI | Health Care | 65 | BUY | $178.40 | Tendencia de corto plazo alcista: SMA20 (170.82) por encima de SMA50 (164.36). |
-| IPAR | Consumer Staples | 65 | BUY | $132.65 | Tendencia de corto plazo alcista: SMA20 (124.43) por encima de SMA50 (117.86). |
-| LFST | Health Care | 65 | BUY | $14.28 | Tendencia de corto plazo alcista: SMA20 (13.65) por encima de SMA50 (12.86). |
+| AMRX | Health Care | 75 | BUY | $21.80 | Tendencia de corto plazo alcista: SMA20 (20.96) por encima de SMA50 (19.96). |
+| AZTA | Health Care | 74 | BUY | $48.62 | Tendencia de corto plazo alcista: SMA20 (40.98) por encima de SMA50 (37.50). |
+| ENOV | Health Care | 72 | BUY | $27.18 | Tendencia de corto plazo alcista: SMA20 (24.73) por encima de SMA50 (21.02). |
+| EPAM | Information Technology | 72 | BUY | $155.13 | Tendencia de corto plazo alcista: SMA20 (149.17) por encima de SMA50 (128.83). |
+| SEZL | Financials | 71 | BUY | $157.42 | Tendencia de corto plazo alcista: SMA20 (142.62) por encima de SMA50 (127.90). |
+| ADMA | Health Care | 70 | BUY | $14.03 | Tendencia de corto plazo alcista: SMA20 (12.18) por encima de SMA50 (10.83). |
+| EXTR | Information Technology | 69 | BUY | $26.78 | Tendencia de corto plazo alcista: SMA20 (24.25) por encima de SMA50 (23.17). |
+| ATMU | Industrials | 68 | BUY | $53.81 | Tendencia de corto plazo alcista: SMA20 (49.75) por encima de SMA50 (46.54). |
+| COTY | Consumer Staples | 67 | BUY | $4.21 | Tendencia de corto plazo alcista: SMA20 (3.72) por encima de SMA50 (3.15). |
+| PRVA | Health Care | 67 | BUY | $24.90 | Tendencia de corto plazo alcista: SMA20 (23.22) por encima de SMA50 (21.67). |
+| ALGT | Industrials | 66 | BUY | $96.03 | Tendencia de corto plazo alcista: SMA20 (83.15) por encima de SMA50 (78.52). |
+| ENR | Consumer Staples | 64 | BUY | $28.31 | Tendencia de corto plazo alcista: SMA20 (24.20) por encima de SMA50 (22.61). |
+| PRKS | Consumer Discretionary | 64 | BUY | $40.97 | Tendencia de corto plazo alcista: SMA20 (36.16) por encima de SMA50 (34.57). |
+| VYX | Information Technology | 64 | BUY | $10.27 | Tendencia de corto plazo alcista: SMA20 (9.28) por encima de SMA50 (8.07). |
+| CBRL | Consumer Discretionary | 63 | BUY | $73.75 | Tendencia de corto plazo alcista: SMA20 (68.39) por encima de SMA50 (59.99). |
+| PLMR | Financials | 63 | BUY | $157.90 | Tendencia de corto plazo alcista: SMA20 (149.49) por encima de SMA50 (139.07). |
+| DLX | Industrials | 62 | BUY | $26.83 | Tendencia de corto plazo alcista: SMA20 (24.88) por encima de SMA50 (23.93). |
+| VCEL | Health Care | 62 | HOLD | $58.35 | Tendencia de corto plazo alcista: SMA20 (49.73) por encima de SMA50 (43.89). |
+| USPH | Health Care | 62 | BUY | $95.77 | Tendencia de corto plazo alcista: SMA20 (92.46) por encima de SMA50 (87.01). |
+| ACHC | Health Care | 61 | HOLD | $37.55 | Tendencia de corto plazo alcista: SMA20 (34.13) por encima de SMA50 (31.03). |
 
 ## Las más bajistas (score más bajo)
 
 | Ticker | Sector | Score | Señal | Precio | Motivo principal |
 |---|---|---|---|---|---|
-| FMC | Materials | -83 | SELL | $4.93 | Tendencia de corto plazo bajista: SMA20 (5.38) por debajo de SMA50 (7.61). |
-| ENPH | Information Technology | -77 | SELL | $23.50 | Tendencia de corto plazo bajista: SMA20 (28.26) por debajo de SMA50 (31.36). |
-| PRIM | Industrials | -76 | SELL | $67.26 | Tendencia de corto plazo bajista: SMA20 (69.89) por debajo de SMA50 (73.97). |
-| UNIT | Communication | -75 | SELL | $4.19 | Tendencia de corto plazo bajista: SMA20 (4.87) por debajo de SMA50 (6.86). |
-| SXI | Industrials | -75 | SELL | $228.65 | Tendencia de corto plazo bajista: SMA20 (244.06) por debajo de SMA50 (261.41). |
-| SEI | Energy | -75 | SELL | $61.05 | Tendencia de corto plazo bajista: SMA20 (63.17) por debajo de SMA50 (67.01). |
-| MARA | Information Technology | -75 | SELL | $6.39 | Tendencia de corto plazo bajista: SMA20 (6.94) por debajo de SMA50 (9.32). |
-| DXPE | Industrials | -74 | SELL | $149.25 | Tendencia de corto plazo bajista: SMA20 (159.99) por debajo de SMA50 (174.55). |
-| ACAD | Health Care | -74 | SELL | $18.16 | Tendencia de corto plazo bajista: SMA20 (19.68) por debajo de SMA50 (21.41). |
-| RCUS | Health Care | -73 | SELL | $16.38 | Tendencia de corto plazo bajista: SMA20 (18.25) por debajo de SMA50 (22.11). |
-| POWL | Industrials | -73 | SELL | $147.52 | Tendencia de corto plazo bajista: SMA20 (150.54) por debajo de SMA50 (170.34). |
-| ALG | Industrials | -73 | SELL | $132.84 | Tendencia de corto plazo bajista: SMA20 (142.86) por debajo de SMA50 (153.04). |
-| POWI | Information Technology | -72 | SELL | $42.52 | Tendencia de corto plazo bajista: SMA20 (45.44) por debajo de SMA50 (47.98). |
-| ESE | Industrials | -72 | SELL | $228.10 | Tendencia de corto plazo bajista: SMA20 (236.97) por debajo de SMA50 (252.25). |
-| ECG | Industrials | -72 | SELL | $84.51 | Tendencia de corto plazo bajista: SMA20 (92.90) por debajo de SMA50 (107.28). |
-| AGX | Industrials | -72 | SELL | $290.26 | Tendencia de corto plazo bajista: SMA20 (319.07) por debajo de SMA50 (356.14). |
-| PENG | Information Technology | -71 | SELL | $43.15 | Tendencia de corto plazo bajista: SMA20 (50.08) por debajo de SMA50 (55.19). |
-| PDFS | Information Technology | -71 | SELL | $34.83 | Tendencia de corto plazo bajista: SMA20 (40.11) por debajo de SMA50 (44.70). |
-| NAVI | Financials | -71 | SELL | $6.07 | Tendencia de corto plazo bajista: SMA20 (7.93) por debajo de SMA50 (8.75). |
-| UCTT | Information Technology | -70 | SELL | $42.05 | Tendencia de corto plazo bajista: SMA20 (46.96) por debajo de SMA50 (60.31). |
+| LKQ | Consumer Discretionary | -80 | SELL | $19.14 | Tendencia de corto plazo bajista: SMA20 (19.29) por debajo de SMA50 (21.36). |
+| FMC | Materials | -80 | SELL | $4.72 | Tendencia de corto plazo bajista: SMA20 (5.37) por debajo de SMA50 (7.46). |
+| IART | Health Care | -74 | SELL | $13.82 | Tendencia de corto plazo bajista: SMA20 (13.48) por debajo de SMA50 (14.17). |
+| ENPH | Information Technology | -74 | SELL | $22.27 | Tendencia de corto plazo bajista: SMA20 (27.75) por debajo de SMA50 (31.06). |
+| ALHC | Health Care | -72 | SELL | $6.83 | Tendencia de corto plazo bajista: SMA20 (7.64) por debajo de SMA50 (8.30). |
+| WERN | Industrials | -71 | SELL | $27.05 | Tendencia de corto plazo bajista: SMA20 (28.07) por debajo de SMA50 (31.55). |
+| PENG | Information Technology | -71 | SELL | $43.13 | Tendencia de corto plazo bajista: SMA20 (49.35) por debajo de SMA50 (55.04). |
+| PDFS | Information Technology | -71 | SELL | $35.42 | Tendencia de corto plazo bajista: SMA20 (39.70) por debajo de SMA50 (44.47). |
+| LGIH | Consumer Discretionary | -71 | SELL | $40.76 | Tendencia de corto plazo bajista: SMA20 (43.52) por debajo de SMA50 (45.50). |
+| CCS | Consumer Discretionary | -71 | SELL | $50.16 | Tendencia de corto plazo bajista: SMA20 (54.47) por debajo de SMA50 (57.03). |
+| ACAD | Health Care | -71 | SELL | $17.97 | Tendencia de corto plazo bajista: SMA20 (19.58) por debajo de SMA50 (21.22). |
+| UNIT | Communication | -70 | SELL | $3.91 | Tendencia de corto plazo bajista: SMA20 (4.81) por debajo de SMA50 (6.74). |
+| STC | Financials | -70 | SELL | $43.52 | Tendencia de corto plazo bajista: SMA20 (44.94) por debajo de SMA50 (51.98). |
+| RCUS | Health Care | -70 | SELL | $15.92 | Tendencia de corto plazo bajista: SMA20 (18.09) por debajo de SMA50 (21.86). |
+| OI | Materials | -70 | SELL | $4.59 | Tendencia de corto plazo bajista: SMA20 (5.38) por debajo de SMA50 (5.74). |
+| EZPW | Financials | -70 | SELL | $26.69 | Tendencia de corto plazo bajista: SMA20 (28.47) por debajo de SMA50 (30.24). |
+| REX | Energy | -69 | SELL | $35.65 | Tendencia de corto plazo bajista: SMA20 (38.93) por debajo de SMA50 (41.16). |
+| MXL | Information Technology | -69 | SELL | $49.36 | Tendencia de corto plazo bajista: SMA20 (59.85) por debajo de SMA50 (75.01). |
+| DMC | Consumer Staples | -69 | SELL | $25.85 | Tendencia de corto plazo bajista: SMA20 (27.61) por debajo de SMA50 (29.04). |
+| DAVE | Financials | -69 | SELL | $266.74 | Tendencia de corto plazo bajista: SMA20 (303.75) por debajo de SMA50 (332.44). |
 
 ---
-_Generado automáticamente el 2026-11-17T20:07:15.366Z. Mismo motor que lib/strategy.js, sin tilt fundamental (apagado en producción). No genera trades._
+_Generado automáticamente el 2026-11-18T20:07:13.827Z. Mismo motor que lib/strategy.js, sin tilt fundamental (apagado en producción). No genera trades._

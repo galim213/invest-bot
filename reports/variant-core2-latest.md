@@ -1,10 +1,10 @@
-# Cartera paralela — Core v2 (screen cuantitativo) — 2026-11-17
+# Cartera paralela — Core v2 (screen cuantitativo) — 2026-11-18
 
 > 🧪 **Experimento en vivo, no validado por backtest** (no hay dataset point-in-time gratuito para fundamentals-cache.json (503 empresas, foto del 2026-10-20), así que no se puede correr validate.js con el mismo rigor que el S&P 500). Compra única en partes iguales y buy & hold (igual que el core real), pero elegido con un criterio cuantitativo objetivo (paga dividendo real >= 2%, es rentable, ranking por quality score) en vez de curación cualitativa a mano — ver lib/coreScreen.js. Capital ficticio independiente — simulación 100% educativa, no es asesoría financiera real.
 
 - Capital inicial: $700.00
-- Valor hoy: **$669.06**
-- P&L: $-30.94 (-4.42%)
+- Valor hoy: **$663.07**
+- P&L: $-36.93 (-5.28%)
 
 ## Movimientos de hoy
 
@@ -25,4 +25,4 @@ _Sin movimientos hoy._
 | APA | 1.3550 | $51.66 |
 | DVN | 1.3489 | $51.63 |
 
-_Generado automáticamente el 2026-11-17T20:07:15.398Z. Simulación 100% educativa, no es asesoría financiera real._
+_Generado automáticamente el 2026-11-18T20:07:13.881Z. Simulación 100% educativa, no es asesoría financiera real._
