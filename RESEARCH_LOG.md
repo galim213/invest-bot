@@ -315,3 +315,10 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Decisión:** sin cambios de código; sin experimentos nuevos que justifiquen `validate.js`. Sin impacto en dashboard ni reportes.
 
 **Pendiente (requiere decisión humana):** habilitar `fc.yahoo.com`, `query2.finance.yahoo.com` y `data.sec.gov` en la política de red del entorno de las rutinas.
+
+### 2026-11-18 (addendum) — red desbloqueada
+
+- Se agregaron a la allowlist del entorno `fc.yahoo.com`, `query2.finance.yahoo.com`, `data.sec.gov` y `www.sec.gov`. `node run-daily.js` corre completo (Yahoo y SEC funcionan; 193/193 tests).
+- Cambio de código (privacidad, sin impacto en trading): el User-Agent de SEC (`lib/secEdgar.js`, `lib/thirteenF.js`) tenía un email personal escrito a mano. Ahora lee `SEC_CONTACT` del entorno, con un nombre genérico por defecto. SEC pide un contacto real: si devuelve 403, definir `SEC_CONTACT` en el entorno.
+- `stooq.com` no es alcanzable desde el entorno (no es alternativa por ahora).
+- Los datos generados por la corrida de prueba se descartaron; la rutina oficial de apertura/cierre es la dueña de `data/` y `reports/`.
