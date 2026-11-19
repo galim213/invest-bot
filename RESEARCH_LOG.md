@@ -322,3 +322,11 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 - Cambio de código (privacidad, sin impacto en trading): el User-Agent de SEC (`lib/secEdgar.js`, `lib/thirteenF.js`) tenía un email personal escrito a mano. Ahora lee `SEC_CONTACT` del entorno, con un nombre genérico por defecto. SEC pide un contacto real: si devuelve 403, definir `SEC_CONTACT` en el entorno.
 - `stooq.com` no es alcanzable desde el entorno (no es alternativa por ahora).
 - Los datos generados por la corrida de prueba se descartaron; la rutina oficial de apertura/cierre es la dueña de `data/` y `reports/`.
+
+## 2026-11-19
+
+**Estado revisado:** `data/research-notes-history.json` ahora existe pero solo tiene 15 entradas (15 tickers), todas del 2026-11-18 → `node track-record.js` confirma que ninguna tiene 30+ días. Primera lectura con sentido estadístico: no antes de ~2026-12-18 y con muestra mayor a unas pocas decenas.
+
+**Conectividad:** Yahoo responde parcialmente (`query2` 429 en la prueba, `fc.yahoo.com` 404 a un path inexistente, o sea alcanzable); red desbloqueada desde ayer. `npm test`: 193/193 en verde. Todos los archivos de `lib/` ya tienen test.
+
+**Decisión:** sin mejora genuina hoy que justifique tocar código (no se investigó con WebSearch una idea nueva; no se inventó nada). Sin experimentos de trading → no se corrió `validate.js`. Sin impacto en dashboard ni reportes.
