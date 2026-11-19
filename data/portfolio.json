@@ -7,61 +7,61 @@
         "shares": 0.26963003922387324,
         "avgCost": 259.614990234375,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "PG": {
         "shares": 0.4424778846418163,
         "avgCost": 158.1999969482422,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "KO": {
         "shares": 0.7549204761597976,
         "avgCost": 92.7249984741211,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "XOM": {
         "shares": 0.39479993734864277,
         "avgCost": 177.30499267578125,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "CVX": {
         "shares": 0.31141560806186497,
         "avgCost": 224.77999877929688,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "JPM": {
         "shares": 0.20850087185935426,
         "avgCost": 335.7300109863281,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "MSFT": {
         "shares": 0.13139864953424787,
         "avgCost": 532.72998046875,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "V": {
         "shares": 0.1720070804742163,
         "avgCost": 406.9599914550781,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "LMT": {
         "shares": 0.1274163591281987,
         "avgCost": 549.3800048828125,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       },
       "TXN": {
         "shares": 0.2490619575637314,
         "avgCost": 279.6499938964844,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-18"
+        "lastDividendCheck": "2026-11-19"
       }
     },
     "history": [
@@ -320,19 +320,21 @@
         "cash": 0,
         "pnl": 3.9320831242964687,
         "pnlPct": 0.5617261606137813
+      },
+      {
+        "date": "2026-11-19",
+        "totalValue": 691.057316052103,
+        "cash": 0,
+        "pnl": -8.942683947896967,
+        "pnlPct": -1.2775262782709953
       }
     ],
     "createdAt": "2026-10-20T18:09:30.329Z"
   },
   "satellite": {
     "startingCapital": 300,
-    "cash": 14.750504314043825,
+    "cash": 23.61238372102124,
     "positions": {
-      "VEEV": {
-        "shares": 0.22627336536059467,
-        "avgCost": 315.4324951171875,
-        "openedAt": "2026-10-20"
-      },
       "ISRG": {
         "shares": 0.22130792920459166,
         "avgCost": 438.4800109863281,
@@ -352,6 +354,11 @@
         "shares": 0.026634058099047005,
         "avgCost": 396.79998779296875,
         "openedAt": "2026-10-22"
+      },
+      "J": {
+        "shares": 0.32678193693348356,
+        "avgCost": 154.67999267578125,
+        "openedAt": "2026-11-19"
       }
     },
     "history": [
@@ -425,6 +432,27 @@
         "usdAmount": 10.568393928579072,
         "fee": 0.005284196964289536,
         "reason": "Señal técnica de compra (score 57): Tendencia de corto plazo alcista: SMA20 (370.87) por encima de SMA50 (355.54). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.9%. RSI 78: sobrecompra, riesgo de corrección."
+      },
+      {
+        "date": "2026-11-19",
+        "action": "SELL",
+        "ticker": "VEEV",
+        "shares": 0.22627336536059467,
+        "price": 262.7950134277344,
+        "usdAmount": 59.43378033223199,
+        "fee": 0.029731756044138063,
+        "realizedPnl": -11.940191882023376,
+        "reason": "Stop-loss: precio -16.7% desde el precio de entrada (umbral -12%)."
+      },
+      {
+        "date": "2026-11-19",
+        "action": "BUY",
+        "ticker": "J",
+        "shares": 0.32678193693348356,
+        "price": 154.67999267578125,
+        "usdAmount": 50.54662761144885,
+        "fee": 0.025273313805724423,
+        "reason": "Señal técnica de compra (score 64): Tendencia de corto plazo alcista: SMA20 (154.67) por encima de SMA50 (146.21). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 4.8%. RSI 50: zona neutral."
       }
     ],
     "dailySnapshots": [
@@ -581,6 +609,13 @@
         "cash": 14.750504314043825,
         "pnl": -17.047428633115317,
         "pnlPct": -5.682476211038439
+      },
+      {
+        "date": "2026-11-19",
+        "totalValue": 274.01552000992274,
+        "cash": 23.61238372102124,
+        "pnl": -25.98447999007726,
+        "pnlPct": -8.661493330025753
       }
     ],
     "createdAt": "2026-10-20T18:09:30.329Z"

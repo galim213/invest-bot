@@ -1,50 +1,18 @@
 {
-  "date": "2026-11-18",
-  "generatedAt": "2026-11-18T20:07:13.877Z",
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T20:06:47.384Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-18",
-    "totalValue": 257.27322000854366,
+    "date": "2026-11-19",
+    "totalValue": 251.75735863320773,
     "cash": 20.983127282913674,
-    "pnl": -42.72677999145634,
-    "pnlPct": -14.242259997152113
+    "pnl": -48.24264136679227,
+    "pnlPct": -16.080880455597423
   },
-  "trades": [
-    {
-      "date": "2026-11-18",
-      "action": "SELL",
-      "ticker": "KRNT",
-      "shares": 2.6412464582501816,
-      "price": 13.15999984741211,
-      "usdAmount": 34.741423586056385,
-      "fee": 0.017379401493775083,
-      "realizedPnl": -13.197198623628843,
-      "reason": "Stop-loss: precio -27.5% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-11-18",
-      "action": "BUY",
-      "ticker": "GFR",
-      "shares": 2.390230365105357,
-      "price": 7.684999942779541,
-      "usdAmount": 18.368920219064588,
-      "fee": 0.009184460109532295,
-      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (6.93) por encima de SMA50 (6.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 35.8%. RSI 62: zona neutral."
-    },
-    {
-      "date": "2026-11-18",
-      "action": "BUY",
-      "ticker": "LION",
-      "shares": 0.737986066854002,
-      "price": 13.869999885559082,
-      "usdAmount": 10.235866662809205,
-      "fee": 0.005117933331404602,
-      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (13.20) por encima de SMA50 (12.01). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 62: zona neutral."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "BB",
@@ -228,6 +196,13 @@
       "cash": 20.983127282913674,
       "pnl": -42.72677999145634,
       "pnlPct": -14.242259997152113
+    },
+    {
+      "date": "2026-11-19",
+      "totalValue": 251.75735863320773,
+      "cash": 20.983127282913674,
+      "pnl": -48.24264136679227,
+      "pnlPct": -16.080880455597423
     }
   ]
 }

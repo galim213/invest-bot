@@ -1,0 +1,732 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T20:06:46.188Z",
+  "sectorRotation": {
+    "rows": [
+      {
+        "ticker": "XLP",
+        "sector": "Consumo básico",
+        "lastClose": 89.77999877929688,
+        "momentum1m": 0.03065087992466422,
+        "momentum3m": 0.0440749041712001
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Servicios públicos",
+        "lastClose": 43.025001525878906,
+        "momentum1m": 0.024404798235212053,
+        "momentum3m": 0.005962147893055405
+      },
+      {
+        "ticker": "XLRE",
+        "sector": "Bienes raíces",
+        "lastClose": 42.935001373291016,
+        "momentum1m": 0.020803613205672488,
+        "momentum3m": -0.047582084530573936
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumo discrecional",
+        "lastClose": 115.91500091552734,
+        "momentum1m": 0.003332486283203022,
+        "momentum3m": -0.01783592431293913
+      },
+      {
+        "ticker": "ITA",
+        "sector": "Aeroespacial y Defensa",
+        "lastClose": 68.19000244140625,
+        "momentum1m": -0.005928305562543946,
+        "momentum3m": -0.1380719478187226
+      },
+      {
+        "ticker": "XLF",
+        "sector": "Financiero",
+        "lastClose": 55.58000183105469,
+        "momentum1m": -0.00820840608418337,
+        "momentum3m": -0.03305493608756071
+      },
+      {
+        "ticker": "XLV",
+        "sector": "Salud",
+        "lastClose": 177.02999877929688,
+        "momentum1m": -0.010673989248071034,
+        "momentum3m": 0.013801418677695078
+      },
+      {
+        "ticker": "XLB",
+        "sector": "Materiales",
+        "lastClose": 49.435001373291016,
+        "momentum1m": -0.03673028707604047,
+        "momentum3m": -0.07667163750544168
+      },
+      {
+        "ticker": "XLI",
+        "sector": "Industrial",
+        "lastClose": 161.42880249023438,
+        "momentum1m": -0.04088405423429363,
+        "momentum3m": -0.10441718452019765
+      },
+      {
+        "ticker": "XLC",
+        "sector": "Comunicaciones",
+        "lastClose": 103.0999984741211,
+        "momentum1m": -0.05386806167592108,
+        "momentum3m": -0.07450631003653685
+      },
+      {
+        "ticker": "XLE",
+        "sector": "Energía",
+        "lastClose": 60.880001068115234,
+        "momentum1m": -0.10680754405594531,
+        "momentum3m": -0.04336892438723278
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Tecnología",
+        "lastClose": 160.6699981689453,
+        "momentum1m": -0.1478200705931464,
+        "momentum3m": -0.12350662643160923
+      },
+      {
+        "ticker": "SMH",
+        "sector": "Semiconductores",
+        "lastClose": 448.3900146484375,
+        "momentum1m": -0.19455720349133804,
+        "momentum3m": -0.19990359315877365
+      }
+    ],
+    "errors": []
+  },
+  "qualityCompanies": {
+    "companies": [
+      {
+        "ticker": "XOM",
+        "name": "ExxonMobil",
+        "sector": "Energía",
+        "why": "Integración vertical completa (exploración, refinación, química) que le da control de costos en todo el ciclo del petróleo. Balance históricamente más conservador que la mayoría de sus pares, lo que le permitió seguir pagando dividendo incluso en los peores años del sector (2015-2016, 2020).",
+        "fundamentals": {
+          "marketCap": 647127891968,
+          "trailingPE": 16.320988,
+          "forwardPE": 12.706203,
+          "dividendYield": 0.026700001,
+          "profitMargin": 0.10463,
+          "returnOnEquity": 0.15528,
+          "revenueGrowth": 0.326,
+          "debtToEquity": 12.568,
+          "currentPrice": 158.64,
+          "analystTargetMean": 184.18182,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "CVX",
+        "name": "Chevron",
+        "sector": "Energía",
+        "why": "Segunda integrada de EEUU, con activos de bajo costo de extracción en Permian Basin. Historial de más de 35 años consecutivos aumentando el dividendo — ese tipo de constancia solo se sostiene con disciplina de capital real, no promesas.",
+        "fundamentals": {
+          "marketCap": 401899716608,
+          "trailingPE": 15.122614,
+          "forwardPE": 12.467564,
+          "dividendYield": 0.0346,
+          "profitMargin": 0.11923,
+          "returnOnEquity": 0.13853,
+          "revenueGrowth": 0.348,
+          "debtToEquity": 16.769,
+          "currentPrice": 205.97,
+          "analystTargetMean": 242.54167,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "COP",
+        "name": "ConocoPhillips",
+        "sector": "Energía",
+        "why": "Pure-play de exploración y producción (sin refinación), lo que la hace más sensible al precio del crudo pero con menor costo de producción por barril que la mayoría — eficiencia operativa como ventaja central.",
+        "fundamentals": {
+          "marketCap": 158964957184,
+          "trailingPE": 14.167544,
+          "forwardPE": 11.698018,
+          "dividendYield": 0.0277,
+          "profitMargin": 0.16758,
+          "returnOnEquity": 0.17656,
+          "revenueGrowth": 0.293,
+          "debtToEquity": 35.25,
+          "currentPrice": 134.45,
+          "analystTargetMean": 153,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "SLB",
+        "name": "Schlumberger (SLB)",
+        "sector": "Energía",
+        "why": "Líder mundial en servicios petroleros (no produce petróleo, vende la tecnología para extraerlo) — modelo de negocio distinto al de las integradas, se beneficia de la inversión en exploración de TODA la industria, no de un solo pozo.",
+        "fundamentals": {
+          "marketCap": 70827278336,
+          "trailingPE": 23.29369,
+          "forwardPE": 15.588859,
+          "dividendYield": 0.024400001,
+          "profitMargin": 0.08396,
+          "returnOnEquity": 0.1166,
+          "revenueGrowth": 0.058,
+          "debtToEquity": 47.08,
+          "currentPrice": 47.985,
+          "analystTargetMean": 62.2069,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "NEE",
+        "name": "NextEra Energy",
+        "sector": "Energía (renovable/utility)",
+        "why": "La mayor generadora de energía eólica y solar de EEUU, combinada con un negocio regulado de utility (ingresos estables). Puente entre energía tradicional y transición energética, con el perfil de riesgo más bajo de utility.",
+        "fundamentals": {
+          "marketCap": 175292841984,
+          "trailingPE": 15.05946,
+          "forwardPE": 19.102821,
+          "dividendYield": 0.0294,
+          "profitMargin": 0.40370998,
+          "returnOnEquity": 0.14064,
+          "revenueGrowth": 0.016,
+          "debtToEquity": 153.254,
+          "currentPrice": 83.58,
+          "analystTargetMean": 94.10526,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "sector": "Semiconductores",
+        "why": "Dominancia casi total en GPUs para entrenamiento de IA, reforzada por CUDA (su software propietario) que hace costoso para los clientes migrar a la competencia — el moat no es solo el chip, es el ecosistema de software alrededor.",
+        "fundamentals": {
+          "marketCap": 3548281044992,
+          "trailingPE": 15.783566,
+          "forwardPE": 8.849295,
+          "dividendYield": 0.0066000004,
+          "profitMargin": 0.62535,
+          "returnOnEquity": 1.17364,
+          "revenueGrowth": 1.032,
+          "debtToEquity": 14.306,
+          "currentPrice": 146.945,
+          "analystTargetMean": 246.67091,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom",
+        "sector": "Semiconductores",
+        "why": "Diversificación real entre semiconductores (redes, chips a medida para los grandes de la nube) y software empresarial (tras comprar VMware) — menos dependiente de un solo ciclo que un fabricante puro de chips.",
+        "fundamentals": {
+          "marketCap": 1650458624000,
+          "trailingPE": 44.15645,
+          "forwardPE": 17.80902,
+          "dividendYield": 0.0073,
+          "profitMargin": 0.42944,
+          "returnOnEquity": 0.44245,
+          "revenueGrowth": 0.855,
+          "debtToEquity": 59.604,
+          "currentPrice": 345.745,
+          "analystTargetMean": 526.4721,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "AMD",
+        "name": "Advanced Micro Devices",
+        "sector": "Semiconductores",
+        "why": "Pasó de ser el competidor débil de Intel a liderar en varios segmentos (servidores con EPYC, GPUs para IA con la línea MI) — ejemplo de que el liderazgo en este sector puede cambiar de manos más rápido que en otros.",
+        "fundamentals": {
+          "marketCap": 794787315712,
+          "trailingPE": 102.61005,
+          "forwardPE": 27.225773,
+          "dividendYield": 0,
+          "profitMargin": 0.16769,
+          "returnOnEquity": 0.1196,
+          "revenueGrowth": 0.447,
+          "debtToEquity": 13.469,
+          "currentPrice": 480.215,
+          "analystTargetMean": 657.74286,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "TSM",
+        "name": "Taiwan Semiconductor (TSMC)",
+        "sector": "Semiconductores",
+        "why": "Fabrica los chips más avanzados del mundo para Nvidia, Apple, AMD y casi todos los demás — es el 'foundry' que nadie más puede replicar al mismo nodo tecnológico. Riesgo geopolítico real (Taiwán) que hay que tener en cuenta, no es solo una historia de moat.",
+        "fundamentals": {
+          "marketCap": 1833703440384,
+          "trailingPE": 22.913479,
+          "forwardPE": 15.118691,
+          "dividendYield": 0.0104,
+          "profitMargin": 0.51116,
+          "returnOnEquity": 0.4186,
+          "revenueGrowth": 0.509,
+          "debtToEquity": 15.188,
+          "currentPrice": 353.555,
+          "analystTargetMean": 586.693,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "ASML",
+        "name": "ASML Holding",
+        "sector": "Semiconductores",
+        "why": "Monopolio efectivo en litografía ultravioleta extrema (EUV) — la máquina que hace posible fabricar los chips más avanzados. Sin ASML, no hay chips de última generación; es uno de los moats más puros que existen en toda la industria.",
+        "fundamentals": {
+          "marketCap": 527694692352,
+          "trailingPE": 33.689716,
+          "forwardPE": 21.595669,
+          "dividendYield": 0.0067000003,
+          "profitMargin": 0.34135,
+          "returnOnEquity": 0.65636003,
+          "revenueGrowth": 0.552,
+          "debtToEquity": 8.897,
+          "currentPrice": 1369.15,
+          "analystTargetMean": 2108.6704,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "INTC",
+        "name": "Intel",
+        "sector": "Semiconductores",
+        "why": "Ejemplo de advertencia, no solo de calidad: perdió años de liderazgo tecnológico frente a TSMC/Samsung en manufactura. Útil para aprender que ni el nombre más histórico del sector está garantizado — el moat se puede erosionar.",
+        "fundamentals": {
+          "marketCap": 295431602176,
+          "trailingPE": null,
+          "forwardPE": 31.044815,
+          "dividendYield": 0,
+          "profitMargin": -0.20089,
+          "returnOnEquity": -0.0962,
+          "revenueGrowth": 0.209,
+          "debtToEquity": 38.108,
+          "currentPrice": 55.5845,
+          "analystTargetMean": 90.65116,
+          "analystRecommendation": "hold"
+        }
+      },
+      {
+        "ticker": "TXN",
+        "name": "Texas Instruments",
+        "sector": "Semiconductores (analógicos)",
+        "why": "Líder en chips analógicos (no los de IA de moda, los que están en cada electrodoméstico, auto, sensor). Negocio menos glamoroso pero con márgenes altísimos y ciclos de producto mucho más largos que los chips digitales.",
+        "fundamentals": {
+          "marketCap": 261785960448,
+          "trailingPE": 37.158222,
+          "forwardPE": 24.628319,
+          "dividendYield": 0.0208,
+          "profitMargin": 0.34252998,
+          "returnOnEquity": 0.39723998,
+          "revenueGrowth": 0.277,
+          "debtToEquity": 70.654,
+          "currentPrice": 286.4899,
+          "analystTargetMean": 338.7931,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "LMT",
+        "name": "Lockheed Martin",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Fabricante del F-35, el programa de defensa más caro de la historia — contratos gubernamentales plurianuales que dan visibilidad de ingresos a 10+ años, algo rarísimo fuera de este sector. Barrera de entrada altísima: nadie nuevo puede competir por estos contratos.",
+        "fundamentals": {
+          "marketCap": 131872464896,
+          "trailingPE": 20.272194,
+          "forwardPE": 17.14834,
+          "dividendYield": 0.0249,
+          "profitMargin": 0.082320005,
+          "returnOnEquity": 0.8019,
+          "revenueGrowth": 0.113,
+          "debtToEquity": 203.697,
+          "currentPrice": 570.865,
+          "analystTargetMean": 660.86365,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "RTX",
+        "name": "RTX Corporation (ex-Raytheon)",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Combina defensa (misiles, sistemas de radar) con motores de avión comerciales (Pratt & Whitney) — expuesto tanto al gasto militar como a la recuperación de la aviación comercial, dos ciclos distintos en una sola empresa.",
+        "fundamentals": {
+          "marketCap": 260711907328,
+          "trailingPE": 31.414633,
+          "forwardPE": 23.876524,
+          "dividendYield": 0.0148,
+          "profitMargin": 0.08754,
+          "returnOnEquity": 0.1285,
+          "revenueGrowth": 0.111,
+          "debtToEquity": 54.758,
+          "currentPrice": 193.2,
+          "analystTargetMean": 228.13043,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "NOC",
+        "name": "Northrop Grumman",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Especializada en sistemas espaciales, drones y el bombardero B-21 — más expuesta a programas clasificados/estratégicos que a hardware convencional, lo que le da contratos de muy largo plazo con el gobierno de EEUU.",
+        "fundamentals": {
+          "marketCap": 76834168832,
+          "trailingPE": 17.07197,
+          "forwardPE": 18.063665,
+          "dividendYield": 0.0182,
+          "profitMargin": 0.103690006,
+          "returnOnEquity": 0.26073998,
+          "revenueGrowth": 0.067,
+          "debtToEquity": 93.127,
+          "currentPrice": 540.84,
+          "analystTargetMean": 636.5,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "GD",
+        "name": "General Dynamics",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Diversificada entre submarinos nucleares (astilleros que literalmente nadie más tiene la capacidad de construir), vehículos blindados y jets privados (Gulfstream) — mezcla rara de defensa pura y aviación de lujo civil.",
+        "fundamentals": {
+          "marketCap": 93510909952,
+          "trailingPE": 20.367863,
+          "forwardPE": 18.237297,
+          "dividendYield": 0.0182,
+          "profitMargin": 0.082399994,
+          "returnOnEquity": 0.18006,
+          "revenueGrowth": 0.129,
+          "debtToEquity": 33.087,
+          "currentPrice": 346.05,
+          "analystTargetMean": 419.29428,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "LHX",
+        "name": "L3Harris Technologies",
+        "sector": "Aeroespacial y Defensa",
+        "why": "Fusión de dos proveedores de comunicaciones y electrónica de defensa — menos conocida que Lockheed o Boeing pero fundamental en sistemas de comunicación militar, con menor exposición a programas de un solo gran avión/barco.",
+        "fundamentals": {
+          "marketCap": 47617114112,
+          "trailingPE": 23.810987,
+          "forwardPE": 18.738354,
+          "dividendYield": 0.0195,
+          "profitMargin": 0.0876,
+          "returnOnEquity": 0.1003,
+          "revenueGrowth": 0.071,
+          "debtToEquity": 51.802,
+          "currentPrice": 255.73,
+          "analystTargetMean": 333.9524,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "HII",
+        "name": "Huntington Ingalls Industries",
+        "sector": "Aeroespacial y Defensa",
+        "why": "El único constructor de portaaviones nucleares de EEUU y uno de los dos constructores de submarinos nucleares — monopolio/duopolio literal en infraestructura que ninguna empresa privada nueva podría replicar en décadas.",
+        "fundamentals": {
+          "marketCap": 11218906112,
+          "trailingPE": 15.331181,
+          "forwardPE": 13.870552,
+          "dividendYield": 0.0196,
+          "profitMargin": 0.054180004,
+          "returnOnEquity": 0.13994001,
+          "revenueGrowth": 0.108,
+          "debtToEquity": 53.332,
+          "currentPrice": 284.7,
+          "analystTargetMean": 357.66666,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "sector": "Tecnología (plataformas)",
+        "why": "Ingresos recurrentes de software empresarial (Office 365, Azure) que generan flujo de caja predecible década tras década — el ejemplo de libro de texto de 'switching costs' altos: migrar una empresa entera fuera de Microsoft es carísimo y lento.",
+        "fundamentals": {
+          "marketCap": 3707725938688,
+          "trailingPE": 26.058283,
+          "forwardPE": 20.630552,
+          "dividendYield": 0.0077,
+          "profitMargin": 0.41169998,
+          "returnOnEquity": 0.34221,
+          "revenueGrowth": 0.188,
+          "debtToEquity": 28.465,
+          "currentPrice": 499.2767,
+          "analystTargetMean": 636.12427,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "AAPL",
+        "name": "Apple",
+        "sector": "Tecnología (plataformas)",
+        "why": "El ecosistema (hardware + software + servicios) crea una de las bases de clientes más leales del mundo — los márgenes vienen cada vez más de servicios (App Store, suscripciones) y no solo de vender hardware una vez.",
+        "fundamentals": {
+          "marketCap": 5068850987008,
+          "trailingPE": 38.84207,
+          "forwardPE": 32.990704,
+          "dividendYield": 0.0031,
+          "profitMargin": 0.27604,
+          "returnOnEquity": 1.42257,
+          "revenueGrowth": 0.117,
+          "debtToEquity": 84.286,
+          "currentPrice": 348.8018,
+          "analystTargetMean": 345.6313,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet (Google)",
+        "sector": "Tecnología (plataformas)",
+        "why": "Dominancia en búsqueda (~90% de market share global) financia apuestas de largo plazo (Waymo, IA) sin presión de rentabilidad inmediata — pocas empresas pueden permitirse invertir así de lejos gracias al flujo de caja del negocio central.",
+        "fundamentals": {
+          "marketCap": 3381556674560,
+          "trailingPE": 14.363316,
+          "forwardPE": 17.980692,
+          "dividendYield": 0.0031,
+          "profitMargin": 0.50031,
+          "returnOnEquity": 0.44286,
+          "revenueGrowth": 0.247,
+          "debtToEquity": 22.187,
+          "currentPrice": 275.0575,
+          "analystTargetMean": 400.14716,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "sector": "Tecnología (plataformas)",
+        "why": "AWS (la nube) genera la mayoría de la ganancia operativa mientras el e-commerce, de menor margen, sigue ganando escala — dos negocios con economía muy distinta bajo una sola marca.",
+        "fundamentals": {
+          "marketCap": 2779787558912,
+          "trailingPE": 20.782135,
+          "forwardPE": 23.528568,
+          "dividendYield": 0,
+          "profitMargin": 0.16900998,
+          "returnOnEquity": 0.27416,
+          "revenueGrowth": 0.121,
+          "debtToEquity": 49.681,
+          "currentPrice": 257.075,
+          "analystTargetMean": 326.09033,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "PG",
+        "name": "Procter & Gamble",
+        "sector": "Consumo básico (dividendos)",
+        "why": "Más de 65 años consecutivos aumentando el dividendo (\"Dividend King\") — marcas (Tide, Gillette, Pampers) que la gente sigue comprando en recesiones, lo que hace el negocio muy predecible aunque poco emocionante.",
+        "fundamentals": {
+          "marketCap": 390059687936,
+          "trailingPE": 25.34488,
+          "forwardPE": 22.686157,
+          "dividendYield": 0.0256,
+          "profitMargin": 0.18229,
+          "returnOnEquity": 0.29609,
+          "revenueGrowth": 0.04,
+          "debtToEquity": 70.343,
+          "currentPrice": 168.29,
+          "analystTargetMean": 174.78261,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "KO",
+        "name": "Coca-Cola",
+        "sector": "Consumo básico (dividendos)",
+        "why": "Más de 60 años aumentando el dividendo. El negocio real no es la bebida, es la distribución global y la marca — Warren Buffett la tiene en Berkshire desde 1988 como ejemplo clásico de moat de marca.",
+        "fundamentals": {
+          "marketCap": 413757407232,
+          "trailingPE": 28.37171,
+          "forwardPE": 27.218422,
+          "dividendYield": 0.0216,
+          "profitMargin": 0.28654,
+          "returnOnEquity": 0.40592998,
+          "revenueGrowth": 0.074,
+          "debtToEquity": 107.449,
+          "currentPrice": 96.1801,
+          "analystTargetMean": 99.64,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "COST",
+        "name": "Costco",
+        "sector": "Consumo básico (retail)",
+        "why": "Modelo de membresía (no vende por margen en los productos, vende la membresía anual) que genera lealtad altísima y flujo de caja predecible — tasa de renovación de membresías típicamente >90%.",
+        "fundamentals": {
+          "marketCap": 483143942144,
+          "trailingPE": 52.519268,
+          "forwardPE": 43.536316,
+          "dividendYield": 0.0054,
+          "profitMargin": 0.03043,
+          "returnOnEquity": 0.28402,
+          "revenueGrowth": 0.111,
+          "debtToEquity": 28.436,
+          "currentPrice": 1090.3,
+          "analystTargetMean": 1085.3513,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "WMT",
+        "name": "Walmart",
+        "sector": "Consumo básico (retail)",
+        "why": "Escala logística que ninguna cadena nueva puede replicar rápido — se reinventó exitosamente para competir con Amazon en e-commerce en vez de perder relevancia, algo que muchos retailers tradicionales no lograron.",
+        "fundamentals": {
+          "marketCap": 1001603792896,
+          "trailingPE": 45.601448,
+          "forwardPE": 38.98646,
+          "dividendYield": 0.0078,
+          "profitMargin": 0.03,
+          "returnOnEquity": 0.22313999,
+          "revenueGrowth": 0.059,
+          "debtToEquity": 71.653,
+          "currentPrice": 125.86,
+          "analystTargetMean": 131.90244,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase",
+        "sector": "Financiero",
+        "why": "El banco más grande de EEUU por activos, con el balance más sólido entre los grandes bancos — salió de la crisis de 2008 y de los problemas bancarios de 2023 (SVB, etc.) comprando activos de competidores en problemas, no necesitando rescate.",
+        "fundamentals": {
+          "marketCap": 849994776576,
+          "trailingPE": 13.425973,
+          "forwardPE": 12.516109,
+          "dividendYield": 0.020399999,
+          "profitMargin": 0.34592,
+          "returnOnEquity": 0.18013,
+          "revenueGrowth": 0.102,
+          "debtToEquity": null,
+          "currentPrice": 320.0752,
+          "analystTargetMean": 373.47827,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "V",
+        "name": "Visa",
+        "sector": "Financiero (pagos)",
+        "why": "No presta plata, solo procesa transacciones — negocio de infraestructura con márgenes altísimos y casi sin riesgo crediticio directo, a diferencia de un banco tradicional.",
+        "fundamentals": {
+          "marketCap": 749118750720,
+          "trailingPE": 32.589287,
+          "forwardPE": 23.42419,
+          "dividendYield": 0.0075,
+          "profitMargin": 0.51203996,
+          "returnOnEquity": 0.63507,
+          "revenueGrowth": 0.132,
+          "debtToEquity": 63.568,
+          "currentPrice": 401.5,
+          "analystTargetMean": 450.9562,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "MA",
+        "name": "Mastercard",
+        "sector": "Financiero (pagos)",
+        "why": "Duopolio con Visa en procesamiento de pagos global — mismo modelo de negocio de infraestructura, se beneficia estructuralmente de la migración mundial de efectivo a pagos digitales.",
+        "fundamentals": {
+          "marketCap": 546602024960,
+          "trailingPE": 32.832546,
+          "forwardPE": 27.089994,
+          "dividendYield": 0.0054,
+          "profitMargin": 0.46732,
+          "returnOnEquity": 2.31366,
+          "revenueGrowth": 0.14,
+          "debtToEquity": 355.163,
+          "currentPrice": 627.43,
+          "analystTargetMean": 720.68677,
+          "analystRecommendation": "strong_buy"
+        }
+      },
+      {
+        "ticker": "BRK-B",
+        "name": "Berkshire Hathaway",
+        "sector": "Financiero (holding diversificado)",
+        "why": "No es una sola empresa, es una colección de negocios (seguros, ferrocarriles, energía, y una cartera de acciones) bajo la disciplina de capital de Warren Buffett — el ejemplo más estudiado del mundo de inversión de largo plazo con margen de seguridad.",
+        "fundamentals": {
+          "marketCap": 1212006400000,
+          "trailingPE": 15.966555,
+          "forwardPE": 25.003046,
+          "dividendYield": 0,
+          "profitMargin": 0.19497,
+          "returnOnEquity": 0.10574,
+          "revenueGrowth": 0.112,
+          "debtToEquity": 17.127,
+          "currentPrice": 570.485,
+          "analystTargetMean": 564.6667,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "JNJ",
+        "name": "Johnson & Johnson",
+        "sector": "Salud",
+        "why": "Más de 60 años aumentando el dividendo, diversificada entre farmacéutica y dispositivos médicos — la demanda de salud es mucho menos sensible a recesiones que casi cualquier otro sector.",
+        "fundamentals": {
+          "marketCap": 639814926336,
+          "trailingPE": 40.330803,
+          "forwardPE": 22.885239,
+          "dividendYield": 0.0197,
+          "profitMargin": 0.16203,
+          "returnOnEquity": 0.20018,
+          "revenueGrowth": 0.059,
+          "debtToEquity": 54.767,
+          "currentPrice": 265.78,
+          "analystTargetMean": 280.18182,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "UNH",
+        "name": "UnitedHealth Group",
+        "sector": "Salud (seguros)",
+        "why": "La mayor aseguradora de salud de EEUU, con Optum (su brazo de servicios de salud) creciendo más rápido que el negocio de seguros tradicional — verticalización que le da control sobre más partes de la cadena de valor de salud.",
+        "fundamentals": {
+          "marketCap": 296574517248,
+          "trailingPE": 18.892122,
+          "forwardPE": 14.180559,
+          "dividendYield": 0.026500002,
+          "profitMargin": 0.03529,
+          "returnOnEquity": 0.15773,
+          "revenueGrowth": -0.004,
+          "debtToEquity": 70.426,
+          "currentPrice": 330.99,
+          "analystTargetMean": 476.16,
+          "analystRecommendation": "buy"
+        }
+      },
+      {
+        "ticker": "LLY",
+        "name": "Eli Lilly",
+        "sector": "Salud (farmacéutica)",
+        "why": "Líder en medicamentos para diabetes/obesidad (GLP-1, la categoría de mayor crecimiento en farma en años) — ejemplo de cómo un solo avance científico puede cambiar radicalmente la trayectoria de una empresa, para bien o para mal.",
+        "fundamentals": {
+          "marketCap": 1203245154304,
+          "trailingPE": 43.843884,
+          "forwardPE": 26.554327,
+          "dividendYield": 0.005,
+          "profitMargin": 0.31898,
+          "returnOnEquity": 0.86024004,
+          "revenueGrowth": 0.386,
+          "debtToEquity": 122.925,
+          "currentPrice": 1350.8301,
+          "analystTargetMean": 1468.5737,
+          "analystRecommendation": "buy"
+        }
+      }
+    ],
+    "errors": []
+  }
+}

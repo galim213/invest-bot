@@ -46,5 +46,42 @@
     "researchBull": null,
     "researchBear": null,
     "researchSellTriggers": null
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "VEEV",
+    "action": "SELL",
+    "shares": 0.22627336536059467,
+    "price": 262.7950134277344,
+    "usdAmount": 59.43378033223199,
+    "fee": 0.029731756044138063,
+    "realizedPnl": -11.940191882023376,
+    "reason": "Stop-loss: precio -16.7% desde el precio de entrada (umbral -12%).",
+    "researchAvailable": false,
+    "researchVerdict": null,
+    "researchBull": null,
+    "researchBear": null,
+    "researchSellTriggers": null
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "J",
+    "action": "BUY",
+    "shares": 0.32678193693348356,
+    "price": 154.67999267578125,
+    "usdAmount": 50.54662761144885,
+    "fee": 0.025273313805724423,
+    "realizedPnl": null,
+    "reason": "Señal técnica de compra (score 64): Tendencia de corto plazo alcista: SMA20 (154.67) por encima de SMA50 (146.21). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 4.8%. RSI 50: zona neutral.",
+    "researchAvailable": true,
+    "researchVerdict": "POSITIVO",
+    "researchBull": [
+      "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+      "P/E futuro (18.8) más bajo que el actual (51.4) — el mercado espera que las ganancias crezcan."
+    ],
+    "researchBear": [
+      "Percentil de calidad fundamental 25/100 — por debajo de la mayoría del universo."
+    ],
+    "researchSellTriggers": []
   }
 ]

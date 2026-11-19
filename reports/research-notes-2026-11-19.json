@@ -1,0 +1,692 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T20:06:47.333Z",
+  "notes": [
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "why": "Segunda integrada de EEUU, con activos de bajo costo de extracción en Permian Basin. Historial de más de 35 años consecutivos aumentando el dividendo — ese tipo de constancia solo se sostiene con disciplina de capital real, no promesas.",
+      "currentPrice": 205.97,
+      "nextEarningsDate": "2027-01-29",
+      "analystTarget": 242.54167,
+      "analystRecommendation": "buy",
+      "qualityScore": 60.477022977022976,
+      "secFundamentals": {
+        "ticker": "CVX",
+        "cik": 93410,
+        "entityName": "Chevron Corp",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-24",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 189031000000,
+        "netIncome": 12299000000,
+        "eps": null,
+        "totalAssets": 333786000000,
+        "totalLiabilities": 133809000000,
+        "stockholdersEquity": 194327000000,
+        "longTermDebt": 25676000000,
+        "debtToEquityPct": 13.212780519433737,
+        "netMarginPct": 6.50634022990938,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "Los analistas se pusieron más optimistas: 20 → 21 recomendaciones de compra en los últimos meses.",
+        "1 upgrade(s) de analistas en los últimos 30 días (ej. Freedom Broker: Sell → Hold).",
+        "P/E futuro (12.5) más bajo que el actual (15.1) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 66.09623291476832,
+        "low": 146.49,
+        "high": 236.48
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "why": "Ingresos recurrentes de software empresarial (Office 365, Azure) que generan flujo de caja predecible década tras década — el ejemplo de libro de texto de 'switching costs' altos: migrar una empresa entera fuera de Microsoft es carísimo y lento.",
+      "currentPrice": 499.33,
+      "nextEarningsDate": "2027-01-27",
+      "analystTarget": 636.12427,
+      "analystRecommendation": "strong_buy",
+      "qualityScore": 75.2947052947053,
+      "secFundamentals": {
+        "ticker": "MSFT",
+        "cik": 789019,
+        "entityName": "MICROSOFT CORP",
+        "fiscalYear": 2026,
+        "filedDate": "2026-07-29",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-07-01 a 2026-06-30)",
+        "revenue": 331839000000,
+        "netIncome": 133749000000,
+        "eps": null,
+        "totalAssets": 779403000000,
+        "totalLiabilities": 308894000000,
+        "stockholdersEquity": 470509000000,
+        "longTermDebt": 31090000000,
+        "debtToEquityPct": 6.607737577814666,
+        "netMarginPct": 40.30538905915218,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "P/E futuro (20.6) más bajo que el actual (26.1) — el mercado espera que las ganancias crezcan.",
+        "Margen neto de 40.3% según su último resultado presentado a la SEC — rentabilidad sólida.",
+        "Percentil de calidad fundamental 75/100 — entre lo mejor del universo en ROE/margen/crecimiento/deuda."
+      ],
+      "bear": [
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 71.50750178613956,
+        "low": 349.2,
+        "high": 559.15
+      }
+    },
+    {
+      "ticker": "TXN",
+      "sector": "Technology",
+      "why": "Líder en chips analógicos (no los de IA de moda, los que están en cada electrodoméstico, auto, sensor). Negocio menos glamoroso pero con márgenes altísimos y ciclos de producto mucho más largos que los chips digitales.",
+      "currentPrice": 286.4899,
+      "nextEarningsDate": "2027-01-26",
+      "analystTarget": 338.7931,
+      "analystRecommendation": "buy",
+      "qualityScore": 64.97752247752248,
+      "secFundamentals": {
+        "ticker": "TXN",
+        "cik": 97476,
+        "entityName": "TEXAS INSTRUMENTS INC",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-06",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 17682000000,
+        "netIncome": 5001000000,
+        "eps": null,
+        "totalAssets": 36839000000,
+        "totalLiabilities": 17654000000,
+        "stockholdersEquity": 19185000000,
+        "longTermDebt": 12905000000,
+        "debtToEquityPct": 67.2660933020589,
+        "netMarginPct": 28.28299966067187,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 3/4 de los últimos trimestres.",
+        "1 upgrade(s) de analistas en los últimos 30 días (ej. Freedom Broker: Hold → Buy).",
+        "P/E futuro (24.6) más bajo que el actual (37.2) — el mercado espera que las ganancias crezcan.",
+        "Margen neto de 28.3% según su último resultado presentado a la SEC — rentabilidad sólida."
+      ],
+      "bear": [
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 73.77821290678433,
+        "low": 152.73,
+        "high": 334.03
+      }
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Defensive",
+      "why": "Más de 60 años aumentando el dividendo. El negocio real no es la bebida, es la distribución global y la marca — Warren Buffett la tiene en Berkshire desde 1988 como ejemplo clásico de moat de marca.",
+      "currentPrice": 96.1801,
+      "nextEarningsDate": "2026-10-27",
+      "analystTarget": 99.64,
+      "analystRecommendation": "buy",
+      "qualityScore": 52.80969030969031,
+      "secFundamentals": {
+        "ticker": "KO",
+        "cik": 21344,
+        "entityName": "COCA COLA CO",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-20",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 47941000000,
+        "netIncome": 13107000000,
+        "eps": null,
+        "totalAssets": 107950000000,
+        "totalLiabilities": null,
+        "stockholdersEquity": 37372000000,
+        "longTermDebt": 35104000000,
+        "debtToEquityPct": 93.93128545435086,
+        "netMarginPct": 27.33985523873094,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "Los analistas se pusieron más optimistas: 19 → 21 recomendaciones de compra en los últimos meses.",
+        "Margen neto de 27.3% según su último resultado presentado a la SEC — rentabilidad sólida."
+      ],
+      "bear": [
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 86.8431961550015,
+        "low": 67.27,
+        "high": 100.56
+      }
+    },
+    {
+      "ticker": "V",
+      "sector": "Financial Services",
+      "why": "No presta plata, solo procesa transacciones — negocio de infraestructura con márgenes altísimos y casi sin riesgo crediticio directo, a diferencia de un banco tradicional.",
+      "currentPrice": 401.43,
+      "nextEarningsDate": "2027-01-26",
+      "analystTarget": 450.9562,
+      "analystRecommendation": "strong_buy",
+      "qualityScore": 76.55094905094906,
+      "secFundamentals": {
+        "ticker": "V",
+        "cik": 1403161,
+        "entityName": "VISA INC.",
+        "fiscalYear": 2026,
+        "filedDate": "2026-11-05",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-10-01 a 2026-09-30)",
+        "revenue": 45903000000,
+        "netIncome": 23504000000,
+        "eps": null,
+        "totalAssets": 94360000000,
+        "totalLiabilities": 58249000000,
+        "stockholdersEquity": 36111000000,
+        "longTermDebt": 19355000000,
+        "debtToEquityPct": 53.59862645731218,
+        "netMarginPct": 51.203625035400734,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "P/E futuro (23.4) más bajo que el actual (32.6) — el mercado espera que las ganancias crezcan.",
+        "Margen neto de 51.2% según su último resultado presentado a la SEC — rentabilidad sólida.",
+        "Percentil de calidad fundamental 77/100 — entre lo mejor del universo en ROE/margen/crecimiento/deuda."
+      ],
+      "bear": [
+        "Los analistas se pusieron más cautos: recomendaciones de compra bajaron de 36 a 35.",
+        "6 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 72.49561817446407,
+        "low": 293.89,
+        "high": 442.23
+      }
+    },
+    {
+      "ticker": "LMT",
+      "sector": "Industrials",
+      "why": "Fabricante del F-35, el programa de defensa más caro de la historia — contratos gubernamentales plurianuales que dan visibilidad de ingresos a 10+ años, algo rarísimo fuera de este sector. Barrera de entrada altísima: nadie nuevo puede competir por estos contratos.",
+      "currentPrice": 570.865,
+      "nextEarningsDate": "2027-01-26",
+      "analystTarget": 660.86365,
+      "analystRecommendation": "buy",
+      "qualityScore": 48.92857142857142,
+      "secFundamentals": {
+        "ticker": "LMT",
+        "cik": 936468,
+        "entityName": "LOCKHEED MARTIN CORPORATION",
+        "fiscalYear": 2025,
+        "filedDate": "2026-01-29",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 75048000000,
+        "netIncome": 5017000000,
+        "eps": null,
+        "totalAssets": 64510000000,
+        "totalLiabilities": 54447000000,
+        "stockholdersEquity": 10063000000,
+        "longTermDebt": 20498000000,
+        "debtToEquityPct": 203.69671072244859,
+        "netMarginPct": 6.685054898198486,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 3/4 de los últimos trimestres.",
+        "Los analistas se pusieron más optimistas: 8 → 12 recomendaciones de compra en los últimos meses.",
+        "1 upgrade(s) de analistas en los últimos 30 días (ej. Morgan Stanley: Equal-Weight → Overweight).",
+        "P/E futuro (17.1) más bajo que el actual (20.3) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "Deuda/equity de 204% — nivel de apalancamiento alto, más sensible a subas de tasas.",
+        "6 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 52.44946025515211,
+        "low": 437.25,
+        "high": 692
+      }
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Healthcare",
+      "why": "Más de 60 años aumentando el dividendo, diversificada entre farmacéutica y dispositivos médicos — la demanda de salud es mucho menos sensible a recesiones que casi cualquier otro sector.",
+      "currentPrice": 265.78,
+      "nextEarningsDate": "2027-01-26",
+      "analystTarget": 280.18182,
+      "analystRecommendation": "buy",
+      "qualityScore": 42.22777222777223,
+      "secFundamentals": {
+        "ticker": "JNJ",
+        "cik": 200406,
+        "entityName": "Johnson & Johnson",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-11",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2024-12-30 a 2025-12-28)",
+        "revenue": 94193000000,
+        "netIncome": 26804000000,
+        "eps": null,
+        "totalAssets": 197425000000,
+        "totalLiabilities": 115896000000,
+        "stockholdersEquity": 81529000000,
+        "longTermDebt": 35799000000,
+        "debtToEquityPct": 43.90952912460597,
+        "netMarginPct": 28.45646704107524,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 3/4 de los últimos trimestres.",
+        "P/E futuro (22.9) más bajo que el actual (40.3) — el mercado espera que las ganancias crezcan.",
+        "Margen neto de 28.5% según su último resultado presentado a la SEC — rentabilidad sólida."
+      ],
+      "bear": [
+        "Payout ratio de 80% — reparte más del 80% de las ganancias como dividendo, poco margen de error.",
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [
+        "Si el payout ratio sigue subiendo por encima del 100%, el dividendo actual no es sostenible con las ganancias actuales."
+      ],
+      "priceContext": {
+        "pctOfRange": 72.91343812264775,
+        "low": 199.91,
+        "high": 290.25
+      }
+    },
+    {
+      "ticker": "PG",
+      "sector": "Consumer Defensive",
+      "why": "Más de 65 años consecutivos aumentando el dividendo (\"Dividend King\") — marcas (Tide, Gillette, Pampers) que la gente sigue comprando en recesiones, lo que hace el negocio muy predecible aunque poco emocionante.",
+      "currentPrice": 168.29,
+      "nextEarningsDate": "2027-01-21",
+      "analystTarget": 174.78261,
+      "analystRecommendation": "buy",
+      "qualityScore": 48.20929070929071,
+      "secFundamentals": {
+        "ticker": "PG",
+        "cik": 80424,
+        "entityName": "PROCTER & GAMBLE Co",
+        "fiscalYear": 2026,
+        "filedDate": "2026-08-04",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-07-01 a 2026-06-30)",
+        "revenue": 87032000000,
+        "netIncome": 16046000000,
+        "eps": null,
+        "totalAssets": 133132000000,
+        "totalLiabilities": 77795000000,
+        "stockholdersEquity": 55337000000,
+        "longTermDebt": 21897000000,
+        "debtToEquityPct": 39.57026943997687,
+        "netMarginPct": 18.436896773600512,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "1 upgrade(s) de analistas en los últimos 30 días (ej. Freedom Broker: Hold → Buy).",
+        "P/E futuro (22.7) más bajo que el actual (25.3) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "Los analistas se pusieron más cautos: recomendaciones de compra bajaron de 13 a 14.",
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 85.26549902696688,
+        "low": 137.62,
+        "high": 173.59
+      }
+    },
+    {
+      "ticker": "ISRG",
+      "sector": "Healthcare",
+      "why": null,
+      "currentPrice": 405.41,
+      "nextEarningsDate": "2027-01-21",
+      "analystTarget": 488.53333,
+      "analystRecommendation": "buy",
+      "qualityScore": 47.44667097608275,
+      "secFundamentals": {
+        "ticker": "ISRG",
+        "cik": 1035267,
+        "entityName": "Intuitive Surgical, Inc.",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-03",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 10064700000,
+        "netIncome": 2856000000,
+        "eps": null,
+        "totalAssets": 19349100000,
+        "totalLiabilities": 3231300000,
+        "stockholdersEquity": 15986200000,
+        "longTermDebt": null,
+        "debtToEquityPct": null,
+        "netMarginPct": 28.376404661837906,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "P/E futuro (32.5) más bajo que el actual (49.0) — el mercado espera que las ganancias crezcan.",
+        "Margen neto de 28.4% según su último resultado presentado a la SEC — rentabilidad sólida."
+      ],
+      "bear": [
+        "Los analistas se pusieron más cautos: recomendaciones de compra bajaron de 24 a 26.",
+        "8 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 27.910355599142793,
+        "low": 328.57,
+        "high": 603.88
+      }
+    },
+    {
+      "ticker": "TMO",
+      "sector": "Healthcare",
+      "why": null,
+      "currentPrice": 687.535,
+      "nextEarningsDate": "2027-01-28",
+      "analystTarget": 756.52,
+      "analystRecommendation": "strong_buy",
+      "qualityScore": 30.372127872127876,
+      "secFundamentals": {
+        "ticker": "TMO",
+        "cik": 97745,
+        "entityName": "THERMO FISHER SCIENTIFIC INC.",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-26",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 44556000000,
+        "netIncome": 6704000000,
+        "eps": null,
+        "totalAssets": 114233000000,
+        "totalLiabilities": null,
+        "stockholdersEquity": 54761000000,
+        "longTermDebt": 41108000000,
+        "debtToEquityPct": 75.06802286298642,
+        "netMarginPct": 15.046233952778525,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "P/E futuro (24.7) más bajo que el actual (36.3) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "5 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 86.30640801943275,
+        "low": 435.27,
+        "high": 727.56
+      }
+    },
+    {
+      "ticker": "MAR",
+      "sector": "Consumer Cyclical",
+      "why": null,
+      "currentPrice": 414.8899,
+      "nextEarningsDate": "2026-11-02",
+      "analystTarget": 421.73077,
+      "analystRecommendation": "buy",
+      "qualityScore": 57.738095238095234,
+      "secFundamentals": {
+        "ticker": "MAR",
+        "cik": 1048286,
+        "entityName": "MARRIOTT INTERNATIONAL INC /MD/",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-10",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 26186000000,
+        "netIncome": 2601000000,
+        "eps": null,
+        "totalAssets": 28022000000,
+        "totalLiabilities": null,
+        "stockholdersEquity": -5084000000,
+        "longTermDebt": 23000000,
+        "debtToEquityPct": -0.45239968528717545,
+        "netMarginPct": 9.93278851294585,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 3/4 de los últimos trimestres.",
+        "P/E futuro (30.9) más bajo que el actual (41.4) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "7 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 87.85453226019264,
+        "low": 281.72,
+        "high": 433.3
+      }
+    },
+    {
+      "ticker": "J",
+      "sector": "Industrials",
+      "why": null,
+      "currentPrice": 154.675,
+      "nextEarningsDate": "2026-11-23",
+      "analystTarget": 162.8,
+      "analystRecommendation": "buy",
+      "qualityScore": 24.715284715284714,
+      "secFundamentals": {
+        "ticker": "J",
+        "cik": 52988,
+        "entityName": "JACOBS SOLUTIONS INC.",
+        "fiscalYear": 2018,
+        "filedDate": "2018-11-21",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2017-09-30 a 2018-09-28)",
+        "revenue": 14984646000,
+        "netIncome": 289336000,
+        "eps": null,
+        "totalAssets": 11743702000,
+        "totalLiabilities": null,
+        "stockholdersEquity": 3264489000,
+        "longTermDebt": 3579376000,
+        "debtToEquityPct": 109.64582818321642,
+        "netMarginPct": 1.9308831186268933,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "POSITIVO",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "P/E futuro (18.8) más bajo que el actual (51.4) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "Percentil de calidad fundamental 25/100 — por debajo de la mayoría del universo."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 86.99396306818184,
+        "low": 105.68,
+        "high": 162
+      }
+    },
+    {
+      "ticker": "XOM",
+      "sector": "Energy",
+      "why": "Integración vertical completa (exploración, refinación, química) que le da control de costos en todo el ciclo del petróleo. Balance históricamente más conservador que la mayoría de sus pares, lo que le permitió seguir pagando dividendo incluso en los peores años del sector (2015-2016, 2020).",
+      "currentPrice": 158.615,
+      "nextEarningsDate": "2027-01-29",
+      "analystTarget": 184.18182,
+      "analystRecommendation": "buy",
+      "qualityScore": 58.049450549450555,
+      "secFundamentals": {
+        "ticker": "XOM",
+        "cik": 2115436,
+        "entityName": "ExxonMobil Holdings Corporation",
+        "fiscalYear": 2026,
+        "filedDate": "2026-11-02",
+        "resultsArePartial": true,
+        "resultsPeriodLabel": "10-Q Q3 (2026-01-01 a 2026-09-30)",
+        "revenue": 314319000000,
+        "netIncome": 34121000000,
+        "eps": null,
+        "totalAssets": 470917000000,
+        "totalLiabilities": 198397000000,
+        "stockholdersEquity": 265789000000,
+        "longTermDebt": null,
+        "debtToEquityPct": null,
+        "netMarginPct": 10.855532118643799,
+        "source": "SEC EDGAR (último período disponible, no un año completo)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "NEUTRAL",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 3/4 de los últimos trimestres.",
+        "P/E futuro (12.7) más bajo que el actual (16.3) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "Los analistas se pusieron más cautos: recomendaciones de compra bajaron de 10 a 9.",
+        "4 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 59.783340061902855,
+        "low": 114.19,
+        "high": 188.5
+      }
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financial Services",
+      "why": "El banco más grande de EEUU por activos, con el balance más sólido entre los grandes bancos — salió de la crisis de 2008 y de los problemas bancarios de 2023 (SVB, etc.) comprando activos de competidores en problemas, no necesitando rescate.",
+      "currentPrice": 320.0752,
+      "nextEarningsDate": "2027-01-14",
+      "analystTarget": 373.47827,
+      "analystRecommendation": "buy",
+      "qualityScore": 62.734324499030386,
+      "secFundamentals": {
+        "ticker": "JPM",
+        "cik": 19617,
+        "entityName": "JPMORGAN CHASE & CO",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-13",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2025-01-01 a 2025-12-31)",
+        "revenue": 182447000000,
+        "netIncome": 57048000000,
+        "eps": null,
+        "totalAssets": 5091545000000,
+        "totalLiabilities": 4719177000000,
+        "stockholdersEquity": 372368000000,
+        "longTermDebt": 269929000000,
+        "debtToEquityPct": 72.48984875177244,
+        "netMarginPct": 31.268258727192006,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "NEUTRAL",
+      "bull": [
+        "Los analistas se pusieron más optimistas: 13 → 15 recomendaciones de compra en los últimos meses.",
+        "Margen neto de 31.3% según su último resultado presentado a la SEC — rentabilidad sólida."
+      ],
+      "bear": [
+        "Le falló a las expectativas de ganancias en 2/4 de los últimos trimestres.",
+        "4 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 46.882379862700205,
+        "low": 279.1,
+        "high": 366.5
+      }
+    },
+    {
+      "ticker": "CRL",
+      "sector": "Healthcare",
+      "why": null,
+      "currentPrice": 326.885,
+      "nextEarningsDate": "2026-11-04",
+      "analystTarget": 350.57144,
+      "analystRecommendation": "buy",
+      "qualityScore": 4.09090909090909,
+      "secFundamentals": {
+        "ticker": "CRL",
+        "cik": 1100682,
+        "entityName": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+        "fiscalYear": 2025,
+        "filedDate": "2026-02-18",
+        "resultsArePartial": false,
+        "resultsPeriodLabel": "10-K FY (2024-12-29 a 2025-12-27)",
+        "revenue": 4015382000,
+        "netIncome": -144338000,
+        "eps": null,
+        "totalAssets": 7451507000,
+        "totalLiabilities": 4176241000,
+        "stockholdersEquity": 3227011000,
+        "longTermDebt": 1626760000,
+        "debtToEquityPct": 50.4107361270228,
+        "netMarginPct": -3.5946268624006383,
+        "source": "SEC EDGAR (10-K más reciente)"
+      },
+      "yahooDataAvailable": true,
+      "verdict": "CAUTELA",
+      "bull": [
+        "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.",
+        "P/E futuro (25.2) más bajo que el actual (355.3) — el mercado espera que las ganancias crezcan."
+      ],
+      "bear": [
+        "Los analistas se pusieron más cautos: recomendaciones de compra bajaron de 15 a 14.",
+        "Margen neto negativo (-3.6%) según su último resultado presentado a la SEC.",
+        "4 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite.",
+        "Percentil de calidad fundamental 4/100 — por debajo de la mayoría del universo."
+      ],
+      "sellTriggers": [],
+      "priceContext": {
+        "pctOfRange": 77.40436105042197,
+        "low": 146.2,
+        "high": 379.63
+      }
+    }
+  ]
+}

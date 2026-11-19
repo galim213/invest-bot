@@ -1,16 +1,14 @@
-# Cartera paralela — Internacional (ADRs) — 2026-11-18
+# Cartera paralela — Internacional (ADRs) — 2026-11-19
 
 > 🧪 **Experimento en vivo, no validado por backtest** (no hay dataset point-in-time gratuito para empresas internacionales en bolsas de EEUU, así que no se puede correr validate.js con el mismo rigor que el S&P 500). Mismo motor técnico y mismos umbrales que el satellite de producción, aplicados sobre empresas internacionales en bolsas de EEUU en vez de S&P 500. Capital ficticio independiente — simulación 100% educativa, no es asesoría financiera real.
 
 - Capital inicial: $300.00
-- Valor hoy: **$257.27**
-- P&L: $-42.73 (-14.24%)
+- Valor hoy: **$251.76**
+- P&L: $-48.24 (-16.08%)
 
 ## Movimientos de hoy
 
-- **SELL KRNT**: 2.6412 shares @ $13.16 ($34.74). Stop-loss: precio -27.5% desde el precio de entrada (umbral -12%).
-- **BUY GFR**: 2.3902 shares @ $7.68 ($18.37). Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (6.93) por encima de SMA50 (6.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 35.8%. RSI 62: zona neutral.
-- **BUY LION**: 0.7380 shares @ $13.87 ($10.24). Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (13.20) por encima de SMA50 (12.01). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 62: zona neutral.
+_Sin movimientos hoy._
 
 ## Posiciones abiertas
 
@@ -26,4 +24,4 @@
 | GFR | 2.3902 | $7.68 |
 | LION | 0.7380 | $13.87 |
 
-_Generado automáticamente el 2026-11-18T20:07:13.877Z. Simulación 100% educativa, no es asesoría financiera real._
+_Generado automáticamente el 2026-11-19T20:06:47.384Z. Simulación 100% educativa, no es asesoría financiera real._

@@ -2,6 +2,25 @@
 
 > 📓 Cada compra/venta del satellite, junto al research note vigente ese día para ese ticker (cuando existe). El motivo técnico siempre está (viene del score); el veredicto sintetizado solo cuando el ticker tenía research note generada esa misma corrida — una venta no siempre lo tiene, porque la posición se cierra esa misma corrida.
 
+## 2026-11-19 — COMPRA J
+
+0.327 shares a $154.68 ($50.55)
+
+_Motivo técnico:_ Señal técnica de compra (score 64): Tendencia de corto plazo alcista: SMA20 (154.67) por encima de SMA50 (146.21). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 4.8%. RSI 50: zona neutral.
+
+**Research note vigente ese día: POSITIVO**
+- ✅ Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.
+- ✅ P/E futuro (18.8) más bajo que el actual (51.4) — el mercado espera que las ganancias crezcan.
+- ⚠️ Percentil de calidad fundamental 25/100 — por debajo de la mayoría del universo.
+
+## 2026-11-19 — VENTA VEEV
+
+0.226 shares a $262.80 ($59.43) — PnL realizado: $-11.94
+
+_Motivo técnico:_ Stop-loss: precio -16.7% desde el precio de entrada (umbral -12%).
+
+_Sin research note disponible para este ticker ese mismo día (frecuente en ventas, el ticker ya no está en posiciones al generarse las notas)._
+
 ## 2026-10-22 — COMPRA MAR
 
 0.027 shares a $396.80 ($10.57)
