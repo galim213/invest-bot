@@ -330,3 +330,11 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Conectividad:** Yahoo responde parcialmente (`query2` 429 en la prueba, `fc.yahoo.com` 404 a un path inexistente, o sea alcanzable); red desbloqueada desde ayer. `npm test`: 193/193 en verde. Todos los archivos de `lib/` ya tienen test.
 
 **Decisión:** sin mejora genuina hoy que justifique tocar código (no se investigó con WebSearch una idea nueva; no se inventó nada). Sin experimentos de trading → no se corrió `validate.js`. Sin impacto en dashboard ni reportes.
+
+## 2026-11-20
+
+**Estado revisado:** `data/research-notes-history.json` tiene 30 entradas (16 tickers únicos), la más vieja del 2026-11-18. `node track-record.js` confirma que ninguna alcanza 30+ días → primera lectura con sentido recién ~2026-12-18.
+
+**Chequeos:** `npm test`: 193/193 en verde. Yahoo alcanzable (track-record.js trajo precios).
+
+**Decisión:** sin mejora genuina hoy; no se investigó una idea nueva con fuente real y no se inventó ninguna. Sin cambios de código, sin `validate.js`, sin impacto en dashboard ni reportes.
