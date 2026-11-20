@@ -83,5 +83,26 @@
       "Percentil de calidad fundamental 25/100 — por debajo de la mayoría del universo."
     ],
     "researchSellTriggers": []
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "ALL",
+    "action": "BUY",
+    "shares": 0.03772332690847972,
+    "price": 268.70001220703125,
+    "usdAmount": 10.13625840079833,
+    "fee": 0.0050681292003991645,
+    "realizedPnl": null,
+    "reason": "Señal técnica de compra (score 63): Tendencia de corto plazo alcista: SMA20 (262.20) por encima de SMA50 (247.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 55: zona neutral.",
+    "researchAvailable": true,
+    "researchVerdict": "CAUTELA",
+    "researchBull": [
+      "Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres."
+    ],
+    "researchBear": [
+      "P/E futuro (9.4) más alto que el actual (6.1) — el mercado espera que las ganancias se achiquen.",
+      "3 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite."
+    ],
+    "researchSellTriggers": []
   }
 ]

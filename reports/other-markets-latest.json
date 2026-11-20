@@ -1,174 +1,174 @@
 {
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-19T20:06:48.030Z",
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T20:07:17.718Z",
   "otherMarkets": [
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
       "category": "Cripto",
-      "lastClose": 1760.8800048828125,
-      "momentum1m": -0.21721211706820476,
-      "momentum3m": -0.2804236887291862
+      "lastClose": 1603.510009765625,
+      "momentum1m": -0.28448413445862614,
+      "momentum3m": -0.3859452969583804
     },
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
       "category": "Cripto",
-      "lastClose": 62153,
-      "momentum1m": -0.2008625831649626,
-      "momentum3m": -0.18651923584844213
-    },
-    {
-      "ticker": "SCHD",
-      "name": "Dividendo de calidad EEUU (ETF)",
-      "category": "ETF — dividendos",
-      "lastClose": 34.14139938354492,
-      "momentum1m": -0.014962506236303658,
-      "momentum3m": -0.02758761634772133
+      "lastClose": 58451.69921875,
+      "momentum1m": -0.24283609025508707,
+      "momentum3m": -0.2774951336922512
     },
     {
       "ticker": "VYM",
       "name": "Alto dividendo EEUU (ETF)",
       "category": "ETF — dividendos",
-      "lastClose": 157.04510498046875,
-      "momentum1m": -0.027283320229393143,
-      "momentum3m": -0.04803840808385609
+      "lastClose": 154.4499969482422,
+      "momentum1m": -0.05012305565403803,
+      "momentum3m": -0.06444969183881676
     },
     {
-      "ticker": "VWO",
-      "name": "Mercados emergentes (ETF)",
-      "category": "ETF — internacional",
-      "lastClose": 52.68000030517578,
-      "momentum1m": -0.09453420369801394,
-      "momentum3m": -0.12853598609923073
+      "ticker": "SCHD",
+      "name": "Dividendo de calidad EEUU (ETF)",
+      "category": "ETF — dividendos",
+      "lastClose": 34.099998474121094,
+      "momentum1m": -0.03672324846673961,
+      "momentum3m": -0.03152515305917927
     },
     {
       "ticker": "VXUS",
       "name": "Resto del mundo ex-EEUU (ETF, un solo fondo)",
       "category": "ETF — internacional",
-      "lastClose": 77.93000030517578,
-      "momentum1m": -0.07226190112885975,
-      "momentum3m": -0.11150380665125595
+      "lastClose": 75.4749984741211,
+      "momentum1m": -0.0876949666194406,
+      "momentum3m": -0.13446099638146203
     },
     {
       "ticker": "VEA",
       "name": "Mercados desarrollados ex-EEUU (ETF)",
       "category": "ETF — internacional",
-      "lastClose": 65.67500305175781,
-      "momentum1m": -0.06339132231481392,
-      "momentum3m": -0.10548890370939051
+      "lastClose": 63.79499816894531,
+      "momentum1m": -0.0789056280497336,
+      "momentum3m": -0.12681357376473978
+    },
+    {
+      "ticker": "VWO",
+      "name": "Mercados emergentes (ETF)",
+      "category": "ETF — internacional",
+      "lastClose": 50.650001525878906,
+      "momentum1m": -0.10905887624719132,
+      "momentum3m": -0.15541103060052505
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq-100 (ETF, cargado a tecnología)",
       "category": "ETF — mercado amplio EEUU",
-      "lastClose": 645.2899780273438,
-      "momentum1m": -0.11019033760974987,
-      "momentum3m": -0.09552313324295207
+      "lastClose": 612.969970703125,
+      "momentum1m": -0.12988488339492268,
+      "momentum3m": -0.1321639421977236
     },
     {
       "ticker": "VTI",
       "name": "Mercado total EEUU (ETF, ~3600 empresas)",
       "category": "ETF — mercado amplio EEUU",
-      "lastClose": 352.5068054199219,
-      "momentum1m": -0.07027083978758188,
-      "momentum3m": -0.0680340140620976
+      "lastClose": 341.3599853515625,
+      "momentum1m": -0.08946388127758355,
+      "momentum3m": -0.09470395756497135
     },
     {
       "ticker": "BND",
       "name": "Bonos EEUU diversificados (ETF)",
       "category": "ETF — renta fija diversificada",
-      "lastClose": 70.91500091552734,
-      "momentum1m": 0.0023321684173476147,
-      "momentum3m": -0.01820576464475574
+      "lastClose": 71.41439819335938,
+      "momentum1m": 0.0007622979616387716,
+      "momentum3m": -0.013204428864938637
     },
     {
       "ticker": "EURUSD=X",
       "name": "EUR/USD",
       "category": "Forex",
-      "lastClose": 1.098056435585022,
-      "momentum1m": -0.021928125162924996,
-      "momentum3m": -0.060008757855103116
+      "lastClose": 1.0970927476882935,
+      "momentum1m": -0.02347771086005677,
+      "momentum3m": -0.05976954493369099
     },
     {
       "ticker": "USDCLP=X",
       "name": "USD/CLP",
       "category": "Forex — relevante para Chile",
-      "lastClose": 1014.9099731445312,
-      "momentum1m": 0.04113619647558772,
-      "momentum3m": 0.1018096987011617
+      "lastClose": 1022.0800170898438,
+      "momentum1m": 0.045092985032225724,
+      "momentum3m": 0.12046833922135229
     },
     {
       "ticker": "DBC",
       "name": "Canasta amplia de commodities (ETF)",
       "category": "Materias primas — diversificado",
-      "lastClose": 29.594999313354492,
-      "momentum1m": -0.11656718467598531,
-      "momentum3m": -0.053262984751644725
+      "lastClose": 29.264999389648438,
+      "momentum1m": -0.1282395098096924,
+      "momentum3m": -0.05413707548470789
     },
     {
       "ticker": "CL=F",
       "name": "Petróleo WTI (futuro)",
       "category": "Materias primas — energía",
-      "lastClose": 82.8499984741211,
-      "momentum1m": -0.14719508828776048,
-      "momentum3m": -0.048357445469019364
+      "lastClose": 83.08999633789062,
+      "momentum1m": -0.16467281272540346,
+      "momentum3m": -0.022585645807454407
     },
     {
       "ticker": "NG=F",
       "name": "Gas natural (futuro)",
       "category": "Materias primas — energía",
-      "lastClose": 3.26200008392334,
-      "momentum1m": 0.16917567330604025,
-      "momentum3m": 0.17634333994938442
-    },
-    {
-      "ticker": "GC=F",
-      "name": "Oro (futuro)",
-      "category": "Materias primas — metales",
-      "lastClose": 3668.800048828125,
-      "momentum1m": -0.11595179546310241,
-      "momentum3m": -0.2161688731611083
+      "lastClose": 3.746999979019165,
+      "momentum1m": 0.3401287460325392,
+      "momentum3m": 0.3468727144768752
     },
     {
       "ticker": "HG=F",
       "name": "Cobre (futuro)",
       "category": "Materias primas — metales",
-      "lastClose": 5.625,
-      "momentum1m": -0.14030264255083894,
-      "momentum3m": -0.14507183974271448
+      "lastClose": 5.472499847412109,
+      "momentum1m": -0.1398821715744357,
+      "momentum3m": -0.17070770322880682
     },
     {
       "ticker": "SI=F",
       "name": "Plata (futuro)",
       "category": "Materias primas — metales",
-      "lastClose": 44.025001525878906,
-      "momentum1m": -0.23330777668230293,
-      "momentum3m": -0.3662367293395927
+      "lastClose": 41.005001068115234,
+      "momentum1m": -0.2512416712837664,
+      "momentum3m": -0.4017449285970779
+    },
+    {
+      "ticker": "GC=F",
+      "name": "Oro (futuro)",
+      "category": "Materias primas — metales",
+      "lastClose": 3523.10009765625,
+      "momentum1m": -0.13232681942913038,
+      "momentum3m": -0.2500531644322361
     },
     {
       "ticker": "VNQ",
       "name": "REITs — bienes raíces EEUU (ETF)",
       "category": "Real estate",
-      "lastClose": 93.62000274658203,
-      "momentum1m": 0.02328128683513711,
-      "momentum3m": -0.04954311932404029
+      "lastClose": 93.08499908447266,
+      "momentum1m": 0.004695062616617949,
+      "momentum3m": -0.06069626117319457
     },
     {
       "ticker": "TLT",
       "name": "Bonos del Tesoro EEUU 20+ años (ETF)",
       "category": "Renta fija",
-      "lastClose": 80.4000015258789,
-      "momentum1m": 0.0019940636386983363,
-      "momentum3m": -0.020109707062875692
+      "lastClose": 81.59500122070312,
+      "momentum1m": -0.0017738762766798973,
+      "momentum3m": -0.011688424980944995
     },
     {
       "ticker": "IEF",
       "name": "Bonos del Tesoro EEUU 7-10 años (ETF)",
       "category": "Renta fija",
-      "lastClose": 90.82499694824219,
-      "momentum1m": 0.006594187844091134,
-      "momentum3m": -0.021493242330761133
+      "lastClose": 91.73500061035156,
+      "momentum1m": 0.005866268421182078,
+      "momentum3m": -0.013708219509676272
     }
   ],
   "techniques": [

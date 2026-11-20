@@ -7,61 +7,61 @@
         "shares": 0.26963003922387324,
         "avgCost": 259.614990234375,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "PG": {
         "shares": 0.4424778846418163,
         "avgCost": 158.1999969482422,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "KO": {
         "shares": 0.7549204761597976,
         "avgCost": 92.7249984741211,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "XOM": {
         "shares": 0.39479993734864277,
         "avgCost": 177.30499267578125,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "CVX": {
         "shares": 0.31141560806186497,
         "avgCost": 224.77999877929688,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "JPM": {
         "shares": 0.20850087185935426,
         "avgCost": 335.7300109863281,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "MSFT": {
         "shares": 0.13139864953424787,
         "avgCost": 532.72998046875,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "V": {
         "shares": 0.1720070804742163,
         "avgCost": 406.9599914550781,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "LMT": {
         "shares": 0.1274163591281987,
         "avgCost": 549.3800048828125,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       },
       "TXN": {
         "shares": 0.2490619575637314,
         "avgCost": 279.6499938964844,
         "openedAt": "2026-10-20",
-        "lastDividendCheck": "2026-11-19"
+        "lastDividendCheck": "2026-11-20"
       }
     },
     "history": [
@@ -327,13 +327,20 @@
         "cash": 0,
         "pnl": -8.942683947896967,
         "pnlPct": -1.2775262782709953
+      },
+      {
+        "date": "2026-11-20",
+        "totalValue": 687.0994156491957,
+        "cash": 0,
+        "pnl": -12.900584350804252,
+        "pnlPct": -1.8429406215434645
       }
     ],
     "createdAt": "2026-10-20T18:09:30.329Z"
   },
   "satellite": {
     "startingCapital": 300,
-    "cash": 23.61238372102124,
+    "cash": 13.47105719102251,
     "positions": {
       "ISRG": {
         "shares": 0.22130792920459166,
@@ -359,6 +366,11 @@
         "shares": 0.32678193693348356,
         "avgCost": 154.67999267578125,
         "openedAt": "2026-11-19"
+      },
+      "ALL": {
+        "shares": 0.03772332690847972,
+        "avgCost": 268.70001220703125,
+        "openedAt": "2026-11-20"
       }
     },
     "history": [
@@ -453,6 +465,16 @@
         "usdAmount": 50.54662761144885,
         "fee": 0.025273313805724423,
         "reason": "Señal técnica de compra (score 64): Tendencia de corto plazo alcista: SMA20 (154.67) por encima de SMA50 (146.21). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 4.8%. RSI 50: zona neutral."
+      },
+      {
+        "date": "2026-11-20",
+        "action": "BUY",
+        "ticker": "ALL",
+        "shares": 0.03772332690847972,
+        "price": 268.70001220703125,
+        "usdAmount": 10.13625840079833,
+        "fee": 0.0050681292003991645,
+        "reason": "Señal técnica de compra (score 63): Tendencia de corto plazo alcista: SMA20 (262.20) por encima de SMA50 (247.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 55: zona neutral."
       }
     ],
     "dailySnapshots": [
@@ -616,6 +638,13 @@
         "cash": 23.61238372102124,
         "pnl": -25.98447999007726,
         "pnlPct": -8.661493330025753
+      },
+      {
+        "date": "2026-11-20",
+        "totalValue": 269.5174382752578,
+        "cash": 13.47105719102251,
+        "pnl": -30.482561724742197,
+        "pnlPct": -10.1608539082474
       }
     ],
     "createdAt": "2026-10-20T18:09:30.329Z"

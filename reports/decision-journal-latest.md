@@ -2,6 +2,17 @@
 
 > 📓 Cada compra/venta del satellite, junto al research note vigente ese día para ese ticker (cuando existe). El motivo técnico siempre está (viene del score); el veredicto sintetizado solo cuando el ticker tenía research note generada esa misma corrida — una venta no siempre lo tiene, porque la posición se cierra esa misma corrida.
 
+## 2026-11-20 — COMPRA ALL
+
+0.038 shares a $268.70 ($10.14)
+
+_Motivo técnico:_ Señal técnica de compra (score 63): Tendencia de corto plazo alcista: SMA20 (262.20) por encima de SMA50 (247.56). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 5.5%. RSI 55: zona neutral.
+
+**Research note vigente ese día: CAUTELA**
+- ✅ Le ganó a las expectativas de ganancias en 4/4 de los últimos trimestres.
+- ⚠️ P/E futuro (9.4) más alto que el actual (6.1) — el mercado espera que las ganancias se achiquen.
+- ⚠️ 3 ventas de insiders registradas sin compras — señal débil por sí sola (puede ser solo diversificación personal), pero vale la pena vigilar si se repite.
+
 ## 2026-11-19 — COMPRA J
 
 0.327 shares a $154.68 ($50.55)

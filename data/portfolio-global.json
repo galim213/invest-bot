@@ -1,12 +1,7 @@
 {
   "startingCapital": 300,
-  "cash": 20.983127282913674,
+  "cash": 21.156350857393726,
   "positions": {
-    "BB": {
-      "shares": 4.082343709802438,
-      "avgCost": 9.18589973449707,
-      "openedAt": "2026-10-26"
-    },
     "MTC": {
       "shares": 6.805807339795702,
       "avgCost": 5.510000228881836,
@@ -47,6 +42,16 @@
       "shares": 0.737986066854002,
       "avgCost": 13.869999885559082,
       "openedAt": "2026-11-18"
+    },
+    "RDWR": {
+      "shares": 0.6295635408187467,
+      "avgCost": 32.084999084472656,
+      "openedAt": "2026-11-20"
+    },
+    "STN": {
+      "shares": 0.1347256455663172,
+      "avgCost": 84.13999938964844,
+      "openedAt": "2026-11-20"
     }
   },
   "shorts": {},
@@ -341,6 +346,37 @@
       "usdAmount": 10.235866662809205,
       "fee": 0.005117933331404602,
       "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (13.20) por encima de SMA50 (12.01). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.0%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-11-20",
+      "action": "SELL",
+      "ticker": "BB",
+      "shares": 4.082343709802438,
+      "price": 7.775000095367432,
+      "usdAmount": 31.72435262167007,
+      "fee": 0.015870111366518294,
+      "realizedPnl": -5.7756473783299285,
+      "reason": "Stop-loss: precio -15.4% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-20",
+      "action": "BUY",
+      "ticker": "RDWR",
+      "shares": 0.6295635408187467,
+      "price": 32.084999084472656,
+      "usdAmount": 20.19954563078685,
+      "fee": 0.010099772815393426,
+      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (32.81) por encima de SMA50 (30.94). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.5%. RSI 48: zona neutral."
+    },
+    {
+      "date": "2026-11-20",
+      "action": "BUY",
+      "ticker": "STN",
+      "shares": 0.1347256455663172,
+      "price": 84.13999938964844,
+      "usdAmount": 11.33581573571992,
+      "fee": 0.005667907867859961,
+      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (77.34) por encima de SMA50 (72.23). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.2%. RSI 66: zona neutral."
     }
   ],
   "dailySnapshots": [
@@ -476,6 +512,13 @@
       "cash": 20.983127282913674,
       "pnl": -48.24264136679227,
       "pnlPct": -16.080880455597423
+    },
+    {
+      "date": "2026-11-20",
+      "totalValue": 246.15200517951772,
+      "cash": 21.156350857393726,
+      "pnl": -53.847994820482285,
+      "pnlPct": -17.94933160682743
     }
   ],
   "createdAt": "2026-10-26T20:07:55.797Z"
