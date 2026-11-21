@@ -338,3 +338,19 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Chequeos:** `npm test`: 193/193 en verde. Yahoo alcanzable (track-record.js trajo precios).
 
 **Decisión:** sin mejora genuina hoy; no se investigó una idea nueva con fuente real y no se inventó ninguna. Sin cambios de código, sin `validate.js`, sin impacto en dashboard ni reportes.
+
+## 2026-11-21
+
+**Idea (e): ¿sigue vigente el supuesto de costo de transacción (5 bps)?** Prueba de sensibilidad, sin cambiar código: copia del repo en un directorio temporal, `transactionCostPct` 0.0005 → 0.002 (4x), `node validate.js` (sin pasar qualityScores, sin look-ahead). El run a 5 bps reproduce el baseline (-17.59% en Q4 2018).
+
+| Régimen | 5 bps | 20 bps |
+|---|---|---|
+| Selloff Q4 2018 | -17.59% | -18.11% |
+| Crash COVID 2020 | -3.99% | -4.40% |
+| Bajista 2022 | -20.85% | -21.79% |
+| Recuperación 2023 | +16.30% | +15.43% |
+| Reciente (ya visto) | +50.06% | +49.67% |
+
+`beatBenchmark` se mantiene en 2/5 en ambos casos. Costo 4x resta ~0.4–0.9 pp por régimen: las conclusiones no dependen del supuesto de costos. No es un cambio de estrategia (el config real no se tocó), así que no aplica el gate de descarte. No se citaron fuentes externas porque no se implementó nada nuevo (no se hizo WebSearch).
+
+**Otros chequeos:** `npm test` en verde. Track record: la entrada más vieja sigue siendo 2026-11-18 → sin 30 días, no se lee todavía (~2026-12-18). Sin impacto en dashboard ni reportes.
