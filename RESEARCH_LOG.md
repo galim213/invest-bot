@@ -354,3 +354,9 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 `beatBenchmark` se mantiene en 2/5 en ambos casos. Costo 4x resta ~0.4–0.9 pp por régimen: las conclusiones no dependen del supuesto de costos. No es un cambio de estrategia (el config real no se tocó), así que no aplica el gate de descarte. No se citaron fuentes externas porque no se implementó nada nuevo (no se hizo WebSearch).
 
 **Otros chequeos:** `npm test` en verde. Track record: la entrada más vieja sigue siendo 2026-11-18 → sin 30 días, no se lee todavía (~2026-12-18). Sin impacto en dashboard ni reportes.
+
+## 2026-11-22
+
+**Estado revisado:** `node track-record.js`: 46 entradas, 17 tickers únicos; la más vieja es del 2026-11-18 (hace 4 días) → sin 30+ días, no hay lectura todavía (primera con sentido ~2026-12-18). `npm test` en verde (ver conteo en la corrida).
+
+**Decisión:** sin mejora genuina hoy; ayer ya se revisó el supuesto de costos y todos los archivos de `lib/` tienen test. No se investigó una idea nueva con fuente real y no se inventó ninguna. Sin cambios de código, sin `validate.js`, sin impacto en dashboard ni reportes.
