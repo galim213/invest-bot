@@ -360,3 +360,9 @@ Bitácora fechada de la rutina de investigación y mejora continua: qué se inve
 **Estado revisado:** `node track-record.js`: 46 entradas, 17 tickers únicos; la más vieja es del 2026-11-18 (hace 4 días) → sin 30+ días, no hay lectura todavía (primera con sentido ~2026-12-18). `npm test` en verde (ver conteo en la corrida).
 
 **Decisión:** sin mejora genuina hoy; ayer ya se revisó el supuesto de costos y todos los archivos de `lib/` tienen test. No se investigó una idea nueva con fuente real y no se inventó ninguna. Sin cambios de código, sin `validate.js`, sin impacto en dashboard ni reportes.
+
+## 2026-11-23
+
+**Estado revisado:** `node track-record.js`: 46 entradas, 17 tickers únicos; la más vieja es del 2026-11-18 (hace 5 días) → sin 30+ días, sin lectura todavía (primera con sentido ~2026-12-18). `npm test`: 193/193 en verde.
+
+**Decisión:** sin mejora genuina hoy; no se investigó una idea nueva con fuente real y no se inventó ninguna. Sin cambios de código, sin `validate.js`, sin impacto en dashboard ni reportes.
