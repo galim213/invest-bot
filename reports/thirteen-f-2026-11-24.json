@@ -1,0 +1,372 @@
+{
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T20:07:20.437Z",
+  "reports": [
+    {
+      "fund": {
+        "cik": "0001067983",
+        "name": "Berkshire Hathaway (Warren Buffett)"
+      },
+      "filingDate": "2026-11-16",
+      "entityName": "BERKSHIRE HATHAWAY INC",
+      "holdingsCount": 30,
+      "matchedCount": 28,
+      "holdings": [
+        {
+          "issuer": "APPLE INC",
+          "titleOfClass": "COM",
+          "cusip": "037833100",
+          "valueUsd": 75901188420,
+          "shares": 227917808,
+          "putCall": null,
+          "ticker": "AAPL"
+        },
+        {
+          "issuer": "AMERICAN EXPRESS CO",
+          "titleOfClass": "COM",
+          "cusip": "025816109",
+          "valueUsd": 46104813870,
+          "shares": 151610700,
+          "putCall": null,
+          "ticker": "AXP"
+        },
+        {
+          "issuer": "COCA COLA CO",
+          "titleOfClass": "COM",
+          "cusip": "191216100",
+          "valueUsd": 34432000000,
+          "shares": 400000000,
+          "putCall": null,
+          "ticker": "KO"
+        },
+        {
+          "issuer": "ALPHABET INC",
+          "titleOfClass": "CAP STK CL A",
+          "cusip": "02079K305",
+          "valueUsd": 27110464741,
+          "shares": 78791167,
+          "putCall": null,
+          "ticker": "GOOGL"
+        },
+        {
+          "issuer": "BANK OF AMER CORP",
+          "titleOfClass": "COM",
+          "cusip": "060505104",
+          "valueUsd": 24812509222,
+          "shares": 455860908,
+          "putCall": null,
+          "ticker": "BAC"
+        },
+        {
+          "issuer": "CHEVRON CORPORATION",
+          "titleOfClass": "COM",
+          "cusip": "166764100",
+          "valueUsd": 17230393553,
+          "shares": 84375856,
+          "putCall": null,
+          "ticker": "CVX"
+        },
+        {
+          "issuer": "OCCIDENTAL PETE CORP",
+          "titleOfClass": "COM",
+          "cusip": "674599105",
+          "valueUsd": 14656559963,
+          "shares": 264941431,
+          "putCall": null,
+          "ticker": "OXY"
+        },
+        {
+          "issuer": "MOODYS CORP",
+          "titleOfClass": "COM",
+          "cusip": "615369105",
+          "valueUsd": 11203286284,
+          "shares": 24669778,
+          "putCall": null,
+          "ticker": null
+        },
+        {
+          "issuer": "CHUBB LIMITED",
+          "titleOfClass": "COM",
+          "cusip": "H1467J104",
+          "valueUsd": 11139546771,
+          "shares": 34249183,
+          "putCall": null,
+          "ticker": "CB"
+        },
+        {
+          "issuer": "ALPHABET INC",
+          "titleOfClass": "CAP STK CL C",
+          "cusip": "02079K107",
+          "valueUsd": 9264186660,
+          "shares": 27188433,
+          "putCall": null,
+          "ticker": "GOOGL"
+        },
+        {
+          "issuer": "KRAFT HEINZ CO",
+          "titleOfClass": "COM",
+          "cusip": "500754106",
+          "valueUsd": 7398423065,
+          "shares": 325634818,
+          "putCall": null,
+          "ticker": "KHC"
+        },
+        {
+          "issuer": "DELTA AIR LINES INC",
+          "titleOfClass": "COM NEW",
+          "cusip": "247361702",
+          "valueUsd": 5378997000,
+          "shares": 64450000,
+          "putCall": null,
+          "ticker": "DAL"
+        },
+        {
+          "issuer": "DAVITA INC",
+          "titleOfClass": "COM",
+          "cusip": "23918K108",
+          "valueUsd": 5019719296,
+          "shares": 28697229,
+          "putCall": null,
+          "ticker": "DVA"
+        },
+        {
+          "issuer": "SIRIUSXM HOLDINGS INC",
+          "titleOfClass": "COMMON STOCK",
+          "cusip": "829933100",
+          "valueUsd": 3230008188,
+          "shares": 124807117,
+          "putCall": null,
+          "ticker": "SIRI"
+        },
+        {
+          "issuer": "LENNAR CORP",
+          "titleOfClass": "CL A",
+          "cusip": "526057104",
+          "valueUsd": 2124149633,
+          "shares": 26034436,
+          "putCall": null,
+          "ticker": "LEN"
+        },
+        {
+          "issuer": "KROGER CO",
+          "titleOfClass": "COM",
+          "cusip": "501044101",
+          "valueUsd": 2051700000,
+          "shares": 35000000,
+          "putCall": null,
+          "ticker": "KR"
+        },
+        {
+          "issuer": "VERISIGN INC",
+          "titleOfClass": "COM",
+          "cusip": "92343E102",
+          "valueUsd": 1670101573,
+          "shares": 5922136,
+          "putCall": null,
+          "ticker": "VRSN"
+        },
+        {
+          "issuer": "LIBERTY LIVE HOLDINGS INC",
+          "titleOfClass": "COM SHS SER C",
+          "cusip": "530909308",
+          "valueUsd": 1029599657,
+          "shares": 10587143,
+          "putCall": null,
+          "ticker": "LBRT"
+        },
+        {
+          "issuer": "ALLY FINL INC",
+          "titleOfClass": "COM",
+          "cusip": "02005N100",
+          "valueUsd": 1015740001,
+          "shares": 27000000,
+          "putCall": null,
+          "ticker": "ALLY"
+        },
+        {
+          "issuer": "NEW YORK TIMES CO MTN BE",
+          "titleOfClass": "CL A",
+          "cusip": "650111107",
+          "valueUsd": 1000090000,
+          "shares": 15700000,
+          "putCall": null,
+          "ticker": null
+        },
+        {
+          "issuer": "BENDING SPOONS SPA",
+          "titleOfClass": "COM SHS",
+          "cusip": "T19377109",
+          "valueUsd": 689379305,
+          "shares": 20689655,
+          "putCall": null,
+          "ticker": "BSP"
+        },
+        {
+          "issuer": "LIBERTY LIVE HOLDINGS INC",
+          "titleOfClass": "COM SER A",
+          "cusip": "530909100",
+          "valueUsd": 471930689,
+          "shares": 4986588,
+          "putCall": null,
+          "ticker": "LBRT"
+        },
+        {
+          "issuer": "NUCOR CORP",
+          "titleOfClass": "COM",
+          "cusip": "670346105",
+          "valueUsd": 369506390,
+          "shares": 1580776,
+          "putCall": null,
+          "ticker": "NUE"
+        },
+        {
+          "issuer": "LOUISIANA PAC CORP",
+          "titleOfClass": "COM",
+          "cusip": "546347105",
+          "valueUsd": 365662388,
+          "shares": 5664793,
+          "putCall": null,
+          "ticker": "LPX"
+        },
+        {
+          "issuer": "CAPITAL ONE FINL CORP",
+          "titleOfClass": "COM",
+          "cusip": "14040H105",
+          "valueUsd": 222030500,
+          "shares": 1150000,
+          "putCall": null,
+          "ticker": "COF"
+        },
+        {
+          "issuer": "MACYS INC",
+          "titleOfClass": "COM",
+          "cusip": "55616P104",
+          "valueUsd": 171658476,
+          "shares": 7538800,
+          "putCall": null,
+          "ticker": "M"
+        },
+        {
+          "issuer": "NVR INC",
+          "titleOfClass": "COM",
+          "cusip": "62944T105",
+          "valueUsd": 68387582,
+          "shares": 11112,
+          "putCall": null,
+          "ticker": "NVR"
+        },
+        {
+          "issuer": "LENNAR CORP",
+          "titleOfClass": "CL B",
+          "cusip": "526057302",
+          "valueUsd": 44234470,
+          "shares": 553000,
+          "putCall": null,
+          "ticker": "LEN"
+        },
+        {
+          "issuer": "JEFFERIES FINANCIAL GROUP IN",
+          "titleOfClass": "COM",
+          "cusip": "47233W109",
+          "valueUsd": 19826607,
+          "shares": 433558,
+          "putCall": null,
+          "ticker": "JEF"
+        },
+        {
+          "issuer": "D R HORTON INC",
+          "titleOfClass": "COM",
+          "cusip": "23331A109",
+          "valueUsd": 487021,
+          "shares": 3564,
+          "putCall": null,
+          "ticker": "DHI"
+        }
+      ]
+    },
+    {
+      "fund": {
+        "cik": "0001649339",
+        "name": "Scion Asset Management (Michael Burry)"
+      },
+      "filingDate": "2025-11-03",
+      "entityName": "Scion Asset Management, LLC",
+      "holdingsCount": 8,
+      "matchedCount": 8,
+      "holdings": [
+        {
+          "issuer": "PALANTIR TECHNOLOGIES INC",
+          "titleOfClass": "CL A",
+          "cusip": "69608A108",
+          "valueUsd": 912100000,
+          "shares": 5000000,
+          "putCall": "Put",
+          "ticker": "PLTR"
+        },
+        {
+          "issuer": "NVIDIA CORPORATION",
+          "titleOfClass": "COM",
+          "cusip": "67066G104",
+          "valueUsd": 186580000,
+          "shares": 1000000,
+          "putCall": "Put",
+          "ticker": "NVDA"
+        },
+        {
+          "issuer": "PFIZER INC",
+          "titleOfClass": "COM",
+          "cusip": "717081103",
+          "valueUsd": 152880000,
+          "shares": 6000000,
+          "putCall": "Call",
+          "ticker": "PFE"
+        },
+        {
+          "issuer": "HALLIBURTON CO",
+          "titleOfClass": "COM",
+          "cusip": "406216101",
+          "valueUsd": 61500000,
+          "shares": 2500000,
+          "putCall": "Call",
+          "ticker": "HAL"
+        },
+        {
+          "issuer": "MOLINA HEALTHCARE INC",
+          "titleOfClass": "COM",
+          "cusip": "60855R100",
+          "valueUsd": 23920000,
+          "shares": 125000,
+          "putCall": null,
+          "ticker": "MOH"
+        },
+        {
+          "issuer": "LULULEMON ATHLETICA INC",
+          "titleOfClass": "COM",
+          "cusip": "550021109",
+          "valueUsd": 17793000,
+          "shares": 100000,
+          "putCall": null,
+          "ticker": "LULU"
+        },
+        {
+          "issuer": "SLM CORP",
+          "titleOfClass": "COM",
+          "cusip": "78442P106",
+          "valueUsd": 13287895,
+          "shares": 480054,
+          "putCall": null,
+          "ticker": "SLM"
+        },
+        {
+          "issuer": "BRUKER CORP",
+          "titleOfClass": "6.375 PREF SER A",
+          "cusip": "116794207",
+          "valueUsd": 13137181,
+          "shares": 48334,
+          "putCall": null,
+          "ticker": "BRKR"
+        }
+      ]
+    }
+  ]
+}

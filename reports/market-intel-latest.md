@@ -1,4 +1,4 @@
-# Informe de mercado — sectores y empresas de calidad — 2026-11-20
+# Informe de mercado — sectores y empresas de calidad — 2026-11-24
 
 > 📚 **Sección educativa.** Esto es contexto de mercado y análisis fundamental para aprender, no son señales del motor de trading (que opera sobre el S&P 500 completo con reglas técnicas — ver el reporte diario). No es asesoría financiera.
 
@@ -8,19 +8,19 @@ Qué sectores lideran y cuáles están rezagados, por momentum de precio.
 
 | Sector | ETF | Momentum 1m | Momentum 3m | Precio |
 |---|---|---|---|---|
-| Consumo básico | XLP | 0.8% | 3.7% | $90.72 |
-| Bienes raíces | XLRE | 0.4% | -5.8% | $42.69 |
-| Servicios públicos | XLU | 0.0% | -0.8% | $42.89 |
-| Consumo discrecional | XLY | -1.8% | -4.6% | $112.91 |
-| Salud | XLV | -1.8% | 1.9% | $177.95 |
-| Aeroespacial y Defensa | ITA | -2.4% | -14.5% | $66.50 |
-| Financiero | XLF | -3.2% | -5.8% | $54.86 |
-| Industrial | XLI | -5.9% | -12.4% | $156.86 |
-| Materiales | XLB | -6.0% | -9.3% | $48.58 |
-| Comunicaciones | XLC | -6.5% | -10.6% | $100.42 |
-| Energía | XLE | -10.0% | -3.6% | $60.84 |
-| Tecnología | XLK | -17.8% | -16.7% | $149.93 |
-| Semiconductores | SMH | -23.0% | -26.3% | $403.09 |
+| Consumo básico | XLP | 4.3% | 6.3% | $91.71 |
+| Salud | XLV | 3.1% | 6.5% | $184.80 |
+| Consumo discrecional | XLY | 2.6% | 0.1% | $117.22 |
+| Servicios públicos | XLU | 1.9% | -0.3% | $43.38 |
+| Bienes raíces | XLRE | 1.1% | -4.0% | $43.26 |
+| Comunicaciones | XLC | 0.3% | -7.5% | $104.18 |
+| Financiero | XLF | -0.1% | -3.9% | $55.97 |
+| Aeroespacial y Defensa | ITA | -1.1% | -13.3% | $68.30 |
+| Materiales | XLB | -2.6% | -6.8% | $50.03 |
+| Industrial | XLI | -3.3% | -10.5% | $161.47 |
+| Energía | XLE | -13.1% | -3.1% | $60.51 |
+| Tecnología | XLK | -16.1% | -14.5% | $156.28 |
+| Semiconductores | SMH | -21.3% | -23.3% | $426.39 |
 
 _Momentum = retorno de precio en la ventana, no es una recomendación de comprar el sector — un sector "caliente" también puede estar sobrecomprado._
 
@@ -32,194 +32,194 @@ Selección curada de empresas con posición competitiva reconocida en su sector,
 
 **XOM — ExxonMobil**
 - _Por qué:_ Integración vertical completa (exploración, refinación, química) que le da control de costos en todo el ciclo del petróleo. Balance históricamente más conservador que la mayoría de sus pares, lo que le permitió seguir pagando dividendo incluso en los peores años del sector (2015-2016, 2020).
-- Market cap: $654.6B | P/E: 16.5 | Div. yield: 2.7% | Margen neto: 10.5% | ROE: 15.5% | Crec. ingresos: 32.6%
+- Market cap: $647.6B | P/E: 16.3 | Div. yield: 2.7% | Margen neto: 10.5% | ROE: 15.5% | Crec. ingresos: 32.6%
 - Consenso de analistas: buy (precio objetivo promedio: $184.18)
 
 **CVX — Chevron**
 - _Por qué:_ Segunda integrada de EEUU, con activos de bajo costo de extracción en Permian Basin. Historial de más de 35 años consecutivos aumentando el dividendo — ese tipo de constancia solo se sostiene con disciplina de capital real, no promesas.
-- Market cap: $408.4B | P/E: 15.4 | Div. yield: 3.5% | Margen neto: 11.9% | ROE: 13.9% | Crec. ingresos: 34.8%
-- Consenso de analistas: buy (precio objetivo promedio: $242.54)
+- Market cap: $409.2B | P/E: 15.4 | Div. yield: 3.5% | Margen neto: 11.9% | ROE: 13.9% | Crec. ingresos: 34.8%
+- Consenso de analistas: buy (precio objetivo promedio: $241.63)
 
 **COP — ConocoPhillips**
 - _Por qué:_ Pure-play de exploración y producción (sin refinación), lo que la hace más sensible al precio del crudo pero con menor costo de producción por barril que la mayoría — eficiencia operativa como ventaja central.
-- Market cap: $161.6B | P/E: 14.4 | Div. yield: 2.8% | Margen neto: 16.8% | ROE: 17.7% | Crec. ingresos: 29.3%
-- Consenso de analistas: buy (precio objetivo promedio: $153.00)
+- Market cap: $159.8B | P/E: 14.2 | Div. yield: 2.8% | Margen neto: 16.8% | ROE: 17.7% | Crec. ingresos: 29.3%
+- Consenso de analistas: buy (precio objetivo promedio: $152.74)
 
 **SLB — Schlumberger (SLB)**
 - _Por qué:_ Líder mundial en servicios petroleros (no produce petróleo, vende la tecnología para extraerlo) — modelo de negocio distinto al de las integradas, se beneficia de la inversión en exploración de TODA la industria, no de un solo pozo.
-- Market cap: $68.0B | P/E: 22.4 | Div. yield: 2.5% | Margen neto: 8.4% | ROE: 11.7% | Crec. ingresos: 5.8%
+- Market cap: $69.2B | P/E: 22.8 | Div. yield: 2.6% | Margen neto: 8.4% | ROE: 11.7% | Crec. ingresos: 5.8%
 - Consenso de analistas: buy (precio objetivo promedio: $62.21)
 
 ### Energía (renovable/utility)
 
 **NEE — NextEra Energy**
 - _Por qué:_ La mayor generadora de energía eólica y solar de EEUU, combinada con un negocio regulado de utility (ingresos estables). Puente entre energía tradicional y transición energética, con el perfil de riesgo más bajo de utility.
-- Market cap: $175.7B | P/E: 15.1 | Div. yield: 3.0% | Margen neto: 40.4% | ROE: 14.1% | Crec. ingresos: 1.6%
-- Consenso de analistas: buy (precio objetivo promedio: $94.11)
+- Market cap: $177.3B | P/E: 15.2 | Div. yield: 3.0% | Margen neto: 40.4% | ROE: 14.1% | Crec. ingresos: 1.6%
+- Consenso de analistas: buy (precio objetivo promedio: $94.47)
 
 ### Semiconductores
 
 **NVDA — Nvidia**
 - _Por qué:_ Dominancia casi total en GPUs para entrenamiento de IA, reforzada por CUDA (su software propietario) que hace costoso para los clientes migrar a la competencia — el moat no es solo el chip, es el ecosistema de software alrededor.
-- Market cap: $3095.5B | P/E: 13.8 | Div. yield: 0.7% | Margen neto: 62.5% | ROE: 117.4% | Crec. ingresos: 103.2%
-- Consenso de analistas: buy (precio objetivo promedio: $246.67)
+- Market cap: $3681.2B | P/E: 16.4 | Div. yield: 0.6% | Margen neto: 62.5% | ROE: 117.4% | Crec. ingresos: 103.2%
+- Consenso de analistas: buy (precio objetivo promedio: $244.71)
 
 **AVGO — Broadcom**
 - _Por qué:_ Diversificación real entre semiconductores (redes, chips a medida para los grandes de la nube) y software empresarial (tras comprar VMware) — menos dependiente de un solo ciclo que un fabricante puro de chips.
-- Market cap: $1448.6B | P/E: 38.8 | Div. yield: 0.8% | Margen neto: 42.9% | ROE: 44.2% | Crec. ingresos: 85.5%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $526.47)
+- Market cap: $1442.4B | P/E: 38.6 | Div. yield: 0.8% | Margen neto: 42.9% | ROE: 44.2% | Crec. ingresos: 85.5%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $525.51)
 
 **AMD — Advanced Micro Devices**
 - _Por qué:_ Pasó de ser el competidor débil de Intel a liderar en varios segmentos (servidores con EPYC, GPUs para IA con la línea MI) — ejemplo de que el liderazgo en este sector puede cambiar de manos más rápido que en otros.
-- Market cap: $708.3B | P/E: 91.4 | Div. yield: 0.0% | Margen neto: 16.8% | ROE: 12.0% | Crec. ingresos: 44.7%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $657.74)
+- Market cap: $680.0B | P/E: 87.8 | Div. yield: 0.0% | Margen neto: 16.8% | ROE: 12.0% | Crec. ingresos: 44.7%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $656.21)
 
 **TSM — Taiwan Semiconductor (TSMC)**
 - _Por qué:_ Fabrica los chips más avanzados del mundo para Nvidia, Apple, AMD y casi todos los demás — es el 'foundry' que nadie más puede replicar al mismo nodo tecnológico. Riesgo geopolítico real (Taiwán) que hay que tener en cuenta, no es solo una historia de moat.
-- Market cap: $1653.6B | P/E: 20.7 | Div. yield: 1.1% | Margen neto: 51.1% | ROE: 41.9% | Crec. ingresos: 50.9%
+- Market cap: $1805.1B | P/E: 22.6 | Div. yield: 1.0% | Margen neto: 51.1% | ROE: 41.9% | Crec. ingresos: 50.9%
 - Consenso de analistas: strong_buy (precio objetivo promedio: $586.69)
 
 **ASML — ASML Holding**
 - _Por qué:_ Monopolio efectivo en litografía ultravioleta extrema (EUV) — la máquina que hace posible fabricar los chips más avanzados. Sin ASML, no hay chips de última generación; es uno de los moats más puros que existen en toda la industria.
-- Market cap: $488.4B | P/E: 31.2 | Div. yield: 0.7% | Margen neto: 34.1% | ROE: 65.6% | Crec. ingresos: 55.2%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $2106.82)
+- Market cap: $514.7B | P/E: 32.9 | Div. yield: 0.7% | Margen neto: 34.1% | ROE: 65.6% | Crec. ingresos: 55.2%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $2106.24)
 
 **INTC — Intel**
 - _Por qué:_ Ejemplo de advertencia, no solo de calidad: perdió años de liderazgo tecnológico frente a TSMC/Samsung en manufactura. Útil para aprender que ni el nombre más histórico del sector está garantizado — el moat se puede erosionar.
-- Market cap: $280.8B | P/E: — | Div. yield: 0.0% | Margen neto: -20.1% | ROE: -9.6% | Crec. ingresos: 20.9%
-- Consenso de analistas: hold (precio objetivo promedio: $90.65)
+- Market cap: $292.0B | P/E: — | Div. yield: 0.0% | Margen neto: -20.1% | ROE: -9.6% | Crec. ingresos: 20.9%
+- Consenso de analistas: hold (precio objetivo promedio: $90.42)
 
 ### Semiconductores (analógicos)
 
 **TXN — Texas Instruments**
 - _Por qué:_ Líder en chips analógicos (no los de IA de moda, los que están en cada electrodoméstico, auto, sensor). Negocio menos glamoroso pero con márgenes altísimos y ciclos de producto mucho más largos que los chips digitales.
-- Market cap: $243.5B | P/E: 34.6 | Div. yield: 2.1% | Margen neto: 34.3% | ROE: 39.7% | Crec. ingresos: 27.7%
-- Consenso de analistas: buy (precio objetivo promedio: $338.79)
+- Market cap: $239.3B | P/E: 34.0 | Div. yield: 2.1% | Margen neto: 34.3% | ROE: 39.7% | Crec. ingresos: 27.7%
+- Consenso de analistas: buy (precio objetivo promedio: $339.66)
 
 ### Aeroespacial y Defensa
 
 **LMT — Lockheed Martin**
 - _Por qué:_ Fabricante del F-35, el programa de defensa más caro de la historia — contratos gubernamentales plurianuales que dan visibilidad de ingresos a 10+ años, algo rarísimo fuera de este sector. Barrera de entrada altísima: nadie nuevo puede competir por estos contratos.
-- Market cap: $130.8B | P/E: 20.1 | Div. yield: 2.5% | Margen neto: 8.2% | ROE: 80.2% | Crec. ingresos: 11.3%
+- Market cap: $136.2B | P/E: 20.9 | Div. yield: 2.5% | Margen neto: 8.2% | ROE: 80.2% | Crec. ingresos: 11.3%
 - Consenso de analistas: buy (precio objetivo promedio: $660.86)
 
 **RTX — RTX Corporation (ex-Raytheon)**
 - _Por qué:_ Combina defensa (misiles, sistemas de radar) con motores de avión comerciales (Pratt & Whitney) — expuesto tanto al gasto militar como a la recuperación de la aviación comercial, dos ciclos distintos en una sola empresa.
-- Market cap: $258.6B | P/E: 31.2 | Div. yield: 1.5% | Margen neto: 8.8% | ROE: 12.8% | Crec. ingresos: 11.1%
-- Consenso de analistas: buy (precio objetivo promedio: $228.13)
+- Market cap: $265.3B | P/E: 32.0 | Div. yield: 1.5% | Margen neto: 8.8% | ROE: 12.8% | Crec. ingresos: 11.1%
+- Consenso de analistas: buy (precio objetivo promedio: $227.88)
 
 **NOC — Northrop Grumman**
 - _Por qué:_ Especializada en sistemas espaciales, drones y el bombardero B-21 — más expuesta a programas clasificados/estratégicos que a hardware convencional, lo que le da contratos de muy largo plazo con el gobierno de EEUU.
-- Market cap: $76.3B | P/E: 16.9 | Div. yield: 1.8% | Margen neto: 10.4% | ROE: 26.1% | Crec. ingresos: 6.7%
-- Consenso de analistas: buy (precio objetivo promedio: $636.50)
+- Market cap: $78.7B | P/E: 17.5 | Div. yield: 1.8% | Margen neto: 10.4% | ROE: 26.1% | Crec. ingresos: 6.7%
+- Consenso de analistas: buy (precio objetivo promedio: $638.24)
 
 **GD — General Dynamics**
 - _Por qué:_ Diversificada entre submarinos nucleares (astilleros que literalmente nadie más tiene la capacidad de construir), vehículos blindados y jets privados (Gulfstream) — mezcla rara de defensa pura y aviación de lujo civil.
-- Market cap: $92.9B | P/E: 20.2 | Div. yield: 1.8% | Margen neto: 8.2% | ROE: 18.0% | Crec. ingresos: 12.9%
-- Consenso de analistas: buy (precio objetivo promedio: $419.29)
+- Market cap: $95.1B | P/E: 20.7 | Div. yield: 1.8% | Margen neto: 8.2% | ROE: 18.0% | Crec. ingresos: 12.9%
+- Consenso de analistas: buy (precio objetivo promedio: $417.96)
 
 **LHX — L3Harris Technologies**
 - _Por qué:_ Fusión de dos proveedores de comunicaciones y electrónica de defensa — menos conocida que Lockheed o Boeing pero fundamental en sistemas de comunicación militar, con menor exposición a programas de un solo gran avión/barco.
-- Market cap: $46.9B | P/E: 23.4 | Div. yield: 1.9% | Margen neto: 8.8% | ROE: 10.0% | Crec. ingresos: 7.1%
-- Consenso de analistas: buy (precio objetivo promedio: $333.95)
+- Market cap: $48.4B | P/E: 24.2 | Div. yield: 2.0% | Margen neto: 8.8% | ROE: 10.0% | Crec. ingresos: 7.1%
+- Consenso de analistas: buy (precio objetivo promedio: $332.86)
 
 **HII — Huntington Ingalls Industries**
 - _Por qué:_ El único constructor de portaaviones nucleares de EEUU y uno de los dos constructores de submarinos nucleares — monopolio/duopolio literal en infraestructura que ninguna empresa privada nueva podría replicar en décadas.
-- Market cap: $11.2B | P/E: 15.2 | Div. yield: 2.0% | Margen neto: 5.4% | ROE: 14.0% | Crec. ingresos: 10.8%
+- Market cap: $11.6B | P/E: 15.8 | Div. yield: 2.0% | Margen neto: 5.4% | ROE: 14.0% | Crec. ingresos: 10.8%
 - Consenso de analistas: buy (precio objetivo promedio: $357.67)
 
 ### Tecnología (plataformas)
 
 **MSFT — Microsoft**
 - _Por qué:_ Ingresos recurrentes de software empresarial (Office 365, Azure) que generan flujo de caja predecible década tras década — el ejemplo de libro de texto de 'switching costs' altos: migrar una empresa entera fuera de Microsoft es carísimo y lento.
-- Market cap: $3607.2B | P/E: 25.4 | Div. yield: 0.8% | Margen neto: 41.2% | ROE: 34.2% | Crec. ingresos: 18.8%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $636.12)
+- Market cap: $3665.5B | P/E: 25.8 | Div. yield: 0.8% | Margen neto: 41.2% | ROE: 34.2% | Crec. ingresos: 18.8%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $637.36)
 
 **AAPL — Apple**
 - _Por qué:_ El ecosistema (hardware + software + servicios) crea una de las bases de clientes más leales del mundo — los márgenes vienen cada vez más de servicios (App Store, suscripciones) y no solo de vender hardware una vez.
-- Market cap: $5001.2B | P/E: 38.3 | Div. yield: 0.3% | Margen neto: 27.6% | ROE: 142.3% | Crec. ingresos: 11.7%
+- Market cap: $5114.2B | P/E: 39.2 | Div. yield: 0.3% | Margen neto: 27.6% | ROE: 142.3% | Crec. ingresos: 11.7%
 - Consenso de analistas: buy (precio objetivo promedio: $345.63)
 
 **GOOGL — Alphabet (Google)**
 - _Por qué:_ Dominancia en búsqueda (~90% de market share global) financia apuestas de largo plazo (Waymo, IA) sin presión de rentabilidad inmediata — pocas empresas pueden permitirse invertir así de lejos gracias al flujo de caja del negocio central.
-- Market cap: $3307.8B | P/E: 14.0 | Div. yield: 0.3% | Margen neto: 50.0% | ROE: 44.3% | Crec. ingresos: 24.7%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $400.15)
+- Market cap: $3410.0B | P/E: 14.5 | Div. yield: 0.3% | Margen neto: 50.0% | ROE: 44.3% | Crec. ingresos: 24.7%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $395.48)
 
 **AMZN — Amazon**
 - _Por qué:_ AWS (la nube) genera la mayoría de la ganancia operativa mientras el e-commerce, de menor margen, sigue ganando escala — dos negocios con economía muy distinta bajo una sola marca.
-- Market cap: $2681.1B | P/E: 20.0 | Div. yield: 0.0% | Margen neto: 16.9% | ROE: 27.4% | Crec. ingresos: 12.1%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $326.51)
+- Market cap: $2718.2B | P/E: 20.3 | Div. yield: 0.0% | Margen neto: 16.9% | ROE: 27.4% | Crec. ingresos: 12.1%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $326.34)
 
 ### Consumo básico (dividendos)
 
 **PG — Procter & Gamble**
 - _Por qué:_ Más de 65 años consecutivos aumentando el dividendo ("Dividend King") — marcas (Tide, Gillette, Pampers) que la gente sigue comprando en recesiones, lo que hace el negocio muy predecible aunque poco emocionante.
-- Market cap: $394.5B | P/E: 25.6 | Div. yield: 2.6% | Margen neto: 18.2% | ROE: 29.6% | Crec. ingresos: 4.0%
-- Consenso de analistas: buy (precio objetivo promedio: $174.78)
+- Market cap: $398.9B | P/E: 25.9 | Div. yield: 2.6% | Margen neto: 18.2% | ROE: 29.6% | Crec. ingresos: 4.0%
+- Consenso de analistas: buy (precio objetivo promedio: $176.35)
 
 **KO — Coca-Cola**
 - _Por qué:_ Más de 60 años aumentando el dividendo. El negocio real no es la bebida, es la distribución global y la marca — Warren Buffett la tiene en Berkshire desde 1988 como ejemplo clásico de moat de marca.
-- Market cap: $417.7B | P/E: 28.6 | Div. yield: 2.2% | Margen neto: 28.7% | ROE: 40.6% | Crec. ingresos: 7.4%
+- Market cap: $420.2B | P/E: 28.8 | Div. yield: 2.2% | Margen neto: 28.7% | ROE: 40.6% | Crec. ingresos: 7.4%
 - Consenso de analistas: buy (precio objetivo promedio: $99.64)
 
 ### Consumo básico (retail)
 
 **COST — Costco**
 - _Por qué:_ Modelo de membresía (no vende por margen en los productos, vende la membresía anual) que genera lealtad altísima y flujo de caja predecible — tasa de renovación de membresías típicamente >90%.
-- Market cap: $489.9B | P/E: 53.3 | Div. yield: 0.5% | Margen neto: 3.0% | ROE: 28.4% | Crec. ingresos: 11.1%
-- Consenso de analistas: buy (precio objetivo promedio: $1085.35)
+- Market cap: $482.6B | P/E: 52.5 | Div. yield: 0.5% | Margen neto: 3.0% | ROE: 28.4% | Crec. ingresos: 11.1%
+- Consenso de analistas: buy (precio objetivo promedio: $1084.60)
 
 **WMT — Walmart**
 - _Por qué:_ Escala logística que ninguna cadena nueva puede replicar rápido — se reinventó exitosamente para competir con Amazon en e-commerce en vez de perder relevancia, algo que muchos retailers tradicionales no lograron.
-- Market cap: $1023.6B | P/E: 46.6 | Div. yield: 0.8% | Margen neto: 3.0% | ROE: 22.3% | Crec. ingresos: 5.9%
-- Consenso de analistas: strong_buy (precio objetivo promedio: $133.88)
+- Market cap: $1048.0B | P/E: 47.7 | Div. yield: 0.8% | Margen neto: 2.8% | ROE: 20.6% | Crec. ingresos: 5.2%
+- Consenso de analistas: buy (precio objetivo promedio: $136.15)
 
 ### Financiero
 
 **JPM — JPMorgan Chase**
 - _Por qué:_ El banco más grande de EEUU por activos, con el balance más sólido entre los grandes bancos — salió de la crisis de 2008 y de los problemas bancarios de 2023 (SVB, etc.) comprando activos de competidores en problemas, no necesitando rescate.
-- Market cap: $826.1B | P/E: 13.0 | Div. yield: 2.1% | Margen neto: 34.6% | ROE: 18.0% | Crec. ingresos: 10.2%
+- Market cap: $839.8B | P/E: 13.3 | Div. yield: 2.1% | Margen neto: 34.6% | ROE: 18.0% | Crec. ingresos: 10.2%
 - Consenso de analistas: buy (precio objetivo promedio: $373.48)
 
 ### Financiero (pagos)
 
 **V — Visa**
 - _Por qué:_ No presta plata, solo procesa transacciones — negocio de infraestructura con márgenes altísimos y casi sin riesgo crediticio directo, a diferencia de un banco tradicional.
-- Market cap: $754.3B | P/E: 32.8 | Div. yield: 0.8% | Margen neto: 51.2% | ROE: 63.5% | Crec. ingresos: 13.2%
+- Market cap: $774.9B | P/E: 33.7 | Div. yield: 0.8% | Margen neto: 51.2% | ROE: 63.5% | Crec. ingresos: 13.2%
 - Consenso de analistas: strong_buy (precio objetivo promedio: $450.96)
 
 **MA — Mastercard**
 - _Por qué:_ Duopolio con Visa en procesamiento de pagos global — mismo modelo de negocio de infraestructura, se beneficia estructuralmente de la migración mundial de efectivo a pagos digitales.
-- Market cap: $547.0B | P/E: 32.9 | Div. yield: 0.6% | Margen neto: 46.7% | ROE: 231.4% | Crec. ingresos: 14.0%
+- Market cap: $562.8B | P/E: 33.8 | Div. yield: 0.5% | Margen neto: 46.7% | ROE: 231.4% | Crec. ingresos: 14.0%
 - Consenso de analistas: strong_buy (precio objetivo promedio: $720.69)
 
 ### Financiero (holding diversificado)
 
 **BRK-B — Berkshire Hathaway**
 - _Por qué:_ No es una sola empresa, es una colección de negocios (seguros, ferrocarriles, energía, y una cartera de acciones) bajo la disciplina de capital de Warren Buffett — el ejemplo más estudiado del mundo de inversión de largo plazo con margen de seguridad.
-- Market cap: $1209.8B | P/E: 15.9 | Div. yield: 0.0% | Margen neto: 19.5% | ROE: 10.6% | Crec. ingresos: 11.2%
-- Consenso de analistas: buy (precio objetivo promedio: $564.67)
+- Market cap: $1224.0B | P/E: 16.1 | Div. yield: 0.0% | Margen neto: 19.5% | ROE: 10.6% | Crec. ingresos: 11.2%
+- Consenso de analistas: hold (precio objetivo promedio: $564.67)
 
 ### Salud
 
 **JNJ — Johnson & Johnson**
 - _Por qué:_ Más de 60 años aumentando el dividendo, diversificada entre farmacéutica y dispositivos médicos — la demanda de salud es mucho menos sensible a recesiones que casi cualquier otro sector.
-- Market cap: $653.2B | P/E: 41.2 | Div. yield: 2.0% | Margen neto: 16.2% | ROE: 20.0% | Crec. ingresos: 5.9%
-- Consenso de analistas: buy (precio objetivo promedio: $279.17)
+- Market cap: $664.1B | P/E: 41.9 | Div. yield: 2.0% | Margen neto: 16.2% | ROE: 20.0% | Crec. ingresos: 5.9%
+- Consenso de analistas: buy (precio objetivo promedio: $279.85)
 
 ### Salud (seguros)
 
 **UNH — UnitedHealth Group**
 - _Por qué:_ La mayor aseguradora de salud de EEUU, con Optum (su brazo de servicios de salud) creciendo más rápido que el negocio de seguros tradicional — verticalización que le da control sobre más partes de la cadena de valor de salud.
-- Market cap: $305.3B | P/E: 19.4 | Div. yield: 2.8% | Margen neto: 3.5% | ROE: 15.8% | Crec. ingresos: -0.4%
-- Consenso de analistas: buy (precio objetivo promedio: $476.36)
+- Market cap: $308.6B | P/E: 19.7 | Div. yield: 2.8% | Margen neto: 3.5% | ROE: 15.8% | Crec. ingresos: -0.4%
+- Consenso de analistas: strong_buy (precio objetivo promedio: $478.48)
 
 ### Salud (farmacéutica)
 
 **LLY — Eli Lilly**
 - _Por qué:_ Líder en medicamentos para diabetes/obesidad (GLP-1, la categoría de mayor crecimiento en farma en años) — ejemplo de cómo un solo avance científico puede cambiar radicalmente la trayectoria de una empresa, para bien o para mal.
-- Market cap: $1203.5B | P/E: 43.9 | Div. yield: 0.5% | Margen neto: 31.9% | ROE: 86.0% | Crec. ingresos: 38.6%
+- Market cap: $1257.3B | P/E: 45.8 | Div. yield: 0.5% | Margen neto: 31.9% | ROE: 86.0% | Crec. ingresos: 38.6%
 - Consenso de analistas: buy (precio objetivo promedio: $1470.06)
 
 ---
-_Generado automáticamente el 2026-11-20T20:07:16.191Z. Fundamentales: endpoint no oficial de Yahoo Finance (mismo mecanismo que usa la librería yfinance) — puede fallar sin aviso. Los textos "por qué" son análisis cualitativo, no se actualizan automáticamente y pueden quedar desactualizados; revisalos cada tanto._
+_Generado automáticamente el 2026-11-24T20:07:18.505Z. Fundamentales: endpoint no oficial de Yahoo Finance (mismo mecanismo que usa la librería yfinance) — puede fallar sin aviso. Los textos "por qué" son análisis cualitativo, no se actualizan automáticamente y pueden quedar desactualizados; revisalos cada tanto._

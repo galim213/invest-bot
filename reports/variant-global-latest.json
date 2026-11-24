@@ -1,50 +1,18 @@
 {
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T20:07:17.510Z",
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T20:07:19.717Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-20",
-    "totalValue": 246.15200517951772,
+    "date": "2026-11-24",
+    "totalValue": 256.00873752015286,
     "cash": 21.156350857393726,
-    "pnl": -53.847994820482285,
-    "pnlPct": -17.94933160682743
+    "pnl": -43.99126247984714,
+    "pnlPct": -14.663754159949047
   },
-  "trades": [
-    {
-      "date": "2026-11-20",
-      "action": "SELL",
-      "ticker": "BB",
-      "shares": 4.082343709802438,
-      "price": 7.775000095367432,
-      "usdAmount": 31.72435262167007,
-      "fee": 0.015870111366518294,
-      "realizedPnl": -5.7756473783299285,
-      "reason": "Stop-loss: precio -15.4% desde el precio de entrada (umbral -12%)."
-    },
-    {
-      "date": "2026-11-20",
-      "action": "BUY",
-      "ticker": "RDWR",
-      "shares": 0.6295635408187467,
-      "price": 32.084999084472656,
-      "usdAmount": 20.19954563078685,
-      "fee": 0.010099772815393426,
-      "reason": "Señal técnica de compra (score 74): Tendencia de corto plazo alcista: SMA20 (32.81) por encima de SMA50 (30.94). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 7.5%. RSI 48: zona neutral."
-    },
-    {
-      "date": "2026-11-20",
-      "action": "BUY",
-      "ticker": "STN",
-      "shares": 0.1347256455663172,
-      "price": 84.13999938964844,
-      "usdAmount": 11.33581573571992,
-      "fee": 0.005667907867859961,
-      "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (77.34) por encima de SMA50 (72.23). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.2%. RSI 66: zona neutral."
-    }
-  ],
+  "trades": [],
   "positions": [
     {
       "ticker": "MTC",
@@ -248,6 +216,13 @@
       "cash": 21.156350857393726,
       "pnl": -53.847994820482285,
       "pnlPct": -17.94933160682743
+    },
+    {
+      "date": "2026-11-24",
+      "totalValue": 256.00873752015286,
+      "cash": 21.156350857393726,
+      "pnl": -43.99126247984714,
+      "pnlPct": -14.663754159949047
     }
   ]
 }
