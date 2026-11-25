@@ -1,4 +1,4 @@
-# 13F — qué compran los fondos grandes — 2026-11-24
+# 13F — qué compran los fondos grandes — 2026-11-25
 
 > 🏦 **Datos oficiales de la SEC, con retraso de hasta 45 días (es trimestral, nunca en vivo) y sin tickers directos (se intenta resolver cruzando nombres — no siempre se logra).** El 13F NO reporta posiciones cortas — solo tenencias largas y algunas opciones (put/call). No es asesoría financiera real, y copiar lo que hizo otro hace más de un mes no es una estrategia.
 
@@ -55,4 +55,4 @@ _Declarado el 2025-11-03 · 8 posiciones · 8/8 con ticker resuelto._
 | BRKR | BRUKER CORP | Tenencia larga | $13.1M |
 
 ---
-_Generado automáticamente el 2026-11-24T20:07:20.436Z. Fuente: SEC EDGAR (Form 13F-HR). El valor declarado está en dólares completos (convención de la SEC desde 2023) — para opciones (put/call), es el valor de mercado de las acciones subyacentes que cubre la opción, no la prima pagada._
+_Generado automáticamente el 2026-11-25T20:07:19.782Z. Fuente: SEC EDGAR (Form 13F-HR). El valor declarado está en dólares completos (convención de la SEC desde 2023) — para opciones (put/call), es el valor de mercado de las acciones subyacentes que cubre la opción, no la prima pagada._

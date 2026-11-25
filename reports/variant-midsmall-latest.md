@@ -1,10 +1,10 @@
-# Cartera paralela — Mid + Small cap — 2026-11-24
+# Cartera paralela — Mid + Small cap — 2026-11-25
 
 > 🧪 **Experimento en vivo, no validado por backtest** (no hay dataset point-in-time gratuito para S&P MidCap 400 + SmallCap 600, así que no se puede correr validate.js con el mismo rigor que el S&P 500). Mismo motor técnico y mismos umbrales que el satellite de producción, aplicados sobre S&P MidCap 400 + SmallCap 600 en vez de S&P 500. Capital ficticio independiente — simulación 100% educativa, no es asesoría financiera real.
 
 - Capital inicial: $300.00
-- Valor hoy: **$261.94**
-- P&L: $-38.06 (-12.69%)
+- Valor hoy: **$262.92**
+- P&L: $-37.08 (-12.36%)
 
 ## Movimientos de hoy
 
@@ -27,4 +27,4 @@ _Sin movimientos hoy._
 | PRVA | 0.4307 | $25.12 |
 | ICUI | 0.0608 | $178.40 |
 
-_Generado automáticamente el 2026-11-24T20:07:19.708Z. Simulación 100% educativa, no es asesoría financiera real._
+_Generado automáticamente el 2026-11-25T20:07:19.217Z. Simulación 100% educativa, no es asesoría financiera real._
