@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-25T20:07:19.223Z",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T20:07:15.743Z",
   "name": "global",
   "label": "Internacional (ADRs)",
   "universeLabel": "empresas internacionales en bolsas de EEUU",
   "startingCapital": 300,
   "snapshot": {
-    "date": "2026-11-25",
-    "totalValue": 258.5625162219832,
+    "date": "2026-11-26",
+    "totalValue": 258.336153293035,
     "cash": 21.156350857393726,
-    "pnl": -41.437483778016826,
-    "pnlPct": -13.812494592672275
+    "pnl": -41.66384670696499,
+    "pnlPct": -13.887948902321662
   },
   "trades": [],
   "positions": [
@@ -230,6 +230,13 @@
       "cash": 21.156350857393726,
       "pnl": -41.437483778016826,
       "pnlPct": -13.812494592672275
+    },
+    {
+      "date": "2026-11-26",
+      "totalValue": 258.336153293035,
+      "cash": 21.156350857393726,
+      "pnl": -41.66384670696499,
+      "pnlPct": -13.887948902321662
     }
   ]
 }
