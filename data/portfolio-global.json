@@ -1,15 +1,10 @@
 {
   "startingCapital": 300,
-  "cash": 21.156350857393726,
+  "cash": 14.281689550158468,
   "positions": {
     "MTC": {
       "shares": 6.805807339795702,
       "avgCost": 5.510000228881836,
-      "openedAt": "2026-10-26"
-    },
-    "DAO": {
-      "shares": 2.2644267528956243,
-      "avgCost": 19.209999084472656,
       "openedAt": "2026-10-26"
     },
     "GMAB": {
@@ -52,6 +47,16 @@
       "shares": 0.1347256455663172,
       "avgCost": 84.13999938964844,
       "openedAt": "2026-11-20"
+    },
+    "DMRA": {
+      "shares": 0.9108222999261052,
+      "avgCost": 26.06999969482422,
+      "openedAt": "2026-11-27"
+    },
+    "ALC": {
+      "shares": 0.2648394508812035,
+      "avgCost": 78.58999633789062,
+      "openedAt": "2026-11-27"
     }
   },
   "shorts": {},
@@ -377,6 +382,37 @@
       "usdAmount": 11.33581573571992,
       "fee": 0.005667907867859961,
       "reason": "Señal técnica de compra (score 71): Tendencia de corto plazo alcista: SMA20 (77.34) por encima de SMA50 (72.23). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 13.2%. RSI 66: zona neutral."
+    },
+    {
+      "date": "2026-11-27",
+      "action": "SELL",
+      "ticker": "DAO",
+      "shares": 2.2644267528956243,
+      "price": 16.65999984741211,
+      "usdAmount": 37.70648668303814,
+      "fee": 0.0188626746788585,
+      "realizedPnl": -5.793149166942192,
+      "reason": "Stop-loss: precio -13.3% desde el precio de entrada (umbral -12%)."
+    },
+    {
+      "date": "2026-11-27",
+      "action": "BUY",
+      "ticker": "DMRA",
+      "shares": 0.9108222999261052,
+      "price": 26.06999969482422,
+      "usdAmount": 23.745137081112656,
+      "fee": 0.011872568540556329,
+      "reason": "Señal técnica de compra (score 73): Tendencia de corto plazo alcista: SMA20 (23.20) por encima de SMA50 (21.68). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 18.2%. RSI 62: zona neutral."
+    },
+    {
+      "date": "2026-11-27",
+      "action": "BUY",
+      "ticker": "ALC",
+      "shares": 0.2648394508812035,
+      "price": 78.58999633789062,
+      "usdAmount": 20.813731474882747,
+      "fee": 0.010406865737441373,
+      "reason": "Señal técnica de compra (score 70): Tendencia de corto plazo alcista: SMA20 (74.71) por encima de SMA50 (69.43). Precio por encima de la media de 200 días: contexto de fondo alcista. Momentum 10d: 9.4%. RSI 64: zona neutral."
     }
   ],
   "dailySnapshots": [
@@ -540,6 +576,13 @@
       "cash": 21.156350857393726,
       "pnl": -41.66384670696499,
       "pnlPct": -13.887948902321662
+    },
+    {
+      "date": "2026-11-27",
+      "totalValue": 261.56365906568385,
+      "cash": 14.281689550158468,
+      "pnl": -38.43634093431615,
+      "pnlPct": -12.81211364477205
     }
   ],
   "createdAt": "2026-10-26T20:07:55.797Z"
